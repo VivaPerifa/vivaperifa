@@ -20,5 +20,4 @@ VivaPerifa é uma plataforma digital dedicada a promover e fortalecer a vida cul
 - **Participe e Colabore**: 🤝 Envolva-se em projetos sociais, voluntariado e outras atividades comunitárias para fazer a diferença em sua comunidade.
 - **Notificações Personalizadas**: 🔔 Receba notificações personalizadas sobre eventos e atividades com base em seus interesses e localização.
 
-
-Commit Teste
+Testando
