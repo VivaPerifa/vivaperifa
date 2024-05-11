@@ -1,8 +1,27 @@
+:root{
+  --font-family: "Poppins";
+  --cor-azul: "#033E8C";
+  --cor-rosa: "#D9043E";
+  --cor-vermelha: "#D90504";
+  --cor-amarela: "#F2B705";
+  --cor-laranja: "#F28705";
+  --font-size: 1rem;
+}
+
+:root{
+  font-size: var(--font-size);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-family), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

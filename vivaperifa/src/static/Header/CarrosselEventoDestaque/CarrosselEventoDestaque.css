@@ -1,0 +1,9 @@
+.evento-destaque-scroll{
+    width: 100vw;
+    overflow: auto;
+}
+
+.container-fixed{
+    display: flex;
+    gap: 30px;
+}
