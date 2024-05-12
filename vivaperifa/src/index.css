@@ -1,17 +1,3 @@
-:root{
-  --font-family: "Poppins";
-  --cor-azul: "#033E8C";
-  --cor-rosa: "#D9043E";
-  --cor-vermelha: "#D90504";
-  --cor-amarela: "#F2B705";
-  --cor-laranja: "#F28705";
-  --font-size: 1rem;
-}
-
-:root{
-  font-size: var(--font-size);
-}
-
 *{
   padding: 0;
   margin: 0;
@@ -21,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: var(--font-family), sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
