@@ -1,9 +1,20 @@
 .evento-destaque-scroll{
     width: 100vw;
     overflow: auto;
+    background-image: url('../../../assets/fundo_header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fixed{
+    width: 80vw;
+    margin: 0 auto;
 }
 
 .item{
     display: flex;
     justify-content: center;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: white;
 }

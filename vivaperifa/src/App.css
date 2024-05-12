@@ -1,7 +1,20 @@
+:root{
+    --font-family: "Poppins";
+    --cor-azul: "#033E8C";
+    --cor-rosa: "#D9043E";
+    --cor-vermelha: "#D90504";
+    --cor-amarela: "#F2B705";
+    --cor-laranja: "#F28705";
+    --font-size-text: 1rem;
+    font-size: var(--font-size-text);
+    color: var(--cor-azul);
+  }
+
 .container{
     height: 100vh;
     width: 100vw;
 }
 .evento-destaque{
     margin: 0 auto;
+   
 }
