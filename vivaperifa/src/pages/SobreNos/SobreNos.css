@@ -59,3 +59,22 @@
     width: 100%;
     object-fit: cover;
 }
+
+.vivaperifa-title {
+    font-size: 30px;
+    display: flex;
+}
+
+.logo-vivaperifa {
+    width: 100px;
+}
+
+.vivaperifa-title img {
+    width: 10%;
+    object-fit: cover;
+}
+
+.vivaperifa{
+    justify-content: space-between;
+}
+
