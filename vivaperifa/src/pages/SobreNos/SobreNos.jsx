@@ -47,12 +47,17 @@ export default function SobreNos() {
                 </div>
             </div>
 
+            <div className="container-perifa">
 
-            <div className="vivaperifa">
-                <h1 className="vivaperifa-title" >O que é o
-                    <img className="logo-vivaperifa" src={logo} alt="" />?</h1>
+                <div className="vivaperifa">
+                    <div className="titulo-perifa">
+                        <h1 className="vivaperifa-title" >O que é o</h1>
+                        <img className="logo-vivaperifa" src={logo} alt="" />
+                        <h1 className="vivaperifa-title2">?</h1>
+                    </div>
 
-                <p className="vivaperifa-texto">O VivaPerifa é uma plataforma digital que conecta <br /> e fortalece a vida  cultural e comunitária nas periferias. <br /> Nosso objetivo é proporcionar  oportunidades de <br /> participação, aprendizado e engajamento em diversas <br /> atividades locais. Através do VivaPerifa, moradores das <br /> periferias podem  descobrir, compartilhar e participar <br /> dessas atividades, promovendo  inclusão, desenvolvimento <br /> comunitário e empoderamento.</p>
+                    <p className="vivaperifa-texto">O VivaPerifa é uma plataforma digital que conecta <br /> e fortalece a vida  cultural e comunitária nas <br /> periferias. Nosso objetivo é proporcionar <br /> oportunidades de participação, aprendizado e <br /> engajamento em diversas atividades locais. <br />Através do VivaPerifa, moradores das periferias <br /> podem  descobrir, compartilhar e participar <br />dessas atividades, promovendo  inclusão, <br /> desenvolvimento comunitário e empoderamento.</p>
+                </div>
 
                 <div className="imagem-vivaperifa">
                     <img src={imagemPerifa} alt="" />

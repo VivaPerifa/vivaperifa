@@ -1,3 +1,4 @@
+
 .main {
     width: 100vw;
     padding: 20px 0;
@@ -61,20 +62,54 @@
 }
 
 .vivaperifa-title {
-    font-size: 30px;
+    font-size: 40px;
     display: flex;
 }
 
 .logo-vivaperifa {
-    width: 100px;
+    width: 150px;
 }
 
-.vivaperifa-title img {
-    width: 10%;
+.container-perifa {
+    display: flex;
+    gap: 14%;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.titulo-perifa {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.imagem-vivaperifa {
+    width: 430px;
+    height: 430px;
+    margin-top: 30px;
+    
+}
+.imagem-vivaperifa img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
-.vivaperifa{
-    justify-content: space-between;
+.vivaperifa-texto {
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin: 0 -50px;
 }
 
+.vivaperifa-texto {
+    margin-top: 25px;
+}
+
+.vivaperifa-title {
+    margin-left: 10px;
+}
+.vivaperifa-title2 {
+    font-size: 40px;
+}
