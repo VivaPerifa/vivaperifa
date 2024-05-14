@@ -113,3 +113,28 @@
 .vivaperifa-title2 {
     font-size: 40px;
 }
+
+.title-equipe {
+    text-align: center;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+}
+
+.equipe-1 img {
+    max-width: 70%;
+}
+
+.equipe-1 {
+    display: flex;
+    margin-top: 30px;
+}
+
+.equipe-2 img {
+    max-width: 70%;
+}
+
+.equipe-2 {
+    display: flex;
+    margin-top: 30px;
+}
