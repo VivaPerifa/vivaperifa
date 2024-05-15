@@ -3,6 +3,7 @@ import EventoDestaque from '../EventoDestaque/EventoDestaque';
 import Xamuel from '../../../assets/xamuel.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import 'swiper/css/bundle';
 
@@ -42,7 +43,10 @@ export default function CarrosselEventoDestaque(){
         <div className='evento-destaque-scroll'>
             <div className='container-fixed'>
                 <Swiper
-                   
+                   slidesPerView={1}
+                   navigation
+                   modules={[Navigation, Pagination, Scrollbar, A11y]}
+
                 >
                     {
                         listItem.map((item) => (
