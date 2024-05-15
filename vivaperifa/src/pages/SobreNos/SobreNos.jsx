@@ -89,26 +89,28 @@ export default function SobreNos() {
 
                     <div className="jessica">
                         <img src={jessica} alt="" />
-                        <h1>Jéssica Souza</h1>
-                        <p>product Owner & Dev FullStack</p>
+                        <h1 className="nomes">Jéssica Souza</h1>
+                        <p className="funcao-equipe">product Owner & Dev FullStack</p>
                     </div>
 
                     <div className="raquel">
                         <img src={raquel} alt="" />
-                        <h1>raquel Costa</h1>
-                        <p>Scrum Master & Dev FullStack</p>
+                        <div className="descricao-equipe">
+                            <h1 className="nomes">Raquel Costa</h1>
+                            <p className="funcao-equipe">Scrum Master & Dev FullStack</p>
+                        </div>
                     </div>
 
                     <div className="larissa">
                         <img src={larissa} alt="" />
-                        <h1>Larissa Dias</h1>
-                        <p>Financeiro & Dev Front-End</p>
+                        <h1 className="nomes">Larissa Dias</h1>
+                        <p className="funcao-equipe">Financeiro & Dev Front-End</p>
                     </div>
 
                     <div className="erick">
                         <img src={erick} alt="" />
-                        <h1>Erick Gabriel</h1>
-                        <p>Dev Front-End</p>
+                        <h1 className="nomes">Erick Gabriel</h1>
+                        <p className="funcao-equipe">Dev Front-End</p>
                     </div>
                 </div>
 
@@ -116,26 +118,26 @@ export default function SobreNos() {
                 <div className="equipe-2">
                     <div className="nathan">
                         <img src={nathan} alt="" />
-                        <h1>nathan Rabelo</h1>
-                        <p>Dev FullStack</p>
+                        <h1 className="nomes">Nathan Rabelo</h1>
+                        <p className="funcao-equipe" >Dev FullStack</p>
                     </div>
 
                     <div className="renan">
                         <img src={renan} alt="" />
-                        <h1>Renan Anacleto</h1>
-                        <p>Dev FullStack & Designer</p>
+                        <h1 className="nomes">Renan Anacleto</h1>
+                        <p className="funcao-equipe">Dev FullStack & Designer</p>
                     </div>
 
                     <div className="diego">
                         <img src={diego} alt="" />
-                        <h1>Diego Guarnieri</h1>
-                        <p>Dev Front-end & Designer</p>
+                        <h1 className="nomes">Diego Guarnieri</h1>
+                        <p className="funcao-equipe">Dev Front-end & Designer</p>
                     </div>
 
                     <div className="kaue">
                         <img src={kaue} alt="" />
-                        <h1>Kaue Souza</h1>
-                        <p>Dev Back-End</p>
+                        <h1 className="nomes">Kaue Souza</h1>
+                        <p className="funcao-equipe">Dev Back-End</p>
                     </div>
                 </div>
             </div>
