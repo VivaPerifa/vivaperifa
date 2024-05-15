@@ -14,17 +14,11 @@ import diego from "../../assets/imagemEquipeDiego.png";
 import kaue from "../../assets/imagemEquipeKaue.png";
 
 
-
-
-
-
-
-
 export default function SobreNos() {
     return (
         <div className="conteudo">
             <div className="main">
-                <div className="container">
+                <div className="container-sobreNos">
                     <div id="square">
                         <div className="conteudo">
                             <div className="missao">
@@ -87,13 +81,13 @@ export default function SobreNos() {
                 </div>
                 <div className="equipe-1">
 
-                    <div className="jessica">
+                    <div className="item-equipe">
                         <img src={jessica} alt="" />
                         <h1 className="nomes">Jéssica Souza</h1>
                         <p className="funcao-equipe">product Owner & Dev FullStack</p>
                     </div>
 
-                    <div className="raquel">
+                    <div className="item-equipe">
                         <img src={raquel} alt="" />
                         <div className="descricao-equipe">
                             <h1 className="nomes">Raquel Costa</h1>
@@ -101,13 +95,13 @@ export default function SobreNos() {
                         </div>
                     </div>
 
-                    <div className="larissa">
+                    <div className="item-equipe">
                         <img src={larissa} alt="" />
                         <h1 className="nomes">Larissa Dias</h1>
                         <p className="funcao-equipe">Financeiro & Dev Front-End</p>
                     </div>
 
-                    <div className="erick">
+                    <div className="item-equipe">
                         <img src={erick} alt="" />
                         <h1 className="nomes">Erick Gabriel</h1>
                         <p className="funcao-equipe">Dev Front-End</p>
@@ -116,25 +110,25 @@ export default function SobreNos() {
 
 
                 <div className="equipe-2">
-                    <div className="nathan">
+                    <div className="item-equipe">
                         <img src={nathan} alt="" />
                         <h1 className="nomes">Nathan Rabelo</h1>
                         <p className="funcao-equipe" >Dev FullStack</p>
                     </div>
 
-                    <div className="renan">
+                    <div className="item-equipe">
                         <img src={renan} alt="" />
                         <h1 className="nomes">Renan Anacleto</h1>
                         <p className="funcao-equipe">Dev FullStack & Designer</p>
                     </div>
 
-                    <div className="diego">
+                    <div className="item-equipe">
                         <img src={diego} alt="" />
                         <h1 className="nomes">Diego Guarnieri</h1>
                         <p className="funcao-equipe">Dev Front-end & Designer</p>
                     </div>
 
-                    <div className="kaue">
+                    <div className="item-equipe">
                         <img src={kaue} alt="" />
                         <h1 className="nomes">Kaue Souza</h1>
                         <p className="funcao-equipe">Dev Back-End</p>
