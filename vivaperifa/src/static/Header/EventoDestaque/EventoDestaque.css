@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 0 auto;
 }
 
 .evento-destaque__imagem{

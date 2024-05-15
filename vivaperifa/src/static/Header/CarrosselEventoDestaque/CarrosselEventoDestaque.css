@@ -1,20 +1,24 @@
-.evento-destaque-scroll{
-    width: 100vw;
-    overflow: auto;
+.container-evento-destaque{
+    width: inherit;
     background-image: url('../../../assets/fundo_header.png');
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    overflow: hidden;
 }
-
-.container-fixed{
+.container-scroll{
     width: 80vw;
-    margin: 0 auto;
 }
 
 .item{
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
 }
-.swiper-button-prev, .swiper-button-next{
+
+.swiper-button-prev, 
+.swiper-button-next{
     color: white;
 }

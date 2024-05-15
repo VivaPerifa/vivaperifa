@@ -10,7 +10,6 @@ export default function EventoDestaque(props){
                 <h2>{props.tituloEventoDestaque}</h2>
                 <span>{props.dataEventoDestaque}</span>
             </div>
-            <div>teste</div>
         </div>
     );
 }

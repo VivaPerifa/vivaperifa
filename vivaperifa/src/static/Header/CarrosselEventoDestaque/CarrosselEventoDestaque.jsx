@@ -1,19 +1,16 @@
 import EventoDestaque from '../EventoDestaque/EventoDestaque';
-
 import Xamuel from '../../../assets/xamuel.jpg';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
-import 'swiper/css/bundle';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/swiper-bundle.css';
-import './CarrosselEventoDestaque.css';
 
+import './CarrosselEventoDestaque.css';
 
 export default function CarrosselEventoDestaque(){
     const listItem = [
@@ -37,33 +34,29 @@ export default function CarrosselEventoDestaque(){
         }
     ]
 
- 
-     
     return(
-        <div className='evento-destaque-scroll'>
-            <div className='container-fixed'>
+        <div className='container-evento-destaque'>
+            <div className='container-scroll'>
                 <Swiper
-                   slidesPerView={1}
-                   navigation
-                   modules={[Navigation, Pagination, Scrollbar, A11y]}
-
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    slidesPerView={1}
+                    navigation
                 >
+                    
                     {
                         listItem.map((item) => (
-                            <SwiperSlide ke={item.id}>
+                            <SwiperSlide>
                                 <div className='item'>
-                                    <EventoDestaque
-                                        tituloEventoDestaque={item.titulo} 
+                                    <EventoDestaque 
                                         imagemEventoDestaque={item.imagem} 
-                                        dataEventoDestaque={item.data}
+                                        tituloEventoDestaque={item.titulo} 
+                                        dataEventoDestaque={item.data} 
                                     />
                                 </div>
                             </SwiperSlide>
                         ))
                     }
                 </Swiper>
-
-                
             </div>
         </div>
     );
