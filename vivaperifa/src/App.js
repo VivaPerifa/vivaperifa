@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='container'>
       <CarrosselEventoDestaque></CarrosselEventoDestaque>
-      {/* <SobreNos></SobreNos> */}
+      <SobreNos></SobreNos> 
     </div>
     
   );

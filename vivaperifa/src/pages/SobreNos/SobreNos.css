@@ -17,6 +17,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding: 20px 0;
 }
 
 #square {
@@ -72,9 +73,10 @@
 
 .container-perifa {
     display: flex;
-    gap: 14%;
+    gap: 20%;
     margin: 0 auto;
     width: 80vw;
+    margin-top: 100px;
 }
 
 .titulo-perifa {
@@ -154,6 +156,19 @@
 }
 
 .item-equipe {
+    flex-direction: column;
+    display: flex;
     width: 400px;
-    margin: 0 auto;
+    margin: 0 ;
+}
+
+.conteudo-equipe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 60px;
+}
+
+.equipe {
+    margin-top: 100px;
 }
