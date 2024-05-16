@@ -1,0 +1,31 @@
+.container-menu{
+    width: inherit;
+}
+.menu{
+    width: inherit;
+    padding: 20px;
+}
+
+.list-menu{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+    color: white;
+}
+
+.list-menu .logo{
+    width: 80px;
+    cursor: pointer;
+}
+
+.list-menu li{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100%;
+    object-fit: cover;
+}
