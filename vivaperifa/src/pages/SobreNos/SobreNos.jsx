@@ -16,11 +16,11 @@ import kaue from "../../assets/imagemEquipeKaue.png";
 
 export default function SobreNos() {
     return (
-        <div className="conteudo">
+        <div className="corpo-sobreNos">
             <div className="main">
                 <div className="container-sobreNos">
                     <div id="square">
-                        <div className="conteudo">
+                        <div className="conteudo-sobreNos">
                             <div className="missao">
                                 <div className="icone">
                                     <img src={missao} alt="" />
