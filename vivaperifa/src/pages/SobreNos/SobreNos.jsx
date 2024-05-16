@@ -74,11 +74,11 @@ export default function SobreNos() {
 
 
 
-
+            <div className="equipe">
+                <h1 className="title-equipe">Equipe</h1>
+            </div>
+            
             <div className="conteudo-equipe">
-                <div className="equipe">
-                    <h1 className="title-equipe">Equipe</h1>
-                </div>
                 <div className="equipe-1">
 
                     <div className="item-equipe">
