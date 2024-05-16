@@ -103,7 +103,6 @@
     font-size: 21px;
     letter-spacing: 1px;
     line-height: 35px;
-    margin: 0 -50px;
 }
 
 .vivaperifa-texto {
@@ -138,35 +137,34 @@
 }
 
 .equipe-1 img {
-    max-width: 65%;
+    width: 100%;
 }
 
 .equipe-1 {
     display: flex;
-    margin-top: 30px;
+    margin: 30px auto;
 }
 
 .equipe-2 img {
-    max-width: 65%;
+    max-width: 100%;
 }
 
 .equipe-2 {
     display: flex;
-    margin-top: 30px;
+    margin: 30px auto;
 }
 
 .item-equipe {
     flex-direction: column;
     display: flex;
-    width: 400px;
-    margin: 0 ;
+    width: 20vw;
+    margin: 0 30px;
 }
 
 .conteudo-equipe {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 60px;
 }
 
 .equipe {
