@@ -1,0 +1,24 @@
+.container-header{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/fundo_home.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.titulo-header{
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
