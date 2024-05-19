@@ -7,7 +7,19 @@ function App() {
 
   return (
     <div className='container'>
-git     </div>
+
+      {/*Componente header*/}
+      <Header 
+        tipoCabecalho="home"
+      />
+
+      {/*Componente evento comum*/}
+      <EventoComum></EventoComum>
+
+      {/*Componente sobre nós*/}
+      <SobreNos></SobreNos>
+
+    </div>
     
   );
 }
