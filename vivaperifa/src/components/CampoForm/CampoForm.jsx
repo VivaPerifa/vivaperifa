@@ -1,9 +1,9 @@
 import './CampoForm.css';
 
-export default function CampoForm(){
+export default function CampoForm(props){
     return(
-        <div>
-            
+        <div className='campo-formulario' >
+            <input id={props.id} type={props.tipo} placeholder={props.legenda} style={{width:props.tamanhoCampo}}></input>
         </div>
     );
 }

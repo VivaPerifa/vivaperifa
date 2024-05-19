@@ -1,0 +1,92 @@
+.formulario-fale-conosco form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40vw;
+    margin-top: 30px;
+}
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fale-conosco{
+    width: 40vw;
+}
+
+#mensagem{
+    padding: 50px !important;
+}
+
+.email-tel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.titulo-fale-conosco{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-fale-conosco{
+    font-size: 40px;
+    background: var(--cor_texto, linear-gradient(90deg, #D9043E 0%, #F28705 99%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.message-fale-conosco{
+    font-size: 15px;
+}
+
+.icones-contato{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    gap:50px;
+}
+
+.linktree, .email, .telefone{
+ display: flex;
+ gap: 30px;
+}
+
+.link{
+    display: flex ;
+    flex-direction: column;
+}
+
+.bold-icon{
+    font-weight: bold;
+}
+
+.gradient-icon{
+    background: var(--cor_texto, linear-gradient(90deg, #D9043E 0%, #F28705 99%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-fale-conosco{
+    width: 100vw;
+    background-image: url(../../assets/faixa-laranja.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    padding: 90px;
+}
+
+.form-img{
+    width: 80vw;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
