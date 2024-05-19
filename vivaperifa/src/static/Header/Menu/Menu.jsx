@@ -1,5 +1,7 @@
 import './Menu.css';
 import Logo from '../../../assets/logo.png';
+import { IoIosSearch } from "react-icons/io";
+import User from '../../../assets/user.png';
 
 export default function Menu(){
     return (
@@ -22,6 +24,24 @@ export default function Menu(){
                         Sobre nós
                     </li>
                 </ul>
+                <div className='pesquisa-user'>
+                    <div className='pesquisa'>
+                        <input id='search' placeholder='Pesquisar evento por artista, categoria, local...'></input>
+                        <span>
+                            <IoIosSearch
+                                style={{
+                                    width: '20px',
+                                    height: '20px'
+                                }} 
+                            />
+                        </span>
+                    </div>
+                    <div className='user'>
+                        <span>
+                            <img src={User} alt="" />
+                        </span>
+                    </div>
+                </div>
             </nav>
         </div>
 
