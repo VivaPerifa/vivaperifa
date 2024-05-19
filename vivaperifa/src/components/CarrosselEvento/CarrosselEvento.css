@@ -1,0 +1,42 @@
+.eventos{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.item-evento{
+    width: 25vw;
+}
+
+.header-carrossel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrossel-evento{
+    width: 100vw;
+}
+
+.conteudo-eventos{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 30px;
+}
+.header-carrossel h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: var(--cor_texto, linear-gradient(90deg, #D9043E 0%, #F28705 99%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-carrossel span{
+    color: #033E8C;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
