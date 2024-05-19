@@ -1,4 +1,7 @@
 import './EventoComum.css';
+import FotoEvento from '../../../assets/imagem-evento.jpg';
+import Coracao from '../../../assets/coracao.png';
+import Agenda from '../../../assets/agenda.png';
 
 export default function EventoComum(){
     return(
@@ -9,23 +12,27 @@ export default function EventoComum(){
  
                <figure className="imagem-evento-comum">
                           
-                          <img src="" alt="" />
+                          <img src={FotoEvento} alt="" />
 
                </figure>
 
                <div className="titulo-evento-comum">
 
+             <div>
                     <h2>
                         Tenda de historia
                     </h2>
-
+             </div>
+               
+                <div className='icones'>
                     <span>
-                        calendario
+                        <img src={Coracao} alt="" />
                     </span>
 
                     <span>
-                        coracao
+                        <img src={Agenda} alt="" />
                     </span>
+                </div>
 
                </div>
 
