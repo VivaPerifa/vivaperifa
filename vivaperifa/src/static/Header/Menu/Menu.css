@@ -19,12 +19,14 @@
     gap: 30px;
     align-items: center;
     color: white;
+    width: inherit;
 }
 
 .list-menu .logo{
     width: 85px;
     cursor: pointer;
 }
+
 
 .list-menu li{
     font-size: 1.2rem;

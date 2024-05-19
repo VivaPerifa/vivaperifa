@@ -2,12 +2,12 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px; 
-    box-shadow: 1.606px 1.606px 32.122px 0px rgba(164, 164, 164, 0.44);
+    gap: 15px; 
+    box-shadow: 1px 1px 32px 0px rgba(164, 164, 164, 0.44);
 }
 
 .container-evento{
-    width: 20vw; 
+    width: 30vw; 
 }
 
 .titulo-evento-comum h2{
@@ -15,16 +15,21 @@
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.30);
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
-    width: 200px;
     text-overflow: ellipsis;
+    overflow: hidden;   
+    white-space: nowrap; 
+}
+.titulo-evento-comum{
+    width: 70%;
 }
 
-.titulo-evento-comum div{
-     display: inline;
-
+.dados-evento-comum{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
 }
 
 .data-evento-comum{
@@ -50,11 +55,15 @@
     object-fit: cover;
 }
 
-.icones {
-    display: inline;
-
+.icones-evento-comum {
+    display: flex;
+    gap: 20px;
 }
 
+.icones-evento-comum span{
+    display: flex;
+    align-items: center;
+}
 
 
 
