@@ -4,10 +4,12 @@
     flex-direction: column;
     gap: 10px;
     cursor: pointer;
+    width: 60vw;
+    margin: 0 auto;
 }
 
 .evento-destaque__imagem{
-    width: 60vw;
+    width: inherit;
     height: 25vw;
     border-radius: inherit;
     box-shadow: 0px 0px 8px 3px rgba(76, 0, 0, 0.18);

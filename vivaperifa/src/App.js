@@ -10,15 +10,9 @@ function App() {
   return (
     <div className='container'>
       <main>
-        
+
       </main>
-      {/* <Header 
-        mostrarCarrosselDestaque={true} 
-        mostrarTitulo={false} 
-        tela={"home"}
-        tituloHeader={""}
-        mostrarDestaque={false}
-      /> */}
+      <Header tipoCabecalho = 'explorar'/>
 
       <SobreNos></SobreNos>
 

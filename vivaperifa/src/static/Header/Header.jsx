@@ -6,7 +6,7 @@ import EventoDestaque from './EventoDestaque/EventoDestaque';
 import BatalhaRima from '../../assets/batalha_rima.png';
 import Arte from '../../assets/arte.png';
 import EventoRua from '../../assets/evento_rua.png';
-import Comunidade from '../../assets/fundo_comunidade.png';
+import Xamuel from '../../assets/xamuel.jpg';
 
 export default function Header(props){
     const listItem = [
@@ -29,23 +29,33 @@ export default function Header(props){
             data: "Sábado, dia 20/04 às 9h - 12h, SP Jardim Clímax"
         }
     ];
+
+    const item = {
+        id: 1,
+        imagem: Xamuel,
+        titulo: "Batalha de Rima do Xamuel em SP",
+        data: "Sábado, dia 20/04 às 9h - 12h, SP Jardim Clímax"
+    }
+
     return(
         <div className='container-header'>
-            <Menu></Menu>
-            <div>Ola mundo</div>
-            <div className={`destaques ${props.mostrarCarrosselDestaque ? 'show' : 'hidden'}`}>
+            <div className={`fundo-home ${props.tipoCabecalho == 'home' ? 'show' : 'hidden'}`}>
+                <Menu></Menu>
                 <CarrosselEventoDestaque listaEventoDestaque={listItem}></CarrosselEventoDestaque>
             </div>
-            {/* <div className={`comunidade titulo-header fundo-comunidade ${props.mostrarTitulo ? 'show' : 'hidden'}`}>
-                {props.tituloHeader}
+            <div className={`fundo-comunidade ${props.tipoCabecalho == 'comunidade' ? 'show' : 'hidden'}`}>
+                <Menu></Menu>
+                <h2>Bem vindo a comunidade!</h2>
             </div>
-            <div className={`explorar fundo-explorar ${props.mostrarDestaque ? 'show' : 'hidden'}`}>
+            <div className={`fundo-explorar ${props.tipoCabecalho == 'explorar' ? 'show' : 'hidden'}`}>
+                <Menu></Menu>
                 <EventoDestaque
-                    imagemEventoDestaque={props.imagemEventoDestaque}
-                    tituloEventoDestaque={props.tituloEventoDestaque}
-                    dataEventoDestaque={props.dataEventoDestaque}
+                    className='destaque-explorar'
+                    imagemEventoDestaque={item.imagem}
+                    tituloEventoDestaque={item.titulo}
+                    dataEventoDestaque={item.data}
                 />
-            </div> */}
+            </div>
         </div>
     );
 }
