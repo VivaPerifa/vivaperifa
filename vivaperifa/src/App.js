@@ -10,23 +10,7 @@ function App() {
 
   return (
     <div className='container'>
-      <CarrosselEventoDestaque></CarrosselEventoDestaque>
-      <SobreNos></SobreNos> 
-      <EventoComum>giu</EventoComum>
-      <main>
-
-      </main>
-      <Header tipoCabecalho = 'explorar'/>
-
-      <SobreNos></SobreNos>
-
-      {/* <Header 
-        mostrarCarrosselDestaque={false} 
-        mostrarTitulo={false} 
-        tela={"explorar"}
-        tituloHeader={""}
-        mostrarDestaque={true}
-      /> */}
+      
     </div>
     
   );
