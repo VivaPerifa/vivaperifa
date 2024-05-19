@@ -9,6 +9,9 @@ function App() {
 
   return (
     <div className='container'>
+      <main>
+        
+      </main>
       {/* <Header 
         mostrarCarrosselDestaque={true} 
         mostrarTitulo={false} 

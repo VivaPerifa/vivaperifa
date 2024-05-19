@@ -1,11 +1,8 @@
 .main {
-    width: 100vw ;
+    
     display: flex;
     color: black;
-    align-items: center;
-    background-image: url(../../assets/fundo_sobrenos.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 .corpo-sobreNos{
@@ -15,12 +12,11 @@
 }
 
 .container-sobreNos {
-    width: 80vw;
+    width: 100vw;
     display: flex;
-    margin: 0 auto;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    background-image: url(../../assets/fundo_sobrenos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 80px 0;
 }
 
@@ -29,6 +25,7 @@
     background-color: #fff;
     box-shadow: 0px 1px 10px gray;
     border-radius: 40px;
+    margin: 0 auto;
 }
 
 .missao,

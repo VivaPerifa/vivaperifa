@@ -17,8 +17,8 @@ import './SobreNos.css';
 export default function SobreNos() {
     return (
         <div className="corpo-sobreNos">
-            <div className="main">
-                <div className="container-sobreNos">
+            
+            <div className="container-sobreNos">
                     <div id="square">
                         <div className="conteudo-sobreNos">
                             <div className="missao">
@@ -53,7 +53,7 @@ export default function SobreNos() {
                         </div>
                     </div>
                 </div>
-            </div>
+    
 
             <div className="container-perifa">
 
