@@ -3,7 +3,8 @@ import SobreNos from './pages/SobreNos/SobreNos';
 import EventoComum from './components/CarrosselEvento/EventoComum/EventoComum';
 import Header from './static/Header/Header';
 import CarrosselEvento from './components/CarrosselEvento/CarrosselEvento';
-
+import Depoimento from './components/ContainerDepoimentos/Depoimento/Depoimento';
+import fotoUsuario from './assets/fotoUsuario.png';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
       </CarrosselEvento>
       {/*Componente sobre nós*/}
       <SobreNos></SobreNos>
-
+      <Depoimento fotoUsuario= {fotoUsuario}></Depoimento>
     </div>
     
   );
