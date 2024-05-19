@@ -48,5 +48,7 @@ export default function EventoComum(props) {
                 </div>
             </div>
         </div>
+
+        
     )
 }

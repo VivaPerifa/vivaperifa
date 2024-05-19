@@ -1,7 +1,6 @@
 .botao button{
     width: inherit;
     border: none;
-    border-radius: 10px;
     color: white;
     font-weight: 700;
     cursor: pointer;
