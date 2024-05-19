@@ -1,8 +1,4 @@
 .container-evento-destaque{
-    width: inherit;
-    background-image: url('../../../assets/fundo_header.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
