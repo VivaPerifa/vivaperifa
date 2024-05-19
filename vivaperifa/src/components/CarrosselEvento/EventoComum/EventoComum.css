@@ -7,7 +7,7 @@
 }
 
 .container-evento{
-    width: 30vw; 
+    width: 25vw; 
 }
 
 .titulo-evento-comum h2{
@@ -15,7 +15,7 @@
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.30);
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
     text-overflow: ellipsis;
@@ -40,8 +40,9 @@
 }
 
 .descricao-evento-comum{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 .local-evento-comum{

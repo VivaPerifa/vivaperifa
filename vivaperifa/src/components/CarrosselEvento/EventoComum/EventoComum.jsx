@@ -1,21 +1,20 @@
 import './EventoComum.css';
-import FotoEvento from '../../../assets/imagem-evento.jpg';
 import Coracao from '../../../assets/coracao.png';
 import Agenda from '../../../assets/agenda.png';
 
-export default function EventoComum() {
+export default function EventoComum(props) {
     return (
         <div className="container-evento">
             <div className="evento-comum">
 
                 <figure className="imagem-evento-comum">
-                    <img src={FotoEvento} alt="" />
+                    <img src={props.fotoEvento} alt="" />
                 </figure>
 
                 <div className="dados-evento-comum">
                     <div className='titulo-evento-comum'>
                         <h2>
-                            Tenda de historia
+                            {props.tituloEvento}
                         </h2>
                     </div>
 
@@ -32,19 +31,19 @@ export default function EventoComum() {
 
                 <div className="data-evento-comum">
                     <span>
-                        data
+                        {props.dataEvento}
                     </span>
                 </div>
 
                 <div className='descricao-evento-comum'>
                     <p>
-                        descricao
+                        {props.descricaoEvento}
                     </p>
                 </div>
 
                 <div className='local-evento-comum'>
                     <span>
-                        local
+                        {props.localEvento}
                     </span>
                 </div>
             </div>
