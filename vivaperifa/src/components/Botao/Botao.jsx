@@ -9,7 +9,8 @@ export default function Botao(props){
                     backgroundColor: props.corFundo, 
                     borderColor: props.corBorda, 
                     borderWidth: props.grossuraBorda,
-                    borderRadius: props.bordaRaio}}>{props.legenda}</button>
+                    borderRadius: props.bordaRaio,
+                    fontSize: props.tamanhoFonte}}>{props.legenda}</button>
             </div>
         </div>
     );
