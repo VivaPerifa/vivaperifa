@@ -1,0 +1,22 @@
+.container-cookies{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2B705;
+    padding: 20px;
+}
+
+.texto-cookies{
+    text-align: center;
+}
+
+.cookies{
+    width: 80vw;
+}
+
+.btn_cookies{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}

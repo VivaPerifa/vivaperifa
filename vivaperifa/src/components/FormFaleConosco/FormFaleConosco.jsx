@@ -4,7 +4,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import './FormFaleConosco.css';
 import Botao from '../Botao/Botao';
 import CampoForm from '../CampoForm/CampoForm';
-import MuroVivaPerifa from '../../assets/muro-viva-perifa.png';
+import MuroVivaPerifa from '../../assets/muro_viva_perifa.png';
 
 export default function FormFaleConosco() {
     return (
