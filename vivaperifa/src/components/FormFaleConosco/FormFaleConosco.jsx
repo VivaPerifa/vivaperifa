@@ -10,6 +10,7 @@ export default function FormFaleConosco() {
     return (
         <div className='container-fale-conosco'>
             <div className='form-img'>
+
                 <div className='form-contato'>
                     <div className='fale-conosco'>
 
@@ -40,7 +41,7 @@ export default function FormFaleConosco() {
 
                                 <CampoForm id='mensagem' tipo='text' legenda='Mensagem' tamanhoCampo='40vw' />
 
-                                <Botao espacamento='20px' corFundo='#F28705' legenda='Enviar' tamanhoFonte='1.5rem' largura='40vw' bordaRaio='20px' />
+                                <Botao espacamento='10px' corFundo='#F28705' legenda='Enviar' tamanhoFonte='1.5rem' largura='40vw' bordaRaio='20px' />
                             </form>
                         </div>
                     </div>
@@ -48,7 +49,7 @@ export default function FormFaleConosco() {
                     <div className='icones-contato'>
 
                         <div className='linktree'>
-                            <TbBrandLinktree style={{ width: '40px', height: '40px' }} />
+                            <TbBrandLinktree style={{ width: '2rem', height: '2rem' }} />
                             <div className='link'>
                                 <span className='bold-icon'>LINKTREE</span>
                                 <span className='gradient-icon'><a href='https://linktr.ee/vivaperifa'>https://linktr.ee/vivaperifa</a></span>
@@ -56,7 +57,7 @@ export default function FormFaleConosco() {
                         </div>
 
                         <div className='email'>
-                            <HiOutlineMailOpen style={{ width: '40px', height: '40px' }} />
+                            <HiOutlineMailOpen style={{ width: '2rem', height: '2rem' }} />
                             <div className='link'>
                                 <span className='bold-icon'>EMAIL</span>
                                 <span className='gradient-icon'>contatovivaperifa@gmail.com</span>
@@ -64,7 +65,7 @@ export default function FormFaleConosco() {
                         </div>
 
                         <div className='telefone'>
-                            <FiPhoneCall style={{ width: '40px', height: '40px' }} />
+                            <FiPhoneCall style={{ width: '2rem', height: '2rem' }} />
                             <div className='link'>
                                 <span className='bold-icon'>TELEFONE</span>
                                 <span className='gradient-icon'>11 95830 0920</span>
@@ -75,9 +76,11 @@ export default function FormFaleConosco() {
                 </div>
 
                 <div className='img-muro'>
-                    <img src={MuroVivaPerifa} alt="" />
+                    <img src={MuroVivaPerifa}/>
                 </div>
+
             </div>
+
         </div>
     )
 }
