@@ -1,5 +1,4 @@
 .main {
-    
     display: flex;
     color: black;
     
@@ -168,4 +167,13 @@
     gap: 30px;
     justify-content: center;
     margin-top: 40px;
+}
+
+
+.container-identidade {
+    display: grid;
+    grid-template-columns: 40vw 30vw;
+    width: 75vw;
+    justify-content: space-between;
+    margin: 40px auto;
 }
