@@ -1,0 +1,7 @@
+.container-filtro-pesquisa{
+    border-radius: 50px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid;
+    font-weight: 700;
+}

@@ -18,3 +18,10 @@
     width: 100vw;
     overflow-x: hidden;
 }
+
+.filtros{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    
+}

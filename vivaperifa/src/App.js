@@ -9,6 +9,7 @@ import fotoUsuario from './assets/fotoUsuario.png';
 import Cookies from './components/DisclaimerCookies/DisclaimerCookies';
 import Footer from './static/Footer/Footer';
 import BannerCrescimento from './components/BannerCrescimento/BannerCrescimento';
+import FiltroPesquisa from './pages/Explorar/FiltroPesquisa/FiltroPesquisa';
 
 function App() {
 
@@ -41,6 +42,12 @@ function App() {
       {/*Componente Footer*/}
       <Footer></Footer>
 
+      {/*Filtro Pesquisa*/}
+      <div className='filtros'>
+          <FiltroPesquisa nomeFiltro='Feira de artesanato' corFiltro='#033E8C'></FiltroPesquisa>
+          <FiltroPesquisa nomeFiltro='Feira de artesanato' corFiltro='#F28705'></FiltroPesquisa>
+          <FiltroPesquisa nomeFiltro='Feira de artesanato' corFiltro='#D9043E'></FiltroPesquisa>
+      </div>
     </div>
     
   );
