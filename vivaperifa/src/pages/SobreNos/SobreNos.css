@@ -177,3 +177,23 @@
     justify-content: space-between;
     margin: 40px auto;
 }
+
+.title-identidade {
+    font-size: 30px;
+    margin-bottom: 30px;
+    background-image: linear-gradient( 
+        to right,
+        #000000 30%, #F28705 32%, #F2B705 , #F28705
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.texto-identidade {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+

@@ -17,43 +17,43 @@ import './SobreNos.css';
 export default function SobreNos() {
     return (
         <div className="corpo-sobreNos">
-            
+
             <div className="container-sobreNos">
-                    <div id="square">
-                        <div className="conteudo-sobreNos">
-                            <div className="missao">
-                                <div className="icone">
-                                    <img src={Missao} alt="" />
-                                </div>
-                                <div className="descricao">
-                                    <h1 className="title">Missão</h1>
-                                    <p className="texto">Promover a inclusão e valorização da cultura <br /> e dos talentos locais,  viabilizando o <br /> desenvolvimento social e fortalecendo o <br /> senso de comunidade na periferia.</p>
-                                </div>
+                <div id="square">
+                    <div className="conteudo-sobreNos">
+                        <div className="missao">
+                            <div className="icone">
+                                <img src={Missao} alt="" />
                             </div>
-
-                            <div className="visao">
-                                <div className="icone">
-                                    <img src={Visao} alt="" />
-                                </div>
-                                <div className="descricao">
-                                    <h1 className="title">Visão</h1>
-                                    <p className="texto">Ser referência como a principal plataforma de <br /> eventos das periferias do mundo, com foco no <br /> desenvolvimento das oportunidades culturais e <br />empreendedoras da região, aplicando estratégias <br /> de divulgação únicas.</p>
-                                </div>
+                            <div className="descricao">
+                                <h1 className="title">Missão</h1>
+                                <p className="texto">Promover a inclusão e valorização da cultura <br /> e dos talentos locais,  viabilizando o <br /> desenvolvimento social e fortalecendo o <br /> senso de comunidade na periferia.</p>
                             </div>
+                        </div>
 
-                            <div className="valores">
-                                <div className="icone">
-                                    <img src={Valores} alt="" />
-                                </div>
-                                <div className="descricao">
-                                    <h1 className="title">Valores</h1>
-                                    <p className="texto">Integridade, comunicação, colaboração, <br /> criatividade e inclusão.</p>
-                                </div>
+                        <div className="visao">
+                            <div className="icone">
+                                <img src={Visao} alt="" />
+                            </div>
+                            <div className="descricao">
+                                <h1 className="title">Visão</h1>
+                                <p className="texto">Ser referência como a principal plataforma de <br /> eventos das periferias do mundo, com foco no <br /> desenvolvimento das oportunidades culturais e <br />empreendedoras da região, aplicando estratégias <br /> de divulgação únicas.</p>
+                            </div>
+                        </div>
+
+                        <div className="valores">
+                            <div className="icone">
+                                <img src={Valores} alt="" />
+                            </div>
+                            <div className="descricao">
+                                <h1 className="title">Valores</h1>
+                                <p className="texto">Integridade, comunicação, colaboração, <br /> criatividade e inclusão.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-    
+            </div>
+
 
             <div className="container-perifa">
 
@@ -78,7 +78,7 @@ export default function SobreNos() {
             <div className="titulo-equipe">
                 <h2>Equipe</h2>
             </div>
-            
+
             <div className="conteudo-equipe">
                 <div className="equipe-1">
 
@@ -140,13 +140,12 @@ export default function SobreNos() {
 
             <div className="container-identidade">
                 <div className="titulo-identidade">
-                    <h1 className="title-identidade">Identidade Visual</h1>
+                    <h1 className="title-identidade">Identidade Visual </h1>
                     <p className="texto-identidade">A identidade visual do VivaPerifa é uma expressão vibrante da energia e diversidade das periferias. Com tons de vermelho, amarelo, laranja e azul, nossa marca transmite dinamismo, otimismo, alegria e confiança. Essas cores refletem a vontade de agir, a atmosfera positiva e acolhedora, e a serenidade que buscamos proporcionar aos nossos usuários.</p>
                 </div>
 
-                
                 <div className="logo-identidade">
-                <figure className="imagem-identidade">
+                    <figure className="imagem-identidade">
                         <img src={Logo} alt="" />
                     </figure>
                 </div>
