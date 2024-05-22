@@ -10,7 +10,7 @@ import Cookies from './components/DisclaimerCookies/DisclaimerCookies';
 import Footer from './static/Footer/Footer';
 import BannerCrescimento from './components/BannerCrescimento/BannerCrescimento';
 import FiltroPesquisa from './pages/Explorar/FiltroPesquisa/FiltroPesquisa';
-
+import ProgramacaoEvento from "./pages/DetalheEvento/ProgramacaoEvento/ProgramacaoEvento.1";
 function App() {
 
   return (
@@ -48,7 +48,11 @@ function App() {
           <FiltroPesquisa nomeFiltro='Feira de artesanato' corFiltro='#F28705'></FiltroPesquisa>
           <FiltroPesquisa nomeFiltro='Feira de artesanato' corFiltro='#D9043E'></FiltroPesquisa>
       </div>
+      <ProgramacaoEvento dataProgramacao='data de programacao' telefoneProgramacao='telefone de programacao'  mapaProgramacao='mapa de programacao'></ProgramacaoEvento>
+      
     </div>
+
+
     
   );
 }
