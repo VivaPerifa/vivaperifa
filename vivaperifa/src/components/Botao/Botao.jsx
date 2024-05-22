@@ -12,6 +12,8 @@ export default function Botao(props){
                     borderRadius: props.bordaRaio,
                     fontSize: props.tamanhoFonte}}>{props.legenda}</button>
             </div>
+
+            <div></div>
         </div>
     );
 }

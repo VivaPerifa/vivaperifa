@@ -1,11 +1,10 @@
 .main {
-    
     display: flex;
     color: black;
-    
+
 }
 
-.corpo-sobreNos{
+.corpo-sobreNos {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -86,12 +85,12 @@
     gap: 20px;
 }
 
-.imagem-vivaperifa{
+.imagem-vivaperifa {
     display: flex;
     align-items: center;
 }
 
-.imagem-vivaperifa figure{
+.imagem-vivaperifa figure {
     width: inherit;
 }
 
@@ -120,7 +119,7 @@
     font-size: 40px;
 }
 
-.titulo-equipe h2{
+.titulo-equipe h2 {
     font-size: 2.5rem;
     text-align: center;
 }
@@ -168,4 +167,38 @@
     gap: 30px;
     justify-content: center;
     margin-top: 40px;
+}
+
+
+.container-identidade {
+    display: grid;
+    grid-template-columns: 40vw 30vw;
+    width: 75vw;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.titulo-identidade {
+    display: flex;
+    gap: 15px;
+}
+
+.title-identidade {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.title-visual {
+    font-size: 40px;
+    color: #F28705;
+}
+
+.texto-identidade {
+    letter-spacing: 1px;
+    line-height: 2;
+    font-size: 1.1rem;
+}
+
+.logo-identidade {
+    margin-top: 50px;
 }
