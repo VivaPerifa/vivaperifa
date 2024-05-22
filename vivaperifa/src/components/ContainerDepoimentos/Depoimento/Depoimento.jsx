@@ -1,4 +1,5 @@
 import PerfilUsuario from '../../PerfilUsuario/PerfilUsuario'
+import  './Depoimento.css'
 export default function Depoimento(props){
     return (
         <div className="container-depoimento">
