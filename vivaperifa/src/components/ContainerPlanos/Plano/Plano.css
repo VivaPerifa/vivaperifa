@@ -1,0 +1,32 @@
+.container-plano{
+    width: 25vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 1px 1px 32px 0px rgba(164, 164, 164, 0.44);
+}
+
+.tipo-plano span{
+    color: #D90504;
+}
+
+.valor-plano h2{
+    font-size: 2rem;
+}
+
+.beneficios span{
+    display: flex;
+    align-items: center;
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-beneficio{
+    display: flex;
+    gap: 10px;
+}

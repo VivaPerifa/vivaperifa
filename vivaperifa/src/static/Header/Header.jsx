@@ -30,7 +30,7 @@ export default function Header(props){
         }
     ];
 
-    const item = {
+    const itemEventoExplorar = {
         id: 1,
         imagem: Xamuel,
         titulo: "Batalha de Rima do Xamuel em SP",
@@ -51,11 +51,14 @@ export default function Header(props){
                 <Menu></Menu>
                 <EventoDestaque
                     className='destaque-explorar'
-                    imagemEventoDestaque={item.imagem}
-                    tituloEventoDestaque={item.titulo}
-                    dataEventoDestaque={item.data}
+                    imagemEventoDestaque={itemEventoExplorar.imagem}
+                    tituloEventoDestaque={itemEventoExplorar.titulo}
+                    dataEventoDestaque={itemEventoExplorar.data}
                 />
             </div>
+            <div className={`fundo-detalhe-evento ${props.tipoCabecalho == 'detalhe-evento' ? 'show' : 'hidden'}`}>
+                <img src={props.imagemDetalheEvento} alt="" className='detalhe-evento__imagem' />
+            </div>  
         </div>
     );
 }

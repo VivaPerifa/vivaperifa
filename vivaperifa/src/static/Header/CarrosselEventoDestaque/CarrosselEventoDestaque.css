@@ -1,6 +1,6 @@
 .container-evento-destaque{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
     overflow: hidden;
@@ -23,7 +23,7 @@
 }
 
 .slide-blur{
-    filter: blur(5px);
+    filter: blur(2px);
 }
 
 @media only screen and (max-width: 1024px){

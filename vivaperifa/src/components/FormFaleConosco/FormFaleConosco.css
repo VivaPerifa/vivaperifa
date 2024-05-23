@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* width: 40vw; */
     margin-top: 30px;
 }
 
@@ -16,9 +15,9 @@
 .form-img{
     display: grid;
     width: 90vw;
-    grid-template-columns: 1fr auto;
-    justify-content: space-between;
-    gap: 40px;
+    grid-template-columns: 50vw auto;
+    
+    gap: 100px;
     align-items: center;
     margin: 0 auto;
 }
@@ -77,16 +76,14 @@
 .message-fale-conosco h4{
     font-size: 1rem;
     font-style: normal;
-    font-weight: 600;
-    
+    font-weight: 500;
 }
 
 .icones-contato{
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
-    width: 50vw;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 .linktree, .email, .telefone{
@@ -112,98 +109,31 @@
 }
 
 
+@media (max-width:1024px){
+    .form-img{
+        grid-template-columns: 50vw auto;
+        width: 90vw;
+        gap: 0;
+    }
 
+    .icones-contato{
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    .img-muero{
+        width: 100%;
+    }
 
-.formulario-fale-conosco form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 40vw;
-    margin-top: 30px;
+    .form-contato{
+        align-items: start;
+    }
 }
 
-.form-contato{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.fale-conosco{
-    width: 40vw;
-}
-
-#mensagem{
-    padding: 50px !important;
-}
-
-.email-tel{
-    display: flex;
-    justify-content: space-between;
-}
-
-.link{
-    text-decoration: none;
-}
-
-.titulo-fale-conosco{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.title-fale-conosco{
-    font-size: 40px;
-    background: var(--cor_texto, linear-gradient(90deg, #D9043E 0%, #F28705 99%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.message-fale-conosco{
-    font-size: 15px;
-}
-
-.icones-contato{
-    display: flex;
-    margin-top: 50px;
-    justify-content: space-between;
-    gap:50px;
-}
-
-.linktree, .email, .telefone{
- display: flex;
- gap: 30px;
-}
-
-.link{
-    display: flex ;
-    flex-direction: column;
-}
-
-.bold-icon{
-    font-weight: bold;
-}
-
-.gradient-icon{
-    background: var(--cor_texto, linear-gradient(90deg, #D9043E 0%, #F28705 99%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.container-fale-conosco{
-    width: 100vw;
-    background-image: url(../../assets/faixa_laranja.png);
-    background-repeat: no-repeat;
-    background-position-x: 100%;
-    padding: 90px;
-}
-
-.form-img{
-    width: 80vw;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
+@media (min-width:1900px){
+    .form-img{
+        width: 80vw;
+        gap: 50px;
+        grid-template-columns: 45vw auto;
+    }
 }

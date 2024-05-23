@@ -7,7 +7,7 @@ import Evento3 from "../../assets/Evento3.png";
 import './CarrosselEvento.css'; 
 
 export default function CarrosselEvento(props){
-    const listEventoComum=[
+    const listEventoComum = [
         {
             id:1,
             imagem: Evento1,
@@ -32,9 +32,7 @@ export default function CarrosselEvento(props){
             local:"Itaquera",
             descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
         }
-    ]
-
-
+    ];
     
     return(
         <div className="carrossel-evento">
@@ -65,9 +63,7 @@ export default function CarrosselEvento(props){
                     ))
                 }
                 </div>
-                </div>
+            </div>
         </div>
-
-
     )
 }

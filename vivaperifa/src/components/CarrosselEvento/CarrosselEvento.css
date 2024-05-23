@@ -1,10 +1,11 @@
 .eventos{
-    display: flex;
-    justify-content: space-between; 
+    display: grid;
+    grid-template-columns: repeat(3,29vw);
+    justify-content: space-between;
 }
 
 .item-evento{
-    width: 25vw;
+    width: inherit;
 }
 
 .header-carrossel{
@@ -14,11 +15,11 @@
 }
 
 .carrossel-evento{
-    width: 100vw;
+    width: 92vw;
+    margin: 0 auto;
 }
 
 .conteudo-eventos{
-    width: 80vw;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -26,7 +27,7 @@
 }
 .header-carrossel h2 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: capitalize;
     background: var(--cor_texto, linear-gradient(90deg, #D9043E 0%, #F28705 99%));
     background-clip: text;
