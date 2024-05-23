@@ -149,7 +149,7 @@ export default function SobreNos() {
                         <h2 className="title-identidade">Identidade </h2>
                         <h2 className="title-visual"> Visual</h2>
                     </div>
-                    <p className="texto-identidade">A identidade visual do VivaPerifa é uma expressão vibrante da energia e diversidade das periferias. Com tons de vermelho, amarelo, laranja e azul, nossa marca transmite dinamismo, otimismo, alegria e confiança. Essas cores refletem a vontade de agir, a atmosfera positiva e acolhedora, e a serenidade que buscamos proporcionar aos nossos usuários.</p>
+                    <p className="texto-identidade">A identidade visual do VivaPerifa é uma expressão vibrante da energia e diversidade das periferias. Com tons de vermelho, Rosa, amarelo, laranja e azul, nossa marca transmite dinamismo, otimismo, alegria e confiança. Essas cores refletem a vontade de agir, a atmosfera positiva e acolhedora, e a serenidade que buscamos proporcionar aos nossos usuários.</p>
                 </div>
 
                 <div className="logo-identidade">

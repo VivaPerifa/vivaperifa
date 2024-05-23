@@ -244,6 +244,7 @@
 .adesivosIdentidade {
     display: flex;
     justify-content: space-between;
+    padding: 0 50px;
 }
 
 
@@ -252,8 +253,8 @@
     color: white;
     padding: 20px;
     border-radius: 35px;
-    width: 350px;
-    height: 130px;
+    width: 400px;
+    height: 150px;
     text-align: center;
     margin: 20px auto;
     display: flex;
@@ -266,8 +267,8 @@
     color: white;
     padding: 20px;
     border-radius: 35px;
-    width: 350px;
-    height: 130px;
+    width: 400px;
+    height: 150px;
     text-align: center;
     margin: 20px auto;
     display: flex;
@@ -280,8 +281,8 @@
     color: white;
     padding: 20px;
     border-radius: 35px;
-    width: 350px;
-    height: 130px;
+    width: 400px;
+    height: 150px;
     text-align: center;
     margin: 20px auto;
     display: flex;
@@ -294,8 +295,8 @@
     color: white;
     padding: 20px;
     border-radius: 35px;
-    width: 350px;
-    height: 130px;
+    width: 400px;
+    height: 150px;
     text-align: center;
     margin: 20px auto;
     display: flex;
@@ -308,8 +309,8 @@
     color: white;
     padding: 20px;
     border-radius: 35px;
-    width: 350px;
-    height: 130px;
+    width: 400px;
+    height: 150px;
     text-align: center;
     margin: 20px auto;
     display: flex;
