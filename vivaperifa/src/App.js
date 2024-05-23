@@ -1,5 +1,6 @@
 import './App.css';
 import SobreNos from './pages/SobreNos/SobreNos';
+import EventoComum from './components/CarrosselEvento/EventoComum/EventoComum';
 import Header from './static/Header/Header';
 import FormFaleConosco from './components/FormFaleConosco/FormFaleConosco';
 import CarrosselEvento from './components/CarrosselEvento/CarrosselEvento';
@@ -9,18 +10,8 @@ import Cookies from './components/DisclaimerCookies/DisclaimerCookies';
 import Footer from './static/Footer/Footer';
 import BannerCrescimento from './components/BannerCrescimento/BannerCrescimento';
 import FiltroPesquisa from './pages/Explorar/FiltroPesquisa/FiltroPesquisa';
-import ProgramacaoEvento from "./pages/DetalheEvento/ProgramacaoEvento/ProgramacaoEvento.1";import Xamuel from './assets/xamuel.jpg';
-import Plano from './components/ContainerPlanos/Plano/Plano';
-
+import ProgramacaoEvento from "./pages/DetalheEvento/ProgramacaoEvento/ProgramacaoEvento.1";
 function App() {
-  const items = [
-    {
-      nome: "Cadastrar evento"
-    },
-    {
-      nome: "Acesso a comunidade"
-    }
-  ];
 
   return (
     <div className='container'>
@@ -34,7 +25,6 @@ function App() {
       <CarrosselEvento tituloCarrossel="Acontece Na Zona Leste">
         
       </CarrosselEvento>
-
       {/*Componente sobre nós*/}
       <SobreNos></SobreNos>
 
@@ -58,6 +48,8 @@ function App() {
           <FiltroPesquisa nomeFiltro='Feira de artesanato' corFiltro='#F28705'></FiltroPesquisa>
           <FiltroPesquisa nomeFiltro='Feira de artesanato' corFiltro='#D9043E'></FiltroPesquisa>
       </div>
+      <ProgramacaoEvento dataProgramacao='data de programacao' telefoneProgramacao='telefone de programacao'  mapaProgramacao='mapa de programacao'></ProgramacaoEvento>
+      
     </div>
   );
 }
