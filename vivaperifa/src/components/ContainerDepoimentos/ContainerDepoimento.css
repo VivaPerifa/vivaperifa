@@ -1,0 +1,11 @@
+.container-depoimentos{
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    gap: 30px;
+    background-image: url(../../assets/faixa_laranja_horizontal.png);
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+}

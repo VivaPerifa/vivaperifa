@@ -11,6 +11,8 @@ import Footer from './static/Footer/Footer';
 import BannerCrescimento from './components/BannerCrescimento/BannerCrescimento';
 import FiltroPesquisa from './pages/Explorar/FiltroPesquisa/FiltroPesquisa';
 import ProgramacaoEvento from "./pages/DetalheEvento/ProgramacaoEvento/ProgramacaoEvento.1";
+
+import ContainerDepoimento from './components/ContainerDepoimentos/ContainerDepoimento';
 function App() {
 
   return (
@@ -28,7 +30,7 @@ function App() {
       {/*Componente sobre nós*/}
       <SobreNos></SobreNos>
 
-      <Depoimento fotoUsuario= {fotoUsuario}></Depoimento>
+      <Depoimento fotoPerfil={fotoUsuario}></Depoimento>
 
       {/*Componente Banner Crescimento*/}
       <BannerCrescimento></BannerCrescimento>
@@ -49,7 +51,7 @@ function App() {
           <FiltroPesquisa nomeFiltro='Feira de artesanato' corFiltro='#D9043E'></FiltroPesquisa>
       </div>
       <ProgramacaoEvento dataProgramacao='data de programacao' telefoneProgramacao='telefone de programacao'  mapaProgramacao='mapa de programacao'></ProgramacaoEvento>
-      
+      <ContainerDepoimento></ContainerDepoimento>
     </div>
   );
 }
