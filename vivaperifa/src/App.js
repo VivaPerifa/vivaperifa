@@ -9,7 +9,7 @@ import Cookies from './components/DisclaimerCookies/DisclaimerCookies';
 import Footer from './static/Footer/Footer';
 import BannerCrescimento from './components/BannerCrescimento/BannerCrescimento';
 import FiltroPesquisa from './pages/Explorar/FiltroPesquisa/FiltroPesquisa';
-import Xamuel from './assets/xamuel.jpg';
+import ProgramacaoEvento from "./pages/DetalheEvento/ProgramacaoEvento/ProgramacaoEvento.1";import Xamuel from './assets/xamuel.jpg';
 import Plano from './components/ContainerPlanos/Plano/Plano';
 
 function App() {
@@ -58,13 +58,7 @@ function App() {
           <FiltroPesquisa nomeFiltro='Feira de artesanato' corFiltro='#F28705'></FiltroPesquisa>
           <FiltroPesquisa nomeFiltro='Feira de artesanato' corFiltro='#D9043E'></FiltroPesquisa>
       </div>
-
-      {/*Componente plano*/}
-      <Plano tipoPlano="Básico" valorPlano="Gratuito"></Plano>
-      <Plano tipoPlano="Premium" valorPlano="39,29" beneficios={items}></Plano>
-
     </div>
-    
   );
 }
 

@@ -1,10 +1,10 @@
 .main {
     display: flex;
     color: black;
-    
+
 }
 
-.corpo-sobreNos{
+.corpo-sobreNos {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -85,12 +85,12 @@
     gap: 20px;
 }
 
-.imagem-vivaperifa{
+.imagem-vivaperifa {
     display: flex;
     align-items: center;
 }
 
-.imagem-vivaperifa figure{
+.imagem-vivaperifa figure {
     width: inherit;
 }
 
@@ -119,7 +119,7 @@
     font-size: 40px;
 }
 
-.titulo-equipe h2{
+.titulo-equipe h2 {
     font-size: 2.5rem;
     text-align: center;
 }
@@ -178,22 +178,146 @@
     margin: 40px auto;
 }
 
-.title-identidade {
-    font-size: 30px;
-    margin-bottom: 30px;
-    background-image: linear-gradient( 
-        to right,
-        #000000 30%, #F28705 32%, #F2B705 , #F28705
-    );
+.titulo-identidade {
+    display: flex;
+    gap: 15px;
+}
 
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+.title-identidade {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.title-visual {
+    font-size: 40px;
+    color: #F28705;
 }
 
 .texto-identidade {
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 2;
     font-size: 1.1rem;
 }
 
+.logo-identidade {
+    margin-top: 50px;
+}
+
+.logoAmarela {
+    width: 22vw;
+}
+
+.logoAmarela img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logoLaranja {
+    width: 22vw;
+}
+
+.logoLaranja img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tiposDeLogo-identidade {
+    justify-content: space-between;
+    display: flex;
+    padding: 0 30px;
+}
+
+.logo-colorida {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.logoAzul {
+    display: flex;
+    align-items: center;
+    width: 22vw;
+}
+
+.adesivosIdentidade {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container-vermelho {
+    background-color: #D90504;
+    color: white;
+    padding: 20px;
+    border-radius: 35px;
+    width: 350px;
+    height: 130px;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-rosa {
+    background-color: #D9043E;
+    color: white;
+    padding: 20px;
+    border-radius: 35px;
+    width: 350px;
+    height: 130px;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-laranja {
+    background-color: #F28705;
+    color: white;
+    padding: 20px;
+    border-radius: 35px;
+    width: 350px;
+    height: 130px;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-amarelo {
+    background-color: #F2B705;
+    color: white;
+    padding: 20px;
+    border-radius: 35px;
+    width: 350px;
+    height: 130px;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-azul {
+    background-color: #033E8C;
+    color: white;
+    padding: 20px;
+    border-radius: 35px;
+    width: 350px;
+    height: 130px;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto-cores {
+    font-size: 25px;
+}
