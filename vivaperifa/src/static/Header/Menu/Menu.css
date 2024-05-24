@@ -82,3 +82,28 @@
 .pesquisa input::placeholder {
     color: white; /* Troque 'gray' pela cor que desejar */
 }
+
+li {
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+li:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+li:hover {
+    color: #fff;
+}
+
+li:hover::after {
+    width: 100%;
+}

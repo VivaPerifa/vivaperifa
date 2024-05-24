@@ -23,6 +23,9 @@ export default function Menu(){
                     <li>
                         Sobre nós
                     </li>
+                    <li>
+                        Contato
+                    </li>
                 </ul>
                 <div className='pesquisa-user'>
                     <div className='pesquisa'>
