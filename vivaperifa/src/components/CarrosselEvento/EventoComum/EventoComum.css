@@ -1,11 +1,12 @@
 .evento-comum{
-    padding: 30px;
+    padding: 25px;
     width: inherit;
     display: flex;
     flex-direction: column;
     gap: 15px; 
-    box-shadow: 1px 1px 32px 0px rgba(164, 164, 164, 0.44);
+    box-shadow: 1px 1px 24px 0px rgba(164, 164, 164, 0.44);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .container-evento{
@@ -38,8 +39,8 @@
 .data-evento-comum{
     text-align: justify;
     font-size: 1.2rem;
-    font-weight: 700;
-    color: #033E8C;
+    font-weight: 600;
+    color: var(--cor-azul);
 }
 
 .descricao-evento-comum{
@@ -50,9 +51,9 @@
 }
 
 .local-evento-comum{
-    color: #FF8F00;
+    color: var(--cor-laranja);
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .imagem-evento-comum img{

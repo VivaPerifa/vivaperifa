@@ -2,29 +2,30 @@ import './Menu.css';
 import Logo from '../../../assets/logo.png';
 import { IoIosSearch } from "react-icons/io";
 import User from '../../../assets/user.png';
+import { Link  }from 'react-router-dom';
 
 export default function Menu(){
     return (
         <div className="container-menu">
             <nav className="menu">
-                <ul className="list-menu">
-                    <li className='logo'>
-                        <img src={Logo} alt="" />
+                <ul className="menu__lista">
+                    <div className='logo'>
+                        <img src={Logo} alt="VivaPerifa" />
+                    </div>
+                    <li>
+                        <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        Home
+                        <Link to="/explorar">Explorar</Link>
                     </li>
                     <li>
-                        Explorar
+                        <Link to="/comunidade">Comunidade</Link>
                     </li>
                     <li>
-                        Comunidade
+                        <Link to="/sobre-nos">Sobre nós</Link>
                     </li>
                     <li>
-                        Sobre nós
-                    </li>
-                    <li>
-                        Contato
+                        <Link to="/contato">Contato</Link>
                     </li>
                 </ul>
                 <div className='pesquisa-user'>

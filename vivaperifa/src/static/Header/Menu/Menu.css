@@ -3,6 +3,7 @@
 }
 .container-menu{
     width: inherit;
+    background-color: var(--cor-azul);
 }
 .menu{
     width: inherit;
@@ -12,7 +13,7 @@
     align-items: center;
 }
 
-.list-menu{
+.menu__lista{
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -22,13 +23,17 @@
     width: inherit;
 }
 
-.list-menu .logo{
+.menu__lista .logo{
     width: 85px;
     cursor: pointer;
 }
 
+.menu__lista li a{
+    text-decoration: none;
+    color: white;
+}
 
-.list-menu li{
+.menu__lista li{
     font-size: 1.2rem;
     cursor: pointer;
 }
@@ -80,7 +85,7 @@
 }
 
 .pesquisa input::placeholder {
-    color: white; /* Troque 'gray' pela cor que desejar */
+    color: white; 
 }
 
 li {

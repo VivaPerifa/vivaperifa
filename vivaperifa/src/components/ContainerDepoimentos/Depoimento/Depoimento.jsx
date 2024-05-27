@@ -9,7 +9,7 @@ export default function Depoimento(props){
                     <div className="titulo"> 
                         <h1>{props.tituloDepoimento}</h1>
                     </div>
-                    <div className="descricao">
+                    <div className="descricao-depoimento">
                         <p> {props.descricaoDepoimento}</p>
                     </div>
             </div>

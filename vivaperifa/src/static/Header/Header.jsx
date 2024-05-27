@@ -39,15 +39,15 @@ export default function Header(props){
 
     return(
         <div className='container-header'>
-            <div className={`fundo-home ${props.tipoCabecalho == 'home' ? 'show' : 'hidden'}`}>
+            <div className={`fundo-home header ${props.tipoCabecalho == 'home' ? 'show' : 'hidden'}`}>
                 <Menu></Menu>
                 <CarrosselEventoDestaque listaEventoDestaque={listItem}></CarrosselEventoDestaque>
             </div>
-            <div className={`fundo-comunidade ${props.tipoCabecalho == 'comunidade' ? 'show' : 'hidden'}`}>
+            <div className={`fundo-comunidade header ${props.tipoCabecalho == 'comunidade' ? 'show' : 'hidden'}`}>
                 <Menu></Menu>
                 <h2>Bem vindo a comunidade!</h2>
             </div>
-            <div className={`fundo-explorar ${props.tipoCabecalho == 'explorar' ? 'show' : 'hidden'}`}>
+            <div className={`fundo-explorar header ${props.tipoCabecalho == 'explorar' ? 'show' : 'hidden'}`}>
                 <Menu></Menu>
                 <EventoDestaque
                     className='destaque-explorar'
@@ -56,7 +56,7 @@ export default function Header(props){
                     dataEventoDestaque={itemEventoExplorar.data}
                 />
             </div>
-            <div className={`fundo-detalhe-evento ${props.tipoCabecalho == 'detalhe-evento' ? 'show' : 'hidden'}`}>
+            <div className={`fundo-detalhe-evento header ${props.tipoCabecalho == 'detalhe-evento' ? 'show' : 'hidden'}`}>
                 <img src={props.imagemDetalheEvento} alt="" className='detalhe-evento__imagem' />
             </div>  
         </div>

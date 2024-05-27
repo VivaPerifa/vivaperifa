@@ -13,7 +13,6 @@ import './CarrosselEventoDestaque.css';
 
 export default function CarrosselEventoDestaque(props) {
     const listItem = props.listaEventoDestaque;
-    
 
     return(
         <div className='container-evento-destaque'>

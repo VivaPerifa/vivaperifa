@@ -1,14 +1,14 @@
 :root{
     --font-family: "Poppins";
-    --cor-azul: "#033E8C";
-    --cor-rosa: "#D9043E";
-    --cor-vermelha: "#D90504";
-    --cor-amarela: "#F2B705";
-    --cor-laranja: "#F28705";
+    --cor-azul: #033E8C;
+    --cor-rosa: #D9043E;
+    --cor-vermelha: #D90504;
+    --cor-amarela: #F2B705;
+    --cor-laranja: #F28705;
     --font-size-text: 1rem;
-    font-size: var(--font-size-text);
-    color: var(--cor-azul);
-  }
+    --font-size-title: 2rem;
+    --tamanho-container: 90vw;
+}
 
 .container{
     display: flex;
@@ -24,4 +24,23 @@
     width: 100vw;
     justify-content: space-between;
     
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c5c5c5;
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7a7a7aa1;
 }

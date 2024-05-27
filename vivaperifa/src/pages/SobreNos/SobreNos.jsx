@@ -30,7 +30,7 @@ export default function SobreNos() {
                             <div className="icone">
                                 <img src={Missao} alt="" />
                             </div>
-                            <div className="descricao">
+                            <div className="descricao-sobre-nos">
                                 <h1 className="title">Missão</h1>
                                 <p className="texto">Promover a inclusão e valorização da cultura <br /> e dos talentos locais,  viabilizando o <br /> desenvolvimento social e fortalecendo o <br /> senso de comunidade na periferia.</p>
                             </div>
@@ -40,7 +40,7 @@ export default function SobreNos() {
                             <div className="icone">
                                 <img src={Visao} alt="" />
                             </div>
-                            <div className="descricao">
+                            <div className="descricao-sobre-nos">
                                 <h1 className="title">Visão</h1>
                                 <p className="texto">Ser referência como a principal plataforma de <br /> eventos das periferias do mundo, com foco no <br /> desenvolvimento das oportunidades culturais e <br />empreendedoras da região, aplicando estratégias <br /> de divulgação únicas.</p>
                             </div>
@@ -50,7 +50,7 @@ export default function SobreNos() {
                             <div className="icone">
                                 <img src={Valores} alt="" />
                             </div>
-                            <div className="descricao">
+                            <div className="descricao-sobre-nos">
                                 <h1 className="title">Valores</h1>
                                 <p className="texto">Integridade, comunicação, colaboração, <br /> criatividade e inclusão.</p>
                             </div>

@@ -1,10 +1,33 @@
-.container-plano{
+.plano{
     width: 25vw;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     box-shadow: 1px 1px 32px 0px rgba(164, 164, 164, 0.44);
+    border-radius: 10px;
+    background-color: white;
+    text-align: left;
+}
+
+.botao-plano button{
+    background: linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    color: white;
+}
+
+.botao-plano{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.botao-plano hr{
+    border: 0.1px solid rgba(202, 202, 202, 0.616);
 }
 
 .tipo-plano span{
@@ -23,10 +46,14 @@
 .beneficios{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .item-beneficio{
     display: flex;
     gap: 10px;
+}
+
+.periodo-plano{
+    color: rgb(168, 168, 168);
 }

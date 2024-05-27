@@ -1,13 +1,15 @@
 .main {
     display: flex;
     color: black;
-
+    
 }
+
 
 .corpo-sobreNos {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    overflow-x: hidden;
 }
 
 .container-sobreNos {
@@ -190,7 +192,7 @@
 
 .title-visual {
     font-size: 40px;
-    color: #F28705;
+    color: var(--cor-laranja);
 }
 
 .texto-identidade {
@@ -249,7 +251,7 @@
 
 
 .container-vermelho {
-    background-color: #D90504;
+    background-color: var(--cor-vermelha);
     color: white;
     padding: 20px;
     border-radius: 35px;
@@ -263,7 +265,7 @@
 }
 
 .container-rosa {
-    background-color: #D9043E;
+    background-color: var(--cor-rosa);
     color: white;
     padding: 20px;
     border-radius: 35px;
@@ -277,7 +279,7 @@
 }
 
 .container-laranja {
-    background-color: #F28705;
+    background-color: var(--cor-laranja);
     color: white;
     padding: 20px;
     border-radius: 35px;
@@ -291,7 +293,7 @@
 }
 
 .container-amarelo {
-    background-color: #F2B705;
+    background-color: var(--cor-amarela);
     color: white;
     padding: 20px;
     border-radius: 35px;
@@ -305,7 +307,7 @@
 }
 
 .container-azul {
-    background-color: #033E8C;
+    background-color: var(--cor-azul);
     color: white;
     padding: 20px;
     border-radius: 35px;

@@ -67,7 +67,7 @@
 
 .title-fale-conosco h2{
     font-size: 2.5rem;
-    background: var(--cor_texto, linear-gradient(90deg, #D9043E 0%, #F28705 99%));
+    background: var(--cor_texto, linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -102,7 +102,7 @@
 }
 
 .gradient-icon{
-    background: var(--cor_texto, linear-gradient(90deg, #D9043E 0%, #F28705 99%));
+    background: var(--cor_texto, linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

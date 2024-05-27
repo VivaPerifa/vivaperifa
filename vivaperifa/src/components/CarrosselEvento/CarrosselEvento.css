@@ -1,6 +1,6 @@
 .eventos{
     display: grid;
-    grid-template-columns: repeat(3,29vw);
+    grid-template-columns: repeat(3,32%);
     justify-content: space-between;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .carrossel-evento{
-    width: 92vw;
+    width: var(--tamanho-container);
     margin: 0 auto;
 }
 
@@ -27,16 +27,17 @@
 }
 .header-carrossel h2 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: capitalize;
-    background: var(--cor_texto, linear-gradient(90deg, #D9043E 0%, #F28705 99%));
+    background: linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
 }
 
 .header-carrossel span{
-    color: #033E8C;
+    color: var(--cor-azul);
     font-size: 1.4rem;
     font-weight: 500;
 }

@@ -10,7 +10,6 @@ export default function Footer() {
     return (
         <div className='container-footer'>
             <div className='footer'>
-
                 <div className='logo-footer'>
                     <img src={Logo} alt="" />
                 </div>
@@ -33,7 +32,7 @@ export default function Footer() {
                     <span>Contato</span>
                 </div>
 
-                <div className='footer-column-2'>
+                <div className='footer-redes-sociais'>
                     <span className='bold-footer'>Redes sociais</span>
                     <div className='icon-footer'>
 

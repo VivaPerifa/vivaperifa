@@ -2,29 +2,26 @@
     width: inherit;
 }
 
-.fundo-home{
-    background-image: url('../../assets/fundo_home.png');
+.header{
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
+.fundo-home{
+    background-image: url('../../assets/fundo_home.png');
+}
+
 .fundo-comunidade{
     background-image: url('../../assets/fundo_comunidade.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
     height: 500px;
 }
 
 .fundo-explorar{
     background-image: url('../../assets/fundo_explorar.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .fundo-detalhe-evento{
     background-image: url('../../assets/fundo_detalhe_evento.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
     height: 600px;
 
     flex-direction: column;
@@ -34,12 +31,12 @@
 
 
 .show{
-    display: flex;
+    display: flex !important;
     flex-direction: column;
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 .fundo-comunidade h2{
