@@ -4,13 +4,12 @@ import  './Depoimento.css';
 
 export default function Depoimento(props){
     return (
-        <div className="container-depoimento">
+        <div className="depoimento">
             <div className="titulo-descricao">
-                    
-                    <div className="titulo"> 
+                    <div className="depoimento__titulo"> 
                         <h1>{props.tituloDepoimento}</h1>
                     </div>
-                    <div className="descricao-depoimento">
+                    <div className="depoimento__descricao">
                         <p> {props.descricaoDepoimento}</p>
                     </div>
             </div>

@@ -10,6 +10,13 @@
     text-align: center;
 }
 
+.btn_cookies button{
+    border: none;
+    padding: 5px 20px;
+    background-color: #033E8C;
+    color: white;
+}
+
 .cookies{
     width: 80vw;
 }

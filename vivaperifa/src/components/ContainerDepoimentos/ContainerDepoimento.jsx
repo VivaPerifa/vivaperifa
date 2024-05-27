@@ -49,20 +49,24 @@ export default function ContainerDepoimento(){
     
     return( 
         <div className='container-depoimentos'>
-            
-            {
-                listItem.map((item, index) => (
-                    <div className='item-depoimento' key={index}>
-                        <Depoimento
-                            fotoPerfil={item.imagem}
-                            nomeUsuario={item.nome}
-                            tipoUsuario={item.tipo}
-                            descricaoDepoimento={item.descricao}
-                            tituloDepoimento={item.titulo}
-                        />
-                    </div>
-                ))
-            }
+            <div className='container-depoimentos__titulo'>
+                <h2>eles curtiram você também vai!</h2>
+            </div>
+            <div className='depoimentos__list'>
+                {
+                    listItem.map((item, index) => (
+                        <div className='item-depoimento' key={index}>
+                            <Depoimento
+                                fotoPerfil={item.imagem}
+                                nomeUsuario={item.nome}
+                                tipoUsuario={item.tipo}
+                                descricaoDepoimento={item.descricao}
+                                tituloDepoimento={item.titulo}
+                            />
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     )
 }
