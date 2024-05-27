@@ -5,7 +5,7 @@ import Menu from '../../static/Header/Menu/Menu';
 export default function Contato(){
     return (
         <div className='contato'>
-            <Menu></Menu>
+            <Menu corFundo="var(--cor-azul)"></Menu>
             <FormFaleConosco/>
         </div>
     );

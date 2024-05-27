@@ -4,9 +4,9 @@ import { IoIosSearch } from "react-icons/io";
 import User from '../../../assets/user.png';
 import { Link  }from 'react-router-dom';
 
-export default function Menu(){
+export default function Menu(props){
     return (
-        <div className="container-menu">
+        <div className="container-menu" style={{backgroundColor: props.corFundo}}>
             <nav className="menu">
                 <ul className="menu__lista">
                     <div className='logo'>

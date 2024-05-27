@@ -18,8 +18,8 @@ export default function Plano(props){
             </div>
             <div className="beneficios">    
                 {   
-                    listItem.map((item) => (
-                        <div className='item-beneficio'>
+                    listItem.map((item, index) => (
+                        <div className='item-beneficio' key={index}>
                             <span>
                                 <IoIosStar style={{color:'#D90504'}}></IoIosStar>
                             </span>
@@ -30,7 +30,12 @@ export default function Plano(props){
             </div>
             <div className={`botao-plano ${props.tipoPlano == "Básico" ? 'hidden' : 'show'}`}>
                 <hr></hr>
-                <button>Assinar</button>
+                <Botao 
+                    gradiente={"linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%)"}
+                    espacamento={"10px"} 
+                    legenda={"Assinar"}
+                    bordaRaio={"5px"}
+                />
             </div>
         </div>
     );

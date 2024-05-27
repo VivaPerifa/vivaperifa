@@ -40,7 +40,7 @@ export default function CarrosselEvento(props){
              <div className="conteudo-eventos">
                 <div className="header-carrossel">
                     <h2>
-                          {props.tituloCarrossel}
+                        {props.tituloCarrossel}
                     </h2>
 
                     <span>
@@ -50,8 +50,8 @@ export default function CarrosselEvento(props){
                 
                 <div className="eventos">
                 {
-                    listEventoComum.map((item)=>(
-                        <div className="item-evento">
+                    listEventoComum.map((item, index)=>(
+                        <div className="item-evento" key={index}>
                             <EventoComum 
                                 fotoEvento={item.imagem}
                                 tituloEvento={item.titulo}

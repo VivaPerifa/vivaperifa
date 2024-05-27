@@ -6,6 +6,7 @@ export default function Depoimento(props){
     return (
         <div className="container-depoimento">
             <div className="titulo-descricao">
+                    
                     <div className="titulo"> 
                         <h1>{props.tituloDepoimento}</h1>
                     </div>
@@ -15,10 +16,10 @@ export default function Depoimento(props){
             </div>
             <div className="perfil-nome-usuario">
                 <PerfilUsuario 
-                    nomeUsuario={props.nomeUsuario} 
-                    tipoUsuario={props.tipoUsuario} 
-                    fotoPefil={Neguinha}
-                />    
+                    fotoPerfil={props.fotoPerfil}
+                    tipoUsuario={props.tipoUsuario}
+                    nomeUsuario={props.nomeUsuario}
+                />  
             </div>
         </div>
      )

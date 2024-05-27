@@ -7,6 +7,7 @@ export default function Botao(props){
                 <button style={{
                     padding: props.espacamento, 
                     backgroundColor: props.corFundo, 
+                    background: props.gradiente,
                     borderColor: props.corBorda, 
                     borderWidth: props.grossuraBorda,
                     borderRadius: props.bordaRaio,

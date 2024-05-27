@@ -58,6 +58,9 @@ export default function Header(props){
             </div>
             <div className={`fundo-detalhe-evento header ${props.tipoCabecalho == 'detalhe-evento' ? 'show' : 'hidden'}`}>
                 <img src={props.imagemDetalheEvento} alt="" className='detalhe-evento__imagem' />
+            </div>
+            <div className={`fundo-sobre-nos header ${props.tipoCabecalho == 'sobre-nos' ? 'show' : 'hidden'}`}>
+                <Menu></Menu>
             </div>  
         </div>
     );

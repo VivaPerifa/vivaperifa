@@ -17,12 +17,15 @@ import logoLaranja from "../../assets/logoIdentidadeLaranja.png"
 import logoAzul from "../../assets/logoIdentidadeAzul.png";
 import adesivos from "../../assets/adesivosIdentidade.png";
 import './SobreNos.css';
+import Header from '../../static/Header/Header';
 
 
 export default function SobreNos() {
     return (
         <div className="corpo-sobreNos">
-
+            <Header 
+                tipoCabecalho="sobre-nos"
+            />
             <div className="container-sobreNos">
                 <div id="square">
                     <div className="conteudo-sobreNos">

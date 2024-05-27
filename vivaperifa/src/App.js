@@ -6,6 +6,7 @@ import Explorar from './pages/Explorar/Explorar';
 import Comunidade from './pages/Comunidade/Comunidade';
 import Contato from './pages/Contato/Contato';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Menu from './static/Header/Menu/Menu';
 function App() {
 
   return (

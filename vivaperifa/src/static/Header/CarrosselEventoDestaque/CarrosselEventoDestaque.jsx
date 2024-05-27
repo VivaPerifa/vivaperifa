@@ -34,12 +34,13 @@ export default function CarrosselEventoDestaque(props) {
                     className='swiper-container'
                 >   
                     {
-                        listItem.map((item) => (
+                        listItem.map((item, index) => (
                             <SwiperSlide
                                 className='swiper-item'
+                                key={index}
                             >
                                 {({ isPrev, isNext }) => (
-                                    <div className={ isPrev || isNext ? 'slide-blur' : ''} >
+                                    <div className={ isPrev || isNext ? 'slide-blur' : ''}>
                                         <EventoDestaque 
                                             imagemEventoDestaque={item.imagem} 
                                             tituloEventoDestaque={item.titulo} 

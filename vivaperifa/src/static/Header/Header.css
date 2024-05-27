@@ -29,6 +29,10 @@
     justify-content: center;
 }
 
+.fundo-sobre-nos{
+    background-image: url('../../assets/header-sobrenos.png');
+    height: 70vh;
+}
 
 .show{
     display: flex !important;

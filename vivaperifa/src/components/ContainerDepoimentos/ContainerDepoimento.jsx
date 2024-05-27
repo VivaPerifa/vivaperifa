@@ -1,56 +1,65 @@
 import Depoimento from '../ContainerDepoimentos/Depoimento/Depoimento';
-import PerfilUsuario from '../PerfilUsuario/PerfilUsuario';
 import './ContainerDepoimento.css';
 import Neguinha from '../../assets/fotoUsuario.png';
 
 export default function ContainerDepoimento(){
-    const listDepoimento = [
+    const listItem = [
         {
-            tituloDepoimento: "To amando",
-            descricaoDepoimento: " VivaPerifa é incrível! Encontrei diversos eventos culturais na minha  região que nem sabia que existiam. É uma plataforma que fortalece a cultura local.",
-            nomeUsuario:"Ana Beatriz",
-            tipoUsuario:"usuario",
-            fotoUsuario: {Neguinha}
+            id:1,
+            titulo: "To amando",
+            descricao: " VivaPerifa é incrível! Encontrei diversos eventos culturais na minha  região que nem sabia que existiam. É uma plataforma que fortalece a cultura local.",
+            nome:"Ana Beatriz",
+            tipo:"usuario",
+            imagem: Neguinha
         },
         {
-            tituloDepoimento: "To Prático e Intuitivo",
-            descricaoDepoimento: "Como organizador de eventos, o VivaPerifa foi uma ótima escolha para  promover nossas iniciativas na periferia. A plataforma é fácil de usar e  nos ajudou a alcançar um público mais amplo",
-            nomeUsuario:"Carlos Soares",
-            tipoUsuario:"Organizador",
-            fotoUsuario: "foto"
+            id:2,
+            titulo: "To Prático e Intuitivo",
+            descricao: "Como organizador de eventos, o VivaPerifa foi uma ótima escolha para  promover nossas iniciativas na periferia. A plataforma é fácil de usar e  nos ajudou a alcançar um público mais amplo",
+            nome:"Carlos Soares",
+            tipo:"Organizador",
+            imagem: Neguinha
         },
         {
-            tituloDepoimento: "Essencial!",
-            descricaoDepoimento: "O VivaPerifa é uma ferramenta essencial para quem quer se manter  atualizado sobre o que está acontecendo nas periferias.",
-            nomeUsuario:"João Kaique",
-            tipoUsuario:"usuario",
-            fotoUsuario: "foto"
+            id:3,
+            titulo: "Essencial!",
+            descricao: "O VivaPerifa é uma ferramenta essencial para quem quer se manter  atualizado sobre o que está acontecendo nas periferias.",
+            nome:"João Kaique",
+            tipo:"usuario",
+            imagem: Neguinha
         },
         {
-            tituloDepoimento: "Inclusivo",
-            descricaoDepoimento: "Adoro a proposta inclusiva do VivaPerifa! Encontrei eventos  diversificados e pude participar de iniciativas que antes desconhecia. É  uma plataforma que realmente valoriza a comunidade",
-            nomeUsuario:"Igor Manuel",
-            tipoUsuario:"usuario",
-            fotoUsuario: "foto"
+            id:4,
+            titulo: "Inclusivo",
+            descricao: "Adoro a proposta inclusiva do VivaPerifa! Encontrei eventos  diversificados e pude participar de iniciativas que antes desconhecia. É  uma plataforma que realmente valoriza a comunidade",
+            nome:"Igor Manuel",
+            tipo:"usuario",
+            imagem: Neguinha
         },
         {
-            tituloDepoimento: "Ótimos Recursos!",
-            descricaoDepoimento: "VivaPerifa oferece uma variedade impressionante de recursos que  tornam a experiência do usuário excepcional.É  uma plataforma que realmente valoriza a comunidade",
-            nomeUsuario:"Raquel Oliveira",
-            tipoUsuario:"usuario",
-            fotoUsuario: "foto"
+            id:5,
+            titulo: "Ótimos Recursos!",
+            descricao: "VivaPerifa oferece uma variedade impressionante de recursos que  tornam a experiência do usuário excepcional.É  uma plataforma que realmente valoriza a comunidade",
+            nome:"Raquel Oliveira",
+            tipo:"usuario",
+            imagem: Neguinha
         }
     ]
 
+    
     return( 
         <div className='container-depoimentos'>
             
             {
-                listDepoimento.map((item)=>(
-                    <div className='item-depoimento'>
-                        <Depoimento tituloDepoimento={item.tituloDepoimento} descricaoDepoimento={item.descricaoDepoimento} nomeUsuario={item.nomeUsuario} tipoUsuario={item.tipoUsuario}
-                        fotoPerfil={Neguinha}></Depoimento>
-            
+                listItem.map((item, index) => (
+                    <div className='item-depoimento' key={index}>
+                        <Depoimento
+                            fotoPerfil={item.imagem}
+                            nomeUsuario={item.nome}
+                            tipoUsuario={item.tipo}
+                            descricaoDepoimento={item.descricao}
+                            tituloDepoimento={item.titulo}
+                        />
                     </div>
                 ))
             }
