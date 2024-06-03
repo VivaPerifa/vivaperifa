@@ -9,6 +9,7 @@ import ContainerDepoimentos from '../../components/ContainerDepoimentos/Containe
 import DisclaimerCookies from '../../components/DisclaimerCookies/DisclaimerCookies';
 import DisclaimerDivulgueSeuEvento from "../../components/DisclaimerDivulgueSeuEvento/DisclaimerDivulgueSeuEvento";
 
+
 export default function Home(){
     return(
         <div className="container-homepage">

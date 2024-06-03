@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Explorar from './pages/Explorar/Explorar';
 import Comunidade from './pages/Comunidade/Comunidade';
 import Contato from './pages/Contato/Contato';
+import Cadastro from './pages/CadastroOrganizador/CadastroOrganizador'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Menu from './static/Header/Menu/Menu';
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/explorar' element={<Explorar/>} />
           <Route path='/comunidade' element={<Comunidade/>} />
           <Route path='/contato' element={<Contato/>} />
+          <Route path='/cadastro' element={<Cadastro/>}/>
         </Routes>
       </div>
       <Footer></Footer>
