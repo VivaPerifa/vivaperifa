@@ -1,3 +1,3 @@
-export function clickScroll(value){
-
+export function switchForm(value){
+    
 }

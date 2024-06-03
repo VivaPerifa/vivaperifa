@@ -1,7 +1,7 @@
     import FormCadastroLogin from "../../components/FormCadastroLogin/FormCadastroLogin"
     export default function Login (){
     return (
-        <div>
+        <div className="container-login">
             <FormCadastroLogin/>
         </div>
     )
