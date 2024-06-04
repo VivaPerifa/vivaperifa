@@ -7,6 +7,7 @@ import BatalhaRima from '../../assets/batalha_rima.png';
 import Arte from '../../assets/arte.png';
 import EventoRua from '../../assets/evento_rua.png';
 import Xamuel from '../../assets/xamuel.jpg';
+import Evento15 from '../../assets/evento_15.png';
 
 export default function Header(props){
     const listItem = [
@@ -45,7 +46,7 @@ export default function Header(props){
             </div>
             <div className={`fundo-comunidade header ${props.tipoCabecalho == 'comunidade' ? 'show' : 'hidden'}`}>
                 <Menu></Menu>
-                <h2>Bem vindo a comunidade!</h2>
+                <h2>Explore a comunidade de eventos da sua qubrada!</h2>
             </div>
             <div className={`fundo-explorar header ${props.tipoCabecalho == 'explorar' ? 'show' : 'hidden'}`}>
                 <Menu></Menu>

@@ -9,6 +9,7 @@ import Cadastro from './pages/CadastroOrganizador/CadastroOrganizador'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import api from  './services/api';
+import CadastroOrganizador from './pages/CadastroOrganizador/CadastroOrganizador';
 
 function App() {
   // const [user, setUser] = useState();
@@ -36,11 +37,7 @@ function App() {
           <Route path='/explorar' element={<Explorar/>} />
           <Route path='/comunidade' element={<Comunidade/>} />
           <Route path='/contato' element={<Contato/>} />
-<<<<<<< HEAD
-          <Route path='/cadastro' element={<Cadastro/>}/>
-=======
-          <Route path='/login' />
->>>>>>> e4b76a57d84110505b1b15463e147e7b50606403
+          <Route path='/login' element={<CadastroOrganizador />}/>
         </Routes>
       </div>
       <Footer></Footer>

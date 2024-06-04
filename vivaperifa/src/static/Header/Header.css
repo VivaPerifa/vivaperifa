@@ -16,6 +16,12 @@
     height: 500px;
 }
 
+.fundo-comunidade h2{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .fundo-explorar{
     background-image: url('../../assets/fundo_explorar.png');
 }
