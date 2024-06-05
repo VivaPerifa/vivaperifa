@@ -92,39 +92,55 @@ export default function SobreNos() {
                     <div className="item-equipe">
                         <img src={Jessica} alt="" />
                         <h1 className="nomes">Jéssica Souza</h1>
-                        <a href="https://www.linkedin.com/in/j%c3%a9ssica-souza-590590224" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin"></i>
-                            Linkedin/Jéssica
-                        </a>
+                        <div className="icones-sobre-nos">
+                            <a href="https://www.linkedin.com/in/j%c3%a9ssica-souza-590590224" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/JessiSouza03" className="github-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <div className="item-equipe">
                         <img src={Raquel} alt="" />
                         <div className="descricao-equipe">
                             <h1 className="nomes">Raquel Costa</h1>
-                            <a href="https://www.linkedin.com/in/raquel-moreira-da-costa-372383236" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-linkedin"></i>
-                                Linkedin/Raquel
-                            </a>
+                            <div className="icones-sobre-nos">
+                                <a href="https://www.linkedin.com/in/raquel-moreira-da-costa-372383236" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/Leuquary" className="github-icon" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <div className="item-equipe">
                         <img src={Larissa} alt="" />
                         <h1 className="nomes">Larissa Dias</h1>
-                        <a href="https://www.linkedin.com/in/larissa-rocha-dias" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin"></i>
-                            Linkedin/Larissa
-                        </a>
+                        <div className="icones-sobre-nos">
+                            <a href="https://www.linkedin.com/in/larissa-rocha-dias" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/larissadias-dev" className="github-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <div className="item-equipe">
                         <img src={Erick} alt="" />
                         <h1 className="nomes">Erick Gabriel</h1>
-                        <a href="https://www.linkedin.com/in/erick-agostinho-644187276" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin"></i>
-                            Linkedin/Erick
-                        </a>
+                        <div className="icones-sobre-nos">
+                            <a href="https://www.linkedin.com/in/erick-agostinho-644187276" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/ErickGabrielDev" className="github-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -133,37 +149,53 @@ export default function SobreNos() {
                     <div className="item-equipe">
                         <img src={Nathan} alt="" />
                         <h1 className="nomes">Nathan Rabelo</h1>
-                        <a href="https://www.linkedin.com/in/nathan-viana-rabelo-67a616b3" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin"></i>
-                            Linkedin/Nathan
-                        </a>
+                        <div className="icones-sobre-nos">
+                            <a href="https://www.linkedin.com/in/nathan-viana-rabelo-67a616b3" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/NathanVianaDev" className="github-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <div className="item-equipe">
                         <img src={Renan} alt="" />
                         <h1 className="nomes">Renan Anacleto</h1>
-                        <a href="https://www.linkedin.com/in/renan-oliveira-4368192bb" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin"></i>
-                            Linkedin/Renan
-                        </a>
+                        <div className="icones-sobre-nos">
+                            <a href="https://www.linkedin.com/in/renan-oliveira-4368192bb" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/anacletorenan" className="github-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <div className="item-equipe">
                         <img src={Diego} alt="" />
                         <h1 className="nomes">Diego Guarnieri</h1>
-                        <a href="https://www.linkedin.com/in/diegoguarnieri" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin"></i>
-                            Linkedin/Diego
-                        </a>
+                        <div className="icones-sobre-nos">
+                            <a href="https://www.linkedin.com/in/diegoguarnieri" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/DiegoEmmanuelDev" className="github-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <div className="item-equipe">
                         <img src={Kaue} alt="" />
                         <h1 className="nomes">Kaue Souza</h1>
-                        <a href="https://www.linkedin.com/in/kaue-caires" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin"></i>
-                            Linkedin/Kaue
-                        </a>
+                        <div className="icones-sobre-nos">
+                            <a href="https://www.linkedin.com/in/kaue-caires" className="linkedin-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/kauecodify" className="github-icon" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

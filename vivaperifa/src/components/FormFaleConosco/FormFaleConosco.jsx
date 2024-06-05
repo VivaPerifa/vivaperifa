@@ -52,7 +52,7 @@ export default function FormFaleConosco() {
                             <TbBrandLinktree style={{ width: '2rem', height: '2rem' }} />
                             <div className='link'>
                                 <span className='bold-icon'>LINKTREE</span>
-                                <span className='gradient-icon'><a href='https://linktr.ee/vivaperifa'>https://linktr.ee/vivaperifa</a></span>
+                                <span className='gradient-icon'> <a href='https://linktr.ee/vivaperifa' target="_blank">https://linktr.ee/vivaperifa</a> </span>
                             </div>
                         </div>
 

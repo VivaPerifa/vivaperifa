@@ -65,7 +65,6 @@
 
 .texto-sobre-nos {
     font-size: 20px;
-    font-weight: 430;
 }
 
 
@@ -135,7 +134,7 @@
 .nomes {
     font-weight: 900;
     font-size: 20px;
-    margin-left: 10px;
+    text-align: center;
 }
 
 .funcao-equipe {
@@ -183,13 +182,28 @@
 
 .linkedin-icon {
     font-size: 1.2rem;
-    color: #0077b5;
+    color: black;
     text-decoration: none;
     margin-left: 10px;
+    font-size: 35px;
 }
 
 .linkedin-icon:hover {
     color: #005582;
+}
+
+.icones-sobre-nos {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    font-size: 35px;
+}
+
+.github-icon i {
+    color: #333;
+}
+.github-icon:hover i {
+    color: black; 
 }
 
 .container-identidade {
