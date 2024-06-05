@@ -22,40 +22,39 @@ import Header from '../../static/Header/Header';
 
 export default function SobreNos() {
     return (
-        <div className="corpo-sobreNos">
-            <Header 
+        <div className="corpo-sobre-nos">
+            <Header
                 tipoCabecalho="sobre-nos"
             />
-            <div className="container-sobreNos">
-                <div id="square">
-                    <div className="conteudo-sobreNos">
-                        <div className="missao">
-                            <div className="icone">
-                                <img src={Missao} alt="" />
+
+            <div className="principal-sobre-nos">
+                <div className="container-sobre-nos">
+                    <div className="square-sobre-nos">
+                        <div className="bloco-sobre-nos">
+                            <div className="icone-sobre-nos">
+                                <img src={Missao} alt="Missão" />
                             </div>
-                            <div className="descricao-sobre-nos">
-                                <h1 className="title">Missão</h1>
-                                <p className="texto">Promover a inclusão e valorização da cultura <br /> e dos talentos locais,  viabilizando o <br /> desenvolvimento social e fortalecendo o <br /> senso de comunidade na periferia.</p>
+                            <div className="conteudo-sobre-nos">
+                                <h1 className="title-sobre-nos">Missão</h1>
+                                <p className="texto-sobre-nos">Promover a inclusão e valorização da cultura e dos talentos locais, viabilizando o desenvolvimento social e fortalecendo o senso de comunidade na periferia.</p>
                             </div>
                         </div>
-
-                        <div className="visao">
-                            <div className="icone">
-                                <img src={Visao} alt="" />
+                        <div className="bloco-sobre-nos">
+                            <div className="icone-sobre-nos">
+                                <img src={Visao} alt="Visão" />
                             </div>
-                            <div className="descricao-sobre-nos">
-                                <h1 className="title">Visão</h1>
-                                <p className="texto">Ser referência como a principal plataforma de <br /> eventos das periferias do mundo, com foco no <br /> desenvolvimento das oportunidades culturais e <br />empreendedoras da região, aplicando estratégias <br /> de divulgação únicas.</p>
+                            <div className="conteudo-sobre-nos">
+                                <h1 className="title-sobre-nos">Visão</h1>
+                                <p className="texto-sobre-nos">Ser referência como a principal plataforma de eventos das periferias do mundo, com foco no desenvolvimento das oportunidades culturais e empreendedoras da região, aplicando estratégias de divulgação únicas.</p>
                             </div>
                         </div>
-
-                        <div className="valores">
-                            <div className="icone">
-                                <img src={Valores} alt="" />
+                        <div className="bloco-sobre-nos">
+                            <div className="icone-sobre-nos">
+                                <img src={Valores} alt="Valores" />
                             </div>
-                            <div className="descricao-sobre-nos">
-                                <h1 className="title">Valores</h1>
-                                <p className="texto">Integridade, comunicação, colaboração, <br /> criatividade e inclusão.</p>
+                            <div className="conteudo-sobre-nos">
+                                <h1 className="title-sobre-nos">Valores</h1>
+                                <p className="texto-sobre-nos">Integridade, comunicação, colaboração, criatividade e inclusão.</p>
                             </div>
                         </div>
                     </div>
