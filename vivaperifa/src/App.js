@@ -10,7 +10,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import api from  './services/api';
 import CadastroOrganizador from './pages/CadastroOrganizador/CadastroOrganizador';
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   // const [user, setUser] = useState();
