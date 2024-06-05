@@ -1,6 +1,6 @@
 import './Footer.css';
 import Github from '../../assets/icon_github.png';
-import Facebook from '../../assets/icon_facebook.png';
+import TikTok from '../../assets/icon_tiktok.png';
 import Linkedin from '../../assets/icon_linkedin.png';
 import Instagram from '../../assets/icon_instagram.png';
 import Twitter from '../../assets/icon_twitter.png';
@@ -42,7 +42,7 @@ export default function Footer() {
 
                         <img src={Instagram}/>
 
-                        <img src={Facebook}/>
+                        <img src={TikTok}/>
 
                         <img src={Twitter} />
 

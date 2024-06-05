@@ -41,7 +41,6 @@
     text-align: justify;
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--cor-azul);
 }
 
 .descricao-evento-comum{
@@ -52,9 +51,16 @@
 }
 
 .local-evento-comum{
-    color: var(--cor-laranja);
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.cor-azul{
+    color: var(--cor-azul);
+}
+
+.cor-laranja{
+    color: var(--cor-laranja);
 }
 
 .imagem-evento-comum img{

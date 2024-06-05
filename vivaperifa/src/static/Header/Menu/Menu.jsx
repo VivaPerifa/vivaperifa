@@ -42,7 +42,7 @@ export default function Menu(props){
                     </div>
                     <div className='user'>
                         <span>
-                            <img src={User} alt="" />
+                            <Link to='/login'><img src={User} alt="" /></Link>
                         </span>
                     </div>
                 </div>

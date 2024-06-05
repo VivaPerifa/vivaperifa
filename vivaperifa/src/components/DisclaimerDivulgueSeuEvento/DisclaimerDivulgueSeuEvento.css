@@ -34,7 +34,7 @@
     font-size: 2rem;
     font-weight: 800;
     text-transform: capitalize;
-    background: var(--cor_texto, linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%));
+    background: linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

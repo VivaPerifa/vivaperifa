@@ -1,7 +1,7 @@
-.container-depoimento{
+.depoimento{
     display :flex ;
     flex-direction: column;
-    width: 20vw;
+    width: 25vw;
     border-radius: 10px;
     border: 1.5px solid #D3D3D3;
     box-shadow: 1px 1px 32px 0px rgba(164, 164, 164, 0.44);
@@ -15,7 +15,7 @@
     display: block;
   }
 
-.titulo{
+.depoimento__titulo{
     color: var(--cor-azul);
     font-size: 24px;
     font-weight: bold;
