@@ -21,6 +21,8 @@ import Evento14 from "../../assets/evento_14.png";
 import Evento11 from "../../assets/evento_feira.png";
 import Evento15 from "../../assets/evento_15.png";
 
+import ContainerPlanos from '../../components/ContainerPlanos/ContainerPlanos';
+
 export default function Explorar(){
     const filtros = [
         {
@@ -194,6 +196,8 @@ export default function Explorar(){
             />
 
             <DisclaimerImpulsionarEvento></DisclaimerImpulsionarEvento>
+
+            <ContainerPlanos></ContainerPlanos>
         </div>
     );
 }
