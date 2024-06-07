@@ -37,7 +37,7 @@
 
 .fundo-sobre-nos{
     background-image: url('../../assets/header-sobrenos.png');
-    height: 700px;
+    height: 100vh;
 }
 
 .show{
