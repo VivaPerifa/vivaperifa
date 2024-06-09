@@ -10,7 +10,7 @@ export default function Menu(props){
             <nav className="menu">
                 <ul className="menu__lista">
                     <div className='logo'>
-                        <img src={Logo} alt="VivaPerifa" />
+                        <Link to="/home"><img src={Logo} alt="VivaPerifa" /></Link>
                     </div>
                     <li>
                         <Link to="/home">Home</Link>

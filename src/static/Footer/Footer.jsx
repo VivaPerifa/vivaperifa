@@ -3,8 +3,9 @@ import Github from '../../assets/icon_github.png';
 import TikTok from '../../assets/icon_tiktok.png';
 import Linkedin from '../../assets/icon_linkedin.png';
 import Instagram from '../../assets/icon_instagram.png';
-import Twitter from '../../assets/icon_twitter.png';
-import Logo from '../../assets/logo.png';
+import Twitter from '../../assets/icon_x.png';
+import Logo from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -14,38 +15,35 @@ export default function Footer() {
                     <img src={Logo} alt="" />
                 </div>
 
-                <div className='footer-column'>
-                    <span className='bold-footer'>Inicio</span>
-                    <span>Home</span>
-                    <span>Explorar</span>
-                </div>
+                <div className="footer-description">
+                    <div className='footer-column'>
+                        <span className='bold-footer'>Eventos</span>
+                        <span><Link to="/home">Home</Link></span>
+                        <span><Link to="/explorar">Explorar</Link></span>
+                        <span><Link to="/comunidade">Comunidade</Link></span>
+                    </div>
 
-                <div className='footer-column'>
-                    <span className='bold-footer'>Sobre nós</span>
-                    <span>Sobre a empresa</span>
-                    <span>Patrocinadores</span>
-                </div>
+                    <div className='footer-column'>
+                        <span className='bold-footer'>Empresa</span>
+                        <span><Link to="/sobre-nos">Sobre nós</Link></span>
+                        <span><Link to="/contato">Contato</Link></span>
+                    </div>
 
-                <div className='footer-column'>
-                    <span className='bold-footer'>Fale Conosco</span>
-                    <span>FAQ</span>
-                    <span>Contato</span>
-                </div>
+                    <div className='footer-redes-sociais'>
+                        <span className='bold-footer'>Redes sociais</span>
+                        <div className='icon-footer'>
 
-                <div className='footer-redes-sociais'>
-                    <span className='bold-footer'>Redes sociais</span>
-                    <div className='icon-footer'>
+                            <a href='https://github.com/VivaPerifa' target='new'><img src={Github} /></a>
 
-                        <img src={Github}/>
+                            <a href='https://www.linkedin.com/company/vivaperifa/about/' target='new'><img src={Linkedin} /></a>
 
-                        <img src={Linkedin}/>
+                            <a href='https://www.instagram.com/viva_perifa/' target='new'><img src={Instagram} /></a>
 
-                        <img src={Instagram}/>
+                            <a href='https://github.com/VivaPerifa' target='new'><img src={TikTok} /></a>
 
-                        <img src={TikTok}/>
+                            <a href='https://x.com/VivaPerifa' target='new'><img src={Twitter} /></a>
 
-                        <img src={Twitter} />
-
+                        </div>
                     </div>
                 </div>
 
