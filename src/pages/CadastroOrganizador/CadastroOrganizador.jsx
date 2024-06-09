@@ -1,9 +1,40 @@
 import CampoForm from '../../components/CampoForm/CampoForm';
 import './CadastroOrganizador.css';
-import './CadastroOrganizadorScript.js'
-import LogoCadastro from '../../assets/logo.png'
+import LogoCadastro from '../../assets/logo.png';
+import { useState, useEffect } from 'react';
 
 export default function CadastroOrganizador() {
+
+    const [containerAtivo, setContainerAtivo] = useState(false);
+
+        useEffect(() => {
+            const containerCadastro = document.getElementById('container_cadastro');
+            const btnOrgBtn = document.getElementById('btn_org');
+            const btnUserBtn = document.getElementById('btn_user');
+
+            btnOrgBtn.addEventListener('click', () => {
+            containerCadastro.classList.add('active');
+            setContainerAtivo(true);
+            });
+
+            btnUserBtn.addEventListener('click', () => {
+            containerCadastro.classList.remove('active');
+            setContainerAtivo(false);
+            });
+
+            // Remover os event listeners quando o componente for desmontado
+            return () => {
+            btnOrgBtn.removeEventListener('click', () => {
+                containerCadastro.classList.add('active');
+                setContainerAtivo(true);
+            });
+            btnUserBtn.removeEventListener('click', () => {
+                containerCadastro.classList.remove('active');
+                setContainerAtivo(false);
+            });
+            };
+        }, []); // Sem dependências, executa apenas uma vez ao montar o componente
+
     return (
         <div className='container_cadastro' id='container_cadastro'>
 
@@ -13,22 +44,17 @@ export default function CadastroOrganizador() {
                     <form action=''>
                         <h2>Usuário</h2>
 
-                        <h4>Nome</h4>
-                        <CampoForm id='nome-user' tipo='text' legenda='Digite seu nome' tamanhoCampo='20vw' />
+                        <CampoForm id='nome-user' tipo='text' legenda='Digite seu nome' tamanhoCampo='80%' tituloForm="Nome"/>
 
-                        <h4>Telefone</h4>
-                        <CampoForm id='tel-user' tipo='text' legenda='Digite seu telefone' tamanhoCampo='20vw' />
+                        <CampoForm id='tel-user' tipo='text' legenda='Digite seu telefone' tamanhoCampo='80%' tituloForm="Telefone"/>
 
-                        <h4>E-mail</h4>
-                        <CampoForm id='email-user' tipo='text' legenda='Digite seu e-mail' tamanhoCampo='20vw' />
+                        <CampoForm id='email-user' tipo='text' legenda='Digite seu e-mail' tamanhoCampo='80%' tituloForm="E-mail"/>
 
-                        <h4>Senha</h4>
-                        <CampoForm id='senha-user' tipo='text' legenda='Crie uma senha' tamanhoCampo='20vw' />
+                        <CampoForm id='senha-user' tipo='text' legenda='Crie uma senha' tamanhoCampo='80%' tituloForm="Senha"/>
 
                         <div className='btn-cadastro'>
                             <button>Cadastrar</button>
                         </div>
-
                     </form>
                 </div>
 
@@ -36,20 +62,15 @@ export default function CadastroOrganizador() {
                     <form action=''>
                         <h2>Organizador</h2>
 
-                        <h4>Nome da empresa</h4>
-                        <CampoForm id='nome-org' tipo='text' legenda='Digite o nome da empresa' tamanhoCampo='20vw' />
+                        <CampoForm id='nome-org' tipo='text' legenda='Digite o nome da empresa' tamanhoCampo='80%' tituloForm="Nome da empresa" />
 
-                        <h4>CNPJ</h4>
-                        <CampoForm id='cnpj-org' tipo='text' legenda='Digite o CNPJ da empresa' tamanhoCampo='20vw' />
+                        <CampoForm id='cnpj-org' tipo='text' legenda='Digite o CNPJ da empresa' tamanhoCampo='80%' tituloForm="CNPJ"/>
 
-                        <h4>Telefone</h4>
-                        <CampoForm id='tel-org' tipo='text' legenda='Digite seu telefone' tamanhoCampo='20vw' />
+                        <CampoForm id='tel-org' tipo='text' legenda='Digite seu telefone' tamanhoCampo='80%' tituloForm="Telefone"/>
 
-                        <h4>E-mail</h4>
-                        <CampoForm id='email-org' tipo='text' legenda='Digite seu e-mail' tamanhoCampo='20vw' />
+                        <CampoForm id='email-org' tipo='text' legenda='Digite seu e-mail' tamanhoCampo='80%' tituloForm="E-mail"/>
 
-                        <h4>Senha</h4>
-                        <CampoForm id='senha-org' tipo='text' legenda='Crie uma senha' tamanhoCampo='20vw' />
+                        <CampoForm id='senha-org' tipo='text' legenda='Crie uma senha' tamanhoCampo='80%' tituloForm="Senha"/>
 
                         <div className='btn-cadastro'>
                             <button>Cadastrar</button>
@@ -83,7 +104,7 @@ export default function CadastroOrganizador() {
                             <p>Deseja cadastrar-se como organizador?</p>
 
                             <div className='btn-cadastro'>
-                                <button className='btn-user-org' id='btn_org'>Organizador</button>
+                                <button className='btn-user-org' id='btn_org' >Organizador</button>
                             </div>
 
                         </div>
