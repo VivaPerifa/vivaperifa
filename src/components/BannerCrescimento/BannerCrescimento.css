@@ -1,4 +1,16 @@
-img{
+.banner_crescimento{
+    width: 92vw;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding: 20px;
+}
+
+.banner_crescimento img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 100%;
+    object-fit: cover;
 }

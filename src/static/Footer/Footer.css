@@ -4,20 +4,28 @@
     background-repeat: no-repeat;
     background-size: 100%;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 20px;
+    align-items: center;
 }
 
 .footer {
     display: flex;
     width: 80vw;
-    justify-content: space-between;
     align-items: center;
+    gap: 10%;
+}
+
+.footer-description {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: first;
 }
 
 .footer-column {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .footer-redes-sociais {
@@ -27,31 +35,36 @@
     align-items: center;
 }
 
-.footer-column span{
+.footer-column span {
     color: white;
     font-size: 1.4rem;
 }
 
-.footer-redes-sociais span{
+.footer-column span a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-redes-sociais span {
     color: white;
     font-size: 1.4rem;
 }
 
-.bold-footer{
+.bold-footer {
     font-weight: bold;
 }
 
-.icon-footer{
+.icon-footer {
     display: flex;
     justify-content: space-between;
     gap: 15px;
 }
 
-.logo-footer{
+.logo-footer {
     width: 20vw;
 }
 
-.logo-footer img{
+.logo-footer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
