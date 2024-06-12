@@ -1,0 +1,139 @@
+.formulario-fale-conosco form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.container-fale-conosco{
+    width: 100vw;
+    background-image: url(../../assets/faixa_laranja.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+}
+
+.form-img{
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 50vw auto;
+    
+    gap: 100px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.img-muro{
+    height: 80%;
+    border-radius: 30px;
+}
+
+.img-muro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fale-conosco{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+} 
+
+#mensagem{
+    padding: 50px !important;
+}
+
+.email-tel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.titulo-fale-conosco{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-fale-conosco h2{
+    font-size: 2.5rem;
+    background: var(--cor_texto, linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.message-fale-conosco h4{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.icones-contato{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.linktree, .email, .telefone{
+    display: flex;
+    gap: 20px;
+}
+
+.link{
+    display: flex ;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.bold-icon{
+    font-weight: bold;
+}
+
+.gradient-icon{
+    background: var(--cor_texto, linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width:1024px){
+    .form-img{
+        grid-template-columns: 50vw auto;
+        width: 90vw;
+        gap: 0;
+    }
+
+    .icones-contato{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img-muero{
+        width: 100%;
+    }
+
+    .form-contato{
+        align-items: start;
+    }
+}
+
+@media (min-width:1900px){
+    .form-img{
+        width: 80vw;
+        gap: 50px;
+        grid-template-columns: 45vw auto;
+    }
+}

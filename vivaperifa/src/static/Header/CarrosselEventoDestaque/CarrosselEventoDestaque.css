@@ -1,0 +1,36 @@
+.container-evento-destaque{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+.container-scroll{
+    width: 100vw;
+    overflow: auto;
+}
+
+.swiper-item{
+    display: flex;
+    flex-shrink: 1;
+}
+
+.swiper-button-prev, 
+.swiper-button-next{
+    color: white;
+    margin: 0 80px;
+    margin-top: -30px;
+}
+
+.slide-blur{
+    filter: blur(2px);
+}
+
+@media only screen and (max-width: 1024px){
+    .swiper-button-prev, 
+    .swiper-button-next{
+        margin: 0;
+    }
+}
+
+

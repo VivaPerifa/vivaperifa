@@ -1,0 +1,29 @@
+.container-cookies{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-amarela);
+    padding: 20px;
+}
+
+.texto-cookies{
+    text-align: center;
+}
+
+.btn_cookies button{
+    border: none;
+    padding: 5px 20px;
+    background-color: #033E8C;
+    color: white;
+}
+
+.cookies{
+    width: 80vw;
+}
+
+.btn_cookies{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
