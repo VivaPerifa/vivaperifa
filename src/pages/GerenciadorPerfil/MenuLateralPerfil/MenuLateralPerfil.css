@@ -3,9 +3,9 @@
 }
 
 .nav-bar-menu-lateral {
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     height: 100vh;
     background-color: var(--cor-azul);
     color: #fff;
