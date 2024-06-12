@@ -53,7 +53,7 @@ function App() {
         </Routes>
       </div>
       <Footer></Footer>
-      <MenuLateralPerfil></MenuLateralPerfil>
+      {/* <MenuLateralPerfil></MenuLateralPerfil> */}
     </BrowserRouter>
     
   );
