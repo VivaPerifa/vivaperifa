@@ -12,6 +12,11 @@ import React, { useEffect, useState } from 'react';
 import api from  './services/api';
 import CadastroOrganizador from './pages/CadastroOrganizador/CadastroOrganizador';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Mapa from './components/Mapa/Mapa';
+import Detalhes from './pages/GerenciadorPerfil/CadastrarEvento/DetalhesEvento/DetalhesEvento';
+import GerenciadorPerfil from './pages/GerenciadorPerfil/GerenciadorPerfil';
+import InicioCadastro from './pages/GerenciadorPerfil/CadastrarEvento/InicioCadastro/InicioCadastro';
+import ImagemEvento from './pages/GerenciadorPerfil/CadastrarEvento/ImagemEvento/ImagemEvento';
 
 function App() {
   // const [user, setUser] = useState();
@@ -40,6 +45,10 @@ function App() {
           <Route path='/comunidade' element={<Comunidade/>} />
           <Route path='/contato' element={<Contato/>} />
           <Route path='/login' element={<CadastroOrganizador />}/>
+          <Route path='/detalhes' element={<Detalhes />}/>
+          
+          <Route path='/gerenciador-perfil' element={<GerenciadorPerfil />}></Route>
+          <Route path='/imagem-evento' element={<ImagemEvento />}></Route>
         </Routes>
       </div>
       <Footer></Footer>

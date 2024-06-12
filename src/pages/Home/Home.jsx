@@ -22,6 +22,7 @@ import Evento10 from "../../assets/evento_10.png";
 // import Evento11 from "../../assets/evento_11.png";
 // import Evento12 from "../../assets/evento_12.png";
 // import Evento13 from "../../assets/evento_13.png";
+import Mapa from '../../components/Mapa/Mapa';
 
 
 export default function Home() {
@@ -95,6 +96,8 @@ export default function Home() {
             />
 
             <BannerCrescimento></BannerCrescimento>
+
+            <Mapa></Mapa>
 
             <DisclaimerDivulgueSeuEvento></DisclaimerDivulgueSeuEvento>
 
