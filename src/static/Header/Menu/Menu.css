@@ -3,7 +3,6 @@
 }
 .container-menu{
     width: inherit;
-    
 }
 .menu{
     width: inherit;
@@ -88,13 +87,13 @@
     color: white; 
 }
 
-li {
+.menu__lista li {
     cursor: pointer;
     text-decoration: none;
     position: relative;
 }
 
-li:after {
+.menu__lista li:after {
     content: "";
     position: absolute;
     background-color: #fff;
@@ -105,10 +104,10 @@ li:after {
     transition: 0.5s;
 }
 
-li:hover {
+.menu__lista li:hover {
     color: #fff;
 }
 
-li:hover::after {
+.menu__lista li:hover::after {
     width: 100%;
 }

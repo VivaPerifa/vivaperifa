@@ -1,0 +1,13 @@
+.filtros-explorar{
+    display: flex;
+    width: var(--tamanho-container);
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.container-explorar{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}

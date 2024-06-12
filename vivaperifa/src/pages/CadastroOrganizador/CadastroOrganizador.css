@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_cadastro {
+    background-image: url(../../assets/fundo_cadastro.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 1020px;
+
+}
+
+.container-cadastro-box {
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 1080px;
+    max-width: 100%;
+    min-height: 768px;
+}
+
+.form-container-cadastro h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.form-container-cadastro h4{
+    font-size: 20px;
+    margin: 10px;
+    letter-spacing: 0.5px;
+}
+
+.btn-cadastro button{
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    background-color: #033E8C;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+button.btn-user-org{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container-cadastro-box form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: o 40px;
+    height: 100%;
+}
+
+.form-container-cadastro{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.form-user{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container_cadastro.active .form-user{
+    transform: translateX(100%);
+}
+
+.form-org{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container_cadastro.active .form-org{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.container_cadastro.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle{
+    background-color: #033E8C;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    left: -100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container_cadastro.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+.container_cadastro.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.container_cadastro.active .toggle-right{
+    transform: translateX(200%);
+}
+
+.logo_cadastro{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.toggle-panel h2{
+    font-size: 30px;
+}
+
+.toggle-panel p{
+    font-size: 20px;
+}
