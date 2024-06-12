@@ -1,6 +1,7 @@
 import './App.css';
 import SobreNos from './pages/SobreNos/SobreNos';
 import Footer from './static/Footer/Footer';
+import Menu from './static/Header/Menu/Menu';
 import Home from './pages/Home/Home';
 import Explorar from './pages/Explorar/Explorar';
 import Comunidade from './pages/Comunidade/Comunidade';
