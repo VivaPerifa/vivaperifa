@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+.container-menu{
+    width: inherit;
+    
+}
+.menu{
+    width: inherit;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__lista{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+    color: white;
+    width: inherit;
+}
+
+.menu__lista .logo{
+    width: 85px;
+    cursor: pointer;
+}
+
+.menu__lista li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu__lista li{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.pesquisa-user{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.pesquisa-user span{
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa{
+    color: white;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 8px 15px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.39);
+}
+
+.pesquisa span{
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa input{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    font-size: 0.8rem;
+    color: inherit;
+    width: 30vw;
+}
+
+.pesquisa input::placeholder {
+    color: white; 
+}
+
+li {
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+li:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+li:hover {
+    color: #fff;
+}
+
+li:hover::after {
+    width: 100%;
+}

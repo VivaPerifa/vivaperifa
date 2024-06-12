@@ -1,0 +1,7 @@
+.contato{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}

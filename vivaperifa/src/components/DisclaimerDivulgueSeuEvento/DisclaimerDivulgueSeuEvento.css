@@ -1,0 +1,50 @@
+.divulgue-seu-evento{
+    display: flex;
+    justify-content: space-between;
+    width: var(--tamanho-container);
+    margin: 0 auto;
+}
+
+.divulgar-evento__descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+
+.divulgar-evento__titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.divulgar-evento__descricao p{
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.divulgar-evento__titulo h2{
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.divulgar-evento__titulo h3{
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.divulgar-evento__imagem{
+    width: 50%;
+}
+
+.divulgar-evento__imagem img{
+    width: 100%;
+    object-fit: cover;
+}

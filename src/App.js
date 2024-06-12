@@ -17,6 +17,7 @@ import Detalhes from './pages/GerenciadorPerfil/CadastrarEvento/DetalhesEvento/D
 import GerenciadorPerfil from './pages/GerenciadorPerfil/GerenciadorPerfil';
 import InicioCadastro from './pages/GerenciadorPerfil/CadastrarEvento/InicioCadastro/InicioCadastro';
 import ImagemEvento from './pages/GerenciadorPerfil/CadastrarEvento/ImagemEvento/ImagemEvento';
+import MenuLateralPerfil from './pages/GerenciadorPerfil/MenuLateralPerfil/MenuLateralPerfil';
 
 function App() {
   // const [user, setUser] = useState();
@@ -52,6 +53,7 @@ function App() {
         </Routes>
       </div>
       <Footer></Footer>
+      <MenuLateralPerfil></MenuLateralPerfil>
     </BrowserRouter>
     
   );
