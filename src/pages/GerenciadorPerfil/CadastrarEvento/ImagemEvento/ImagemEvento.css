@@ -48,7 +48,7 @@
 .btn-imagem-eventos {
     display: flex;
     flex-direction: row;
-    width: 58%;
+    width: 100%;
     gap: 20px;
     justify-content: flex-end;
     padding: 20px 0;
