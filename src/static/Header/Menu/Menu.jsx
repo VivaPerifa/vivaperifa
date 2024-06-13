@@ -27,9 +27,9 @@ export default function Menu(props){
                     <li>
                         <Link to="/contato">Contato</Link>
                     </li>
-                    {/* <li>
+                    <li>
                         <Link to="/gerenciador-perfil">teste</Link>
-                    </li> */}
+                    </li>
                 </ul>
                 <div className='pesquisa-user'>
                     <div className='pesquisa'>
