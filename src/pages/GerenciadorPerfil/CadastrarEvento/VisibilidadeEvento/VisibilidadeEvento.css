@@ -1,3 +1,17 @@
+.container-visibilidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.conteudo-visibilidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .container-quadrado-visibilidade {
     display: flex;
     flex-direction: column;
@@ -5,16 +19,12 @@
     border: 2px solid #ccc;
     padding: 20px;
     width: fit-content;
-    margin: 0 auto;
 }
 
 .title-visibilidade,
 .text-visibilidade {
     width: 100%;
-    max-width: 580px;
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .title-visibilidade {
