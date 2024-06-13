@@ -14,13 +14,13 @@ export default function GerenciadorPerfil() {
         <div className="gerenciar-perfil">
             {/* <CadastrarEvento></CadastrarEvento> */}
             <MenuLateralPerfil></MenuLateralPerfil>
-            <ImagemEvento></ImagemEvento>
-            <InicioCadastro></InicioCadastro>
-            <VisibilidadeEvento></VisibilidadeEvento>
+            {/* <ImagemEvento></ImagemEvento> */}
+            {/* <InicioCadastro></InicioCadastro> */}
+            {/* <VisibilidadeEvento></VisibilidadeEvento> */}
             {/* <ProgramaçãoEvento></ProgramaçãoEvento> */}
             {/* <Localização></Localização> */}
             {/* <Detalhes></Detalhes> */}
-            <EditarPerfilOrganizador></EditarPerfilOrganizador>
+            {/* <EditarPerfilOrganizador></EditarPerfilOrganizador> */}
         </div>
     );
 }
