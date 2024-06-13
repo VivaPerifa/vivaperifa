@@ -46,7 +46,7 @@
 
 .opcao {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     cursor: pointer;
     margin-bottom: 10px;
 }
@@ -85,5 +85,12 @@
 .texto-visibilidade-descricao {
     font-size: 14px;
     color: #666;
-    margin-top: 5px; 
+    margin-top: 5px;}
+
+.tipo-container {
+    display: flex;
+    align-items: center;
 }
+
+.tipo {
+    margin-left: 5px;}
