@@ -19,6 +19,7 @@ import ImagemEvento from './pages/GerenciadorPerfil/CadastrarEvento/ImagemEvento
 import MenuLateralPerfil from './pages/GerenciadorPerfil/MenuLateralPerfil/MenuLateralPerfil';
 import DetalheEvento from './pages/DetalheEvento/DetalheEvento';
 import Xamuel from './assets/evento_6.png';
+import VisibilidadeEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisibilidadeEvento/VisibilidadeEvento';
 
 function App() {
   // const [user, setUser] = useState();
@@ -58,7 +59,11 @@ function App() {
       </div>
       <Footer></Footer>
       <MenuLateralPerfil></MenuLateralPerfil>
+      <InicioCadastro></InicioCadastro>
+      <ImagemEvento></ImagemEvento>
+      <VisibilidadeEvento></VisibilidadeEvento>
     </BrowserRouter>
+    
     
   );
 }

@@ -1,0 +1,63 @@
+.conteudo-imagem-evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-imagem-evento,
+.texto-imagem-evento {
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-imagem-evento {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.texto-imagem-evento {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.miniatura-maior-imagem-evento {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.miniatura-maior-imagem-evento img {
+    width: 800px;
+    height: auto;
+}
+
+.miniaturas-menores-imagem-eventos {
+    display: flex;
+    justify-content: center;
+}
+
+.miniaturas-menores-imagem-eventos img {
+    max-width: 124px;
+    height: auto;
+    margin: auto 5px;
+}
+
+.btn-imagem-eventos {
+    display: flex;
+    flex-direction: row;
+    width: 58%;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.btn-imagem-eventos a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor-laranja);
+}
+

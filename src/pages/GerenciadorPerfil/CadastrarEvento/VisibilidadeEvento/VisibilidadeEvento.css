@@ -1,0 +1,70 @@
+.conteudo-visibilidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc; 
+    padding: 20px;
+    width: fit-content; 
+    margin: 0 auto; 
+}
+
+.titulo-visibilidade, .texto-visibilidade {
+    text-align: center; 
+    margin-bottom: 10px; 
+    font-size: 25px;
+}
+
+.texto-visibilidade {
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 18px;
+}
+.opcoes-privacidade {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.opcao.ativo {
+    font-weight: bold; 
+}
+
+.bolinha {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    margin-right: 10px;
+}
+
+.bolinha.ativo {
+    background-color: #00ff00; 
+    border-color: #00ff00; 
+}
+
+.texto-visibilidade-descricao {
+    font-size: px; 
+    color: #666; 
+    margin-left: 5px; 
+}
+
+.btn-visibilidade {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 20px; 
+    width: 100%; 
+}
+
+.btn-visibilidade a {
+    text-decoration: none;
+    color: var(--cor-laranja);
+}
