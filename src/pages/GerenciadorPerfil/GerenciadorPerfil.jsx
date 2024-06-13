@@ -17,9 +17,9 @@ export default function GerenciadorPerfil() {
             <ImagemEvento></ImagemEvento>
             <InicioCadastro></InicioCadastro>
             <VisibilidadeEvento></VisibilidadeEvento>
-            <ProgramaçãoEvento></ProgramaçãoEvento>
-            <Localização></Localização>
-            <Detalhes></Detalhes>
+            {/* <ProgramaçãoEvento></ProgramaçãoEvento> */}
+            {/* <Localização></Localização> */}
+            {/* <Detalhes></Detalhes> */}
             <EditarPerfilOrganizador></EditarPerfilOrganizador>
         </div>
     );

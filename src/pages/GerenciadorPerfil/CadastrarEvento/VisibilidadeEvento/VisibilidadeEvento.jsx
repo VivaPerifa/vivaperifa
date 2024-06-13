@@ -39,7 +39,7 @@ export default function VisibilidadeEvento() {
                                 handleChangePrivacidade={handleChangePrivacidade}
                             />
                             <OpcaoPrivacidade
-                                tipo="Publico"
+                                tipo="Público"
                                 descricao="Seu evento estará disponível para todos"
                                 privacidade={privacidade}
                                 handleChangePrivacidade={handleChangePrivacidade}
