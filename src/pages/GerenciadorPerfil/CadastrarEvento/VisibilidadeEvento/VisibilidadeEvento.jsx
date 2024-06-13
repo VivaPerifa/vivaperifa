@@ -46,19 +46,19 @@ export default function VisibilidadeEvento() {
                             />
                         </div>
                     </div>
-
-                    <div className="btn-visibilidade">
-                        <a href='#'><h4>Voltar</h4></a>
-                        <Botao
-                            legenda="Avançar"
-                            gradiente="var(--cor-laranja)"
-                            bordaRaio="10px"
-                            grossuraBorda="50px"
-                            espacamento="10px"
-                            largura="100%"
-                        />
-                    </div>
                 </div>
+                <div className="btn-visibilidade">
+                    <a href='#'><h4>Voltar</h4></a>
+                    <Botao
+                        legenda="Avançar"
+                        gradiente="var(--cor-laranja)"
+                        bordaRaio="10px"
+                        grossuraBorda="50px"
+                        espacamento="10px"
+                        largura="100%"
+                    />
+                </div>
+
             </div>
         </div>
     );

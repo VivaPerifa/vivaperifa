@@ -8,7 +8,7 @@ export default function Detalhes() {
             <div className="detalhes-evento">
                 <h2>Detalhes</h2>
 
-                <h4>Um título chamativo pode ajudar a atrair a atenção do seu público. Ao criar o título e a descrição do seu evento, inclua palavras-chave que seu público provavelmente usaria para procurar pelo seu conteúdo. Adicione as categorias em que seu evento se encaixa para alcançar seu público-alvo.</h4>
+                <p>Um título chamativo pode ajudar a atrair a atenção do seu público. Ao criar o título e a descrição do seu evento, inclua palavras-chave que seu público provavelmente usaria para procurar pelo seu conteúdo. Adicione as categorias em que seu evento se encaixa para alcançar seu público-alvo.</p>
 
                 <CampoForm id='nome-evento-detalhes' tipo='text' legenda='Escreva o nome do seu evento' tamanhoCampo='100%' tituloForm="Nome do evento" />
 

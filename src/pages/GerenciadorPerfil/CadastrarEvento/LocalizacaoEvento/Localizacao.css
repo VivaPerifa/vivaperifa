@@ -15,7 +15,7 @@
  font-size: 40px;
 }
 
-.local-evento h4{
+.local-evento p{
     font-size: 18px;
 }
 
@@ -43,3 +43,4 @@
 .teste-laranja{
     color: var(--cor-laranja)
 }
+

@@ -9,7 +9,7 @@ export default function ProgramaçãoEvento() {
             <div className="prog-evento">
                 <h2>Programação</h2>
 
-                <h4>Adicione a programação do seu evento, quanto mais precisos forem os dados da sua programação, mais confiança o seu público terá em você.</h4>
+                <p>Adicione a programação do seu evento, quanto mais precisos forem os dados da sua programação, mais confiança o seu público terá em você.</p>
 
                 <div className="form-img-prog-evento">
                     <div className="form-prog-evento">

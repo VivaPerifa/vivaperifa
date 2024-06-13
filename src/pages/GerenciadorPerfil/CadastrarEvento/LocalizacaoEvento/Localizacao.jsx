@@ -9,7 +9,7 @@ export default function Localização() {
             <div className="local-evento">
                 <h2>Localização do evento</h2>
 
-                <h4>Adicione a localização do seu evento, essa informação é importante para que os participantes possam encontrá-lo. Seu evento será indexado na plataforma de acordo com a localização.</h4>
+                <p>Adicione a localização do seu evento, essa informação é importante para que os participantes possam encontrá-lo. Seu evento será indexado na plataforma de acordo com a localização.</p>
 
                 <div className="local-form">
                     <CampoForm id='rua-local' tipo='text' legenda='' tamanhoCampo='100%' tituloForm="Rua" />
@@ -31,7 +31,7 @@ export default function Localização() {
 
                 <h4 className='teste-laranja'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
 
-                <Mapa></Mapa>
+                <Mapa tamanhoMapa='100%'></Mapa>
 
                 <div className="btn-local">
                     <a href='#'><h4>Voltar</h4></a>

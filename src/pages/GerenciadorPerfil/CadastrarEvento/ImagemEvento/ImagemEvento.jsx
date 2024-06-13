@@ -11,41 +11,43 @@ import '../../CadastrarEvento/ImagemEvento/ImagemEvento.css';
 
 export default function ImagemEvento() {
     return (
-        <div className="conteudo-imagem-evento">
-            <div className="title-imagem-evento">
-                <h1 className='title-imagem-evento'>Miniatura</h1>
-            </div>
-            <div className="texto-imagem-evento">
-                <p className='texto-imagem-evento'>Selecione ou faça upload de uma imagem que mostre o que há no seu evento. Uma boa miniatura se destaca e chama a atenção público. Você também pode selecionar alguns templates prontos feitos especialmente para você!</p>
-            </div>
-            <div className="miniatura-maior-imagem-evento">
-                <figure>
-                    <img src={miniaturaMaior} alt="" />
-                </figure>
-            </div>
-            <div className="miniaturas-menores-imagem-eventos">
-                <figure>
-                    <img src={miniatura1} alt="" />
-                    <img src={miniatura2} alt="" />
-                    <img src={miniatura3} alt="" />
-                    <img src={miniatura4} alt="" />
-                    <img src={miniatura5} alt="" />
-                    <img src={miniatura6} alt="" />
-                </figure>
-            </div>
+        <div className="container-imagem-evento">
+            <div className="conteudo-imagem-evento">
+                <div className="title-imagem-evento">
+                    <h1 className='title-imagem-evento'>Miniatura</h1>
+                </div>
+                <div className="texto-imagem-evento">
+                    <p className='texto-imagem-evento'>Selecione ou faça upload de uma imagem que mostre o que há no seu evento. Uma boa miniatura se destaca e chama a atenção público. Você também pode selecionar alguns templates prontos feitos especialmente para você!</p>
+                </div>
+                <div className="miniatura-maior-imagem-evento">
+                    <figure>
+                        <img src={miniaturaMaior} alt="" />
+                    </figure>
+                </div>
+                <div className="miniaturas-menores-imagem-eventos">
+                    <figure>
+                        <img src={miniatura1} alt="" />
+                        <img src={miniatura2} alt="" />
+                        <img src={miniatura3} alt="" />
+                        <img src={miniatura4} alt="" />
+                        <img src={miniatura5} alt="" />
+                        <img src={miniatura6} alt="" />
+                    </figure>
+                </div>
 
-            <div className="btn-imagem-eventos">
-                <a href='#'><h4>Cancelar</h4></a>
-                <Botao
-                    legenda="Avançar"
-                    gradiente="var(--cor-laranja)"
-                    bordaRaio="10px"
-                    grossuraBorda="50px"
-                    espacamento="10px"
-                    largura="100%"
-                />
-            </div>
+                <div className="btn-imagem-eventos">
+                    <a href='#'><h4>Cancelar</h4></a>
+                    <Botao
+                        legenda="Avançar"
+                        gradiente="var(--cor-laranja)"
+                        bordaRaio="10px"
+                        grossuraBorda="50px"
+                        espacamento="10px"
+                        largura="100%"
+                    />
+                </div>
 
+            </div>
         </div>
     );
 }

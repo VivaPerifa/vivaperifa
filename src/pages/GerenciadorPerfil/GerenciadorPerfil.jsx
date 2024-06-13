@@ -7,18 +7,20 @@ import Localização from './CadastrarEvento/LocalizacaoEvento/Localizacao';
 import ProgramaçãoEvento from "./CadastrarEvento/ProgramacaoEvento/ProgramacaoEvento";
 import InicioCadastro from "./CadastrarEvento/InicioCadastro/InicioCadastro";
 import VisibilidadeEvento from './CadastrarEvento/VisibilidadeEvento/VisibilidadeEvento';
+import ImagemEvento from './CadastrarEvento/ImagemEvento/ImagemEvento'
 
 export default function GerenciadorPerfil() {
     return (
         <div className="gerenciar-perfil">
             {/* <CadastrarEvento></CadastrarEvento> */}
             <MenuLateralPerfil></MenuLateralPerfil>
-            {/* <InicioCadastro></InicioCadastro> */}
+            <ImagemEvento></ImagemEvento>
+            <InicioCadastro></InicioCadastro>
             <VisibilidadeEvento></VisibilidadeEvento>
-            {/* <ProgramaçãoEvento></ProgramaçãoEvento> */}
-            {/* <Localização></Localização> */}
-            {/* <Detalhes></Detalhes> */}
-            {/* <EditarPerfilOrganizador></EditarPerfilOrganizador> */}
+            <ProgramaçãoEvento></ProgramaçãoEvento>
+            <Localização></Localização>
+            <Detalhes></Detalhes>
+            <EditarPerfilOrganizador></EditarPerfilOrganizador>
         </div>
     );
 }

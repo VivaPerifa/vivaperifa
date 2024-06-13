@@ -14,7 +14,7 @@ export default function EditarPerfilOrganizador() {
                     <div className="info-perfil">
                         <h2>Dados do Perfil</h2>
 
-                        <h4>Esses dados ficarão disponíveis para todos os usuários, são informações públicas.</h4>
+                        <p>Esses dados ficarão disponíveis para todos os usuários, são informações públicas.</p>
 
                         <CampoForm id='nome-user-editar' tipo='text' legenda='Digite o nome de usuário' tamanhoCampo='100%' tituloForm="Nome de usuário" />
 
@@ -22,7 +22,7 @@ export default function EditarPerfilOrganizador() {
 
                         <h2>Redes Sociais</h2>
 
-                        <h4>Adicione as suas redes sociais se quiser, elas ficarão disponíveis para o público no seu perfil.</h4>
+                        <p>Adicione as suas redes sociais se quiser, elas ficarão disponíveis para o público no seu perfil.</p>
 
                         <CampoForm id='x-editar' tipo='text' legenda='Digite o @ da sua rede social' tamanhoCampo='100%' tituloForm="X" />
 
@@ -32,7 +32,7 @@ export default function EditarPerfilOrganizador() {
 
                         <h2>Dados de acesso</h2>
 
-                        <h4>Seus dados de acesso são necessárias para possibilitar o acesso a sua conta, essas informações não estarão visíveis no seu perfil.</h4>
+                        <p>Seus dados de acesso são necessárias para possibilitar o acesso a sua conta, essas informações não estarão visíveis no seu perfil.</p>
 
                         <CampoForm id='email-editar' tipo='text' legenda='Digite o seu melhor e-mail' tamanhoCampo='100%' tituloForm="E-mail" />
 
@@ -40,7 +40,7 @@ export default function EditarPerfilOrganizador() {
 
                         <h2>Dados pessoais</h2>
 
-                        <h4>Adicione as informações da sua empresa, para que possamos valida-lo como organizador de eventos. Os seus dados pessoais não estarão disponíveis no seu perfil.</h4>
+                        <p>Adicione as informações da sua empresa, para que possamos valida-lo como organizador de eventos. Os seus dados pessoais não estarão disponíveis no seu perfil.</p>
 
                         <CampoForm id='org-editar' tipo='text' legenda='Digite o nome da organização' tamanhoCampo='100%' tituloForm="Nome da Organização" />
 

@@ -3,3 +3,21 @@
     flex-direction: column;
     gap: 50px;
 }
+
+.mapa-home{
+    width: var(--tamanho-container);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mapa-home h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 40%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

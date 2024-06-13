@@ -19,6 +19,7 @@
     border: 2px solid #ccc;
     padding: 20px;
     width: fit-content;
+    border-radius: 10px;
 }
 
 .title-visibilidade,
@@ -71,13 +72,16 @@
 
 .btn-visibilidade {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    flex-direction: row;
     width: 100%;
+    gap: 25px;
+    justify-content: flex-end;
+    padding: 20px 0;
 }
 
 .btn-visibilidade a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: var(--cor-laranja);
 }

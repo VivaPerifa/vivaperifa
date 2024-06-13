@@ -1,7 +1,14 @@
+.container-imagem-evento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
 .conteudo-imagem-evento {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .title-imagem-evento,
