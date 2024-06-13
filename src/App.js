@@ -21,6 +21,7 @@ import MenuLateralPerfil from './pages/GerenciadorPerfil/MenuLateralPerfil/MenuL
 import DetalheEvento from './pages/DetalheEvento/DetalheEvento';
 import Xamuel from './assets/evento_6.png';
 import Comentario from '../../vivaperifa/src/components/Comentario/Comentario';
+import PerfilParticipante from './pages/PerfilParticipante/PerfilParticipante';
 
 function App() {
   // const [user, setUser] = useState();
@@ -60,6 +61,7 @@ function App() {
             descricaoEvento="descricao"
         />
         <Comentario></Comentario>
+        <PerfilParticipante></PerfilParticipante>
       </div>
       <Footer></Footer>
       {/* <MenuLateralPerfil></MenuLateralPerfil> */}
