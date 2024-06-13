@@ -65,9 +65,9 @@ export default function VisibilidadeEvento() {
 function OpcaoPrivacidade({ tipo, descricao, privacidade, handleChangePrivacidade }) {
     return (
         <div className="opcao" onClick={() => handleChangePrivacidade(tipo)}>
-            <div>
+            <div className="tipo-container">
                 <span className={`bolinha ${privacidade === tipo ? 'ativo' : ''}`}></span>
-                {tipo.charAt(0).toUpperCase() + tipo.slice(1)} {/* Transforma a primeira letra em maiúscula */}
+                <span className="tipo">{tipo.charAt(0).toUpperCase() + tipo.slice(1)}</span>
             </div>
             <div className="texto-visibilidade-descricao">
                 {descricao}
