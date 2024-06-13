@@ -1,0 +1,45 @@
+.container-local {
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.local-evento {
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.local-evento h2{
+ font-size: 40px;
+}
+
+.local-evento h4{
+    font-size: 18px;
+}
+
+.local-form{
+    display: flex;
+    gap: 150px;
+}
+
+.btn-local {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 25px;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.btn-local a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor-laranja);
+}
+
+.teste-laranja{
+    color: var(--cor-laranja)
+}

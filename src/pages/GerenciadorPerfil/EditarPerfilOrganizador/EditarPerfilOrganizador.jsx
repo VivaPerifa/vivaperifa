@@ -1,6 +1,6 @@
 import './EditarPerfilOrganizador.css'
-import CampoForm from '../../components/CampoForm/CampoForm';
-import Botao from '../../components/Botao/Botao';
+import CampoForm from '../../../components/CampoForm/CampoForm';
+import Botao from '../../../components/Botao/Botao';
 
 export default function EditarPerfilOrganizador() {
     return (

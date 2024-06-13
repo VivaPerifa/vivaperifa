@@ -39,7 +39,7 @@ export default function Footer() {
 
                             <a href='https://www.instagram.com/viva_perifa/' target='new'><img src={Instagram} /></a>
 
-                            <a href='https://github.com/VivaPerifa' target='new'><img src={TikTok} /></a>
+                            <a href='https://www.tiktok.com/@vivaperifa1?_t=8n9iKgga2mT&_r=1' target='new'><img src={TikTok} /></a>
 
                             <a href='https://x.com/VivaPerifa' target='new'><img src={Twitter} /></a>
 

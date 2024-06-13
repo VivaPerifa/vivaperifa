@@ -20,6 +20,8 @@ import ImagemEvento from './pages/GerenciadorPerfil/CadastrarEvento/ImagemEvento
 import MenuLateralPerfil from './pages/GerenciadorPerfil/MenuLateralPerfil/MenuLateralPerfil';
 import DetalheEvento from './pages/DetalheEvento/DetalheEvento';
 import Xamuel from './assets/evento_6.png';
+// import Comentario from './components/Comentario/Comentario';
+import PerfilParticipante from './pages/PerfilParticipante/PerfilParticipante';
 
 function App() {
   // const [user, setUser] = useState();
@@ -58,7 +60,7 @@ function App() {
             tituloEvento="titulo"
             descricaoEvento="descricao"
         />
-        <Comentario></Comentario>
+        {/* <Comentario></Comentario> */}
         <PerfilParticipante></PerfilParticipante>
       </div>
       <Footer></Footer>

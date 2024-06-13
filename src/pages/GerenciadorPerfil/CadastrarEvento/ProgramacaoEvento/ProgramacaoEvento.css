@@ -1,0 +1,55 @@
+.container-prog-evento {
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.prog-evento {
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.prog-evento h2{
+ font-size: 40px;
+}
+
+.prog-evento h4{
+    font-size: 18px;
+}
+
+.prog-evento img{
+    width: 30%;
+}
+
+.form-img-prog-evento{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-prog-evento{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-prog-evento h4{
+    color: var(--cor-azul);
+}
+
+.btn-prog-evento {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 25px;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.btn-prog-evento a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor-laranja);
+}
