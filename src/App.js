@@ -20,6 +20,7 @@ import ImagemEvento from './pages/GerenciadorPerfil/CadastrarEvento/ImagemEvento
 import MenuLateralPerfil from './pages/GerenciadorPerfil/MenuLateralPerfil/MenuLateralPerfil';
 import DetalheEvento from './pages/DetalheEvento/DetalheEvento';
 import Xamuel from './assets/evento_6.png';
+import Comentario from '../../vivaperifa/src/components/Comentario/Comentario';
 
 function App() {
   // const [user, setUser] = useState();
@@ -58,6 +59,7 @@ function App() {
             tituloEvento="titulo"
             descricaoEvento="descricao"
         />
+        <Comentario></Comentario>
       </div>
       <Footer></Footer>
       {/* <MenuLateralPerfil></MenuLateralPerfil> */}

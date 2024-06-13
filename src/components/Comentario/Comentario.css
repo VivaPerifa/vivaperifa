@@ -1,0 +1,43 @@
+.container-comentario{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.nome-comentario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto-comentario{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.nomeUsuario--notaUsuario{
+    display: flex;
+    gap: 10px;
+}
+
+.conteudo-comentario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.post-comentario{
+    display: flex;
+    text-align: start;
+    margin: auto;
+    gap: 40px;
+}
+
+.like-resposta-comentario{
+    display: flex;
+    gap: 30px;
+
+}
