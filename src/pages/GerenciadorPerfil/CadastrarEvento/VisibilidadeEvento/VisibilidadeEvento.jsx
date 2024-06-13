@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Botao from '../../../../components/Botao/Botao';
-import './VisibilidadeEvento.css'; // Importe o arquivo CSS onde colocaremos os estilos
+import './VisibilidadeEvento.css'; 
 
 export default function VisibilidadeEvento() {
     const [privacidade, setPrivacidade] = useState('publico');
