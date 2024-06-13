@@ -55,6 +55,8 @@ function App() {
         </Routes>
         <DetalheEvento
             imagemDetalheEvento={Xamuel}
+            tituloEvento="titulo"
+            descricaoEvento="descricao"
         />
       </div>
       <Footer></Footer>
