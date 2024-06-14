@@ -8,6 +8,7 @@ import DisclaimerImpulsionarEvento from "../../components/DisclaimerImpulsionarE
 import ContainerDepoimentos from '../../components/ContainerDepoimentos/ContainerDepoimento';
 import DisclaimerCookies from '../../components/DisclaimerCookies/DisclaimerCookies';
 import DisclaimerDivulgueSeuEvento from "../../components/DisclaimerDivulgueSeuEvento/DisclaimerDivulgueSeuEvento";
+import { useTranslation } from 'react-i18next';
 
 import Evento1 from "../../assets/evento_1.png";
 import Evento2 from "../../assets/evento_2.png";
@@ -26,30 +27,32 @@ import Mapa from '../../components/Mapa/Mapa';
 
 
 export default function Home() {
+    const { t } = useTranslation();
+
     const primeiraListaEvento = [
         {
             id: 1,
             imagem: Evento10,
-            titulo: "Tenda de História",
-            data: "Sábado, dia 29/04 às 9h - 12h",
-            local: "Guaianases",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            titulo: t("event.tenda_de_historia"),
+            data: t("event.date_format", { date: "29/04", time_start: "9h", time_end: "12h" }),
+            local: t("event.location_format", { location: "Guaianases" }),
+            descricao: t("event.description"),
         },
         {
             id: 2,
             imagem: Evento5,
-            titulo: "Literatura",
-            data: "Sábado, dia 20/04 às 09h - 12h",
-            local: "Cidade Tiradentes",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            titulo: t("event.literatura"),
+            data: t("event.date_format", { date: "20/04", time_start: "9h", time_end: "12h" }),
+            local: t("event.location_format", { location: "Cidade Tiradentes" }),
+            descricao: t("event.description"),
         },
         {
             id: 3,
             imagem: Evento8,
-            titulo: "Batalha de Rima",
-            data: "Sábado, dia 20/04 às 09h - 12h",
-            local: "Itaquera",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            titulo: t("event.batalha_de_rima"),
+            data: t("event.date_format", { date: "20/04", time_start: "9h", time_end: "12h" }),
+            local: t("event.location_format", { location: "Itaquera" }),
+            descricao: t("event.description"),
         }
     ];
 
@@ -57,60 +60,53 @@ export default function Home() {
         {
             id: 1,
             imagem: Evento9,
-            titulo: "Tenda de História",
-            data: "Sábado, dia 29/04 às 9h - 12h",
-            local: "Guaianases",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            titulo: t("event.tenda_de_historia"),
+            data: t("event.date_format", { date: "29/04", time_start: "9h", time_end: "12h" }),
+            local: t("event.location_format", { location: "Guaianases" }),
+            descricao: t("event.description"),
         },
         {
             id: 2,
             imagem: Evento6,
-            titulo: "Literatura",
-            data: "Sábado, dia 20/04 às 09h - 12h",
-            local: "Cidade Tiradentes",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            titulo: t("event.literatura"),
+            data: t("event.date_format", { date: "20/04", time_start: "9h", time_end: "12h" }),
+            local: t("event.location_format", { location: "Cidade Tiradentes" }),
+            descricao: t("event.description"),
         },
         {
             id: 3,
             imagem: Evento7,
-            titulo: "Batalha de Rima",
-            data: "Sábado, dia 20/04 às 09h - 12h",
-            local: "Itaquera",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            titulo: t("event.batalha_de_rima"),
+            data: t("event.date_format", { date: "20/04", time_start: "9h", time_end: "12h" }),
+            local: t("event.location_format", { location: "Itaquera" }),
+            descricao: t("event.description"),
         }
     ];
 
     return (
         <div className="container-homepage">
-            <Header
-                tipoCabecalho="home"
-            />
+            <Header tipoCabecalho="home" />
 
             <CarrosselEvento
-                tituloCarrossel="acontece em são paulo"
+                tituloCarrossel={t("home.acontece_em_sao_paulo")}
                 listaEvento={primeiraListaEvento}
             />
             <CarrosselEvento
-                tituloCarrossel="adicionados recentemente"
+                tituloCarrossel={t("home.adicionados_recentemente")}
                 listaEvento={segundaListaEvento}
             />
 
             <div className="mapa-home">
-                <h2>Encontre os eventos no mapa</h2>
-                <Mapa tamanhoMapa='100%'></Mapa>
+                <h2>{t("home.encontre_eventos_no_mapa")}</h2>
+                <Mapa tamanhoMapa='100%' />
             </div>
 
-            <BannerCrescimento></BannerCrescimento>
-
-            <DisclaimerDivulgueSeuEvento></DisclaimerDivulgueSeuEvento>
-
-            <DisclaimerImpulsionarEvento></DisclaimerImpulsionarEvento>
-
-            <ContainerPlanos></ContainerPlanos>
-
-            <ContainerDepoimentos></ContainerDepoimentos>
-
-            <DisclaimerCookies></DisclaimerCookies>
+            <BannerCrescimento />
+            <DisclaimerDivulgueSeuEvento />
+            <DisclaimerImpulsionarEvento />
+            <ContainerPlanos />
+            <ContainerDepoimentos />
+            <DisclaimerCookies />
         </div>
     );
 }

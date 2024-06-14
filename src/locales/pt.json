@@ -1,0 +1,24 @@
+{
+    "menu": {
+      "home": "Home",
+      "explorar": "Explorar",
+      "comunidade": "Comunidade",
+      "sobre-nos": "Sobre Nós",
+      "contato": "Contato",
+      "gerenciador-perfil": "Gerenciador de Perfil",
+      "campo-pesquisa": "Pesquisar evento por artista, categoria, local..."
+    },
+    "home": {
+      "acontece_em_sao_paulo": "Acontece em São Paulo",
+      "adicionados_recentemente": "Adicionados Recentemente",
+      "encontre_eventos_no_mapa": "Encontre os eventos no mapa"
+    },
+    "event": {
+      "tenda_de_historia": "Tenda de História",
+      "literatura": "Literatura",
+      "batalha_de_rima": "Batalha de Rima",
+      "date_format": "Sábado, {date} das {time_start} às {time_end}",
+      "location_format": "{location}",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada..."
+    }
+  }

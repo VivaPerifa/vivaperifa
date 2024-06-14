@@ -9,6 +9,8 @@ import Contato from './pages/Contato/Contato';
 import Cadastro from './pages/CadastroOrganizador/CadastroOrganizador'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import "./i18n";
 import api from  './services/api';
 import CadastroOrganizador from './pages/CadastroOrganizador/CadastroOrganizador';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -24,8 +26,14 @@ import Xamuel from './assets/evento_6.png';
 import PerfilParticipante from './pages/PerfilParticipante/PerfilParticipante';
 import VisibilidadeEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisibilidadeEvento/VisibilidadeEvento';
 import imagem from './pages/GerenciadorPerfil/CadastrarEvento/InicioCadastro/InicioCadastro.jsx';
+import Tradutor from './components/Tradutor/tradutor';
+import BotaoTopo from './components/BotaoTopo/BotaoTopo';
 
 function App() {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  }
   // const [user, setUser] = useState();
 
   // useEffect(() => {
@@ -44,6 +52,7 @@ function App() {
         {/* <div>
           <p>Usuário: {user?.nomeCompleto}</p>
         </div> */}
+        <Tradutor changeLanguage={changeLanguage} />  {/* Botão de Tradução */}
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/home' element={<Home/>} />
@@ -53,7 +62,7 @@ function App() {
           <Route path='/contato' element={<Contato/>} />
           <Route path='/login' element={<CadastroOrganizador />}/>
           <Route path='/detalhes' element={<Detalhes />}/>
-          
+      
           <Route path='/gerenciador-perfil' element={<GerenciadorPerfil />}></Route>
           <Route path='/imagem-evento' element={<ImagemEvento />}></Route>
         </Routes>
@@ -65,6 +74,7 @@ function App() {
         {/* <Comentario></Comentario> */}
         <PerfilParticipante></PerfilParticipante>
       </div>
+      <BotaoTopo/>
       <Footer></Footer>
       <MenuLateralPerfil></MenuLateralPerfil>
       <VisibilidadeEvento></VisibilidadeEvento>
