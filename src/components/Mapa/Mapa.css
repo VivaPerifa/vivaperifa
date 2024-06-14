@@ -1,5 +1,10 @@
-.container-mapa{
-    width: var(--tamanho-container);
+.container-mapa {
     margin: 0 auto;
     border-radius: 30px;
+}
+
+.leaflet-container, .leaflet-touch, .leaflet-fade-anim, .leaflet-grab, .leaflet-touch-drag, .leaflet-touch-zoom{
+    border: 2px solid white;
+    box-shadow: 0 0 20px 1px gray;
+    border-radius: 10px;
 }

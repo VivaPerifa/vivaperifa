@@ -1,0 +1,45 @@
+.container-inicio-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 300px;
+}
+
+.conteudo-inicio-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.conteudo-inicio-cadastro figure {
+    margin: 0;
+}
+
+.conteudo-inicio-cadastro img {
+    max-width: 100%;
+    height: auto;
+}
+
+.texto-cadastro-evento {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.botao-cadastro {
+    background: linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.botao-cadastro .link-cadastro {
+    text-decoration: none;
+    color: white;
+}
+

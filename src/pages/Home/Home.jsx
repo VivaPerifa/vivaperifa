@@ -81,9 +81,12 @@ export default function Home() {
                 listaEvento={primeiraListaEvento}
             />
 
-            <BannerCrescimento></BannerCrescimento>
+            <div className="mapa-home">
+                <h2>Encontre os eventos no mapa</h2>
+                <Mapa tamanhoMapa='100%'></Mapa>
+            </div>
 
-            <Mapa></Mapa>
+            <BannerCrescimento></BannerCrescimento>
 
             <DisclaimerDivulgueSeuEvento></DisclaimerDivulgueSeuEvento>
 

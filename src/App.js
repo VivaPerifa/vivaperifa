@@ -1,6 +1,7 @@
 import './App.css';
 import SobreNos from './pages/SobreNos/SobreNos';
 import Footer from './static/Footer/Footer';
+import Menu from './static/Header/Menu/Menu';
 import Home from './pages/Home/Home';
 import Explorar from './pages/Explorar/Explorar';
 import Comunidade from './pages/Comunidade/Comunidade';
@@ -18,6 +19,10 @@ import ImagemEvento from './pages/GerenciadorPerfil/CadastrarEvento/ImagemEvento
 import MenuLateralPerfil from './pages/GerenciadorPerfil/MenuLateralPerfil/MenuLateralPerfil';
 import DetalheEvento from './pages/DetalheEvento/DetalheEvento';
 import Xamuel from './assets/evento_6.png';
+// import Comentario from './components/Comentario/Comentario';
+import PerfilParticipante from './pages/PerfilParticipante/PerfilParticipante';
+import VisibilidadeEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisibilidadeEvento/VisibilidadeEvento';
+import imagem from './pages/GerenciadorPerfil/CadastrarEvento/InicioCadastro/InicioCadastro.jsx';
 
 function App() {
   
@@ -39,12 +44,19 @@ function App() {
         </Routes>
         <DetalheEvento
             imagemDetalheEvento={Xamuel}
+            tituloEvento="titulo"
+            descricaoEvento="descricao"
         />
+        {/* <Comentario></Comentario> */}
+        <PerfilParticipante></PerfilParticipante>
         
       </div>
       <Footer></Footer>
       <MenuLateralPerfil></MenuLateralPerfil>
+      <VisibilidadeEvento></VisibilidadeEvento>
+      <InicioCadastro></InicioCadastro>
     </BrowserRouter>
+    
     
   );
 }

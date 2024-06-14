@@ -28,7 +28,7 @@ const ChangeView = ({ center, zoom }) => {
   return null;
 };
 
-const Mapa = () => {
+const Mapa = (props) => {
   const [markers, setMarkers] = useState([]);
   const [locationFilter, setLocationFilter] = useState('all');
   const [eventFilter, setEventFilter] = useState('all');
@@ -94,7 +94,7 @@ const Mapa = () => {
   };
 
   return (
-    <div className='container-mapa'>
+    <div className='container-mapa' style={{width:props.tamanhoMapa}}>
       <MapContainer center={mapCenter} zoom={mapZoom} style={{ height: '600px' }}>
         {/* tileLayer e ChangeView permanecem inalterados */}
         <TileLayer
@@ -113,35 +113,7 @@ const Mapa = () => {
           />
         )}
       </MapContainer>
-      <div style={{ marginTop: '10px' }}>
-        <label>Filtrar por Zona: </label>
-        <select onChange={handleLocationFilterChange}>
-          <option value="all">Todas</option>
-          <option value="norte">Zona Norte</option>
-          <option value="sul">Zona Sul</option>
-          <option value="leste">Zona Leste</option>
-          <option value="oeste">Zona Oeste</option>
-        </select>
-        <label> Filtrar por Evento: </label>
-        <select onChange={handleEventFilterChange}>
-          <option value="all">Todos</option>
-          <option value="theatre">Teatros</option>
-          <option value="arts_centre">Centros Culturais</option>
-          <option value="sports">Esportes</option>
-          <option value="battle_rap">Batalhas de Rima</option>
-        </select>
-      </div>
-      <div style={{ marginTop: '10px' }}>
-        <form onSubmit={handleSearchSubmit}>
-          <input
-            type="text"
-            value={searchAddress}
-            onChange={(e) => setSearchAddress(e.target.value)}
-            placeholder="Digite um endereço"
-          />
-          <button type="submit">Pesquisar</button>
-        </form>
-      </div>
+      
     </div>
   );
 };

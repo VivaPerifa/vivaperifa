@@ -33,7 +33,6 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-transform: capitalize;
 }
 
 .header-carrossel span{
