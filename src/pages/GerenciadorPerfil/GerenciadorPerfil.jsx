@@ -8,7 +8,6 @@ import ProgramaçãoEvento from "./CadastrarEvento/ProgramacaoEvento/Programacao
 import InicioCadastro from "./CadastrarEvento/InicioCadastro/InicioCadastro";
 import VisibilidadeEvento from './CadastrarEvento/VisibilidadeEvento/VisibilidadeEvento';
 import ImagemEvento from './CadastrarEvento/ImagemEvento/ImagemEvento'
-
 export default function GerenciadorPerfil() {
     return (
         <div className="gerenciar-perfil">
