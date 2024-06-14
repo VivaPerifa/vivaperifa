@@ -7,6 +7,7 @@ import LocalizacaoEvento from './CadastrarEvento/LocalizacaoEvento/LocalizacaoEv
 import ProgramacaoEvento from "./CadastrarEvento/ProgramacaoEvento/ProgramacaoEvento";
 import InicioCadastro from "./CadastrarEvento/InicioCadastro/InicioCadastro";
 import VisibilidadeEvento from './CadastrarEvento/VisibilidadeEvento/VisibilidadeEvento';
+import ImagemEvento from './CadastrarEvento/ImagemEvento/ImagemEvento'
 import ImagemEvento from './CadastrarEvento/ImagemEvento/ImagemEvento';
 import './GerenciadorPerfil.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
