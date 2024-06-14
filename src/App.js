@@ -9,6 +9,8 @@ import Contato from './pages/Contato/Contato';
 import Cadastro from './pages/CadastroOrganizador/CadastroOrganizador'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import "./i18n";
 import CadastroOrganizador from './pages/CadastroOrganizador/CadastroOrganizador';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Mapa from './components/Mapa/Mapa';
@@ -27,12 +29,19 @@ import InicioCadastro from './pages/GerenciadorPerfil/CadastrarEvento/InicioCada
 import ProgramacaoEvento from './pages/GerenciadorPerfil/CadastrarEvento/ProgramacaoEvento/ProgramacaoEvento.jsx';
 import LocalizacaoEvento from './pages/GerenciadorPerfil/CadastrarEvento/LocalizacaoEvento/LocalizacaoEvento.jsx';
 import CadastrarEvento from './pages/GerenciadorPerfil/CadastrarEvento/CadastrarEvento.jsx';
+import Tradutor from './components/Tradutor/tradutor';
+import BotaoTopo from './components/BotaoTopo/BotaoTopo';
 
 function App() {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  }
   
   return (
     <BrowserRouter>
       <div>
+        <Tradutor changeLanguage={changeLanguage} />  {/* Botão de Tradução */}
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/home' element={<Home/>} />
@@ -50,6 +59,7 @@ function App() {
           <Route path='/visibilidade-evento' element={<VisibilidadeEvento />}></Route>
         </Routes>
       </div>
+      <BotaoTopo/>
     </BrowserRouter>
   );
 }

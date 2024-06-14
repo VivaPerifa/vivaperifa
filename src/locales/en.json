@@ -1,0 +1,24 @@
+{
+    "menu": {
+      "home": "Home",
+      "explorar": "Explore",
+      "comunidade": "Community",
+      "sobre-nos": "About Us",
+      "contato": "Contact",
+      "gerenciador-perfil": "Profile Manager",
+      "campo-pesquisa": "Search event by artist, category, location..."
+    },
+    "home": {
+      "acontece_em_sao_paulo": "Happening in São Paulo",
+      "adicionados_recentemente": "Recently Added",
+      "encontre_eventos_no_mapa": "Find events on the map"
+    },
+    "event": {
+      "tenda_de_historia": "StoryTelling",
+      "literatura": "Literature",
+      "batalha_de_rima": "Rap Battle",
+      "date_format": "Saturday, {date} from {time_start} to {time_end}",
+      "location_format": "{location}",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada..."
+    }
+  }
