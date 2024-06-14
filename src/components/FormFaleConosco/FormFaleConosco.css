@@ -82,11 +82,11 @@
 .icones-contato{
     display: flex;
     margin-top: 50px;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 
-.linktree, .email, .telefone{
+.linktree, .email{
     display: flex;
     gap: 20px;
 }
