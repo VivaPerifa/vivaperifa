@@ -41,7 +41,7 @@ export default function FormFaleConosco() {
 
                                 <CampoForm id='mensagem' tipo='text' legenda='Mensagem' tamanhoCampo='40vw' />
 
-                                <Botao espacamento='10px' corFundo="#F28705" legenda='Enviar' tamanhoFonte='1.5rem' largura='40vw' bordaRaio='20px' />
+                                <Botao espacamento='10px' corFundo="var(--cor-laranja)" legenda='Enviar' tamanhoFonte='1.5rem' largura='40vw' bordaRaio='20px' />
                             </form>
                         </div>
                     </div>
@@ -61,14 +61,6 @@ export default function FormFaleConosco() {
                             <div className='link'>
                                 <span className='bold-icon'>EMAIL</span>
                                 <span className='gradient-icon'>contatovivaperifa@gmail.com</span>
-                            </div>
-                        </div>
-
-                        <div className='telefone'>
-                            <FiPhoneCall style={{ width: '2rem', height: '2rem' }} />
-                            <div className='link'>
-                                <span className='bold-icon'>TELEFONE</span>
-                                <span className='gradient-icon'>11 95830 0920</span>
                             </div>
                         </div>
 

@@ -1,9 +1,9 @@
-import './Localizacao.css';
+import './LocalizacaoEvento.css';
 import CampoForm from '../../../../components/CampoForm/CampoForm';
 import Botao from '../../../../components/Botao/Botao';
 import Mapa from '../../../../components/Mapa/Mapa'
 
-export default function Localização() {
+export default function LocalizacaoEvento() {
     return (
         <div className="container-local">
             <div className="local-evento">

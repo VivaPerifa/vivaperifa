@@ -1,8 +1,8 @@
-import './DetalhesEvento.css';
+import './DescricaoEvento.css';
 import CampoForm from '../../../../components/CampoForm/CampoForm';
 import Botao from '../../../../components/Botao/Botao';
 
-export default function Detalhes() {
+export default function DescricaoEvento() {
     return (
         <div className="container-detalhes-evento">
             <div className="detalhes-evento">

@@ -1,14 +1,12 @@
 .container-imagem-evento{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 300px;
+    flex-direction: row;
 }
 
 .conteudo-imagem-evento {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .title-imagem-evento,
@@ -66,5 +64,6 @@
     align-items: center;
     text-decoration: none;
     color: var(--cor-laranja);
+    font-weight: 700;
 }
 
