@@ -8,10 +8,12 @@ import miniatura5 from '../../../../assets/miniatura-criar-evento-05.png';
 import miniatura6 from '../../../../assets/miniatura-criar-evento-06.png';
 import Botao from '../../../../components/Botao/Botao';
 import '../../CadastrarEvento/ImagemEvento/ImagemEvento.css';
+import MenuLateralPerfil from '../../MenuLateralPerfil/MenuLateralPerfil';
 
 export default function ImagemEvento() {
     return (
         <div className="container-imagem-evento">
+            <MenuLateralPerfil></MenuLateralPerfil>
             <div className="conteudo-imagem-evento">
                 <div className="title-imagem-evento">
                     <h1 className='title-imagem-evento'>Miniatura</h1>
@@ -36,15 +38,19 @@ export default function ImagemEvento() {
                 </div>
 
                 <div className="btn-imagem-eventos">
-                    <a href='#'><h4>Cancelar</h4></a>
-                    <Botao
-                        legenda="Avançar"
-                        gradiente="var(--cor-laranja)"
-                        bordaRaio="10px"
-                        grossuraBorda="50px"
-                        espacamento="10px"
-                        largura="100%"
-                    />
+                    <Link to="/criar-evento">
+                        <span>Cancelar</span>
+                    </Link>
+                    <Link to="/descricao-evento">
+                        <Botao
+                            legenda="Avançar"
+                            gradiente="var(--cor-laranja)"
+                            bordaRaio="10px"
+                            grossuraBorda="50px"
+                            espacamento="10px"
+                            largura="100%"
+                        />
+                    </Link>
                 </div>
 
             </div>

@@ -3,7 +3,7 @@ import Botao from '../../../../components/Botao/Botao';
 import './ProgramacaoEvento.css';
 import Calendario from '../../../../assets/Calendário-teste.png'
 
-export default function ProgramaçãoEvento() {
+export default function ProgramacaoEvento() {
     return (
         <div className="container-prog-evento">
             <div className="prog-evento">

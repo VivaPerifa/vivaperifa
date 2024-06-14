@@ -1,58 +1,89 @@
-.conteudo-menu-lateral {
-    display: flex;
-}
-
-.nav-bar-menu-lateral {
+.menu-lateral__conteudo {
     /* position: fixed;
     top: 0;
     left: 0; */
     height: 100vh;
     background-color: var(--cor-azul);
     color: #fff;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 25vw;
+    padding: 30px 40px;
 }
 
-.nav-bar-menu-lateral .perfil-menu-lateral {
-    text-align: center;
-    padding: 20px;
+.menu-lateral__perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.foto-perfil-menu-lateral {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+.menu-lateral__perfil h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-.editar-perfil-menu-lateral {
+.menu-lateral__perfil span {
     color: var(--cor-amarela);
     border: none;
-    padding: 10px;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
-.nav-bar-menu-lateral ul {
+.menu-lateral__perfil figure {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.menu-lateral__perfil figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.menu-lateral__lista{
+    display: flex;
+}
+
+.menu-lateral__lista ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.nav-bar-menu-lateral ul li {
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
+.menu-lateral__lista ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-lateral__lista ul li {
+    /* padding: 10px 30px; */
+    /* display: flex;
+    align-items: center; */
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* margin-bottom: 15px; */
 }
 
-.nav-bar-menu-lateral ul li:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.menu-lateral__lista ul li:hover {
+    background-color: rgba(255, 255, 255, 0.123);
 }
 
 
-.nav-bar-menu-lateral ul li svg {
+.menu-lateral__lista ul li svg {
     margin-right: 10px;
-    font-size: 25px;
+    font-size: 1.5rem
 }

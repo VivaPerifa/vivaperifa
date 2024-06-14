@@ -1,24 +1,23 @@
 .container-inicio-cadastro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 300px;
-}
-
-.conteudo-inicio-cadastro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    width: 100%;
     height: 100vh;
+    margin: 0 auto;
+    display: flex;
 }
 
-.conteudo-inicio-cadastro figure {
+.conteudo-inicio-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.conatainer-inicio-cadastro figure {
     margin: 0;
 }
 
-.conteudo-inicio-cadastro img {
+.container-inicio-cadastro img {
     max-width: 100%;
     height: auto;
 }

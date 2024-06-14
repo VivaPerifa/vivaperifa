@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import CadastroEvento from '../../../../assets/imagem-criar-evento.png';
 import '../../CadastrarEvento/InicioCadastro/InicioCadastro.css';
+import MenuLateralPerfil from '../../MenuLateralPerfil/MenuLateralPerfil';
 
 export default function InicioCadastro() {
     return (
         <div className="container-inicio-cadastro">
-            <div className='conteudo-inicio-cadastro'>
+            <MenuLateralPerfil></MenuLateralPerfil>
+            <div className="conteudo-inicio-cadastro">
                 <figure>
                     <img src={CadastroEvento} alt="" />
                 </figure>
