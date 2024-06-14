@@ -1,5 +1,4 @@
 import './PerfilUsuario.css';
-import Neguinha from '../../assets/fotoUsuario.png';
 
 export default function PerfilUsuario(props){
     return (
