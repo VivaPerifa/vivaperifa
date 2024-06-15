@@ -4,9 +4,35 @@ import { IoIosSearch } from "react-icons/io";
 import User from '../../../assets/user.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Menu(props) {
     const { t } = useTranslation();
+    const [showLoginOptions, setShowLoginOptions] = useState(false);
+    const loginOptionsRef = useRef(null);
+
+    const handleUserIconClick = (e) => {
+        e.stopPropagation();
+        setShowLoginOptions(!showLoginOptions);
+    };
+
+    const handleClickOutside = (event) => {
+        if (loginOptionsRef.current && !loginOptionsRef.current.contains(event.target)) {
+            setShowLoginOptions(false);
+        }
+    };
+
+    useEffect(() => {
+        if (showLoginOptions) {
+            document.addEventListener('click', handleClickOutside);
+        } else {
+            document.removeEventListener('click', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [showLoginOptions]);
 
     return (
         <div className="container-menu" style={{ backgroundColor: props.corFundo }}>
@@ -36,7 +62,7 @@ export default function Menu(props) {
                 </ul>
                 <div className='pesquisa-user'>
                     <div className='pesquisa'>
-                        <input id='search' placeholder={t('menu.campo-pesquisa')}></input>
+                        <input id='search' placeholder={t('menu.campo-pesquisa')} />
                         <span>
                             <IoIosSearch
                                 style={{
@@ -46,10 +72,16 @@ export default function Menu(props) {
                             />
                         </span>
                     </div>
-                    <div className='user'>
-                        <span>
-                            <Link to='/login'><img src={User} alt="" /></Link>
+                    <div className='iniciar-login'>
+                        <span onClick={handleUserIconClick}>
+                            <img src={User} alt="User Icon" />
                         </span>
+                        {showLoginOptions && (
+                            <div className='login-opcao' ref={loginOptionsRef}>
+                                <Link to='/login'>{t('Entrar')}</Link>
+                                <Link to='/login'>{t('Cadastrar')}</Link>
+                            </div>
+                        )}
                     </div>
                 </div>
             </nav>
