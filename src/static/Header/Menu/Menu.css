@@ -1,10 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
-.container-menu{
+
+.container-menu {
     width: inherit;
 }
-.menu{
+
+.menu {
     width: inherit;
     padding: 20px 40px;
     display: flex;
@@ -12,7 +14,7 @@
     align-items: center;
 }
 
-.menu__lista{
+.menu__lista {
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -22,38 +24,39 @@
     width: inherit;
 }
 
-.menu__lista .logo{
+.menu__lista .logo {
     width: 85px;
     cursor: pointer;
 }
 
-.menu__lista li a{
+.menu__lista li a {
     text-decoration: none;
     color: white;
 }
 
-.menu__lista li{
+.menu__lista li {
     font-size: 1.2rem;
     cursor: pointer;
 }
 
-.logo img{
+.logo img {
     width: 100%;
     object-fit: cover;
 }
 
-.pesquisa-user{
+.pesquisa-user {
     display: flex;
     gap: 30px;
     align-items: center;
+    position: relative;
 }
 
-.pesquisa-user span{
+.pesquisa-user span {
     display: flex;
     align-items: center;
 }
 
-.pesquisa{
+.pesquisa {
     color: white;
     width: 30vw;
     display: flex;
@@ -66,12 +69,12 @@
     background-color: rgba(255, 255, 255, 0.39);
 }
 
-.pesquisa span{
+.pesquisa span {
     display: flex;
     align-items: center;
 }
 
-.pesquisa input{
+.pesquisa input {
     border: none;
     background-color: transparent;
     padding: 0;
@@ -84,7 +87,7 @@
 }
 
 .pesquisa input::placeholder {
-    color: white; 
+    color: white;
 }
 
 .menu__lista li {
@@ -110,4 +113,41 @@
 
 .menu__lista li:hover::after {
     width: 100%;
+}
+
+.iniciar-login {
+    position: relative;
+}
+
+.iniciar-login span {
+    cursor: pointer;
+}
+
+.login-opcao {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-opcao a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor-azul);
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.login-opcao a:last-child {
+    border-bottom: none;
+}
+
+.login-opcao a:hover {
+    background-color: #f0f0f0;
 }
