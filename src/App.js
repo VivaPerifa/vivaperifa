@@ -28,12 +28,12 @@ import VisibilidadeEvento from './pages/GerenciadorPerfil/CadastrarEvento/Visibi
 import InicioCadastro from './pages/GerenciadorPerfil/CadastrarEvento/InicioCadastro/InicioCadastro.jsx';
 import ProgramacaoEvento from './pages/GerenciadorPerfil/CadastrarEvento/ProgramacaoEvento/ProgramacaoEvento.jsx';
 import LocalizacaoEvento from './pages/GerenciadorPerfil/CadastrarEvento/LocalizacaoEvento/LocalizacaoEvento.jsx';
-import CadastrarEvento from './pages/GerenciadorPerfil/CadastrarEvento/CadastrarEvento.jsx';
 import Tradutor from './components/Tradutor/tradutor';
 import BotaoTopo from './components/BotaoTopo/BotaoTopo';
 import EventosCadastrados from './pages/GerenciadorPerfil/EventosCadastrados/EventosCadastrados.jsx';
 import DisclaimerCookies from './components/DisclaimerCookies/DisclaimerCookies';
 import LocationRequest from './components/LocationRequest/LocationRequest.jsx';
+import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -66,7 +66,8 @@ function App() {
         </Routes>
       </div>
       <BotaoTopo/>
-      <EventosCadastrados></EventosCadastrados>
+      {/* <EventosCadastrados></EventosCadastrados> */}
+      <VisualizarEvento></VisualizarEvento>
     </BrowserRouter>
   );
 }

@@ -15,29 +15,37 @@ export default function ImagemEvento() {
         <div className="container-imagem-evento">
             <MenuLateralPerfil></MenuLateralPerfil>
             <div className="conteudo-imagem-evento">
-                <div className="title-imagem-evento">
-                    <h1 className='title-imagem-evento'>Miniatura</h1>
+                <div className="imagem-evento__header">
+                    <h2>Miniatura</h2>
+                    <p>Selecione ou faça upload de uma imagem que mostre o que há no seu evento. Uma boa miniatura se destaca e chama a atenção público. Você também pode selecionar alguns templates prontos feitos especialmente para você!</p>
                 </div>
-                <div className="texto-imagem-evento">
-                    <p className='texto-imagem-evento'>Selecione ou faça upload de uma imagem que mostre o que há no seu evento. Uma boa miniatura se destaca e chama a atenção público. Você também pode selecionar alguns templates prontos feitos especialmente para você!</p>
-                </div>
-                <div className="miniatura-maior-imagem-evento">
+                <div className="imagem-evento__banner">
                     <figure>
                         <img src={miniaturaMaior} alt="" />
                     </figure>
                 </div>
-                <div className="miniaturas-menores-imagem-eventos">
-                    <figure>
+                <div className="imagem-evento__banners">
+                    <div>
                         <img src={miniatura1} alt="" />
+                    </div>
+                    <div>
                         <img src={miniatura2} alt="" />
+                    </div>
+                    <div>
                         <img src={miniatura3} alt="" />
+                    </div>
+                    <div>
                         <img src={miniatura4} alt="" />
+                    </div>
+                    <div>
                         <img src={miniatura5} alt="" />
+                    </div>
+                    <div>
                         <img src={miniatura6} alt="" />
-                    </figure>
+                    </div>
                 </div>
 
-                <div className="btn-imagem-eventos">
+                <div className="btn-imagem-evento">
                     <Link to="/criar-evento">
                         <span>Cancelar</span>
                     </Link>
@@ -48,7 +56,7 @@ export default function ImagemEvento() {
                             bordaRaio="10px"
                             grossuraBorda="50px"
                             espacamento="10px"
-                            largura="100%"
+                            largura="180px"
                         />
                     </Link>
                 </div>

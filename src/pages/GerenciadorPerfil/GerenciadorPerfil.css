@@ -1,3 +1,5 @@
 .gerenciar-perfil{
     display: flex;
+    justify-content: space-between;
+
 }

@@ -9,6 +9,7 @@ import '../MenuLateralPerfil/MenuLateralPerfil.css';
 import '../../../App';
 import { Link  }from 'react-router-dom';
 
+
 export default function MenuLateralPerfil() {
     return (
         <div>

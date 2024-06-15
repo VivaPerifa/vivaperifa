@@ -12,7 +12,9 @@ export default function Botao(props){
                     borderWidth: props.grossuraBorda,
                     borderRadius: props.bordaRaio,
                     width: props.largura,
-                    fontSize: props.tamanhoFonte}}>{props.legenda}</button>
+                    fontSize: props.tamanhoFonte}}>
+                        {props.legenda}
+                    </button>
             </div>
 
             <div></div>

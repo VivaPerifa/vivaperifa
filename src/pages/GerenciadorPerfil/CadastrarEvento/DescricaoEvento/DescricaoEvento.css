@@ -1,45 +1,39 @@
 .container-detalhes-evento {
-    margin-left: 300px;
     display: flex;
-    justify-content: center;
 }
 
 .detalhes-evento {
-    width: 1250px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin: 0 auto;
 }
 
-.detalhes-evento h2{
- font-size: 40px;
+.detalhes-evento__header h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.detalhes-evento p{
-    font-size: 18px;
+.detalhes-evento__header p{
+    font-size: 1.3rem;
 }
 
-.btn-detalhes {
+.detalhes-evento__info{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 25px;
-    justify-content: flex-end;
-    padding: 20px 0;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.btn-detalhes a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--cor-laranja);
-}
-
-.filtros-detalhes{
+.categorias-evento{
     display: flex;
     gap: 10px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
+}
+
+.categorias-evento span{
+    font-size: 1.3rem;
 }
 
 .detal-laranja{
@@ -52,4 +46,24 @@
 
 .detal-azul{
     color: var(--cor-azul);
+}
+
+.btn-detalhes{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-detalhes span{
+    color: var(--cor-laranja);
+}
+
+.btn-detalhes a{
+    text-decoration: none;
+}
+
+.btn-detalhes button, .btn-detalhes span{
+    font-size: 1.2rem;
+    font-weight: 600;
 }
