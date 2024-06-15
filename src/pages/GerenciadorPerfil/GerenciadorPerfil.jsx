@@ -10,6 +10,7 @@ import VisibilidadeEvento from './CadastrarEvento/VisibilidadeEvento/Visibilidad
 import ImagemEvento from './CadastrarEvento/ImagemEvento/ImagemEvento';
 import './GerenciadorPerfil.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import EventosCadastrados from "./EventosCadastrados/EventosCadastrados";
 
 export default function GerenciadorPerfil() {
     return (     
