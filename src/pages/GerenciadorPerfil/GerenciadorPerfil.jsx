@@ -14,7 +14,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 export default function GerenciadorPerfil() {
     return (     
         <div className="gerenciar-perfil">
-            <MenuLateralPerfil></MenuLateralPerfil>
+            
             <CadastrarEvento></CadastrarEvento>
         </div>
     );
