@@ -31,6 +31,7 @@ import LocalizacaoEvento from './pages/GerenciadorPerfil/CadastrarEvento/Localiz
 import CadastrarEvento from './pages/GerenciadorPerfil/CadastrarEvento/CadastrarEvento.jsx';
 import Tradutor from './components/Tradutor/tradutor';
 import BotaoTopo from './components/BotaoTopo/BotaoTopo';
+import EventosCadastrados from './pages/GerenciadorPerfil/EventosCadastrados/EventosCadastrados.jsx';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -60,6 +61,7 @@ function App() {
         </Routes>
       </div>
       <BotaoTopo/>
+      <EventosCadastrados></EventosCadastrados>
     </BrowserRouter>
   );
 }
