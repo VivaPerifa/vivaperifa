@@ -32,6 +32,8 @@ import CadastrarEvento from './pages/GerenciadorPerfil/CadastrarEvento/Cadastrar
 import Tradutor from './components/Tradutor/tradutor';
 import BotaoTopo from './components/BotaoTopo/BotaoTopo';
 import EventosCadastrados from './pages/GerenciadorPerfil/EventosCadastrados/EventosCadastrados.jsx';
+import DisclaimerCookies from './components/DisclaimerCookies/DisclaimerCookies';
+import LocationRequest from './components/LocationRequest/LocationRequest.jsx';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -40,7 +42,10 @@ function App() {
   }
   
   return (
+    
     <BrowserRouter>
+    <LocationRequest></LocationRequest>
+    <DisclaimerCookies></DisclaimerCookies>
       <div>
         <Tradutor changeLanguage={changeLanguage} />  {/* Botão de Tradução */}
         <Routes>

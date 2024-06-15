@@ -94,7 +94,6 @@ export default function Home() {
 
             <ContainerDepoimentos></ContainerDepoimentos>
 
-            <DisclaimerCookies></DisclaimerCookies>
         </div>
     );
 }
