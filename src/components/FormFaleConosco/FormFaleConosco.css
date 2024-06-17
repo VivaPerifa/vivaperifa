@@ -108,6 +108,9 @@
     -webkit-text-fill-color: transparent;
 }
 
+.formulario-fale-conosco button {
+    background-color: #F28705;
+}
 
 @media (max-width:1024px){
     .form-img{
