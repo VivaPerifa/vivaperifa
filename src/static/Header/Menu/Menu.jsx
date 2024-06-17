@@ -4,7 +4,11 @@ import { IoIosSearch } from "react-icons/io";
 import User from '../../../assets/user.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import '../../../i18n';
 import { useState, useEffect, useRef } from 'react';
+import Tradutor from '../../../components/Tradutor/tradutor';
+import CampoForm from '../../../components/CampoForm/CampoForm';
+import Botao from '../../../components/Botao/Botao';
 
 export default function Menu(props) {
     const { t } = useTranslation();
@@ -77,12 +81,23 @@ export default function Menu(props) {
                             <img src={User} alt="User Icon" />
                         </span>
                         {showLoginOptions && (
+                            <><div className='overlay-login' onClick={handleUserIconClick}></div>
                             <div className='login-opcao' ref={loginOptionsRef}>
-                                <Link to='/login'>{t('Entrar')}</Link>
-                                <Link to='/login'>{t('Cadastrar')}</Link>
+                                <h2>Entrar/Cadastrar</h2>
+                                <CampoForm id='login-form' tipo='text' legenda='E-mail' tamanhoCampo='100%' tituloForm="" />
+
+                                <CampoForm id='login-form' tipo='text' legenda='Senha' tamanhoCampo='100%' tituloForm="" />
+
+                                <Botao espacamento='10px' corFundo="#033E8C" legenda='Entrar' tamanhoFonte='1.5rem' largura='30vw' bordaRaio='20px' />
+                                {/* <Link to=''>{t('Entrar')}</Link> */}
+                                <a href=''><h4>Esqueceu sua senha?</h4></a>
+
+                                <p>Novo no VivaPerifa!<Link to='/login' className='btn_cadastrese'>{t('CADASTRE-SE')}</Link></p>
                             </div>
+                            </>
                         )}
                     </div>
+                    <Tradutor></Tradutor>
                 </div>
             </nav>
         </div>
