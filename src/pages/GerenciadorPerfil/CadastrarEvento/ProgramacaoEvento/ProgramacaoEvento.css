@@ -37,3 +37,83 @@
     text-decoration: none;
     color: var(--cor-laranja);
 }
+
+/* Estilizando o container do calendário */
+.react-calendar {
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    background: white;
+    border: 2px solid var(--cor-rosa) !important;
+    font-family: var(--font-family) !important;
+    line-height: 1.125em;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Estilizando a navegação do calendário */
+.react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+/* Estilizando os botões de navegação */
+.react-calendar__navigation button {
+    color: black !important;
+    min-width: 44px;
+    background: none;
+    font-size: 16px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.react-calendar__tile, .react-calendar__tile--now, .react-calendar__tile--active, .react-calendar__tile--range, .react-calendar__tile--rangeStart, .react-calendar__tile--rangeEnd, .react-calendar__tile--rangeBothEnds, .react-calendar__month-view__days__day{
+    padding: 20px 0 !important;
+}
+
+/* Estilizando a visualização do mês */
+.react-calendar__month-view__days__day--weekend {
+    color: var(--cor-laranja) !important;
+}
+
+/* Estilizando os tiles (dias) */
+.react-calendar__tile {
+    max-width: 100%;
+    padding: 10px;
+    background: none;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Estilizando os tiles ao passar o mouse */
+.react-calendar__tile:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilizando os tiles selecionados */
+.react-calendar__tile--active {
+    background: white !important;
+    color: var(--cor-rosa) !important;
+    border: 2px solid var(--cor-rosa) !important;
+    border-image-slice: 1 !important;
+    border-radius: 15px !important;
+}
+
+/* Estilizando os tiles selecionados ao passar o mouse */
+.react-calendar__tile--active:hover {
+    background: whitesmoke !important;
+}
+
+/* Estilizando os tiles desabilitados */
+.react-calendar__tile--now {
+    background: white !important;
+}
+
+.react-calendar__tile--now:hover {
+    background: whitesmoke !important;
+
+}

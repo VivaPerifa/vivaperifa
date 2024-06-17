@@ -6,8 +6,13 @@
 }
 
 .container-fale-conosco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
+    height: 100vh;
     background-image: url(../../assets/faixa_laranja.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 100%;
 }
@@ -23,7 +28,7 @@
 }
 
 .img-muro{
-    height: 80%;
+    height: 100%;
     border-radius: 30px;
 }
 
@@ -108,6 +113,13 @@
     -webkit-text-fill-color: transparent;
 }
 
+.formulario-fale-conosco button{
+    background-color: #f28705;
+}
+
+.formulario-fale-conosco button {
+    background-color: #F28705;
+}
 
 @media (max-width:1024px){
     .form-img{
