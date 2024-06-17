@@ -1,9 +1,14 @@
+import React, { useState } from 'react';
 import CampoForm from '../../../../components/CampoForm/CampoForm';
 import Botao from '../../../../components/Botao/Botao';
 import './ProgramacaoEvento.css';
-import Calendario from '../../../../assets/Calendário-teste.png'
+import Calendario from '../../../../assets/Calendário-teste.png';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+// import { CalendarComponent } from '@syncfusion/ej2-react-calendars';
 
 export default function ProgramacaoEvento() {
+    const [date, setDate] = useState(new Date());
     return (
         <div className="container-prog-evento">
             <div className="prog-evento">
@@ -22,7 +27,13 @@ export default function ProgramacaoEvento() {
                         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
                     </div>
 
-                    <img src={Calendario} alt="" />
+                    {/* <img src={Calendario} alt="" /> */}
+                    <div className="calendario-componente">
+                        <Calendar
+                            onChange={setDate}
+                            value={date}
+                        />
+                    </div>
                 </div>
 
                 <div className="btn-prog-evento">
@@ -37,6 +48,9 @@ export default function ProgramacaoEvento() {
                     />
                 </div>
             </div>
-        </div>
+
+        </div >
+
+
     )
 }
