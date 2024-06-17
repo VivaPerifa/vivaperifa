@@ -1,8 +1,8 @@
-import Plano from './Plano/Plano';
+import PlanoComponente from './Plano/Plano.jsx';
 import './ContainerPlanos.css';
 
-export default function ContainerPlanos(){
-    const planoBasico = [
+export default function ContainerPlanos() {
+    const planoHumildade = [
         {
             id: 1,
             beneficio: "Cadastrar evento"
@@ -13,10 +13,10 @@ export default function ContainerPlanos(){
         }
     ];
 
-    const planoPremium = [
+    const planoTopDaFavela = [
         {
             id: 1,
-            beneficio: "Plano básico"
+            beneficio: "Plano Humildade"
         },
         {
             id: 2,
@@ -35,35 +35,34 @@ export default function ContainerPlanos(){
             beneficio: "Notificação imediata"
         },
         {
-            id: 2,
+            id: 6,
             beneficio: "Enquete de perguntas"
         }
     ];
 
-    return(
+    return (
         <div className='container-plano'>
-           <div className='fundo-plano'>
-                <Plano
-                    tipoPlano="Básico"
+            <div className='fundo-plano'>
+                <PlanoComponente
+                    tipoPlano="Humildade"
                     valorPlano="Gratuito"
-                    listaBeneficios={planoBasico}
+                    listaBeneficios={planoHumildade}
                 />
 
-                <Plano
-                    tipoPlano="Premium"
+                <PlanoComponente
+                    tipoPlano="Top da Favela"
                     valorPlano="39,90"
                     periodoPlano="/Mensal"
-                    listaBeneficios={planoPremium}
+                    listaBeneficios={planoTopDaFavela}
                 />
 
-                <Plano
-                    tipoPlano="Premium"
+                <PlanoComponente
+                    tipoPlano="Top da Favela"
                     valorPlano="429,90"
                     periodoPlano="/Anual"
-                    listaBeneficios={planoPremium}
+                    listaBeneficios={planoTopDaFavela}
                 />
-           </div>
-
+            </div>
         </div>
     );
 }
