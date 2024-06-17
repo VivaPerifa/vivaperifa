@@ -1,50 +1,34 @@
 .container-prog-evento {
-    margin-left: 300px;
     display: flex;
-    justify-content: center;
 }
 
-.prog-evento {
-    width: 1250px;
+.conteudo-prog-evento{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+    margin: 0 auto;
+    width: 50%;
 }
 
-.prog-evento h2{
- font-size: 40px;
+.prog-evento__header h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.prog-evento p{
-    font-size: 18px;
+.prog-evento__header p{
+    font-size: 1.3rem;
 }
 
-.prog-evento img{
-    width: 30%;
-}
-
-.form-img-prog-evento{
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-prog-evento{
+.prog-evento__form{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
-.form-prog-evento h4{
+.prog-evento__form span{
+    font-size: 1.3rem;
     color: var(--cor-azul);
-}
-
-.btn-prog-evento {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 25px;
-    justify-content: flex-end;
-    padding: 20px 0;
+    font-weight: 600;
 }
 
 .btn-prog-evento a {
