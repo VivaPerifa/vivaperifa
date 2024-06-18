@@ -68,6 +68,7 @@ function App() {
       <BotaoTopo/>
       {/* <EventosCadastrados></EventosCadastrados> */}
       <VisualizarEvento></VisualizarEvento>
+      <PerfilParticipante></PerfilParticipante>
     </BrowserRouter>
   );
 }
