@@ -14,53 +14,55 @@ export default function ImagemEvento() {
     return (
         <div className="container-imagem-evento">
             <MenuLateralPerfil></MenuLateralPerfil>
-            <div className="conteudo-imagem-evento">
-                <div className="imagem-evento__header">
-                    <h2>Miniatura</h2>
-                    <p>Selecione ou faça upload de uma imagem que mostre o que há no seu evento. Uma boa miniatura se destaca e chama a atenção público. Você também pode selecionar alguns templates prontos feitos especialmente para você!</p>
-                </div>
-                <div className="imagem-evento__banner">
-                    <figure>
-                        <img src={miniaturaMaior} alt="" />
-                    </figure>
-                </div>
-                <div className="imagem-evento__banners">
-                    <div>
-                        <img src={miniatura1} alt="" />
+            <div className='imagem-evento-scroll'>
+                <div className="conteudo-imagem-evento">
+                    <div className="imagem-evento__header">
+                        <h2>Miniatura</h2>
+                        <p>Selecione ou faça upload de uma imagem que mostre o que há no seu evento. Uma boa miniatura se destaca e chama a atenção público. Você também pode selecionar alguns templates prontos feitos especialmente para você!</p>
                     </div>
-                    <div>
-                        <img src={miniatura2} alt="" />
+                    <div className="imagem-evento__banner">
+                        <figure>
+                            <img src={miniaturaMaior} alt="" />
+                        </figure>
                     </div>
-                    <div>
-                        <img src={miniatura3} alt="" />
+                    <div className="imagem-evento__banners">
+                        <div>
+                            <img src={miniatura1} alt="" />
+                        </div>
+                        <div>
+                            <img src={miniatura2} alt="" />
+                        </div>
+                        <div>
+                            <img src={miniatura3} alt="" />
+                        </div>
+                        <div>
+                            <img src={miniatura4} alt="" />
+                        </div>
+                        <div>
+                            <img src={miniatura5} alt="" />
+                        </div>
+                        <div>
+                            <img src={miniatura6} alt="" />
+                        </div>
                     </div>
-                    <div>
-                        <img src={miniatura4} alt="" />
-                    </div>
-                    <div>
-                        <img src={miniatura5} alt="" />
-                    </div>
-                    <div>
-                        <img src={miniatura6} alt="" />
-                    </div>
-                </div>
 
-                <div className="btn-imagem-evento">
-                    <Link to="/criar-evento">
-                        <span>Cancelar</span>
-                    </Link>
-                    <Link to="/descricao-evento">
-                        <Botao
-                            legenda="Avançar"
-                            gradiente="var(--cor-laranja)"
-                            bordaRaio="10px"
-                            grossuraBorda="50px"
-                            espacamento="10px"
-                            largura="180px"
-                        />
-                    </Link>
-                </div>
+                    <div className="btn-imagem-evento">
+                        <Link to="/criar-evento">
+                            <span>Cancelar</span>
+                        </Link>
+                        <Link to="/descricao-evento">
+                            <Botao
+                                legenda="Avançar"
+                                gradiente="var(--cor-laranja)"
+                                bordaRaio="10px"
+                                grossuraBorda="50px"
+                                espacamento="10px"
+                                largura="180px"
+                            />
+                        </Link>
+                    </div>
 
+                </div>
             </div>
         </div>
     );

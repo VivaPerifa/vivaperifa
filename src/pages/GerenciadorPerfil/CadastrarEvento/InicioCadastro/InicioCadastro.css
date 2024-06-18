@@ -1,6 +1,7 @@
 .container-inicio-cadastro{
     width: 100%;
     height: 100vh;
+    overflow: auto;
     margin: 0 auto;
     display: flex;
 }

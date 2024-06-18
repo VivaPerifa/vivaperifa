@@ -2,6 +2,7 @@ import CampoForm from '../../components/CampoForm/CampoForm';
 import './CadastroOrganizador.css';
 import LogoCadastro from '../../assets/logo.png';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function CadastroOrganizador() {
 
@@ -53,7 +54,7 @@ export default function CadastroOrganizador() {
                         <CampoForm id='senha-user' tipo='text' legenda='Crie uma senha' tamanhoCampo='80%' tituloForm="Senha"/>
 
                         <div className='btn-cadastro'>
-                            <button>Cadastrar</button>
+                            <Link to="/gerenciador-perfil"><button>Cadastrar</button></Link>
                         </div>
                     </form>
                 </div>

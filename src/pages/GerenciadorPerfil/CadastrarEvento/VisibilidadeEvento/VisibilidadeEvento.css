@@ -1,15 +1,13 @@
 .container-visibilidade{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 300px;
+    
 }
 
 .conteudo-visibilidade{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .container-quadrado-visibilidade {
