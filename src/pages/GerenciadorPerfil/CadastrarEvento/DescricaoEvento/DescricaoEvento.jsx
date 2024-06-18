@@ -18,6 +18,7 @@ export default function DescricaoEvento() {
                     <CampoForm id='nome-evento-detalhes' tipo='text' legenda='Escreva o nome do seu evento' tamanhoCampo='100%' tituloForm="Nome do evento" />
                     <CampoForm id='descrição-evento' tipo='text' legenda='Escreva uma breve descrição do seu evento' tamanhoCampo='100%' tituloForm="Descrição do evento" alturaCampo='25vh'/>
                 </div>
+                
                 <div className='categorias-evento'>
                     <span className='detal-laranja'>#Cultura</span>
                     <span className='detal-azul'>#Espressão Artística</span>

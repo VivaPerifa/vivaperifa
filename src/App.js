@@ -34,6 +34,8 @@ import EventosCadastrados from './pages/GerenciadorPerfil/EventosCadastrados/Eve
 import DisclaimerCookies from './components/DisclaimerCookies/DisclaimerCookies';
 import LocationRequest from './components/LocationRequest/LocationRequest.jsx';
 import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
+// import { LocalizationProvider } from '@mui/x-date-pickers';
+// import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -44,6 +46,9 @@ function App() {
   return (
     
     <BrowserRouter>
+    {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
+      {children}
+    </LocalizationProvider> */}
     <LocationRequest></LocationRequest>
     <DisclaimerCookies></DisclaimerCookies>
       <div>
