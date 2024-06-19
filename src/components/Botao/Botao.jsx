@@ -5,11 +5,10 @@ export default function Botao(props){
         <div>
             <div className="botao" style={{width: props.largura}}>
                 <button style={{
-                    padding: props.espacamento, 
                     backgroundColor: props.corFundo, 
-                    background: props.gradiente,
-                    borderColor: props.corBorda, 
+                    padding: props.espacamento, 
                     borderWidth: props.grossuraBorda,
+                    borderColor: props.corBorda, 
                     borderRadius: props.bordaRaio,
                     width: props.largura,
                     fontSize: props.tamanhoFonte}}>

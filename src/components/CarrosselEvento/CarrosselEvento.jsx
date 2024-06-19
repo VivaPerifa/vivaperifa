@@ -37,14 +37,14 @@ export default function CarrosselEvento(props){
                 
                 <div className="eventos">
                 {
-                    eventos.map((item, index)=>(
+                    listItem.map((item, index)=>(
                         <div className="item-evento" key={index}>
                             <EventoComum 
                                 fotoEvento={Evento}
                                 tituloEvento={item.titulo}
                                 descricaoEvento={item.descricao}
-                                dataEvento={item.dataInicio.diaSemana+", dia "+item.dataInicio.dia+"/"+item.dataInicio.mes+" "+item.horarioInicio.hora+"h às "+item.horarioFim.hora+"h"}
-                                localEvento={item.endereco.bairro}
+                                dataEvento={item.data}
+                                localEvento={item.local}
                                 quantidadeComentarios={item.comentarios}
                             />
                         </div>

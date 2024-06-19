@@ -34,6 +34,7 @@ import EventosCadastrados from './pages/GerenciadorPerfil/EventosCadastrados/Eve
 import DisclaimerCookies from './components/DisclaimerCookies/DisclaimerCookies';
 import LocationRequest from './components/LocationRequest/LocationRequest.jsx';
 import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
+import PerfilOrganizador from './pages/PerfilOrganizador/PerfilOrganizador.jsx';
 // import { LocalizationProvider } from '@mui/x-date-pickers';
 // import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 

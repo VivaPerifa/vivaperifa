@@ -67,6 +67,7 @@ export default function Menu(props) {
                 <div className='pesquisa-user'>
                     <div className='pesquisa'>
                         <input id='search' placeholder={t('menu.campo-pesquisa')} />
+
                         <span>
                             <IoIosSearch
                                 style={{
