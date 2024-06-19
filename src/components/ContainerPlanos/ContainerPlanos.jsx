@@ -33,11 +33,8 @@ export default function ContainerPlanos() {
         {
             id: 5,
             beneficio: "Notificação imediata"
-        },
-        {
-            id: 6,
-            beneficio: "Enquete de perguntas"
         }
+
     ];
 
     return (

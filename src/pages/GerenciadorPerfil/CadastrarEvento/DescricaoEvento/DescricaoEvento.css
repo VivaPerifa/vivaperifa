@@ -3,11 +3,17 @@
 }
 
 .detalhes-evento {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin: 0 auto;
+}
+
+.detalhes-evento-scroll{
+    height: 100vh;
+    overflow: auto;
+    padding: 20px 0;
 }
 
 .detalhes-evento__header h2{

@@ -7,7 +7,7 @@
 .container_cadastro {
     background-image: url(../../assets/fundo_cadastro.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,9 +23,9 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 1080px;
-    max-width: 100%; 
-    height: 80vh;
+    /* width: 1080px; */
+    width: 80vw; 
+    height: 800px;
 }
 
 .form-container-cadastro h2{
@@ -63,12 +63,15 @@ button.btn-user-org{
     flex-direction: column;
     gap: 20px;
     padding: 0 40px;
-    height: 100%;
 }
 
 .form-container-cadastro{
     position: absolute;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     height: 100%;
     transition: all 0.6s ease-in-out;
 }
@@ -84,7 +87,6 @@ button.btn-user-org{
 }
 
 .form-org{
-    left: 0;
     width: 50%;
     opacity: 0;
     z-index: 1;
