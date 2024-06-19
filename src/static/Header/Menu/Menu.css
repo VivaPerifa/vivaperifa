@@ -58,7 +58,7 @@
 
 .pesquisa {
     color: white;
-    width: 30vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,7 +83,7 @@
     box-shadow: none;
     font-size: 0.8rem;
     color: inherit;
-    width: 30vw;
+    width: inherit;
 }
 
 .pesquisa input::placeholder {

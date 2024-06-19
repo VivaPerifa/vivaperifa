@@ -49,24 +49,25 @@ export default function Menu(props) {
                         <Link to="/home">{t('menu.home')}</Link>
                     </li>
                     <li>
+                        <Link to="/sobre-nos">{t('menu.sobre-nos')}</Link>
+                    </li>
+                    <li>
                         <Link to="/explorar">{t('menu.explorar')}</Link>
                     </li>
                     <li>
                         <Link to="/comunidade">{t('menu.comunidade')}</Link>
                     </li>
                     <li>
-                        <Link to="/sobre-nos">{t('menu.sobre-nos')}</Link>
-                    </li>
-                    <li>
                         <Link to="/contato">{t('menu.contato')}</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/gerenciador-perfil">{t('menu.gerenciador-perfil')}</Link>
-                    </li>
+                    </li> */}
                 </ul>
                 <div className='pesquisa-user'>
                     <div className='pesquisa'>
                         <input id='search' placeholder={t('menu.campo-pesquisa')} />
+
                         <span>
                             <IoIosSearch
                                 style={{
@@ -82,18 +83,18 @@ export default function Menu(props) {
                         </span>
                         {showLoginOptions && (
                             <><div className='overlay-login' onClick={handleUserIconClick}></div>
-                            <div className='login-opcao' ref={loginOptionsRef}>
-                                <h2>Entrar/Cadastrar</h2>
-                                <CampoForm id='login-form' tipo='text' legenda='E-mail' tamanhoCampo='100%' tituloForm="" />
+                                <div className='login-opcao' ref={loginOptionsRef}>
+                                    <h2>Entrar/Cadastrar</h2>
+                                    <CampoForm id='login-form' tipo='text' legenda='E-mail' tamanhoCampo='100%' tituloForm="" />
 
-                                <CampoForm id='login-form' tipo='text' legenda='Senha' tamanhoCampo='100%' tituloForm="" />
+                                    <CampoForm id='login-form' tipo='text' legenda='Senha' tamanhoCampo='100%' tituloForm="" />
 
-                                <Botao espacamento='10px' corFundo="#033E8C" legenda='Entrar' tamanhoFonte='1.5rem' largura='30vw' bordaRaio='20px' />
-                                {/* <Link to=''>{t('Entrar')}</Link> */}
-                                <a href=''><h4>Esqueceu sua senha?</h4></a>
+                                    <Botao espacamento='10px' corFundo="#033E8C" legenda='Entrar' tamanhoFonte='1.5rem' largura='30vw' bordaRaio='20px' />
+                                    {/* <Link to=''>{t('Entrar')}</Link> */}
+                                    <a href=''><h4>Esqueceu sua senha?</h4></a>
 
-                                <p>Novo no VivaPerifa!<Link to='/login' className='btn_cadastrese'>{t('CADASTRE-SE')}</Link></p>
-                            </div>
+                                    <p>Novo no VivaPerifa!<Link to='/login' className='btn_cadastrese'>{t('CADASTRE-SE')}</Link></p>
+                                </div>
                             </>
                         )}
                     </div>

@@ -1,18 +1,24 @@
 .container-local {
-    margin-left: 300px;
     display: flex;
-    justify-content: center;
+    width: 100%;  
 }
 
 .local-evento {
-    width: 1250px;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin: 0 auto;
+}
+
+.local-evento-scroll{
+    height: 100vh;
+    overflow: auto; 
+    width: 100%;
 }
 
 .local-evento h2{
- font-size: 40px;
+    font-size: 40px;
 }
 
 .local-evento p{
@@ -21,7 +27,7 @@
 
 .local-form{
     display: flex;
-    gap: 150px;
+    gap: 20px;
 }
 
 .btn-local {
@@ -33,14 +39,21 @@
     padding: 20px 0;
 }
 
+.btn-local span{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
 .btn-local a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: var(--cor-laranja);
+    font-size: 1.2rem;
 }
 
 .teste-laranja{
-    color: var(--cor-laranja)
+    color: var(--cor-laranja);
+    font-size: 1.2rem;
 }
 

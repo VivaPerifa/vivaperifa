@@ -1,6 +1,7 @@
 .container-visualizacao{
-    width: 75vw;
+    width:100%;
     margin: 0 auto;
+    display: flex;
 }
 
 .conteudo-visualizacao__header{
@@ -12,8 +13,15 @@
 .conteudo-visualizacao {
     display: flex;
     flex-direction: column;
-    width: inherit;
     gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-visualizacao-scroll{
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
 }
 
 .conteudo-visualizacao h1 {

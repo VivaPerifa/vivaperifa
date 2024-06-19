@@ -45,6 +45,8 @@ export default function CarrosselEventoDestaque(props) {
                                             imagemEventoDestaque={item.imagem} 
                                             tituloEventoDestaque={item.titulo} 
                                             dataEventoDestaque={item.data}
+                                            largura="60vw"
+                                            altura="25vw"
                                         />
                                     </div>
                                 )}

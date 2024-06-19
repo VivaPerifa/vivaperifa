@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './VisibilidadeEvento.css';
 import Botao from '../../../../components/Botao/Botao';
+import MenuLateralPerfil from '../../MenuLateralPerfil/MenuLateralPerfil';
+import { Link } from 'react-router-dom';
 
 export default function VisibilidadeEvento() {
     const [privacidade, setPrivacidade] = useState('publico');
@@ -11,6 +13,7 @@ export default function VisibilidadeEvento() {
 
     return (
         <div className="container-visibilidade">
+            <MenuLateralPerfil></MenuLateralPerfil>
             <div className="conteudo-visibilidade">
                 <div className="titulo-visibilidade">
                     <h1 className='title-visibilidade'>
@@ -49,14 +52,16 @@ export default function VisibilidadeEvento() {
                 </div>
                 <div className="btn-visibilidade">
                     <a href='#'><h4>Voltar</h4></a>
-                    <Botao
-                        legenda="Avançar"
-                        gradiente="var(--cor-laranja)"
-                        bordaRaio="10px"
-                        grossuraBorda="50px"
-                        espacamento="10px"
-                        largura="100%"
-                    />
+                    <Link to='/visualizar-evento'>
+                        <Botao
+                            legenda="Avançar"
+                            gradiente="var(--cor-laranja)"
+                            bordaRaio="10px"
+                            grossuraBorda="50px"
+                            espacamento="10px"
+                            largura="100%"
+                        />
+                    </Link>
                 </div>
 
             </div>

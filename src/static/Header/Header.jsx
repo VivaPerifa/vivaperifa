@@ -55,6 +55,8 @@ export default function Header(props){
                     imagemEventoDestaque={itemEventoExplorar.imagem}
                     tituloEventoDestaque={itemEventoExplorar.titulo}
                     dataEventoDestaque={itemEventoExplorar.data}
+                    largura="60vw"
+                    altura="25vw"
                 />
             </div>
             <div className={`fundo-detalhe-evento header ${props.tipoCabecalho == 'detalhe-evento' ? 'show' : 'hidden'}`}>

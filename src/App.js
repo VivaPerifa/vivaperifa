@@ -34,8 +34,10 @@ import EventosCadastrados from './pages/GerenciadorPerfil/EventosCadastrados/Eve
 import DisclaimerCookies from './components/DisclaimerCookies/DisclaimerCookies';
 import LocationRequest from './components/LocationRequest/LocationRequest.jsx';
 import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
+import PerfilOrganizador from './pages/PerfilOrganizador/PerfilOrganizador.jsx';
 // import { LocalizationProvider } from '@mui/x-date-pickers';
 // import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+// import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -52,7 +54,7 @@ function App() {
     <LocationRequest></LocationRequest>
     <DisclaimerCookies></DisclaimerCookies>
       <div>
-        <Tradutor changeLanguage={changeLanguage} />  {/* Botão de Tradução */}
+        {/* <Tradutor changeLanguage={changeLanguage} />  Botão de Tradução */}
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/home' element={<Home/>} />
@@ -68,11 +70,10 @@ function App() {
           <Route path='/localizacao-evento' element={<LocalizacaoEvento />}></Route>
           <Route path='/programacao-evento' element={<ProgramacaoEvento />}></Route>
           <Route path='/visibilidade-evento' element={<VisibilidadeEvento />}></Route>
+          <Route path='/visualizar-evento' element={<VisualizarEvento />}></Route>
         </Routes>
       </div>
-      <BotaoTopo/>
-      {/* <EventosCadastrados></EventosCadastrados> */}
-      <VisualizarEvento></VisualizarEvento>
+      {/* <Footer></Footer> */}
     </BrowserRouter>
   );
 }

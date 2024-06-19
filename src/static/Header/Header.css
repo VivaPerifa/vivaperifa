@@ -7,6 +7,7 @@
     background-size: 100%;
 }
 
+
 .fundo-home{
     background-image: url('../../assets/fundo_home.png');
 }
@@ -24,6 +25,7 @@
 
 .fundo-explorar{
     background-image: url('../../assets/fundo_explorar.png');
+    align-items: center;
 }
 
 .fundo-detalhe-evento{
