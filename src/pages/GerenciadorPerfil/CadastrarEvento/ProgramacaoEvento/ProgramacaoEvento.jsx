@@ -20,11 +20,11 @@ export default function ProgramacaoEvento() {
                 </div>
 
                 <div className="prog-evento__form">
-                    <CampoForm id='data-prog-evento' tipo='text' legenda='' tamanhoCampo='160%' tituloForm="Data do evento" />
-                    <CampoForm id='hora-inic-prog-evento' tipo='text' legenda='' tamanhoCampo='160%' tituloForm="Horário de início" />
-                    <CampoForm id='data-fim-prog-evento' tipo='text' legenda='' tamanhoCampo='160%' tituloForm="Horário de fim" />
+                    <CampoForm id='data-prog-evento' tipo='text' legenda='' tamanhoCampo='80%' tituloForm="Data do evento" />
+                    <CampoForm id='hora-inic-prog-evento' tipo='text' legenda='' tamanhoCampo='80%' tituloForm="Horário de início" />
+                    <CampoForm id='data-fim-prog-evento' tipo='text' legenda='' tamanhoCampo='80%' tituloForm="Horário de fim" />
                     <span>Lorem ipsum</span>
-                <p>Adicione a programação do seu evento, quanto mais precisos forem os dados da sua programação, mais confiança o seu público terá em você.</p>
+                {/* <p>Adicione a programação do seu evento, quanto mais precisos forem os dados da sua programação, mais confiança o seu público terá em você.</p> */}
 
                 {/* <img src={Calendario} alt="" /> */}
                 <div className="calendario-componente">
