@@ -33,18 +33,13 @@
     font-size: 1rem;
 }
 
-.menu-lateral__perfil figure {
+.menu-lateral__perfil a img{
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-bottom: 8px;
-}
-
-.menu-lateral__perfil figure img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .menu-lateral__lista{
@@ -89,8 +84,18 @@
     font-size: 1.5rem
 }
 
-@media only screen and (max-width:1240px){
+@media only screen and (max-width:1300px){
     .menu-lateral__conteudo{
         width: 35vw;
+    }
+
+    .menu-lateral__lista ul {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width:1800px){
+    .menu-lateral__lista ul {
+        height: 70%;
     }
 }

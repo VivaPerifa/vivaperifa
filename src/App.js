@@ -74,6 +74,7 @@ function App() {
           <Route path='/visualizar-evento' element={<VisualizarEvento />}></Route>
           <Route path='/editar-perfil' element={<EditarPerfilOrganizador />}></Route>
           <Route path='/detalhe-evento' element={<DetalheEvento></DetalheEvento>}></Route>
+          <Route path='/eventos-cadastrados' element={<EventosCadastrados></EventosCadastrados>}></Route>
         </Routes>
       </div>
       {/* <Footer></Footer> */}

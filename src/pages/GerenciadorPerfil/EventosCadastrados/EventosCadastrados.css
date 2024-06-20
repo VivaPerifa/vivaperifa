@@ -1,0 +1,26 @@
+.container-eventos-cadastrados{
+    display: flex;
+    width: 100%;
+}
+
+.eventos-cadastrados-scroll{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.conteudo-eventos-cadastrados{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.eventos-cadastrados__guia{
+    display: flex;
+    gap: 30px;
+}
+
+.eventos-cadastrados__guia span{
+    font-size: 1.2rem;
+}
+

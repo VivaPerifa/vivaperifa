@@ -17,9 +17,9 @@ export default function MenuLateralPerfil() {
             <div className="menu-lateral">
                 <div className="menu-lateral__conteudo">
                     <div className="menu-lateral__perfil">
-                        <figure>
+                        <Link to="/home">
                             <img src="https://cdn.oantagonista.com/uploads/2022/08/reproducao_redessociais.jpeg" alt="Foto de Perfil"/>
-                        </figure>
+                        </Link>
                         <h2>Pablo Marçal</h2>
                         <Link to="/editar-perfil"><span>Editar perfil</span></Link>
                     </div>
@@ -30,7 +30,7 @@ export default function MenuLateralPerfil() {
                                 <Link to="/criar-evento">Criar Evento</Link>
                             </li>
                             <li><FontAwesomeIcon icon={faCalendar} /> 
-                                Eventos
+                                <Link to="/eventos-cadastrados">Eventos</Link>
                             </li>
                             <li><FontAwesomeIcon icon={faChartSimple} /> 
                                 Analytics
