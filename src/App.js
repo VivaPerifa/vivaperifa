@@ -77,6 +77,7 @@ function App() {
         </Routes>
       </div>
       {/* <Footer></Footer> */}
+      <PerfilOrganizador></PerfilOrganizador>
     </BrowserRouter>
   );
 }
