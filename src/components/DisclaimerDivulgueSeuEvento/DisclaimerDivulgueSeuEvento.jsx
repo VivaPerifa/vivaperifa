@@ -1,6 +1,6 @@
 import Parceiros from '../../assets/parceiros.png';
+import BotaoColorido from '../BotaoColorido/BotaoColorido';
 import './DisclaimerDivulgueSeuEvento.css';
-import Botao from '../Botao/Botao';
 import { Link } from 'react-router-dom';
 
 export default function DisclaimerDivulgueSeuEvento(){
@@ -16,13 +16,10 @@ export default function DisclaimerDivulgueSeuEvento(){
                     </h3>
                 </div>
                 <p>Junte-se a nós para impulsionar a cultura e os eventos na perifa! Entre em contato agora para se tornar um parceiro do VivaPerifa.</p>
-                <Link to="/contato"><Botao
-                    legenda="Contato"
-                    gradiente="linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%)"
-                    bordaRaio="10px"
-                    espacamento="10px"
-                    largura="50%"
-                /></Link>
+                <BotaoColorido 
+                    legendaBotao="Contato"
+                    larguraBotao="50%"
+                />
 
             </div>
             <figure className="divulgar-evento__imagem">

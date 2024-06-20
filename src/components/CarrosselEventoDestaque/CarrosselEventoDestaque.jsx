@@ -1,4 +1,4 @@
-import EventoDestaque from '../EventoDestaque/EventoDestaque';
+import EventoDestaque from '../../components/CarrosselEventoDestaque/EventoDestaque/EventoDestaque';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, EffectCoverflow } from 'swiper/modules';

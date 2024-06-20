@@ -1,4 +1,4 @@
-import EventoDestaque from "../../static/Header/EventoDestaque/EventoDestaque";
+
 import './DetalheEvento.css';
 import PerfilOrganizador from "../../assets/perfil-usuario.png";
 

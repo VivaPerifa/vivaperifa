@@ -3,3 +3,22 @@
     flex-direction: column;
     margin-bottom: 50px;
 }
+
+.comunidade-header{
+    width: 100%;
+    background-image: url('../../assets/fundo_comunidade.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.comunidade-header h2{
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+    display: flex;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}

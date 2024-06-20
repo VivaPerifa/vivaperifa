@@ -1,18 +1,16 @@
+.menu-lateral{
+    height: 100vh;
+}
+
 .menu-lateral__conteudo {
-    /* position: fixed;
-    top: 0;
-    left: 0; */
     background-color: var(--cor-azul);
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
     width: 25vw;
     padding: 10px 40px;
-}
-
-.menu-lateral{
-    height: 100vh;
+    height: inherit;
 }
 
 .menu-lateral__perfil{
@@ -51,6 +49,7 @@
 
 .menu-lateral__lista{
     display: flex;
+    height: 100%;
 }
 
 .menu-lateral__lista ul {
@@ -59,10 +58,10 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
     margin: 0 auto;
     width: 100%;
-    height: inherit;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .menu-lateral__lista ul li a{

@@ -1,0 +1,10 @@
+.botao-azul button{
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--cor-azul);
+    padding: 10px 0;
+    border-radius: 10px;
+    width: inherit;
+}

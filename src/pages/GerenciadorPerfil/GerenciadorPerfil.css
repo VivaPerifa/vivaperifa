@@ -1,6 +1,6 @@
 .gerenciar-perfil{
     display: flex;
     justify-content: space-between;
-    /* height: 100vh;
-    overflow: auto; */
+    height: 100vh;
+    overflow: hidden;
 } 

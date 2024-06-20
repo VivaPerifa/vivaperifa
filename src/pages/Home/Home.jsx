@@ -25,7 +25,11 @@ import Evento10 from "../../assets/evento_10.png";
 import Mapa from '../../components/Mapa/Mapa';
 import { useState, useEffect } from 'react';
 import api from  '../../services/api';
-
+import Menu from '../../static/Menu/Menu';
+import BatalhaRima from '../../assets/batalha_rima.png';
+import Arte from '../../assets/arte.png';
+import CarrosselEventoDestaque from '../../components/CarrosselEventoDestaque/CarrosselEventoDestaque';
+import EventoRua from '../../assets/evento_rua.png';
 
 export default function Home() {
     const primeiraListaEvento = [
@@ -55,6 +59,27 @@ export default function Home() {
         }
     ];
 
+    const listItem = [
+        {
+            id: 1,
+            imagem: BatalhaRima,
+            titulo: "Batalha de Rima em SP",
+            data: "Sábado, dia 20/04 às 9h - 12h, SP Jardim Clímax"
+        },
+        {
+            id: 2,
+            imagem: Arte,
+            titulo: "Batalha de Rima em SP",
+            data: "Sábado, dia 20/04 às 9h - 12h, SP Jardim Clímax"
+        },
+        {
+            id: 3,
+            imagem: EventoRua,
+            titulo: "Batalha de Rima em SP",
+            data: "Sábado, dia 20/04 às 9h - 12h, SP Jardim Clímax"
+        }
+    ];
+
     
     const [eventos, setEventos] = useState([]);
 
@@ -70,14 +95,20 @@ export default function Home() {
     
     return (
         <div className="container-homepage">
-            <Header
+            {/* <Header
                 tipoCabecalho="home"
-            />
+            /> */}
+            <div className="homepage-header">
+                <Menu></Menu>
+                <CarrosselEventoDestaque listaEventoDestaque={listItem}></CarrosselEventoDestaque>
+            </div>
 
-            <CarrosselEvento
-                tituloCarrossel="acontece em são paulo"
-                listaEvento={primeiraListaEvento}
-            />
+            <div className="homepage-carrossel-evento">
+                <CarrosselEvento
+                    tituloCarrossel="acontece em são paulo"
+                    listaEvento={primeiraListaEvento}
+                />
+            </div>
 
             <div className="mapa-home">
                 <h2>Encontre os eventos no mapa</h2>
@@ -85,15 +116,11 @@ export default function Home() {
             </div>
 
             <BannerCrescimento></BannerCrescimento>
-
             <DisclaimerDivulgueSeuEvento></DisclaimerDivulgueSeuEvento>
-
             <DisclaimerImpulsionarEvento></DisclaimerImpulsionarEvento>
-
             <ContainerPlanos></ContainerPlanos>
-
             <ContainerDepoimentos></ContainerDepoimentos>
-
+            <Footer></Footer>
         </div>
     );
 }

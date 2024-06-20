@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './VisibilidadeEvento.css';
-import Botao from '../../../../components/Botao/Botao';
 import MenuLateralPerfil from '../../MenuLateralPerfil/MenuLateralPerfil';
 import { Link } from 'react-router-dom';
+import BotaoLaranja from '../../../../components/BotaoLaranja/BotaoLaranja';
 
 export default function VisibilidadeEvento() {
     const [privacidade, setPrivacidade] = useState('publico');
@@ -12,23 +12,18 @@ export default function VisibilidadeEvento() {
     };
 
     return (
-        <div className="container-visibilidade">
+        <div className="container-visibilidade-evento">
             <MenuLateralPerfil></MenuLateralPerfil>
-            <div className="conteudo-visibilidade">
-                <div className="titulo-visibilidade">
-                    <h1 className='title-visibilidade'>
-                        Visibilidade
-                    </h1>
-                </div>
-                <div className="texto-visibilidade">
-                    <p className='text-visibilidade'>
-                        Escolha quando publicar e quem poderá ver o seu evento.
-                    </p>
-                </div>
 
-                <div className="container-quadrado-visibilidade">
-                    <div className="container-centralizado">
-                        <div className="opcoes-privacidade">
+            <div className="visibilidade-evento-scroll">
+                <div className="conteudo-visibilidade-evento">
+                    <div className="visibilidade-evento__header">
+                        <h2>Visibilidade</h2>
+                        <p>Escolha quando publicar e quem poderá ver o seu evento.</p>
+                    </div>
+
+                    <div className="visibilidade-evento__quadrado">
+                        <div className="visibilidade-evento__opcoes">
                             <OpcaoPrivacidade
                                 tipo="Privado"
                                 descricao="Seu evento estará disponível apenas para você e pessoas que você escolher"
@@ -49,35 +44,36 @@ export default function VisibilidadeEvento() {
                             />
                         </div>
                     </div>
-                </div>
-                <div className="btn-visibilidade">
-                    <a href='#'><h4>Voltar</h4></a>
-                    <Link to='/visualizar-evento'>
-                        <Botao
-                            legenda="Avançar"
-                            gradiente="var(--cor-laranja)"
-                            bordaRaio="10px"
-                            grossuraBorda="50px"
-                            espacamento="10px"
-                            largura="100%"
-                        />
-                    </Link>
-                </div>
 
+                    <div className="visibilidade-evento__botao">
+                        <Link to="/localizacao-evento">
+                            <span>Voltar</span>
+                        </Link>
+                        <Link to='/visualizar-evento'>
+                            <BotaoLaranja
+                                legendaBotao="Avançar"
+                                larguraBotao="150px"
+                            />
+                        </Link>
+                    </div>
+
+                </div>
             </div>
         </div>
     );
 }
 
 function OpcaoPrivacidade({ tipo, descricao, privacidade, handleChangePrivacidade }) {
-    return (
+    return (   
         <div className="opcao" onClick={() => handleChangePrivacidade(tipo)}>
-            <div className="tipo-container">
+            <div className="opcao__bolinha">
                 <span className={`bolinha ${privacidade === tipo ? 'ativo' : ''}`}></span>
-                <span className="tipo">{tipo.charAt(0).toUpperCase() + tipo.slice(1)}</span>
             </div>
-            <div className="texto-visibilidade-descricao">
-                {descricao}
+            <div className="opcao__titulo">
+                <span>{tipo.charAt(0).toUpperCase() + tipo.slice(1)}</span>
+                <div className="opcao__descricao">
+                    {descricao}
+                </div>
             </div>
         </div>
     );

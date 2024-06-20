@@ -1,6 +1,6 @@
 import './Plano.css';
 import { IoIosStar } from "react-icons/io";
-import Botao from '../../Botao/Botao';
+import BotaoColorido from '../../BotaoColorido/BotaoColorido';
 
 export default function PlanoComponente(props) {
     const listItem = props.listaBeneficios;
@@ -30,12 +30,9 @@ export default function PlanoComponente(props) {
             </div>
             <div className={`botao-plano ${props.tipoPlano === "Humildade" ? 'hidden' : 'show'}`}>
                 <hr />
-                <Botao
-                    gradiente="linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%)"
-                    espacamento="10px"
-                    legenda="Assinar"
-                    bordaRaio="5px"
-                    largura="100%"
+                <BotaoColorido
+                    legendaBotao="Assinar"
+                    larguraBotao="100%"
                 />
             </div>
         </div>

@@ -18,6 +18,7 @@ import Evento13 from "../../assets/evento_13.png";
 import Evento14 from "../../assets/evento_14.png";
 
 import Evento11 from "../../assets/evento_feira.png";
+import Menu from '../../static/Menu/Menu';
 
 export default function Comunidade(){
     const primeiraListaEvento = [
@@ -75,9 +76,10 @@ export default function Comunidade(){
     ];
     return (
         <div className="container-comunidade">
-            <Header 
-                tipoCabecalho="comunidade"
-            />
+            <div className="comunidade-header">
+                <Menu></Menu>
+                <h2>Explore a comunidade de eventos da sua qubrada!</h2>
+            </div>
             <CarrosselEvento
                 tituloCarrossel="histórico de eventos em são paulo"
                 listaEvento={primeiraListaEvento}

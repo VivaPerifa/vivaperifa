@@ -1,13 +1,12 @@
 import React from 'react';
 import './Header.css';
-import CarrosselEventoDestaque from './CarrosselEventoDestaque/CarrosselEventoDestaque';
-import Menu from './Menu/Menu';
-import EventoDestaque from './EventoDestaque/EventoDestaque';
+import CarrosselEventoDestaque from '../../components/CarrosselEventoDestaque/CarrosselEventoDestaque';
+import Menu from '../Menu/Menu';
 import BatalhaRima from '../../assets/batalha_rima.png';
 import Arte from '../../assets/arte.png';
 import EventoRua from '../../assets/evento_rua.png';
 import Xamuel from '../../assets/xamuel.jpg';
-import Evento15 from '../../assets/evento_15.png';
+import EventoDestaque from '../../components/CarrosselEventoDestaque/EventoDestaque/EventoDestaque';
 
 export default function Header(props){
     const listItem = [
@@ -40,10 +39,7 @@ export default function Header(props){
 
     return(
         <div className='container-header'>
-            <div className={`fundo-home header ${props.tipoCabecalho == 'home' ? 'show' : 'hidden'}`}>
-                <Menu></Menu>
-                <CarrosselEventoDestaque listaEventoDestaque={listItem}></CarrosselEventoDestaque>
-            </div>
+            
             <div className={`fundo-comunidade header ${props.tipoCabecalho == 'comunidade' ? 'show' : 'hidden'}`}>
                 <Menu></Menu>
                 <h2>Explore a comunidade de eventos da sua qubrada!</h2>

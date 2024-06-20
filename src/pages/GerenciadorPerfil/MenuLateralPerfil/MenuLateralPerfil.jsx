@@ -20,7 +20,7 @@ export default function MenuLateralPerfil() {
                             <img src="https://cdn.oantagonista.com/uploads/2022/08/reproducao_redessociais.jpeg" alt="Foto de Perfil"/>
                         </figure>
                         <h2>Pablo Marçal</h2>
-                        <span>Editar perfil</span>
+                        <Link to="/editar-perfil"><span>Editar perfil</span></Link>
                     </div>
 
                     <div className="menu-lateral__lista">

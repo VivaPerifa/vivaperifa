@@ -1,5 +1,5 @@
 .container-prog-evento {
-    
+    display: flex;
 }
 
 .conteudo-prog-evento{
@@ -7,35 +7,37 @@
     flex-direction: column;
     gap: 30px;
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
 }
 
-.conteudo-prog-scroll{
-    width: 100%;
+.prog-evento-scroll{
     height: 100vh;
     overflow: auto;
+    padding: 20px 0;
 }
 
-.prog-calendar{
+.programacao-calendario{
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .prog-evento__header h2{
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .prog-evento__header p{
-    font-size: 1.3rem;
+    font-size: 1rem;
+    color: #2d2d2def;
 }
 
 .prog-evento__form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 50%;
+    gap: 30px;
+    width: 55%;
 }
 
 .prog-evento__form span{
@@ -44,25 +46,30 @@
     font-weight: 600;
 }
 
-.btn-prog-evento a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--cor-laranja);
-    font-weight: 600;
-    font-size: 1.2rem;
+.prog-evento__calendar{
+    width: 40%;
 }
 
-.btn-prog-evento{
+.prog-evento__botao {
     display: flex;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
     justify-content: flex-end;
 }
 
-.calendario-componente{
-    width: 40%;
+.prog-evento__botao span{
+    color: var(--cor-laranja);
 }
+
+.prog-evento__botao a{
+    text-decoration: none;
+}
+
+.prog-evento__botao button, .prog-evento__botao span{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
 
 /* Estilizando o container do calendário */
 .react-calendar {    
@@ -92,7 +99,7 @@
 }
 
 .react-calendar__tile, .react-calendar__tile--now, .react-calendar__tile--active, .react-calendar__tile--range, .react-calendar__tile--rangeStart, .react-calendar__tile--rangeEnd, .react-calendar__tile--rangeBothEnds, .react-calendar__month-view__days__day{
-    padding: 15px 0 !important;
+    padding: 10px 0 !important;
 }
 
 /* Estilizando a visualização do mês */

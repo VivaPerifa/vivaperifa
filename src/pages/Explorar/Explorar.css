@@ -11,3 +11,14 @@
     gap: 50px;
     margin-bottom: 50px;
 }
+
+.explorar-header{
+    background-image: url('../../assets/fundo_explorar.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.explorar-header__evento-destaque{
+    margin: 0 auto;
+}

@@ -21,3 +21,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.homepage-header{
+    background-image: url('../../assets/fundo_home.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

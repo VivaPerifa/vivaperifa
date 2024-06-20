@@ -1,7 +1,7 @@
 import './App.css';
 import SobreNos from './pages/SobreNos/SobreNos';
 import Footer from './static/Footer/Footer';
-import Menu from './static/Header/Menu/Menu';
+import Menu from './static/Menu/Menu';
 import Home from './pages/Home/Home';
 import Explorar from './pages/Explorar/Explorar';
 import Comunidade from './pages/Comunidade/Comunidade';
@@ -38,6 +38,7 @@ import PerfilOrganizador from './pages/PerfilOrganizador/PerfilOrganizador.jsx';
 // import { LocalizationProvider } from '@mui/x-date-pickers';
 // import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 // import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
+import EditarPerfilOrganizador from './pages/GerenciadorPerfil/EditarPerfilOrganizador/EditarPerfilOrganizador.jsx';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -51,7 +52,7 @@ function App() {
     {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
       {children}
     </LocalizationProvider> */}
-    <LocationRequest></LocationRequest>
+    {/* <LocationRequest></LocationRequest> */}
     <DisclaimerCookies></DisclaimerCookies>
       <div>
         {/* <Tradutor changeLanguage={changeLanguage} />  Botão de Tradução */}
@@ -71,6 +72,7 @@ function App() {
           <Route path='/programacao-evento' element={<ProgramacaoEvento />}></Route>
           <Route path='/visibilidade-evento' element={<VisibilidadeEvento />}></Route>
           <Route path='/visualizar-evento' element={<VisualizarEvento />}></Route>
+          <Route path='/editar-perfil' element={<EditarPerfilOrganizador />}></Route>
         </Routes>
       </div>
       {/* <Footer></Footer> */}

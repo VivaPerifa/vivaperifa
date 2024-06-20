@@ -1,7 +1,13 @@
 .main {
     display: flex;
     color: black;
-    
+}
+
+.sobre-nos-header{
+    background-image: url('../../assets/header-sobrenos.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 770px;
 }
 
 .principal-sobre-nos {
@@ -13,7 +19,7 @@
 
 .container-sobre-nos {
     width: 100vw;
-    display: flex;
+    display: flex;  
     justify-content: center;
     background-image: url(../../assets/fundo_sobrenos.png);
     background-repeat: no-repeat;

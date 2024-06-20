@@ -1,6 +1,6 @@
 import './EditarPerfilOrganizador.css'
 import CampoForm from '../../../components/CampoForm/CampoForm';
-import Botao from '../../../components/Botao/Botao';
+import BotaoColorido from '../../../components/BotaoColorido/BotaoColorido';
 
 export default function EditarPerfilOrganizador() {
     return (
@@ -49,20 +49,13 @@ export default function EditarPerfilOrganizador() {
                         <CampoForm id='tel-editar' tipo='text' legenda='Digite o telefone dfa organização' tamanhoCampo='100%' tituloForm="Telefone" />
 
                         <div className="btn-editar">
-                            <Botao
-                                legenda="Descartar"
-                                gradiente="var(--cor-rosa)"
-                                bordaRaio="10px"
-                                grossuraBorda="50px"
-                                espacamento="10px"
-                                largura="100%"
+                            <BotaoColorido
+                                legendaBotao="Descartar"
+                                larguraBotao="180px"
                             />
-                            <Botao
-                                legenda="Salvar"
-                                gradiente="linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%)"
-                                bordaRaio="10px"
-                                espacamento="10px"
-                                largura="100%"
+                            <BotaoColorido
+                                legendaBotao="Salvar"
+                                larguraBotao="180px"
                             />
                         </div>
                     </div>

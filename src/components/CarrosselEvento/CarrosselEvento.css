@@ -8,6 +8,10 @@
     width: inherit;
 }
 
+.item-evento a{
+    text-decoration: none;
+}
+
 .header-carrossel{
     display: flex;
     justify-content: space-between;
@@ -41,3 +45,16 @@
     font-weight: 500;
 }
 
+@media only screen and (max-width:940px){
+    .eventos{
+        grid-template-columns: repeat(2,50%);
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .eventos{
+        grid-template-columns: repeat(1,100%);
+        gap: 20px;
+    }
+}
