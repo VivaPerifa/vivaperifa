@@ -9,6 +9,7 @@ import '../MenuLateralPerfil/MenuLateralPerfil.css';
 import '../../../App';
 import { Link  }from 'react-router-dom';
 
+import { IoCreateOutline } from "react-icons/io5";
 
 export default function MenuLateralPerfil() {
     return (

@@ -1,4 +1,3 @@
-import Header from '../../static/Header/Header';
 import CarrosselEvento from '../../components/CarrosselEvento/CarrosselEvento';
 import './Comunidade.css';
 

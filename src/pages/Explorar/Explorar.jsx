@@ -1,5 +1,4 @@
 import FiltroPesquisa from "./FiltroPesquisa/FiltroPesquisa";
-import Header from '../../static/Header/Header';
 import './Explorar.css';
 import CarrosselEvento from "../../components/CarrosselEvento/CarrosselEvento";
 import DisclaimerImpulsionarEvento from "../../components/DisclaimerImpulsionarEvento/DisclaimerImpulsionarEvento";

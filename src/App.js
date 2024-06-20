@@ -73,6 +73,7 @@ function App() {
           <Route path='/visibilidade-evento' element={<VisibilidadeEvento />}></Route>
           <Route path='/visualizar-evento' element={<VisualizarEvento />}></Route>
           <Route path='/editar-perfil' element={<EditarPerfilOrganizador />}></Route>
+          <Route path='/detalhe-evento' element={<DetalheEvento></DetalheEvento>}></Route>
         </Routes>
       </div>
       {/* <Footer></Footer> */}

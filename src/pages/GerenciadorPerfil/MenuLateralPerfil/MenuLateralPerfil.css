@@ -70,15 +70,13 @@
 }
 
 .menu-lateral__lista ul li {
-    /* padding: 10px 30px; */
-    /* display: flex;
-    align-items: center; */
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 10px 20px;
     border-radius: 10px;
-    /* margin-bottom: 15px; */
+    display: flex;
+    align-items: center;    
 }
 
 .menu-lateral__lista ul li:hover {

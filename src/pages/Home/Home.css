@@ -27,3 +27,9 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+.homepage-carrossel-evento{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

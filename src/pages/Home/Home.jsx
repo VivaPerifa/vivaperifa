@@ -1,5 +1,4 @@
 import CarrosselEvento from "../../components/CarrosselEvento/CarrosselEvento";
-import Header from "../../static/Header/Header";
 import Footer from "../../static/Footer/Footer";
 import ContainerPlanos from "../../components/ContainerPlanos/ContainerPlanos";
 import './Home.css';
@@ -24,7 +23,7 @@ import Evento10 from "../../assets/evento_10.png";
 // import Evento13 from "../../assets/evento_13.png";
 import Mapa from '../../components/Mapa/Mapa';
 import { useState, useEffect } from 'react';
-import api from  '../../services/api';
+import api from '../../services/api';
 import Menu from '../../static/Menu/Menu';
 import BatalhaRima from '../../assets/batalha_rima.png';
 import Arte from '../../assets/arte.png';
@@ -80,7 +79,7 @@ export default function Home() {
         }
     ];
 
-    
+
     const [eventos, setEventos] = useState([]);
 
     useEffect(() => {
@@ -89,10 +88,10 @@ export default function Home() {
                 setEventos(response);
             })
             .catch((error) => {
-                console.log("Erro ao buscar dados dos eventos "+error);
+                console.log("Erro ao buscar dados dos eventos " + error);
             });
     }, []);
-    
+
     return (
         <div className="container-homepage">
             {/* <Header
@@ -104,6 +103,10 @@ export default function Home() {
             </div>
 
             <div className="homepage-carrossel-evento">
+                <CarrosselEvento
+                    tituloCarrossel="adicionados recentemente"
+                    listaEvento={primeiraListaEvento}
+                />
                 <CarrosselEvento
                     tituloCarrossel="acontece em são paulo"
                     listaEvento={primeiraListaEvento}
