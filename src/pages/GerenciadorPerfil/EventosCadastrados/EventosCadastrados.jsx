@@ -1,16 +1,17 @@
 import MenuLateralPerfil from "../MenuLateralPerfil/MenuLateralPerfil";
 import "./EventosCadastrados.css";
-import Evento1 from "../../assets/evento_1.png";
-import Evento2 from "../../assets/evento_2.png";
-import Evento3 from "../../assets/evento_3.png";
-import Evento4 from "../../assets/evento_4.png";
+import Evento1 from "../../../assets/evento_1.png";
+import Evento2 from "../../../assets/evento_2.png";
+import Evento3 from "../../../assets/evento_3.png";
+import Evento4 from "../../../assets/evento_4.png";
 import Evento5 from "../../../assets/evento_5.png";
-import Evento6 from "../../assets/evento_6.png";
-import Evento7 from "../../assets/evento_7.png";
-import Evento8 from "../../assets/evento_8.png";
-import Evento9 from "../../assets/evento_9.png";
-import Evento10 from "../../assets/evento_10.png";
-import CarrosselEventoDestaque from '../../components/CarrosselEventoDestaque/CarrosselEventoDestaque';
+import Evento6 from "../../../assets/evento_6.png";
+import Evento7 from "../../../assets/evento_7.png";
+import Evento8 from "../../../assets/evento_8.png";
+import Evento9 from "../../../assets/evento_9.png";
+import Evento10 from "../../../assets/evento_10.png";
+import CarrosselEventoDestaque from '../../../components/CarrosselEventoDestaque/CarrosselEventoDestaque';
+import CarrosselEvento from "../../../components/CarrosselEvento/CarrosselEvento";
 
 export default function EventosCadastrados() {
     const primeiraListaEvento = [

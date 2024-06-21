@@ -60,9 +60,9 @@ export default function Menu(props) {
                     <li>
                         <Link to="/contato">{t('menu.contato')}</Link>
                     </li>
-                    {/* <li>
+                    <li>
                         <Link to="/gerenciador-perfil">{t('menu.gerenciador-perfil')}</Link>
-                    </li> */}
+                    </li>
                 </ul>
                 <div className='pesquisa-user'>
                     <div className='pesquisa'>
