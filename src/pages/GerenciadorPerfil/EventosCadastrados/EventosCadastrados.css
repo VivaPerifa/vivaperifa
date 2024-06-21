@@ -12,7 +12,10 @@
 .conteudo-eventos-cadastrados{
     width: 80%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .eventos-cadastrados__guia{
@@ -24,3 +27,14 @@
     font-size: 1.2rem;
 }
 
+.eventos-cadastrados__carrossel{
+    display: grid;
+    grid-template-columns: repeat(3,32%);
+    justify-content: space-between;
+}
+
+.eventos-cadastrados__body{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

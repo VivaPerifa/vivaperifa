@@ -6,6 +6,7 @@ import MenuLateralPerfil from "../../MenuLateralPerfil/MenuLateralPerfil";
 import Coracao from '../../../../assets/coracao.png';
 import Agenda from '../../../../assets/agenda.png';
 import BotaoColorido from "../../../../components/BotaoColorido/BotaoColorido";
+import MiniEventoComum from "../../../../components/MiniEventoComum/MiniEventoComum";
 
 const VisualizarEvento = () => {
     return (
@@ -27,32 +28,7 @@ const VisualizarEvento = () => {
                         <div className="visualizacao-evento__carrossel">
                             <div className="carrossel-visualizacao__item">
                             </div>
-                            <div className="carrossel-visualizacao__item mini-evento-comum">
-                                <figure>
-                                    <img src={Evento} alt="" />
-                                </figure>
-                                <div className="mini-evento-comum__dados">
-                                    <div className="mini-evento-comum__titulo">
-                                        <h2>Batalha de rima</h2>
-                                    </div>
-                                    <div className="mini-evento-comum__icones">
-                                        <span>
-                                            <img src={Coracao} alt="" />
-                                        </span>
-                                        <span>
-                                            <img src={Agenda} alt="" />
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="mini-evento-comum__data">
-                                    <span>Sábado, dia 20/04 às 09h - 12h</span>
-                                </div>
-                                <div className="mini-evento-comum__descricao">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...
-                                    </p>
-                                </div>
-                            </div>
+                            <MiniEventoComum className="carrossel-visualizacao__item"></MiniEventoComum>
                             <div className="carrossel-visualizacao__item">
                             </div>
                         </div>
