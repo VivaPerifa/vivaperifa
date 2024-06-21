@@ -51,8 +51,8 @@
     }
 }
 
-@media only screen and (max-width:1240px){
+@media only screen and (max-width:1200px){
     :root{
-        font-size: 12px;
+        font-size: 14px;
     }
 }

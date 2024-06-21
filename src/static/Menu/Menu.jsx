@@ -1,14 +1,14 @@
 import './Menu.css';
-import Logo from '../../../assets/logo.png';
+import Logo from '../../assets/logo.png';
 import { IoIosSearch } from "react-icons/io";
-import User from '../../../assets/user.png';
+import User from '../../assets/user.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import '../../../i18n';
+import '../../i18n';
 import { useState, useEffect, useRef } from 'react';
-import Tradutor from '../../../components/Tradutor/tradutor';
-import CampoForm from '../../../components/CampoForm/CampoForm';
-import Botao from '../../../components/Botao/Botao';
+import Tradutor from '../../components/Tradutor/tradutor';
+import CampoForm from '../../components/CampoForm/CampoForm';
+import BotaoAzul from '../../components/BotaoAzul/BotaoAzul';
 
 export default function Menu(props) {
     const { t } = useTranslation();
@@ -89,7 +89,7 @@ export default function Menu(props) {
 
                                     <CampoForm id='login-form' tipo='text' legenda='Senha' tamanhoCampo='100%' tituloForm="" />
 
-                                    <Botao espacamento='10px' corFundo="#033E8C" legenda='Entrar' tamanhoFonte='1.5rem' largura='30vw' bordaRaio='20px' />
+                                    <BotaoAzul legendaBotao="Entrar" larguraBotao="200px"/>
                                     {/* <Link to=''>{t('Entrar')}</Link> */}
                                     <a href=''><h4>Esqueceu sua senha?</h4></a>
 

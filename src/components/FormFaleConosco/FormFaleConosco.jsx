@@ -2,9 +2,9 @@ import { TbBrandLinktree } from 'react-icons/tb';
 import { HiOutlineMailOpen } from 'react-icons/hi';
 import { FiPhoneCall } from 'react-icons/fi';
 import './FormFaleConosco.css';
-import Botao from '../Botao/Botao';
 import CampoForm from '../CampoForm/CampoForm';
 import MuroVivaPerifa from '../../assets/muro_viva_perifa.png';
+import BotaoLaranja from '../BotaoLaranja/BotaoLaranja';
 
 export default function FormFaleConosco() {
     return (
@@ -41,7 +41,7 @@ export default function FormFaleConosco() {
 
                                 <CampoForm id='mensagem' tipo='text' legenda='Mensagem' tamanhoCampo='40vw' />
 
-                                <Botao espacamento='10px' corFundo="#f28705" legenda='Enviar' tamanhoFonte='1.5rem' largura='40vw' bordaRaio='20px' />
+                                <BotaoLaranja legendaBotao="Enviar"></BotaoLaranja>
                             </form>
                         </div>
                     </div>

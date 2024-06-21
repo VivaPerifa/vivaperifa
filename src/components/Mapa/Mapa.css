@@ -5,6 +5,6 @@
 
 .leaflet-container, .leaflet-touch, .leaflet-fade-anim, .leaflet-grab, .leaflet-touch-drag, .leaflet-touch-zoom{
     border: 2px solid white;
-    box-shadow: 0 0 20px 1px gray;
+    box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.493);
     border-radius: 10px;
 }

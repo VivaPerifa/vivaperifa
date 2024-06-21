@@ -1,0 +1,69 @@
+.perfil-organizador__header{
+    background-image: url('../../assets/capa-perfil-organizador.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-organizador__body{
+    width: var(--tamanho-container);
+    margin: 0 auto;
+}
+
+.perfil-organizador__menu{
+    margin-bottom: 18%;
+}
+
+.perfil-organizador__dados{
+    display: flex;
+    width: var(--tamanho-container);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perfil-organizador__botoes{
+    display: flex;
+    gap: 15px;
+}
+
+.perfil-organizador__info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.perfil-organizador__info h4{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.perfil-organizador__info span{
+    font-size: 1.3rem;
+    color: rgba(128, 128, 128, 0.904);
+}
+
+.perfil-organizador__info p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.perfil-organizador__info{
+    width: var(--tamanho-container);
+    margin: 0 auto;
+}
+
+.perfil-organizador__body{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+@media only screen and (min-width:1500px){
+    .perfil-organizador__menu{
+        margin-bottom: 20%;
+    }
+}

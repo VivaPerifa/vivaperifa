@@ -9,6 +9,7 @@ import '../MenuLateralPerfil/MenuLateralPerfil.css';
 import '../../../App';
 import { Link  }from 'react-router-dom';
 
+import { IoCreateOutline } from "react-icons/io5";
 
 export default function MenuLateralPerfil() {
     return (
@@ -16,11 +17,11 @@ export default function MenuLateralPerfil() {
             <div className="menu-lateral">
                 <div className="menu-lateral__conteudo">
                     <div className="menu-lateral__perfil">
-                        <figure>
+                        <Link to="/home">
                             <img src="https://cdn.oantagonista.com/uploads/2022/08/reproducao_redessociais.jpeg" alt="Foto de Perfil"/>
-                        </figure>
+                        </Link>
                         <h2>Pablo Marçal</h2>
-                        <span>Editar perfil</span>
+                        <Link to="/editar-perfil"><span>Editar perfil</span></Link>
                     </div>
 
                     <div className="menu-lateral__lista">
@@ -29,7 +30,7 @@ export default function MenuLateralPerfil() {
                                 <Link to="/criar-evento">Criar Evento</Link>
                             </li>
                             <li><FontAwesomeIcon icon={faCalendar} /> 
-                                Eventos
+                                <Link to="/eventos-cadastrados">Eventos</Link>
                             </li>
                             <li><FontAwesomeIcon icon={faChartSimple} /> 
                                 Analytics

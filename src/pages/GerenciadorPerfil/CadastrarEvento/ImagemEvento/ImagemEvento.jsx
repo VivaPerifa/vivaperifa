@@ -6,15 +6,16 @@ import miniatura3 from '../../../../assets/miniatura-criar-evento-03.png';
 import miniatura4 from '../../../../assets/miniatura-criar-evento-04.png';
 import miniatura5 from '../../../../assets/miniatura-criar-evento-05.png';
 import miniatura6 from '../../../../assets/miniatura-criar-evento-06.png';
-import Botao from '../../../../components/Botao/Botao';
 import '../../CadastrarEvento/ImagemEvento/ImagemEvento.css';
 import MenuLateralPerfil from '../../MenuLateralPerfil/MenuLateralPerfil';
+import BotaoLaranja from '../../../../components/BotaoLaranja/BotaoLaranja';
 
 export default function ImagemEvento() {
     return (
         <div className="container-imagem-evento">
             <MenuLateralPerfil></MenuLateralPerfil>
-            <div className='imagem-evento-scroll'>
+
+            <div className="imagem-evento-scroll">
                 <div className="conteudo-imagem-evento">
                     <div className="imagem-evento__header">
                         <h2>Miniatura</h2>
@@ -46,18 +47,14 @@ export default function ImagemEvento() {
                         </div>
                     </div>
 
-                    <div className="btn-imagem-evento">
+                    <div className="imagem-evento__botao">
                         <Link to="/criar-evento">
                             <span>Cancelar</span>
                         </Link>
                         <Link to="/descricao-evento">
-                            <Botao
-                                legenda="Avançar"
-                                gradiente="var(--cor-laranja)"
-                                bordaRaio="10px"
-                                grossuraBorda="50px"
-                                espacamento="10px"
-                                largura="180px"
+                            <BotaoLaranja
+                                legendaBotao="Avançar"
+                                larguraBotao="150px"
                             />
                         </Link>
                     </div>

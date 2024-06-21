@@ -4,21 +4,21 @@ import Agenda from '../../../assets/agenda.png';
 
 export default function EventoComum(props) {
     return (
-        <div className="container-evento">
+        <div className="container-evento-comum">
             <div className="evento-comum">
 
-                <figure className="imagem-evento-comum">
+                <figure className="evento-comum__imagem">
                     <img src={props.fotoEvento} alt="" />
                 </figure>
 
-                <div className="dados-evento-comum">
-                    <div className='titulo-evento-comum'>
+                <div className="evento-comum__dados">
+                    <div className="evento-comum__titulo">
                         <h2>
                             {props.tituloEvento}
                         </h2>
                     </div>
 
-                    <div className='icones-evento-comum'>
+                    <div className='evento-comum__icones'>
                         <span>
                             <img src={Coracao} alt="" />
                         </span>
@@ -29,7 +29,7 @@ export default function EventoComum(props) {
                     </div>
                 </div>
 
-                <div className="data-evento-comum">
+                <div className="evento-comum__data">
                     <span style={{color:"#D9043E"}}>
                         {props.quantidadeComentarios}
                     </span>
@@ -38,13 +38,13 @@ export default function EventoComum(props) {
                     </span>
                 </div>
 
-                <div className='descricao-evento-comum'>
+                <div className="evento-comum__descricao">
                     <p>
                         {props.descricaoEvento}
                     </p>
                 </div>
 
-                <div className={`local-evento-comum  ${props.quantidadeComentarios != null ? 'cor-azul' : 'cor-laranja'}`}>
+                <div className={`evento-comum__local  ${props.quantidadeComentarios != null ? 'cor-azul' : 'cor-laranja'}`}>
                     <span>
                         {props.localEvento}
                     </span>

@@ -1,7 +1,7 @@
 .campo-formulario {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .campo-formulario input{
@@ -13,8 +13,12 @@
     height: 100%;
 }
 
+.campo-formulario input::placeholder{
+    font-size: 1rem;
+}
+
 .campo-formulario label{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 

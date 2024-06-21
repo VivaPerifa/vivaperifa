@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     gap: 30px;
 }
 
@@ -27,7 +27,8 @@
 }
 
 .imagem-evento__header p{
-    font-size: 1.3rem;
+    font-size: 1rem;
+    color: #2d2d2def;
 }
 
 .imagem-evento__banner{
@@ -59,22 +60,22 @@
     object-fit: contain;
 }
 
-.btn-imagem-evento{
+.imagem-evento__botao{
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: flex-end;
 }
 
-.btn-imagem-evento span, .btn-imagem-evento button{
-    font-size: 1.2rem;
+.imagem-evento__botao span, .imagem-evento__botao button{
+    font-size: 1rem;
     font-weight: 600;
 }
 
-.btn-imagem-evento span{
+.imagem-evento__botao span{
     color: var(--cor-laranja);
 }
 
-.btn-imagem-evento a{
+.imagem-evento__botao a{
     text-decoration: none;
 }

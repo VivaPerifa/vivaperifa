@@ -1,6 +1,7 @@
 .evento-comum{
     padding: 25px;
     width: inherit;
+    height: inherit;
     display: flex;
     flex-direction: column;
     gap: 15px; 
@@ -9,11 +10,15 @@
     cursor: pointer;
 }
 
-.container-evento{
+.container-evento-comum{
     width: inherit; 
 }
 
-.titulo-evento-comum h2{
+.container-evento-comum a{
+    text-decoration: none;
+}
+
+.evento-comum__titulo h2{
     color: #2D2D2D;
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.30);
     font-size: 1.6rem;
@@ -27,30 +32,30 @@
     white-space: nowrap; 
 }
 
-.titulo-evento-comum{
+.evento-comum__titulo{
     width: 70%;
 }
 
-.dados-evento-comum{
+.evento-comum__dados{
     width: inherit;
     display: flex;
     justify-content: space-between;
 }
 
-.data-evento-comum{
+.evento-comum__data{
     text-align: justify;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.descricao-evento-comum{
+.evento-comum__descricao{
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.80);
 }
 
-.local-evento-comum{
+.evento-comum__local{
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -63,21 +68,25 @@
     color: var(--cor-laranja);
 }
 
-.imagem-evento-comum img{
+.evento-comum__imagem img{
     width: 100%;
     object-fit: cover;
 }
 
-.icones-evento-comum {
+.evento-comum__icones {
     display: flex;
     gap: 20px;
 }
 
-.icones-evento-comum span{
+.evento-comum__icones span{
     display: flex;
     align-items: center;
-}
+}   
 
+
+@media only screen and (max-width:1440px){
+    
+}
 
 
 

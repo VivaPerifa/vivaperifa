@@ -1,5 +1,4 @@
 import FiltroPesquisa from "./FiltroPesquisa/FiltroPesquisa";
-import Header from '../../static/Header/Header';
 import './Explorar.css';
 import CarrosselEvento from "../../components/CarrosselEvento/CarrosselEvento";
 import DisclaimerImpulsionarEvento from "../../components/DisclaimerImpulsionarEvento/DisclaimerImpulsionarEvento";
@@ -22,6 +21,10 @@ import Evento11 from "../../assets/evento_feira.png";
 import Evento15 from "../../assets/evento_15.png";
 
 import ContainerPlanos from '../../components/ContainerPlanos/ContainerPlanos';
+import EventoDestaque from "../../components/CarrosselEventoDestaque/EventoDestaque/EventoDestaque";
+
+import Xamuel from '../../assets/xamuel.jpg';
+import Menu from '../../static/Menu/Menu';
 
 export default function Explorar(){
     const filtros = [
@@ -159,11 +162,26 @@ export default function Explorar(){
         }
     ];
 
+    const itemEventoExplorar = {
+        id: 1,
+        imagem: Xamuel,
+        titulo: "Batalha de Rima do Xamuel em SP",
+        data: "Sábado, dia 20/04 às 9h - 12h, SP Jardim Clímax"
+    }
+
     return (
         <div className="container-explorar">
-            <Header
-                tipoCabecalho="explorar"
-            />
+            <div className="explorar-header">
+                <Menu></Menu>
+                <EventoDestaque
+                    className="explorar-header__evento-destaque"
+                    imagemEventoDestaque={itemEventoExplorar.imagem}
+                    tituloEventoDestaque={itemEventoExplorar.titulo}
+                    dataEventoDestaque={itemEventoExplorar.data}
+                    largura="60vw"
+                    altura="25vw"
+                />
+            </div>
 
             <div className="filtros-explorar">
                 {
@@ -175,6 +193,7 @@ export default function Explorar(){
                     ))
                 }
             </div>
+
             <CarrosselEvento
                 tituloCarrossel="acontece na zona leste"
                 listaEvento={primeiraListaEvento}
