@@ -1,40 +1,109 @@
-.container-eventos-cadastrados{
+.container-eventos-cadastrados {
     display: flex;
     width: 100%;
 }
 
-.eventos-cadastrados-scroll{
+.txt-evento-cadastrados{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    position: absolute;
+    width: 50%;
+}
+
+.txt-evento-cadastrados h2{
+    font-size: 2.3rem;
+}
+
+.txt-evento-cadastrados p{
+    font-size: 1.3rem;
+}
+
+.eventos-cadastrados-scroll {
     width: 100%;
     height: 100vh;
     overflow: auto;
+    display: flex;
+    justify-content: center;
 }
 
-.conteudo-eventos-cadastrados{
-    width: 80%;
+.conteudo-eventos-cadastrados {
+    width: 50%;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 150px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    transition: all 0.6s ease-in-out;
+    position: absolute;
 }
 
-.eventos-cadastrados__guia{
+.eventos-cadastrados__guia {
     display: flex;
     gap: 30px;
 }
 
-.eventos-cadastrados__guia span{
+.eventos-cadastrados__guia span {
     font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 3px solid black;
 }
 
-.eventos-cadastrados__carrossel{
+.eventos-cadastrados__carrossel {
     display: grid;
-    grid-template-columns: repeat(3,32%);
+    grid-template-columns: repeat(3, 32%);
     justify-content: space-between;
 }
 
-.eventos-cadastrados__body{
+.eventos-cadastrados__body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.pendentes {
+    opacity: 1;
+    z-index: 2;
+}
+
+.eventos-cadastrados-scroll.active .pendentes {
+    opacity: 0;
+    z-index: 1;
+}
+
+.encerrados {
+    opacity: 0;
+    z-index: 1;
+}
+
+.eventos-cadastrados-scroll.active .encerrados {
+
+    opacity: 1;
+    z-index: 2;
+    animation: move 0.1s;
+}
+
+@keyframes move {
+
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 2;
+    }
+}
+
+.troca-encerrado {
+    border-bottom: 0px solid black !important;
+}
+
+.troca-pendente {
+    border-bottom: 0px solid black !important;
 }
