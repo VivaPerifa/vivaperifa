@@ -6,7 +6,7 @@ import MenuLateralPerfil from "../../MenuLateralPerfil/MenuLateralPerfil";
 import Coracao from '../../../../assets/coracao.png';
 import Agenda from '../../../../assets/agenda.png';
 import BotaoColorido from "../../../../components/BotaoColorido/BotaoColorido";
-import MiniEventoComum from "../../../../components/MiniEventoComum/MiniEventoComum";
+import MiniEventoComum from "../../../../components/CarrosselMiniEventoComum/MiniEventoComum/MiniEventoComum";
 
 const VisualizarEvento = () => {
     return (

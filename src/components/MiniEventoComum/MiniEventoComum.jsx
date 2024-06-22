@@ -12,7 +12,7 @@ export default function MiniEventoComum() {
                 </figure>
                 <div className="mini-evento-comum__dados">
                     <div className="mini-evento-comum__titulo">
-                        <h2>Batalha de rima</h2>
+                        <h2>Titulo</h2>
                     </div>
                     <div className="mini-evento-comum__icones">
                         <span>
@@ -24,15 +24,15 @@ export default function MiniEventoComum() {
                     </div>
                 </div>
                 <div className="mini-evento-comum__data">
-                    <span>Sábado, dia 20/04 às 09h - 12h</span>
+                    <span>Data</span>
                 </div>
                 <div className="mini-evento-comum__descricao">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...
+                        Descricao
                     </p>
                 </div>
                 <div className="mini-evento-comum__local">
-                    <span>Itaquera</span>
+                    <span>Local</span>
                 </div>
             </div>
         </div>

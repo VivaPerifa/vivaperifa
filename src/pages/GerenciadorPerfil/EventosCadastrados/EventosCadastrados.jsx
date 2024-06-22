@@ -12,7 +12,7 @@ import Evento9 from "../../../assets/evento_9.png";
 import Evento10 from "../../../assets/evento_10.png";
 import CarrosselEventoDestaque from '../../../components/CarrosselEventoDestaque/CarrosselEventoDestaque';
 import CarrosselEvento from "../../../components/CarrosselEvento/CarrosselEvento";
-import MiniEventoComum from "../../../components/MiniEventoComum/MiniEventoComum";
+import MiniEventoComum from "../../../components/CarrosselMiniEventoComum/MiniEventoComum/MiniEventoComum";
 
 export default function EventosCadastrados() {
     const primeiraListaEvento = [
