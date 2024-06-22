@@ -1,9 +1,9 @@
-.container-eventos-cadastrados{
+.container-eventos-cadastrados {
     display: flex;
     width: 100%;
 }
 
-.eventos-cadastrados-scroll{
+.eventos-cadastrados-scroll {
     width: 100%;
     height: 100vh;
     overflow: auto;
@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.conteudo-eventos-cadastrados{
+.conteudo-eventos-cadastrados {
     width: 50%;
     margin: 0 auto;
     padding: 40px 0;
@@ -23,56 +23,82 @@
     position: absolute;
 }
 
-.eventos-cadastrados__guia{
+.eventos-cadastrados__guia {
     display: flex;
     gap: 30px;
 }
 
-.eventos-cadastrados__guia span{
+.eventos-cadastrados__guia span {
     font-size: 1.2rem;
     cursor: pointer;
+    padding: 10px;
+    border-bottom: 3px solid black;
 }
 
-.eventos-cadastrados__carrossel{
+/* .eventos-cadastrados__guia span:after{
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.eventos-cadastrados__guia span:hover {
+    color: gray;
+}
+
+.eventos-cadastrados__guia span:hover::after {
+    width: 100%;
+} */
+
+.eventos-cadastrados__carrossel {
     display: grid;
-    grid-template-columns: repeat(3,32%);
+    grid-template-columns: repeat(3, 32%);
     justify-content: space-between;
 }
 
-.eventos-cadastrados__body{
+.eventos-cadastrados__body {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.pendentes{
+.pendentes {
     z-index: 2;
 }
 
-.eventos-cadastrados-scroll.active .pendentes{
+.eventos-cadastrados-scroll.active .pendentes {
     opacity: 0;
 }
 
-.encerrados{
+.encerrados {
     opacity: 0;
     z-index: 1;
 }
 
-.eventos-cadastrados-scroll.active .encerrados{
-    
+.eventos-cadastrados-scroll.active .encerrados {
+
     opacity: 1;
     z-index: 5;
     animation: move 0.6s;
 }
 
-@keyframes move{
-    0%, 49.99%{
+@keyframes move {
+
+    0%,
+    49.99% {
         opacity: 0;
         z-index: 1;
     }
-    50%, 100%{
+
+    50%,
+    100% {
         opacity: 1;
         z-index: 5;
     }
 }
 
+.troca-encerrado {
+    border-bottom: 0px solid black !important;
+}
+
+.troca-pendente {
+    border-bottom: 0px solid black !important;
+}
