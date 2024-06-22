@@ -19,6 +19,7 @@
     padding: 5px 20px;
     background-color: #033E8C;
     color: white;
+    cursor: pointer;
 }
 
 .cookies{
@@ -30,4 +31,5 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    cursor: pointer;
 }

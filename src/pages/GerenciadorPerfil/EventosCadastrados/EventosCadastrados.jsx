@@ -11,9 +11,42 @@ import Evento8 from "../../../assets/evento_8.png";
 import Evento9 from "../../../assets/evento_9.png";
 import Evento10 from "../../../assets/evento_10.png";
 import CarrosselEventoDestaque from '../../../components/CarrosselEventoDestaque/CarrosselEventoDestaque';
-import CarrosselEvento from "../../../components/CarrosselEvento/CarrosselEvento";
+import MiniEventoComum from "../../../components/MiniEventoComum/MiniEventoComum";
+import { useState, useEffect } from 'react';
+
 
 export default function EventosCadastrados() {
+
+    const [containerAtivo, setContainerAtivo] = useState(false);
+
+    useEffect(() => {
+        const eventosCadastradosScroll = document.getElementById('eventos_cadastrados_scroll');
+        const trocaEncerrado = document.getElementById('troca_encerrado');
+        const trocaPendente = document.getElementById('troca_pendente');
+
+        trocaEncerrado.addEventListener('click', () => {
+            eventosCadastradosScroll.classList.add('active');
+            setContainerAtivo(true);
+        });
+
+        trocaPendente.addEventListener('click', () => {
+            eventosCadastradosScroll.classList.remove('active');
+            setContainerAtivo(false);
+        });
+
+        // Remover os event listeners quando o componente for desmontado
+        return () => {
+            trocaEncerrado.removeEventListener('click', () => {
+                eventosCadastradosScroll.classList.add('active');
+                setContainerAtivo(true);
+            });
+            trocaPendente.removeEventListener('click', () => {
+                eventosCadastradosScroll.classList.remove('active');
+                setContainerAtivo(false);
+            });
+        };
+    }, []);
+
     const primeiraListaEvento = [
         {
             id: 1,
@@ -45,24 +78,50 @@ export default function EventosCadastrados() {
         <div className="container-eventos-cadastrados">
             <MenuLateralPerfil></MenuLateralPerfil>
 
-            <div className="eventos-cadastrados-scroll">
-                <div className="conteudo-eventos-cadastrados">
+            <div className="eventos-cadastrados-scroll" id="eventos_cadastrados_scroll">
+                <div className="conteudo-eventos-cadastrados pendentes">
                     <div className="eventos-cadastrados__guia">
                         <div className="eventos-cadastrados__pendentes">
                             <span>Pendentes</span>
+                        </div>
+                        <div className="eventos-cadastrados__encerrados">
+                            <span className="troca-encerrado" id="troca_encerrado">Encerrados</span>
+                        </div>
+                    </div>
+                    <div className="eventos-cadastrados__body">
+                        <div className="eventos-cadastrados__carrossel">
+                            <MiniEventoComum></MiniEventoComum>
+                            <MiniEventoComum></MiniEventoComum>
+                            <MiniEventoComum></MiniEventoComum>
+                        </div>
+                        <div className="eventos-cadastrados__carrossel">
+                            <MiniEventoComum></MiniEventoComum>
+                            <MiniEventoComum></MiniEventoComum>
+                            <MiniEventoComum></MiniEventoComum>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="conteudo-eventos-cadastrados encerrados">
+                    <div className="eventos-cadastrados__guia">
+                        <div className="eventos-cadastrados__pendentes">
+                            <span className="troca-pendente" id="troca_pendente">Pendentes</span>
                         </div>
                         <div className="eventos-cadastrados__encerrados">
                             <span>Encerrados</span>
                         </div>
                     </div>
                     <div className="eventos-cadastrados__body">
-                        <CarrosselEvento
-                            tituloCarrossel="adicionados recentemente"
-                            listaEvento={primeiraListaEvento}
-                        />
+                        <div className="eventos-cadastrados__carrossel">
+                            <MiniEventoComum></MiniEventoComum>
+                            <MiniEventoComum></MiniEventoComum>
+                            <MiniEventoComum></MiniEventoComum>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
+
         </div>
     );
 }

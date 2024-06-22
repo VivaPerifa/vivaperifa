@@ -75,10 +75,10 @@ function App() {
           <Route path='/editar-perfil' element={<EditarPerfilOrganizador />}></Route>
           <Route path='/detalhe-evento' element={<DetalheEvento></DetalheEvento>}></Route>
           <Route path='/eventos-cadastrados' element={<EventosCadastrados></EventosCadastrados>}></Route>
+          <Route path='/perfil-organizador' element={<PerfilOrganizador></PerfilOrganizador>}></Route>
         </Routes>
       </div>
       {/* <Footer></Footer> */}
-      <PerfilOrganizador></PerfilOrganizador>
     </BrowserRouter>
   );
 }
