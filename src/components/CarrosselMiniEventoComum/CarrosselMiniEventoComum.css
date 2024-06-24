@@ -1,0 +1,6 @@
+.carrossel-mini-evento-comum{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-between;
+    width: 100%;
+}

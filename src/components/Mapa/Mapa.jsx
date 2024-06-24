@@ -94,8 +94,8 @@ const Mapa = (props) => {
   };
 
   return (
-    <div className='container-mapa' style={{width:props.tamanhoMapa}}>
-      <MapContainer center={mapCenter} zoom={mapZoom} style={{ height: '600px' }}>
+    <div className='container-mapa' style={{width:props.larguraMapa}}>
+      <MapContainer center={mapCenter} zoom={mapZoom} style={{ height:props.alturaMapa }}>
         {/* tileLayer e ChangeView permanecem inalterados */}
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

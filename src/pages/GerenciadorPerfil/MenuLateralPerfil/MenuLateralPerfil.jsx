@@ -21,29 +21,29 @@ export default function MenuLateralPerfil() {
                             <img src="https://cdn.oantagonista.com/uploads/2022/08/reproducao_redessociais.jpeg" alt="Foto de Perfil"/>
                         </Link>
                         <h2>Pablo Marçal</h2>
-                        <Link to="/editar-perfil"><span>Editar perfil</span></Link>
+                        <Link to="/editar-perfil" className="editar-perfil__link"><span>Editar perfil</span></Link>
                     </div>
 
                     <div className="menu-lateral__lista">
                         <ul>
-                            <li><FontAwesomeIcon icon={faPenToSquare} /> 
-                                <Link to="/criar-evento">Criar Evento</Link>
-                            </li>
-                            <li><FontAwesomeIcon icon={faCalendar} /> 
-                                <Link to="/eventos-cadastrados">Eventos</Link>
-                            </li>
-                            <li><FontAwesomeIcon icon={faChartSimple} /> 
+                            <Link to="/criar-evento"><li><FontAwesomeIcon icon={faPenToSquare} /> 
+                                Criar Evento
+                            </li></Link>
+                            <Link to="/eventos-cadastrados"><li><FontAwesomeIcon icon={faCalendar} /> 
+                                Eventos
+                            </li></Link>
+                            <Link to=''><li><FontAwesomeIcon icon={faChartSimple} /> 
                                 Analytics
-                            </li>
-                            <li><FontAwesomeIcon icon={faCommentDots} /> 
+                            </li></Link>
+                            <Link to='/comentarios-evento'><li><FontAwesomeIcon icon={faCommentDots} /> 
                                 Comunidade
-                            </li>
-                            <li><FontAwesomeIcon icon={faGear} /> 
+                            </li></Link>
+                            <Link to=''><li><FontAwesomeIcon icon={faGear} /> 
                                 Configurações
-                            </li>
-                            <li><FontAwesomeIcon icon={faCircleQuestion} /> 
+                            </li></Link>
+                            <Link to='/suporte-evento'><li><FontAwesomeIcon icon={faCircleQuestion} /> 
                                 Suporte
-                            </li>
+                            </li></Link>
                         </ul>
                     </div>
                 </div>

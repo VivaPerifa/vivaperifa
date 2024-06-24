@@ -26,7 +26,7 @@ import EventoDestaque from '../../components/CarrosselEventoDestaque/EventoDesta
 import Xamuel from '../../assets/xamuel.jpg';
 import Perfil from "../../assets/foto-organizador.png";
 
-export default function PerfilOrganizador(){
+export default function PerfilOrganizador() {
     const { t } = useTranslation();
 
     const primeiraListaEvento = [
@@ -86,16 +86,14 @@ export default function PerfilOrganizador(){
     return (
         <div className="container-perfil-organizador">
             <div className="perfil-organizador__header">
-                <div className='header-organizador__fundo'>
-                    <div className="perfil-organizador__menu">
-                        <Menu
-                            corFundo="rgb(0,0,0,0.8)"
-                        />
-                    </div>
+                <div className="perfil-organizador__menu">
+                    <Menu
+                        corFundo="rgb(0,0,0,0.8)"
+                    />
                 </div>
                 <div className='perfil-organizador__dados'>
                     <figure>
-                        <img src={Perfil} alt="teste" />
+                        <img src={Perfil} alt="Perfil do organizador" />
                     </figure>
                     <div className='perfil-organizador__botoes'>
                         <BotaoLaranja
@@ -110,6 +108,7 @@ export default function PerfilOrganizador(){
                     </div>
                 </div>
             </div>
+            
             <div className='perfil-organizador__info'>
                 <h4>Nome do produtor</h4>
                 <span>10 eventos</span>
@@ -117,7 +116,7 @@ export default function PerfilOrganizador(){
             </div>
 
             <div className='perfil-organizador__body'>
-                <EventoDestaque 
+                <EventoDestaque
                     className='destaque-perfil'
                     imagemEventoDestaque={Xamuel}
                     tituloEventoDestaque="BATALHA DE RIMA DO XAMUEL EM SP"
@@ -136,6 +135,7 @@ export default function PerfilOrganizador(){
                     listaEvento={segundaListaEvento}
                 />
             </div>
+            <Footer></Footer>
         </div>
     );
 }

@@ -1,38 +1,48 @@
 .container-editar-perfil {
-    margin-left: 300px;
     display: flex;
-    justify-content: center;
 }
 
-.container-editar {
-    width: 1250px;
+.editar-perfil__header{
+    background-image: url('../../../assets/capa-perfil-organizador.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
+    justify-content: end;
     flex-direction: column;
+    height: 300px;
+    padding-left: 20px;
 }
 
-.banner-perfil-editar {
-    background-image: url();
-}
-
-.info-perfil{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.info-perfil h2{
- font-size: 40px;
-}
-
-.info-perfil p{
-    font-size: 18px;
-}
-
-.btn-editar {
-    display: flex;
-    flex-direction: row;
+.editar-perfil-scroll{
     width: 100%;
-    gap: 25px;
-    justify-content: flex-end;
+    height: 100vh;
+    overflow: auto;
     padding: 20px 0;
+}
+
+.conteudo-editar-perfil{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.editar-perfil__body{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.editar-perfil__description h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.editar-perfil__description p{
+    font-size: 1rem;
+    color: #2d2d2def;
+}
+
+.editar-perfil__botoes{
+    display: flex;
+    gap: 20px;
+    justify-content: end;
 }

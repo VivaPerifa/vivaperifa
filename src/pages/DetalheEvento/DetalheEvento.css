@@ -8,7 +8,7 @@
     width: 80vw;
     border-radius: 10px;
     border: 3px solid white;
-    height: 40vw;
+    height: 35vw;
     margin: 0 auto;
     box-shadow: 1px 1px 10px 1px #4d0202c2;
 }
@@ -68,6 +68,17 @@
 }
 
 .detalhe-evento__categoria{
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalhe-evento__body p{
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #2D2D2D;
+}
+
+.detalhe-evento__categoria{
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--cor-laranja);
@@ -82,10 +93,22 @@
 .detalhe-evento__prog-info{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
 .detalhe-evento__prog-info p{
-    font-size: 2rem;   
+    font-size: 1.2rem;   
+}
+
+.detalhe-evento__descricao{
+    width: 55%;
+}
+
+.detalhe-evento__descricao p{
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #2D2D2D;
 }
 
 .detalhe-evento__programacao{
@@ -93,8 +116,56 @@
     flex-direction: column;
     gap: 20px;
     padding: 30px;
-    border-radius: 10px;
-    border: 1px solid var(--cor-rosa);
+    border-radius: 30px;
+    border: 3px solid var(--cor-rosa);
+    width: 40%;
+}
+
+.detalhe-evento__programacao h2{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+    font-weight: 600;
+    background: linear-gradient(90deg, #D9043E 0%, #F28705 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.programacao__info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.programacao__item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.programacao__icone{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-weight: 600;
+    background: linear-gradient(90deg, #D9043E 0%, #F28705 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.programacao__icone figure{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.programacao__icone figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .mini-perfil-organizador figure {

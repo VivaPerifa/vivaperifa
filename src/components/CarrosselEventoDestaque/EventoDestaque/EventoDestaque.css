@@ -4,7 +4,6 @@
     flex-direction: column;
     gap: 10px;
     cursor: pointer;
-    margin: 0 auto;
 }
 
 .evento-destaque__imagem{

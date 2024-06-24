@@ -18,6 +18,7 @@ import logoAzul from "../../assets/logoIdentidadeAzul.png";
 import adesivos from "../../assets/adesivosIdentidade.png";
 import './SobreNos.css';
 import Menu from '../../static/Menu/Menu';
+import Footer from '../../static/Footer/Footer';
 
 
 export default function SobreNos() {
@@ -269,8 +270,7 @@ export default function SobreNos() {
 
                 </div>
             </div>
-        </div >
-
-
+            <Footer></Footer>
+        </div>
     )
 }

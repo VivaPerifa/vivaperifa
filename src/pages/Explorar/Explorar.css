@@ -9,16 +9,16 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin-bottom: 50px;
+    
 }
 
 .explorar-header{
     background-image: url('../../assets/fundo_explorar.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    
+    width: 100%;
 }
 
-.explorar-header__evento-destaque{
+.explorar-header .evento-destaque{
     margin: 0 auto;
 }

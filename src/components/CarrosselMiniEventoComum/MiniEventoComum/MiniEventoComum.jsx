@@ -1,18 +1,17 @@
-import Coracao from '../../assets/coracao.png';
-import Agenda from '../../assets/agenda.png';
-import Evento from '../../assets/batalha_rima.png';
+import Coracao from '../../../assets/coracao.png';
+import Agenda from '../../../assets/agenda.png';
 import './MiniEventoComum.css';
 
-export default function MiniEventoComum() {
+export default function MiniEventoComum(props) {
     return (
         <div className="container-mini-evento-comum">
             <div className="mini-evento-comum">
                 <figure>
-                    <img src={Evento} alt="" />
+                    <img src={props.imagem} alt="" />
                 </figure>
                 <div className="mini-evento-comum__dados">
                     <div className="mini-evento-comum__titulo">
-                        <h2>Batalha de rima</h2>
+                        <h2>{props.titulo}</h2>
                     </div>
                     <div className="mini-evento-comum__icones">
                         <span>
@@ -24,15 +23,15 @@ export default function MiniEventoComum() {
                     </div>
                 </div>
                 <div className="mini-evento-comum__data">
-                    <span>Sábado, dia 20/04 às 09h - 12h</span>
+                    <span>{props.data}</span>
                 </div>
                 <div className="mini-evento-comum__descricao">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...
+                        {props.descricao}
                     </p>
                 </div>
                 <div className="mini-evento-comum__local">
-                    <span>Itaquera</span>
+                    <span>{props.local}</span>
                 </div>
             </div>
         </div>

@@ -115,15 +115,17 @@ export default function Home() {
 
             <div className="mapa-home">
                 <h2>Encontre os eventos no mapa</h2>
-                <Mapa tamanhoMapa='100%'></Mapa>
+                <Mapa larguraMapa="100%" alturaMapa="500px"></Mapa>
             </div>
 
             <BannerCrescimento></BannerCrescimento>
             <DisclaimerDivulgueSeuEvento></DisclaimerDivulgueSeuEvento>
             <DisclaimerImpulsionarEvento></DisclaimerImpulsionarEvento>
             <ContainerPlanos></ContainerPlanos>
-            <ContainerDepoimentos></ContainerDepoimentos>
-            <Footer></Footer>
+            <div className="planos-footer">
+                <ContainerDepoimentos></ContainerDepoimentos>
+                <Footer></Footer>
+            </div>
         </div>
     );
 }

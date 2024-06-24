@@ -4,40 +4,39 @@
     height: 100%;
 }
 
-.txt-evento-cadastrados{
+.eventos-cadastrados__header{
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
-    position: absolute;
-    width: 50%;
+    /* position: absolute; */
+    width: 100%;
+    margin: 0 auto;
 }
 
-.txt-evento-cadastrados h2{
-    font-size: 2.3rem;
+.eventos-cadastrados__header h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
-.txt-evento-cadastrados p{
-    font-size: 1.3rem;
+.eventos-cadastrados__header p{
+    font-size: 1rem;
+    color: #2d2d2def;
 }
 
 .eventos-cadastrados-scroll {
     width: 100%;
     height: 100vh;
     overflow: auto;
-    display: flex;
-    justify-content: center;
 }
 
 .conteudo-eventos-cadastrados {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
-    padding: 150px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    transition: all 0.4s ease-in-out;
-    position: absolute;
+    transition: all 0.6s ease-in-out;
+    /* position: absolute; */
 }
 
 .eventos-cadastrados__guia {
@@ -48,22 +47,28 @@
 .eventos-cadastrados__guia span {
     font-size: 1.2rem;
     cursor: pointer;
-    padding: 10px;
-    border-bottom: 3px solid black;
+    display: block;
+    user-select: none;
 }
 
-.eventos-cadastrados__carrossel {
+.ativo{
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+/* .eventos-cadastrados__carrossel {
     display: grid;
     grid-template-columns: repeat(3, 32%);
     justify-content: space-between;
-}
+} */
 
 .eventos-cadastrados__body {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-
+/* 
 .pendentes {
     opacity: 1;
     z-index: 2;
@@ -80,11 +85,15 @@
 }
 
 .eventos-cadastrados-scroll.active .encerrados {
-
     opacity: 1;
     z-index: 2;
     animation: move 0.1s;
-}
+} */
+
+/* .active{
+    opacity: 0;
+    z-index: 1;
+} */
 
 @keyframes move {
 
@@ -101,10 +110,18 @@
     }
 }
 
+.show-container{
+    display: none;
+}
+
+.hidden-container{
+    display: flex;
+}
+/* 
 .troca-encerrado {
     border-bottom: 0px solid black !important;
 }
 
 .troca-pendente {
     border-bottom: 0px solid black !important;
-}
+} */
