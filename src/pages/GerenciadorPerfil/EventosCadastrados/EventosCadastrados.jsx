@@ -78,7 +78,8 @@ export default function EventosCadastrados() {
         <div className="container-eventos-cadastrados">
             <MenuLateralPerfil></MenuLateralPerfil>
 
-            <div className="eventos-cadastrados-scroll" id="eventos_cadastrados_scroll"><div className="txt-evento-cadastrados">
+            <div className="eventos-cadastrados-scroll" id="eventos_cadastrados_scroll">
+                <div className="txt-evento-cadastrados">
                         <h2>Meus eventos</h2>
                         <p>Veja todos os eventos que você já publicou, desde aqueles que ainda não ocorreram (pendentes) até os que já aconteceram (histórico).</p>
                     </div>
@@ -107,10 +108,6 @@ export default function EventosCadastrados() {
                 </div>
 
                 <div className="conteudo-eventos-cadastrados encerrados">
-                    {/* <div className="txt-evento-cadastrados">
-                        <h2>Meus eventos</h2>
-                        <p>Veja todos os eventos que você já publicou, desde aqueles que ainda não ocorreram (pendentes) até os que já aconteceram (histórico).</p>
-                    </div> */}
                     <div className="eventos-cadastrados__guia">
                         <div className="eventos-cadastrados__pendentes">
                             <span className="troca-pendente" id="troca_pendente">Pendentes</span>
