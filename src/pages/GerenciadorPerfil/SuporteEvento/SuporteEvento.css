@@ -1,0 +1,40 @@
+.container-suporte-evento{
+    display: flex;
+    width: 100%;
+}
+
+.suporte-evento{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-suporte-evento__header h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    background: var(--cor_texto, linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-laranja) 99%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conteudo-suporte-evento__header p{
+    font-size: 1rem;
+    color: #2d2d2def;
+}
+.conteudo-suporte-evento{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.conteudo-suporte-evento__guia button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

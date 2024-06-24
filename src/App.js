@@ -38,6 +38,8 @@ import PerfilOrganizador from './pages/PerfilOrganizador/PerfilOrganizador.jsx';
 // import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
 import EditarPerfilOrganizador from './pages/GerenciadorPerfil/EditarPerfilOrganizador/EditarPerfilOrganizador.jsx';
 import FormCadastroUsuario from './pages/FormCadastroUsuario/FormCadastroUsuario.jsx';
+import ComentariosEvento from './pages/GerenciadorPerfil/ComentariosEvento/ComentariosEvento.jsx';
+import SuporteEvento from './pages/GerenciadorPerfil/SuporteEvento/SuporteEvento.jsx';
 
 
 function App() {
@@ -77,6 +79,10 @@ function App() {
           <Route path='/perfil-organizador' element={<PerfilOrganizador></PerfilOrganizador>}></Route>
           <Route path='/perfil-participante' element={<PerfilParticipante></PerfilParticipante>}></Route>
           <Route path='/form-cadastro' element={<FormCadastroUsuario></FormCadastroUsuario>}></Route>
+          <Route path='/comentarios-evento' element={<ComentariosEvento></ComentariosEvento>}></Route>
+          <Route path='/suporte-evento' element={<SuporteEvento></SuporteEvento>}></Route>
+
+          
         </Routes>
       </div>
       {/* <Footer></Footer> */}

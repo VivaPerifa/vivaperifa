@@ -41,7 +41,7 @@ export default function FormFaleConosco() {
 
                                 <CampoForm id='mensagem' tipo='text' legenda='Mensagem' tamanhoCampo='40vw' />
 
-                                <BotaoLaranja legendaBotao="Enviar"></BotaoLaranja>
+                                <BotaoLaranja legendaBotao="Enviar" larguraBotao="100%"></BotaoLaranja>
                             </form>
                         </div>
                     </div>

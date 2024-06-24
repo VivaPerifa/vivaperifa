@@ -32,16 +32,16 @@ export default function MenuLateralPerfil() {
                             <Link to="/eventos-cadastrados"><li><FontAwesomeIcon icon={faCalendar} /> 
                                 Eventos
                             </li></Link>
-                            <Link><li><FontAwesomeIcon icon={faChartSimple} /> 
+                            <Link to=''><li><FontAwesomeIcon icon={faChartSimple} /> 
                                 Analytics
                             </li></Link>
-                            <Link><li><FontAwesomeIcon icon={faCommentDots} /> 
+                            <Link to='/comentarios-evento'><li><FontAwesomeIcon icon={faCommentDots} /> 
                                 Comunidade
                             </li></Link>
-                            <Link><li><FontAwesomeIcon icon={faGear} /> 
+                            <Link to=''><li><FontAwesomeIcon icon={faGear} /> 
                                 Configurações
                             </li></Link>
-                            <Link><li><FontAwesomeIcon icon={faCircleQuestion} /> 
+                            <Link to='/suporte-evento'><li><FontAwesomeIcon icon={faCircleQuestion} /> 
                                 Suporte
                             </li></Link>
                         </ul>
