@@ -25,6 +25,7 @@ import EventoDestaque from "../../components/CarrosselEventoDestaque/EventoDesta
 
 import Xamuel from '../../assets/xamuel.jpg';
 import Menu from '../../static/Menu/Menu';
+import Footer from "../../static/Footer/Footer";
 
 export default function Explorar(){
     const filtros = [
@@ -174,7 +175,7 @@ export default function Explorar(){
             <div className="explorar-header">
                 <Menu></Menu>
                 <EventoDestaque
-                    className="explorar-header__evento-destaque"
+                    className="explorar-evento-destaque"
                     imagemEventoDestaque={itemEventoExplorar.imagem}
                     tituloEventoDestaque={itemEventoExplorar.titulo}
                     dataEventoDestaque={itemEventoExplorar.data}
@@ -215,8 +216,8 @@ export default function Explorar(){
             />
 
             <DisclaimerImpulsionarEvento></DisclaimerImpulsionarEvento>
-
             <ContainerPlanos></ContainerPlanos>
+            <Footer></Footer>
         </div>
     );
 }

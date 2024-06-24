@@ -25,7 +25,7 @@
     margin-bottom: 8px;
 }
 
-.menu-lateral__perfil span {
+.menu-lateral__perfil a span {
     color: var(--cor-amarela);
     border: none;
     cursor: pointer;
@@ -33,10 +33,13 @@
     font-size: 1rem;
 }
 
+.menu-lateral__perfil a{
+    text-decoration: none;
+}
+
 .menu-lateral__perfil a img{
     width: 120px;
     height: 120px;
-    border-radius: 50%;
     margin-bottom: 8px;
     border-radius: 50%;
     object-fit: cover;
@@ -84,17 +87,25 @@
     font-size: 1.5rem
 }
 
-@media only screen and (max-width:1300px){
+@media only screen and (min-width:1900px){
     .menu-lateral__conteudo{
-        width: 35vw;
+        width: 20vw;
     }
-
     .menu-lateral__lista ul {
-        height: 50%;
+        height: 30%;
     }
 }
 
-@media only screen and (max-width:1800px){
+@media only screen and (max-width:1440px){
+    .menu-lateral__lista ul {
+        height: 85%;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .menu-lateral__conteudo{
+        width: 35vw;
+    }
     .menu-lateral__lista ul {
         height: 70%;
     }

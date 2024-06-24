@@ -4,16 +4,16 @@
     background-size: 100%;
     display: flex;
     flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
 }
 
 .perfil-organizador__body{
     width: var(--tamanho-container);
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
-.perfil-organizador__menu{
-    margin-bottom: 18%;
-}
 
 .perfil-organizador__dados{
     display: flex;
@@ -62,8 +62,13 @@
     margin-top: 40px;
 }
 
-@media only screen and (min-width:1500px){
-    .perfil-organizador__menu{
-        margin-bottom: 20%;
+@media only screen and (max-width:1440px){
+    .perfil-organizador__header{
+        height: 500px;
+    }
+}
+@media only screen and (max-width:1024px){
+    .perfil-organizador__header{
+        height: 47  0px;
     }
 }

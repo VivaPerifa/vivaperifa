@@ -1,35 +1,30 @@
 import CampoForm from '../../components/CampoForm/CampoForm';
-import perfil from '../../assets/perfil-usuario.png';
 import "./PerfilParticipante.css";
+import Menu from '../../static/Menu/Menu';
+import Perfil from '../../assets/perfil-participante.png';
+import EditarPerfilParticipante from '../EditarPerfilParticipante/EditarPerfilParticipante';
 
 export default function PerfilParticipante() {
     return (
-        <div className="container-PerfilParticipante">
-            <div className="conteudo-perfil-participante">
-                <div className="campo-PerfilParticipante">
-                    <div className="foto-e-dados">
-                        <div className="foto-perfil">
-                            <img src={perfil} alt="Foto do Participante" />
+        <div className="container-perfil-participante">
+            <div className="perfil-participante__header">
+                <Menu></Menu>
+                <div className="perfil-participante__info">
+                    <figure>
+                        <img src={Perfil} alt="foto de perfil" />
+                    </figure>
+                    <div className="nome-participante">
+                        <h2>Nome do perfil</h2>
+                        <button>Editar perfil</button>
+                        <div className="dados-participante">
+                            <span>3 comentários</span>
+                            <span>2 seguindo</span>
                         </div>
-                        <div className="dados-perfil">
-                            <h2>Gabriel Azevedo</h2>
-                            <p>@Azevedo2024</p>
-                        </div>
-                        <button className="alterar-foto-button">Alterar Foto</button>
-                    </div>
-                </div>
-                <div className='campo-formulario'>
-                    <CampoForm id='nome-user-nomecompleto' tipo='text' legenda='Digite seu nome' tamanhoCampo='80%' tituloForm="Nome Completo" />
-                    <CampoForm id='nome-user-nomedeusuario' tipo='text' legenda='Digite seu nome de usuário' tamanhoCampo='80%' tituloForm="Nome de usuário" />
-                    <CampoForm id='nome-user-email' tipo='text' legenda='Digite o seu e-mail' tamanhoCampo='80%' tituloForm="E-mail" />
-                    <CampoForm id='nome-user-senha' tipo='text' legenda='Digite sua senha' tamanhoCampo='80%' tituloForm="Senha" />
-
-                    <div className="botoes-perfil-participante">
-                        <button>Descartar</button>
-                        <button>Salvar</button>
                     </div>
                 </div>
             </div>
+
+            <EditarPerfilParticipante></EditarPerfilParticipante>
         </div>
     );
 }
