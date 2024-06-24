@@ -32,7 +32,9 @@ export default function LocalizacaoEvento() {
                         <span>Lorem Ipsum</span>
                     </div>  
 
-                    <Mapa tamanhoMapa='100%'></Mapa>
+                    <div className="localizacao-mapa">
+                        <Mapa larguraMapa="100%" alturaMapa="400px"></Mapa>
+                    </div>
 
                     <div className="local-evento__botao">
                         <Link to="/programacao-evento">

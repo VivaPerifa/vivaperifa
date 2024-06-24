@@ -10,6 +10,10 @@
     --tamanho-container: 90vw;
 }
 
+*{
+    user-select: none;
+}
+
 .container{
     display: flex;
     flex-direction: column;

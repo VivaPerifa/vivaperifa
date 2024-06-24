@@ -23,14 +23,19 @@ export default function MiniEventoComum(props) {
                     </div>
                 </div>
                 <div className="mini-evento-comum__data">
-                    <span>{props.data}</span>
+                    <span style={{color:"#D9043E"}}>
+                        {props.comentarios}
+                    </span>
+                    <span style={{color:"#033E8C"}}>
+                        {props.data}
+                    </span>
                 </div>
                 <div className="mini-evento-comum__descricao">
                     <p>
                         {props.descricao}
                     </p>
                 </div>
-                <div className="mini-evento-comum__local">
+                <div className={`mini-evento-comum__local ${props.comentarios != null ? 'cor-azul' : 'cor-laranja'}`}>
                     <span>{props.local}</span>
                 </div>
             </div>

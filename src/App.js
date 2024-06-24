@@ -33,28 +33,30 @@ import DisclaimerCookies from './components/DisclaimerCookies/DisclaimerCookies'
 import LocationRequest from './components/LocationRequest/LocationRequest.jsx';
 import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
 import PerfilOrganizador from './pages/PerfilOrganizador/PerfilOrganizador.jsx';
+
 // import { LocalizationProvider } from '@mui/x-date-pickers';
 // import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-// import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
+
 import EditarPerfilOrganizador from './pages/GerenciadorPerfil/EditarPerfilOrganizador/EditarPerfilOrganizador.jsx';
 import FormCadastroUsuario from './pages/FormCadastroUsuario/FormCadastroUsuario.jsx';
+import Comentario from './components/Comentario/Comentario.jsx';
 
 function App() {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  }
+  // const { t, i18n } = useTranslation();
+  // const changeLanguage = (lng) => {
+  //   i18n.changeLanguage(lng);
+  // }
   
   return (
     
     <BrowserRouter>
-    {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
-      {children}
-    </LocalizationProvider> */}
-    {/* <LocationRequest></LocationRequest> */}
-    <DisclaimerCookies></DisclaimerCookies>
       <div>
-        {/* <Tradutor changeLanguage={changeLanguage} />  Botão de Tradução */}
+        {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
+        {children}
+        </LocalizationProvider> 
+        <LocationRequest></LocationRequest> */}
+        <DisclaimerCookies></DisclaimerCookies>
+        {/* <Tradutor changeLanguage={changeLanguage} />   */}
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/home' element={<Home/>} />
@@ -78,6 +80,8 @@ function App() {
           <Route path='/form-cadastro' element={<FormCadastroUsuario></FormCadastroUsuario>}></Route>
         </Routes>
       </div>
+      <Comentario></Comentario>
+      <BotaoTopo></BotaoTopo>
       {/* <Footer></Footer> */}
     </BrowserRouter>
   );

@@ -17,7 +17,7 @@ export default function Comentario() {
                         <div className="nota-Usuario-comentario">
                             <p>3,0</p>
                         </div>
-                        <div className='estrela-usuario'>
+                        <div className="estrela-usuario">
                             <RiStarLine /> <RiStarLine /> <RiStarLine /> <RiStarLine /> <RiStarLine />
                         </div>
                     </div>

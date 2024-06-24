@@ -79,6 +79,33 @@ export default function Home() {
         }
     ];
 
+    const segundaListaEvento = [
+        {
+            id: 1,
+            imagem: Evento9,
+            titulo: "Tenda de História",
+            data: "Sábado, dia 29/04 às 9h - 12h",
+            local: "Guaianases",
+            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+        },
+        {
+            id: 2,
+            imagem: Evento6,
+            titulo: "Literatura",
+            data: "Sábado, dia 20/04 às 09h - 12h",
+            local: "Cidade Tiradentes",
+            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+        },
+        {
+            id: 3,
+            imagem: Evento7,
+            titulo: "Batalha de Rima",
+            data: "Sábado, dia 20/04 às 09h - 12h",
+            local: "Itaquera",
+            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+        }
+    ];
+
 
     const [eventos, setEventos] = useState([]);
 
@@ -109,7 +136,7 @@ export default function Home() {
                 />
                 <CarrosselEvento
                     tituloCarrossel="acontece em são paulo"
-                    listaEvento={primeiraListaEvento}
+                    listaEvento={segundaListaEvento}
                 />
             </div>
 

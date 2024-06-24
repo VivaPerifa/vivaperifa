@@ -21,6 +21,12 @@ export default function CarrosselEvento(props){
     //             console.error("Erro ao buscar dados "+error);
     //         });
     // }, []);
+
+    const [evento, setEvento] = useState();
+
+    const handleEvento = (item) => {
+        setEvento(item);
+    }
     
     return(
         <div className="carrossel-evento">

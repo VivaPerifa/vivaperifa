@@ -10,6 +10,12 @@ import Evento7 from "../../../assets/evento_7.png";
 import Evento8 from "../../../assets/evento_8.png";
 import Evento9 from "../../../assets/evento_9.png";
 import Evento10 from "../../../assets/evento_10.png";
+
+import Evento12 from "../../../assets/evento_12.png";
+import Evento13 from "../../../assets/evento_13.png";
+import Evento14 from "../../../assets/evento_14.png";
+import Evento11 from "../../../assets/evento_feira.png";
+
 import CarrosselEventoDestaque from '../../../components/CarrosselEventoDestaque/CarrosselEventoDestaque';
 import CarrosselEvento from "../../../components/CarrosselEvento/CarrosselEvento";
 import { useState, useEffect } from 'react';
@@ -18,14 +24,14 @@ import CarrosselMiniEventoComum from "../../../components/CarrosselMiniEventoCom
 
 export default function EventosCadastrados() {
 
-    const primeiraListaEvento = [
+    const primeiraListaEventoPendente = [
         {
             id: 1,
             imagem: Evento10,
             titulo: "Tenda de História",
             data: "Sábado, dia 29/04 às 9h - 12h",
             local: "Guaianases",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla...",
         },
         {
             id: 2,
@@ -33,7 +39,7 @@ export default function EventosCadastrados() {
             titulo: "Literatura",
             data: "Sábado, dia 20/04 às 09h - 12h",
             local: "Cidade Tiradentes",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla...",
         },
         {
             id: 3,
@@ -41,7 +47,61 @@ export default function EventosCadastrados() {
             titulo: "Batalha de Rima",
             data: "Sábado, dia 20/04 às 09h - 12h",
             local: "Itaquera",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla...",
+        }
+    ];
+
+    const primeiraListaEventoEncerrado = [
+        {
+            id:1,
+            imagem: Evento11,
+            titulo: "Tenda de História",
+            comentarios: "1200 comentários",
+            local:"Guaianases",
+            descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla...",
+        },
+        {
+            id:2,
+            imagem: Evento7,
+            titulo: "Literatura",
+            comentarios: "1200 comentários",
+            local:"Cidade Tiradentes",
+            descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla...",
+        },
+        {
+            id:3,
+            imagem: Evento5,
+            titulo: "Batalha de Rima",
+            comentarios: "1200 comentários",
+            local:"Itaquera",
+            descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla...",
+        }
+    ];
+
+    const segundaListaEventoEncerrado = [
+        {
+            id:1,
+            imagem: Evento14,
+            titulo: "Tenda de História",
+            comentarios: "1200 comentários",
+            local:"Guaianases",
+            descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla...",
+        },
+        {
+            id:2,
+            imagem: Evento13,
+            titulo: "Literatura",
+            comentarios: "1200 comentários",
+            local:"Cidade Tiradentes",
+            descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla...",
+        },
+        {
+            id:3,
+            imagem: Evento12,
+            titulo: "Batalha de Rima",
+            comentarios: "1200 comentários",
+            local:"Itaquera",
+            descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla...",
         }
     ];
 
@@ -65,15 +125,19 @@ export default function EventosCadastrados() {
             carrossel_pendentes.classList.add('hidden-container');
             carrossel_encerrados.classList.remove('hidden-container');
             carrossel_encerrados.classList.add('show-container');
+            titulo_encerrados.classList.remove('ativo');
+            titulo_pendentes.classList.add('ativo');
         }
         if(!container){
             carrossel_pendentes.classList.remove('hidden-container');
             carrossel_encerrados.classList.remove('show-container');
             carrossel_encerrados.classList.add('hidden-container');
             carrossel_pendentes.classList.add('show-container');
+            titulo_pendentes.classList.remove('ativo');
+            titulo_encerrados.classList.add('ativo');
         }
         
-    },[container])
+    },[container]);
 
     return (
         <div className="container-eventos-cadastrados">
@@ -87,7 +151,7 @@ export default function EventosCadastrados() {
                     </div>
                     <div className="eventos-cadastrados__guia">
                         <div className="eventos-cadastrados__pendentes">
-                            <span className="ativo" onClick={handleContainerPendentes} id="titulo_pendentes">Pendentes</span>
+                            <span onClick={handleContainerPendentes} id="titulo_pendentes">Pendentes</span>
                         </div>
                         <div className="eventos-cadastrados__encerrados">
                             <span onClick={handleContainerEncerrados} id="titulo_encerrados">Encerrados</span>
@@ -97,11 +161,13 @@ export default function EventosCadastrados() {
                     <div className="eventos-cadastrados__body">
                         <div className="eventos-cadastrados__carrossel" id="carrossel_pendentes">
                             <CarrosselMiniEventoComum
-                                listaMiniEvento={primeiraListaEvento}
+                                listaMiniEvento={primeiraListaEventoPendente}
                             />
                         </div>
                         <div className="eventos-cadastrados__carrossel hidden-container" id="carrossel_encerrados">
-                            Carrossel ne pai
+                            <CarrosselMiniEventoComum
+                                listaMiniEvento={primeiraListaEventoEncerrado}
+                            />
                         </div>
                     </div>
                 </div>

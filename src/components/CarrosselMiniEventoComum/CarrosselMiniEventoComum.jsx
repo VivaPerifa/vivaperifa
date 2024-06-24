@@ -15,6 +15,7 @@ export default function CarrosselMiniEventoComum(props){
                             data={item.data}
                             descricao={item.descricao}
                             local={item.local}
+                            comentarios={item.comentarios}
                         />
                     </div>
                 ))
