@@ -152,8 +152,8 @@
 }
 
 .login-opcao h2{
-    font-size: 1.8rem;
-    color: var(--cor-azul);
+    font-size: 1.8rem !important;
+    color: var(--cor-azul) !important;
 }
 
 .login-opcao a{

@@ -4,6 +4,7 @@ import './PerfilOrganizador.css';
 import Footer from '../../static/Footer/Footer';
 import CarrosselEvento from "../../components/CarrosselEvento/CarrosselEvento";
 import { useTranslation } from 'react-i18next';
+import { Link  }from 'react-router-dom';
 
 import Evento1 from "../../assets/evento_1.png";
 import Evento2 from "../../assets/evento_2.png";
@@ -96,15 +97,15 @@ export default function PerfilOrganizador() {
                         <img src={Perfil} alt="Perfil do organizador" />
                     </figure>
                     <div className='perfil-organizador__botoes'>
-                        <BotaoLaranja
+                        <Link to='/editar-perfil'><BotaoLaranja
                             legendaBotao="Editar Perfil"
                             larguraBotao="150px"
-                        />
+                        /></Link>
 
-                        <BotaoAzul
+                        <Link to='/eventos-cadastrados'><BotaoAzul
                             legendaBotao="Gerenciar Eventos"
                             larguraBotao="180px"
-                        />
+                        /></Link>
                     </div>
                 </div>
             </div>
