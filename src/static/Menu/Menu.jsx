@@ -60,9 +60,6 @@ export default function Menu(props) {
                     <li>
                         <Link to="/contato">{t('menu.contato')}</Link>
                     </li>
-                    <li>
-                        <Link to="/gerenciador-perfil">{t('menu.gerenciador-perfil')}</Link>
-                    </li>
                 </ul>
                 <div className='pesquisa-user'>
                     <div className='pesquisa'>
@@ -93,7 +90,7 @@ export default function Menu(props) {
                                     {/* <Link to=''>{t('Entrar')}</Link> */}
                                     <a href=''><h4>Esqueceu sua senha?</h4></a>
 
-                                    <p>Novo no VivaPerifa!<Link to='/login' className='btn_cadastrese'>{t('CADASTRE-SE')}</Link></p>
+                                    <p>Novo no VivaPerifa!<Link to='/form-cadastro' className='btn_cadastrese'>{t('CADASTRE-SE')}</Link></p>
                                 </div>
                             </>
                         )}

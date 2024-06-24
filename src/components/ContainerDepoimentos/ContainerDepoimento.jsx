@@ -1,6 +1,10 @@
 import Depoimento from '../ContainerDepoimentos/Depoimento/Depoimento';
 import './ContainerDepoimento.css';
-import Neguinha from '../../assets/fotoUsuario.png';
+import Perfil5 from '../../assets/fotoUsuario.png';
+import Perfil1 from '../../assets/perfil_1.png';
+import Perfil2 from '../../assets/perfil_2.png';
+import Perfil3 from '../../assets/perfil_3.png';
+import Perfil4 from '../../assets/perfil_4.png';
 
 export default function ContainerDepoimento(){
     const listItem = [
@@ -10,7 +14,7 @@ export default function ContainerDepoimento(){
             descricao: " VivaPerifa é incrível! Encontrei diversos eventos culturais na minha  região que nem sabia que existiam. É uma plataforma que fortalece a cultura local.",
             nome:"Ana Beatriz",
             tipo:"usuario",
-            imagem: Neguinha
+            imagem: Perfil1
         },
         {
             id:2,
@@ -18,7 +22,7 @@ export default function ContainerDepoimento(){
             descricao: "Como organizador de eventos, o VivaPerifa foi uma ótima escolha para  promover nossas iniciativas na periferia. A plataforma é fácil de usar e  nos ajudou a alcançar um público mais amplo",
             nome:"Carlos Soares",
             tipo:"Organizador",
-            imagem: Neguinha
+            imagem: Perfil2
         },
         {
             id:3,
@@ -26,7 +30,7 @@ export default function ContainerDepoimento(){
             descricao: "O VivaPerifa é uma ferramenta essencial para quem quer se manter  atualizado sobre o que está acontecendo nas periferias.",
             nome:"João Kaique",
             tipo:"usuario",
-            imagem: Neguinha
+            imagem: Perfil3
         },
         {
             id:4,
@@ -34,7 +38,7 @@ export default function ContainerDepoimento(){
             descricao: "Adoro a proposta inclusiva do VivaPerifa! Encontrei eventos  diversificados e pude participar de iniciativas que antes desconhecia. É  uma plataforma que realmente valoriza a comunidade",
             nome:"Igor Manuel",
             tipo:"usuario",
-            imagem: Neguinha
+            imagem: Perfil4
         },
         {
             id:5,
@@ -42,7 +46,7 @@ export default function ContainerDepoimento(){
             descricao: "VivaPerifa oferece uma variedade impressionante de recursos que  tornam a experiência do usuário excepcional.É  uma plataforma que realmente valoriza a comunidade",
             nome:"Raquel Oliveira",
             tipo:"usuario",
-            imagem: Neguinha
+            imagem: Perfil5
         }
     ]
 

@@ -6,12 +6,10 @@ import Home from './pages/Home/Home';
 import Explorar from './pages/Explorar/Explorar';
 import Comunidade from './pages/Comunidade/Comunidade';
 import Contato from './pages/Contato/Contato';
-import Cadastro from './pages/CadastroOrganizador/CadastroOrganizador'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import "./i18n";
-import CadastroOrganizador from './pages/CadastroOrganizador/CadastroOrganizador';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Mapa from './components/Mapa/Mapa';
 import DescricaoEvento from './pages/GerenciadorPerfil/CadastrarEvento/DescricaoEvento/DescricaoEvento.jsx';
@@ -39,6 +37,7 @@ import PerfilOrganizador from './pages/PerfilOrganizador/PerfilOrganizador.jsx';
 // import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 // import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
 import EditarPerfilOrganizador from './pages/GerenciadorPerfil/EditarPerfilOrganizador/EditarPerfilOrganizador.jsx';
+import FormCadastroUsuario from './pages/FormCadastroUsuario/FormCadastroUsuario.jsx';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -63,7 +62,6 @@ function App() {
           <Route path='/explorar' element={<Explorar/>} />
           <Route path='/comunidade' element={<Comunidade/>} />
           <Route path='/contato' element={<Contato/>} />
-          <Route path='/login' element={<CadastroOrganizador />}/>
           <Route path='/descricao-evento' element={<DescricaoEvento />}/>
           <Route path='/gerenciador-perfil' element={<GerenciadorPerfil />}></Route>
           <Route path='/imagem-evento' element={<ImagemEvento />}></Route>
@@ -76,6 +74,8 @@ function App() {
           <Route path='/detalhe-evento' element={<DetalheEvento></DetalheEvento>}></Route>
           <Route path='/eventos-cadastrados' element={<EventosCadastrados></EventosCadastrados>}></Route>
           <Route path='/perfil-organizador' element={<PerfilOrganizador></PerfilOrganizador>}></Route>
+          <Route path='/perfil-participante' element={<PerfilParticipante></PerfilParticipante>}></Route>
+          <Route path='/form-cadastro' element={<FormCadastroUsuario></FormCadastroUsuario>}></Route>
         </Routes>
       </div>
       {/* <Footer></Footer> */}

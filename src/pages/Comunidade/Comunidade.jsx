@@ -18,6 +18,7 @@ import Evento14 from "../../assets/evento_14.png";
 
 import Evento11 from "../../assets/evento_feira.png";
 import Menu from '../../static/Menu/Menu';
+import Footer from '../../static/Footer/Footer';
 
 export default function Comunidade(){
     const primeiraListaEvento = [
@@ -86,6 +87,8 @@ export default function Comunidade(){
             <CarrosselEvento
                 listaEvento={segundaListaEvento}
             />
+
+            <Footer></Footer>
         </div>
     );
 }

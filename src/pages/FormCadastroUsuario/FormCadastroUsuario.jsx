@@ -1,10 +1,11 @@
 import CampoForm from '../../components/CampoForm/CampoForm';
-import './CadastroOrganizador.css';
+import './FormCadastroUsuario.css';
 import LogoCadastro from '../../assets/logo.png';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Menu from '../../static/Menu/Menu';
 
-export default function CadastroOrganizador() {
+export default function FormCadastroUsuario() {
 
     const [containerAtivo, setContainerAtivo] = useState(false);
 
@@ -38,23 +39,19 @@ export default function CadastroOrganizador() {
 
     return (
         <div className='container_cadastro' id='container_cadastro'>
-
+            <Menu></Menu>
             <div className='container-cadastro-box'>
-
                 <div className='form-container-cadastro form-user'>
-                    <form action=''>
-                        <h2>Usuário</h2>
+                    <form>
+                        <h2>Participante</h2>
 
-                        <CampoForm id='nome-user' tipo='text' legenda='Digite seu nome' tamanhoCampo='80%' tituloForm="Nome"/>
-
-                        <CampoForm id='tel-user' tipo='text' legenda='Digite seu telefone' tamanhoCampo='80%' tituloForm="Telefone"/>
-
-                        <CampoForm id='email-user' tipo='text' legenda='Digite seu e-mail' tamanhoCampo='80%' tituloForm="E-mail"/>
-
-                        <CampoForm id='senha-user' tipo='text' legenda='Crie uma senha' tamanhoCampo='80%' tituloForm="Senha"/>
+                        <CampoForm id='nome-user' tipo='text' legenda='Digite seu nome' tamanhoCampo='100%' tituloForm="Nome"/>
+                        <CampoForm id='tel-user' tipo='text' legenda='Digite seu telefone' tamanhoCampo='100%' tituloForm="Telefone"/>
+                        <CampoForm id='email-user' tipo='text' legenda='Digite seu e-mail' tamanhoCampo='100%' tituloForm="E-mail"/>
+                        <CampoForm id='senha-user' tipo='text' legenda='Crie uma senha' tamanhoCampo='100%' tituloForm="Senha"/>
 
                         <div className='btn-cadastro'>
-                            <Link to="/gerenciador-perfil"><button>Cadastrar</button></Link>
+                            <Link to="/perfil-participante"><button>Cadastrar</button></Link>
                         </div>
                     </form>
                 </div>
@@ -63,18 +60,14 @@ export default function CadastroOrganizador() {
                     <form action=''>
                         <h2>Organizador</h2>
 
-                        <CampoForm id='nome-org' tipo='text' legenda='Digite o nome da empresa' tamanhoCampo='80%' tituloForm="Nome da empresa" />
-
-                        <CampoForm id='cnpj-org' tipo='text' legenda='Digite o CNPJ da empresa' tamanhoCampo='80%' tituloForm="CNPJ"/>
-
-                        <CampoForm id='tel-org' tipo='text' legenda='Digite seu telefone' tamanhoCampo='80%' tituloForm="Telefone"/>
-
-                        <CampoForm id='email-org' tipo='text' legenda='Digite seu e-mail' tamanhoCampo='80%' tituloForm="E-mail"/>
-
-                        <CampoForm id='senha-org' tipo='text' legenda='Crie uma senha' tamanhoCampo='80%' tituloForm="Senha"/>
+                        <CampoForm id='nome-org' tipo='text' legenda='Digite o nome da empresa' tamanhoCampo='100%' tituloForm="Nome da empresa" />
+                        <CampoForm id='cnpj-org' tipo='text' legenda='Digite o CNPJ da empresa' tamanhoCampo='100%' tituloForm="CNPJ"/>
+                        <CampoForm id='tel-org' tipo='text' legenda='Digite seu telefone' tamanhoCampo='100%' tituloForm="Telefone"/>
+                        <CampoForm id='email-org' tipo='text' legenda='Digite seu e-mail' tamanhoCampo='100%' tituloForm="E-mail"/>
+                        <CampoForm id='senha-org' tipo='text' legenda='Crie uma senha' tamanhoCampo='100%' tituloForm="Senha"/>
 
                         <div className='btn-cadastro'>
-                            <button>Cadastrar</button>
+                            <Link to="/gerenciador-perfil"><button>Cadastrar</button></Link>
                         </div>
 
                     </form>
@@ -85,19 +78,15 @@ export default function CadastroOrganizador() {
                         <div className='toggle-panel toggle-left'>
 
                             <img className='logo_cadastro' src={LogoCadastro} alt='' />
-
                             <h2>Cadastre-se</h2>
-
                             <p>Deseja cadastrar-se como usuário comum?</p>
-
                             <div className='btn-cadastro'>
-                                <button className='btn-user-org' id='btn_user'>Usuário</button>
+                                <button className='btn-user-org' id='btn_user'>Participante</button>
                             </div>
 
                         </div>
 
                         <div className='toggle-panel toggle-right'>
-
                             <img className='logo_cadastro' src={LogoCadastro} alt=''/>
 
                             <h2>Cadastre-se</h2>

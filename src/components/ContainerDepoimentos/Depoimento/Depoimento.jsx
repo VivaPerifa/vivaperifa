@@ -1,5 +1,4 @@
 import PerfilUsuario from '../../PerfilUsuario/PerfilUsuario';
-import Neguinha from '../../../assets/fotoUsuario.png';
 import  './Depoimento.css';
 
 export default function Depoimento(props){
