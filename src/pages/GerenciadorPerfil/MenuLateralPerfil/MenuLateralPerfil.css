@@ -59,12 +59,12 @@
     justify-content: space-between;
 }
 
-.menu-lateral__lista ul li a{
+.menu-lateral a{
     text-decoration: none;
     color: white;
 }
 
-.menu-lateral__lista ul li {
+.menu-lateral__lista ul a {
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 1.2rem;
@@ -74,12 +74,12 @@
     align-items: center;    
 }
 
-.menu-lateral__lista ul li:hover {
+.menu-lateral__lista ul a:hover {
     background-color: rgba(255, 255, 255, 0.123);
 }
 
 
-.menu-lateral__lista ul li svg {
+.menu-lateral__lista ul a svg {
     margin-right: 10px;
     font-size: 1.5rem
 }

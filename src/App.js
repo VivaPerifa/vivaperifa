@@ -40,6 +40,7 @@ import PerfilOrganizador from './pages/PerfilOrganizador/PerfilOrganizador.jsx';
 // import VisualizarEvento from './pages/GerenciadorPerfil/CadastrarEvento/VisualizarEvento/VisualizarEvento.jsx';
 import EditarPerfilOrganizador from './pages/GerenciadorPerfil/EditarPerfilOrganizador/EditarPerfilOrganizador.jsx';
 
+
 function App() {
   const { t, i18n } = useTranslation();
   const changeLanguage = (lng) => {
@@ -75,6 +76,7 @@ function App() {
           <Route path='/editar-perfil' element={<EditarPerfilOrganizador />}></Route>
           <Route path='/detalhe-evento' element={<DetalheEvento></DetalheEvento>}></Route>
           <Route path='/eventos-cadastrados' element={<EventosCadastrados></EventosCadastrados>}></Route>
+          <Route path='/perfil-organizador' element={<PerfilOrganizador></PerfilOrganizador>}></Route>
           <Route path='/perfil-organizador' element={<PerfilOrganizador></PerfilOrganizador>}></Route>
         </Routes>
       </div>
