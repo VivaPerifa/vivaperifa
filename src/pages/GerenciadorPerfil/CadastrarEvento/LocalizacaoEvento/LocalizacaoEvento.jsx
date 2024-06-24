@@ -25,12 +25,12 @@ export default function LocalizacaoEvento() {
                         <div className="local-evento__right">
                             <CampoForm id='cidade-local' tipo='text' legenda='Digite a cidade' tamanhoCampo='100%' tituloForm="Cidade" />
                             <CampoForm id='cep-local' tipo='text' legenda='Digite o CEP' tamanhoCampo='100%' tituloForm="CEP" />
-                        <CampoForm id='complemento-local' tipo='text' legenda='Digite o complemento' tamanhoCampo='100%' tituloForm="Complemento" />
+                            <CampoForm id='complemento-local' tipo='text' legenda='Digite o complemento' tamanhoCampo='100%' tituloForm="Complemento" />
                         </div>
                     </div>
                     <div className="local-evento__legenda">
                         <span>Lorem Ipsum</span>
-                    </div>  
+                    </div>
 
                     <div className="localizacao-mapa">
                         <Mapa larguraMapa="100%" alturaMapa="400px"></Mapa>

@@ -26,24 +26,24 @@ export default function MenuLateralPerfil() {
 
                     <div className="menu-lateral__lista">
                         <ul>
-                            <li><FontAwesomeIcon icon={faPenToSquare} /> 
-                                <Link to="/criar-evento">Criar Evento</Link>
-                            </li>
-                            <li><FontAwesomeIcon icon={faCalendar} /> 
-                                <Link to="/eventos-cadastrados">Eventos</Link>
-                            </li>
-                            <li><FontAwesomeIcon icon={faChartSimple} /> 
+                            <Link to="/criar-evento"><li><FontAwesomeIcon icon={faPenToSquare} /> 
+                                Criar Evento
+                            </li></Link>
+                            <Link to="/eventos-cadastrados"><li><FontAwesomeIcon icon={faCalendar} /> 
+                                Eventos
+                            </li></Link>
+                            <Link to=''><li><FontAwesomeIcon icon={faChartSimple} /> 
                                 Analytics
-                            </li>
-                            <li><FontAwesomeIcon icon={faCommentDots} /> 
+                            </li></Link>
+                            <Link to='/comentarios-evento'><li><FontAwesomeIcon icon={faCommentDots} /> 
                                 Comunidade
-                            </li>
-                            <li><FontAwesomeIcon icon={faGear} /> 
+                            </li></Link>
+                            <Link to=''><li><FontAwesomeIcon icon={faGear} /> 
                                 Configurações
-                            </li>
-                            <li><FontAwesomeIcon icon={faCircleQuestion} /> 
+                            </li></Link>
+                            <Link to='/suporte-evento'><li><FontAwesomeIcon icon={faCircleQuestion} /> 
                                 Suporte
-                            </li>
+                            </li></Link>
                         </ul>
                     </div>
                 </div>
