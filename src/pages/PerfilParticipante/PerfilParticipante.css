@@ -1,5 +1,8 @@
 .container-perfil-participante{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .perfil-participante__header{
@@ -8,4 +11,66 @@
 
 .perfil-participante__info{
     padding: 30px 100px;
+    display: flex;
+    gap: 40px;
 }
+
+.participante__editar{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nome-participante{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nome-participante h2{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.nome-participante button{
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dados-participante{
+    display: flex;
+    gap: 10px;
+}
+
+.dados-participante span{
+    color: white;
+    font-size: 1rem;
+}
+
+.perfil-participante__comentarios{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.perfil-participante__guia{
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0 100px;
+}
+
+.perfil-participante__guia span{
+    display: block;
+    padding-bottom: 30px;
+}
+    

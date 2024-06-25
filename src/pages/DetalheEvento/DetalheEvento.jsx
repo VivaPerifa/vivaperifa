@@ -10,15 +10,22 @@ import Local from '../../assets/icone-local.png';
 import FaixaEtaria from '../../assets/faixa-etaria.png';
 import Mapa from '../../components/Mapa/Mapa';
 import Evento10 from "../../assets/evento_10.png";
+import { useLocation } from 'react-router-dom';
 
-export default function DetalheEvento(props) {
+export default function DetalheEvento() {
+
+    const location = useLocation();
+    const { evento } = location.state;
+
     return (
         <div className="container-detalhe-evento">
             <div className="detalhe-evento__header">
                 <Menu></Menu>
-                <figure className="detalhe-evento__imagem">
-                    <img src={Evento10} alt="Imagem do evento" />
-                </figure>
+                <div className="detalhe-evento__imagem">
+                    <figure>
+                        <img src={evento.imagem} alt="Imagem do evento" />
+                    </figure>
+                </div>
             </div>
             <div className="detalhe-evento__body">
 
@@ -34,14 +41,14 @@ export default function DetalheEvento(props) {
                     </div>
                 </div>
                 <div className="detalhe-evento__titulo">
-                    <h2>titulo do evento</h2>
+                    <h2>{evento.titulo}</h2>
                 </div> 
 
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <p>{evento.descricao}</p>
                 
                 <div className="detalhe-evento__prog-info">
                     <div className="detalhe-evento__descricao">
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. <br></br> All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. <br></br> The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                        <p>{evento.descricao}</p>
                     </div>
                     <div className="detalhe-evento__programacao">
                         <h2>detalhes do evento</h2>
@@ -53,7 +60,7 @@ export default function DetalheEvento(props) {
                                     </figure>
                                     <span>Programação</span>
                                 </div>
-                                <span>Sábado dia 20/04 das 9:00h às 12:00h</span>
+                                <span>{evento.data}</span>
                             </div>
                             <div className="programacao__item">
                                 <div className="programacao__icone">
@@ -62,7 +69,7 @@ export default function DetalheEvento(props) {
                                     </figure>
                                     <span>Localização</span>
                                 </div>
-                                <span>R. Oscar Feire, 2500 - Sumaré São Paulo, SP 05409-012</span>
+                                <span>{evento.local}</span>
                             </div>
                             <div className="programacao__item">
                                 <div className="programacao__icone">
@@ -80,7 +87,7 @@ export default function DetalheEvento(props) {
                     </div>
                 </div>
                 
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <p>{evento.descricao}</p>
 
                 <div className="mini-perfil-organizador">
                     <div className="mini-perfil-dados">

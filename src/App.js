@@ -87,7 +87,6 @@ function App() {
           
         </Routes>
       </div>
-      <Comentario></Comentario>
       <BotaoTopo></BotaoTopo>
       {/* <Footer></Footer> */}
     </BrowserRouter>

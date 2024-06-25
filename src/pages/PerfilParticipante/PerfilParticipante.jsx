@@ -3,6 +3,7 @@ import "./PerfilParticipante.css";
 import Menu from '../../static/Menu/Menu';
 import Perfil from '../../assets/perfil-participante.png';
 import EditarPerfilParticipante from '../EditarPerfilParticipante/EditarPerfilParticipante';
+import Comentario from '../../components/Comentario/Comentario';
 
 export default function PerfilParticipante() {
     return (
@@ -13,17 +14,31 @@ export default function PerfilParticipante() {
                     <figure>
                         <img src={Perfil} alt="foto de perfil" />
                     </figure>
-                    <div className="nome-participante">
-                        <h2>Nome do perfil</h2>
-                        <button>Editar perfil</button>
+                    <div className="participante__editar">
+                        <div className="nome-participante">
+                            <h2>Guilherme</h2>
+                            <button>Editar perfil</button>
+                        </div>
                         <div className="dados-participante">
                             <span>3 comentários</span>
                             <span>2 seguindo</span>
                         </div>
                     </div>
                 </div>
+                <div className="perfil-participante__guia">
+                    <div id="titulo_comentarios">
+                        <span>Comentários</span>
+                    </div>
+                    <div id="titulo_favoritos">
+                        <span>Favoritos</span>
+                    </div>
+                </div>
             </div>
-
+            <div className="perfil-participante__comentarios">
+                <Comentario></Comentario>
+                <Comentario></Comentario>
+                <Comentario></Comentario>
+            </div>
             <EditarPerfilParticipante></EditarPerfilParticipante>
         </div>
     );
