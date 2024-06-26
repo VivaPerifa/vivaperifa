@@ -32,6 +32,9 @@ const PerfilParticipante = () => {
                     <div id="titulo_favoritos">
                         <span>Favoritos</span>
                     </div>
+                    <div id="titulo_favoritos">
+                        <span>Seguindo</span>
+                    </div>
                 </div>
             </div>
             <div className="perfil-participante__comentarios">

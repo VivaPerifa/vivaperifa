@@ -12,7 +12,6 @@
 .perfil-participante__info{
     padding: 30px 100px;
     display: flex;
-<<<<<<< HEAD
     gap: 40px;
 }
 
@@ -74,10 +73,7 @@
     display: block;
     padding-bottom: 30px;
 }
-    
-=======
-    align-items: center;
-}
+
 
 .perfil-participante__foto {
     margin-right: 50px;
@@ -120,4 +116,3 @@
     cursor: pointer;
 }
 
->>>>>>> c8b0cc7d09b7dd1498acaa784f31151d8449fe9d
