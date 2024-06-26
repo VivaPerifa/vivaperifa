@@ -218,58 +218,6 @@ export default function SobreNos() {
                 </div>
 
             </div>
-
-            <div className="tiposDeLogo-identidade">
-                <div className="logoBranca">
-                    <figure>
-                        <img src={logoBranca} alt="" />
-                    </figure>
-                </div>
-
-                <div className="3logoIdentidade">
-                    <div className="logo-colorida">
-
-                        <figure className="logoAmarela">
-                            <img src={logoAmarela} alt="" />
-                        </figure>
-                        <figure className="logoLaranja">
-                            <img src={logoLaranja} alt="" />
-                        </figure>
-                    </div>
-                    <figure className="logoAzul">
-                        <img src={logoAzul} alt="" />
-                    </figure>
-                </div>
-            </div>
-
-            <div className="adesivosIdentidade">
-                <figure className="brindes-identidade">
-                    <img src={adesivos} alt="" />
-                </figure>
-
-                <div className="cores">
-                    <div className="container-vermelho">
-                        <p className="texto-cores">#D90504</p>
-                    </div>
-
-                    <div className="container-rosa">
-                        <p className="texto-cores">#D9043E</p>
-                    </div>
-
-                    <div className="container-laranja">
-                        <p className="texto-cores">#F28705</p>
-                    </div>
-
-                    <div className="container-amarelo">
-                        <p className="texto-cores">#F2B705</p>
-                    </div>
-
-                    <div className="container-azul">
-                        <p className="texto-cores">#033E8C</p>
-                    </div>
-
-                </div>
-            </div>
             <Footer></Footer>
         </div>
     )
