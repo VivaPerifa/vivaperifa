@@ -11,11 +11,6 @@ import Nathan from "../../assets/nathan.png";
 import Renan from "../../assets/renan.png";
 import Diego from "../../assets/diego.png";
 import Kaue from "../../assets/kaue.png";
-import logoBranca from "../../assets/logoIdentidadeCirculo.png";
-import logoAmarela from "../../assets/logoIdentidadeAmarelo.png"
-import logoLaranja from "../../assets/logoIdentidadeLaranja.png"
-import logoAzul from "../../assets/logoIdentidadeAzul.png";
-import adesivos from "../../assets/adesivosIdentidade.png";
 import './SobreNos.css';
 import Menu from '../../static/Menu/Menu';
 import Footer from '../../static/Footer/Footer';
@@ -32,30 +27,34 @@ export default function SobreNos() {
                 <div className="container-sobre-nos">
                     <div className="square-sobre-nos">
                         <div className="bloco-sobre-nos">
-                            <div className="icone-sobre-nos">
-                                <img src={Missao} alt="Missão" />
+                            <div className="sobre-nos-flex">
+                                <div className="icone-sobre-nos">
+                                    <img src={Missao} alt="Missão" />
+                                </div>
+                                <div className="conteudo-sobre-nos">
+                                    <h1 className="title-sobre-nos">Nosso Corre</h1>
+                                    <p className="texto-sobre-nos">Nosso corre é fortalecer as quebradas. Queremos mostrar pro mundo o talento e a garra do povo da periferia.</p>
+                                </div>
                             </div>
-                            <div className="conteudo-sobre-nos">
-                                <h1 className="title-sobre-nos">Missão</h1>
-                                <p className="texto-sobre-nos">Promover a inclusão e valorização da cultura e dos talentos locais, viabilizando o desenvolvimento social e fortalecendo o senso de comunidade na periferia.</p>
+
+                            <div className="sobre-nos-flex">
+                                <div className="icone-sobre-nos">
+                                    <img src={Visao} alt="Visão" />
+                                </div>
+                                <div className="conteudo-sobre-nos">
+                                    <h1 className="title-sobre-nos"> Nosso Sonho</h1>
+                                    <p className="texto-sobre-nos">Nosso sonho é transformar as periferias em lugares de referência, onde todos têm orgulho de viver e cresce.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="bloco-sobre-nos">
-                            <div className="icone-sobre-nos">
-                                <img src={Visao} alt="Visão" />
-                            </div>
-                            <div className="conteudo-sobre-nos">
-                                <h1 className="title-sobre-nos">Visão</h1>
-                                <p className="texto-sobre-nos">Ser referência como a principal plataforma de eventos das periferias do mundo, com foco no desenvolvimento das oportunidades culturais e empreendedoras da região, aplicando estratégias de divulgação únicas.</p>
-                            </div>
-                        </div>
-                        <div className="bloco-sobre-nos">
-                            <div className="icone-sobre-nos">
-                                <img src={Valores} alt="Valores" />
-                            </div>
-                            <div className="conteudo-sobre-nos">
-                                <h1 className="title-sobre-nos">Valores</h1>
-                                <p className="texto-sobre-nos">Integridade, comunicação, colaboração, criatividade e inclusão.</p>
+
+                            <div className="sobre-nos-flex">
+                                <div className="icone-sobre-nos">
+                                    <img src={Valores} alt="Valores" />
+                                </div>
+                                <div className="conteudo-sobre-nos">
+                                    <h1 className="title-sobre-nos">Nossa Postura</h1>
+                                    <p className="texto-sobre-nos">Respeitar as diferenças e lutar por um mundo mais igual. Valorizando cada história e cada conquista da nossa gente.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -216,7 +215,6 @@ export default function SobreNos() {
                         <img src={Logo} alt="" />
                     </figure>
                 </div>
-
             </div>
             <Footer></Footer>
         </div>

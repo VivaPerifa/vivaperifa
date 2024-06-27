@@ -3,7 +3,7 @@
     color: black;
 }
 
-.sobre-nos-header{
+.sobre-nos-header {
     background-image: url('../../assets/header-sobrenos.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 
 .container-sobre-nos {
     width: 100vw;
-    display: flex;  
+    display: flex;
     justify-content: center;
     background-image: url(../../assets/fundo_sobrenos.png);
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
 .square-sobre-nos {
     display: flex;
     justify-content: space-around;
-    gap: 10px; 
+    gap: 10px;
     margin: 0 auto;
 }
 
@@ -39,11 +39,20 @@
     box-shadow: 0px 1px 10px gray;
     border-radius: 40px;
     padding: 20px;
-    width: 30%; 
+    width: 50%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.sobre-nos-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0;
 }
 
 .icone-sobre-nos {
@@ -62,7 +71,7 @@
     justify-content: center;
     gap: 15px;
     padding: 20px;
-    text-align: center; 
+    width: 70%;
 }
 
 .title-sobre-nos {
@@ -201,15 +210,16 @@
 .icones-sobre-nos {
     display: flex;
     justify-content: center;
-    gap: 10px; 
+    gap: 10px;
     font-size: 35px;
 }
 
 .github-icon i {
     color: #333;
 }
+
 .github-icon:hover i {
-    color: black; 
+    color: black;
 }
 
 .container-identidade {
