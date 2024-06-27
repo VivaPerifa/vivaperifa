@@ -2,7 +2,7 @@
     display: flex;
     background-image: url(../../assets/muro_viva_perifa_footer.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     justify-content: center;
     padding: 40px 20px;
     align-items: center;

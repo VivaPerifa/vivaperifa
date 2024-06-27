@@ -74,7 +74,6 @@
 .perfil-participante__guia span{
     display: block;
     padding-bottom: 15px;
-    border-bottom: 3px solid white;
     cursor: pointer;
 }
 

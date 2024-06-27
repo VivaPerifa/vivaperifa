@@ -11,11 +11,23 @@ import FaixaEtaria from '../../assets/faixa-etaria.png';
 import Mapa from '../../components/Mapa/Mapa';
 import Evento10 from "../../assets/evento_10.png";
 import { useLocation } from 'react-router-dom';
+import Comentario from '../../components/Comentario/Comentario';
+import Perfil from '../../assets/perfil-participante.png';
+import { IoMdStar } from "react-icons/io";
+import { IoIosStarOutline } from "react-icons/io";
+import { IoIosStarHalf } from "react-icons/io";
 
 export default function DetalheEvento() {
 
     const location = useLocation();
     const { evento } = location.state;
+
+    var listComentarios = [];
+
+    if(evento.comentarios!=null){
+        listComentarios = evento.comentarios;
+        console.log(listComentarios);
+    }
 
     return (
         <div className="container-detalhe-evento">
@@ -105,7 +117,32 @@ export default function DetalheEvento() {
                     </div>
                 </div>
 
-                <span>Deixe seu comentário quando o evento ocorrer!</span>
+                <span className={`${listComentarios==null?'show':'hidden'}`}>Deixe seu comentário quando o evento ocorrer!</span>
+
+                <div className={`detalhe-evento__comentarios ${evento.comentarios!=null?'show':'hidden'}`}>
+                    <div className="detalhe-evento__avaliacao">
+                        <span>4.0</span>
+                        <IoMdStar style={{color:"var(--cor-amarela)" }}/> <IoMdStar style={{color:"var(--cor-amarela)"}}/> <IoIosStarHalf style={{color:"var(--cor-amarela)"}}/> <IoIosStarOutline style={{color:"var(--cor-amarela)"}}/> <IoIosStarOutline style={{color:"var(--cor-amarela)"}}/>
+                        <span>293901</span>
+                    </div>
+                   <div className="evento-comentarios__header">
+                        <h2>Avaliação e comentários</h2>
+                        <button>Avalie esse evento</button>
+                   </div>
+                    {
+                        listComentarios.map((item) => (
+                            <div className="comentario__item">
+                                <Comentario 
+                                    nome={item.nome}
+                                    perfil={item.perfil}
+                                    nota={item.nota}
+                                    comentario={item.comentario}
+                                    tempo={item.tempo}
+                                />
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
             <Footer></Footer>
         </div>

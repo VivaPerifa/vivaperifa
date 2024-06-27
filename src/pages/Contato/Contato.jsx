@@ -6,7 +6,7 @@ import Footer from '../../static/Footer/Footer';
 export default function Contato(){
     return (
         <div className='contato'>
-            <Menu corFundo="var(--cor-azul)"></Menu>
+            <Menu corFundo="#2D2D2D"></Menu>
             <FormFaleConosco/>
             <Footer></Footer>
         </div>

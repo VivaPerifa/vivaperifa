@@ -20,31 +20,123 @@ import Evento11 from "../../assets/evento_feira.png";
 import Menu from '../../static/Menu/Menu';
 import Footer from '../../static/Footer/Footer';
 
+import Perfil from '../../assets/perfil-participante.png';
+
 export default function Comunidade(){
     const primeiraListaEvento = [
         {
             id:1,
             imagem: Evento11,
             titulo: "Tenda de História",
-            comentarios: "1200 comentários",
+            qtdComentarios: "1200 comentários",
             local:"Guaianases",
             descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            comentarios: [
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                }
+            ]
         },
         {
             id:2,
             imagem: Evento7,
             titulo: "Literatura",
-            comentarios: "1200 comentários",
+            qtdComentarios: "1200 comentários",
             local:"Cidade Tiradentes",
             descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            comentarios: [
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                }
+            ]
         },
         {
             id:3,
             imagem: Evento5,
             titulo: "Batalha de Rima",
-            comentarios: "1200 comentários",
+            qtdComentarios: "1200 comentários",
             local:"Itaquera",
             descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            comentarios: [
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada",
+                    tempo: "30 min"
+                }
+            ]
         }
     ];
 
@@ -56,6 +148,32 @@ export default function Comunidade(){
             comentarios: "1200 comentários",
             local:"Guaianases",
             descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            comentarios: [
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                }
+            ]
         },
         {
             id:2,
@@ -64,6 +182,32 @@ export default function Comunidade(){
             comentarios: "1200 comentários",
             local:"Cidade Tiradentes",
             descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            comentarios: [
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                }
+            ]
         },
         {
             id:3,
@@ -72,6 +216,32 @@ export default function Comunidade(){
             comentarios: "1200 comentários",
             local:"Itaquera",
             descricao:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            comentarios: [
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                },
+                {
+                    nome:"Guilherme",
+                    perfil: Perfil,
+                    nota: "3,2",
+                    comentario: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada"
+                }
+            ]
         }
     ];
     return (

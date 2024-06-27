@@ -51,7 +51,7 @@ export default function CarrosselEvento(props) {
                                     descricaoEvento={item.descricao}
                                     dataEvento={item.data}
                                     localEvento={item.local}
-                                    quantidadeComentarios={item.comentarios}
+                                    quantidadeComentarios={item.qtdComentarios}
                                 />
                             </div>
                         ))
