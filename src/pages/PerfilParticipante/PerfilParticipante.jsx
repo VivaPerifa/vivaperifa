@@ -4,6 +4,7 @@ import Menu from '../../static/Menu/Menu';
 import Perfil from '../../assets/perfil-participante.png';
 import EditarPerfilParticipante from '../EditarPerfilParticipante/EditarPerfilParticipante';
 import Comentario from '../../components/Comentario/Comentario';
+import { Link } from 'react-router-dom';
 
 const PerfilParticipante = () => {
     return (
@@ -12,12 +13,14 @@ const PerfilParticipante = () => {
                 <Menu />
                 <div className="perfil-participante__info">
                     <figure className="perfil-participante__foto">
-                        <img src={Perfil} alt="foto de perfil" />
+                        <img src={Perfil} alt="Foto de perfil" />
                     </figure>
                     <div className="participante__editar">
                         <div className="nome-participante">
                             <h2>Guilherme</h2>
-                            <button>Editar perfil</button>
+                            <Link to="/editar-perfil-participante">
+                                <button>Editar perfil</button>
+                            </Link>
                         </div>
                         <div className="dados-participante">
                             <span>3 comentários</span>
@@ -32,7 +35,7 @@ const PerfilParticipante = () => {
                     <div id="titulo_favoritos">
                         <span>Favoritos</span>
                     </div>
-                    <div id="titulo_favoritos">
+                    <div id="titulo_seguindo">
                         <span>Seguindo</span>
                     </div>
                 </div>
@@ -42,7 +45,6 @@ const PerfilParticipante = () => {
                 <Comentario></Comentario>
                 <Comentario></Comentario>
             </div>
-            <EditarPerfilParticipante />
         </div>
     );
 }

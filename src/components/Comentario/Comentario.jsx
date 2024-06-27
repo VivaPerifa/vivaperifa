@@ -1,6 +1,9 @@
 import Perfil from '../../assets/perfil-participante.png';
 import { RiStarLine } from "react-icons/ri";
 import './Comentario.css';
+import { IoMdStar } from "react-icons/io";
+import { IoIosStarOutline } from "react-icons/io";
+import { IoIosStarHalf } from "react-icons/io";
 
 export default function Comentario() {
     return (
@@ -22,7 +25,7 @@ export default function Comentario() {
                             <span>3,0</span>
                         </div>
                         <div className="usuario-estrela">
-                            <RiStarLine /> <RiStarLine /> <RiStarLine /> <RiStarLine /> <RiStarLine />
+                            <IoMdStar style={{color:"var(--cor-amarela)" }}/> <IoMdStar style={{color:"var(--cor-amarela)"}}/> <IoIosStarHalf style={{color:"var(--cor-amarela)"}}/> <IoIosStarOutline style={{color:"var(--cor-amarela)"}}/> <IoIosStarOutline style={{color:"var(--cor-amarela)"}}/>
                         </div>
                     </div>
 

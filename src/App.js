@@ -42,6 +42,7 @@ import FormCadastroUsuario from './pages/FormCadastroUsuario/FormCadastroUsuario
 import Comentario from './components/Comentario/Comentario.jsx';
 import ComentariosEvento from './pages/GerenciadorPerfil/ComentariosEvento/ComentariosEvento.jsx';
 import SuporteEvento from './pages/GerenciadorPerfil/SuporteEvento/SuporteEvento.jsx';
+import EditarPerfilParticipante from './pages/EditarPerfilParticipante/EditarPerfilParticipante.jsx';
 
 
 function App() {
@@ -83,14 +84,9 @@ function App() {
           <Route path='/form-cadastro' element={<FormCadastroUsuario></FormCadastroUsuario>}></Route>
           <Route path='/comentarios-evento' element={<ComentariosEvento></ComentariosEvento>}></Route>
           <Route path='/suporte-evento' element={<SuporteEvento></SuporteEvento>}></Route>
-
-          
+          <Route path='/editar-perfil-participante' element={<EditarPerfilParticipante></EditarPerfilParticipante>}></Route>
         </Routes>
       </div>
-      <Comentario></Comentario>
-      <PerfilParticipante></PerfilParticipante>
-      <BotaoTopo></BotaoTopo>
-      {/* <Footer></Footer> */}
     </BrowserRouter>
   );
 }
