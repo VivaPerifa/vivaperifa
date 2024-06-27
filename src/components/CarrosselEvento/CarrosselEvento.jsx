@@ -1,12 +1,12 @@
 import EventoComum from "./EventoComum/EventoComum";
 
-import './CarrosselEvento.css'; 
+import './CarrosselEvento.css';
 import { useState, useEffect } from 'react';
 import api from '../../services/api';
 import Evento from '../../assets/evento_feira.png';
-import { Link  }from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-export default function CarrosselEvento(props){
+export default function CarrosselEvento(props) {
     const listItem = props.listaEvento;
 
     // const [eventos, setEventos] = useState([]);
@@ -22,16 +22,15 @@ export default function CarrosselEvento(props){
     //         });
     // }, []);
 
-    const [evento, setEvento] = useState();
-
-    const handleEvento = (item) => {
-        setEvento(item);
+    const navigate = useNavigate();
+    const handleEventoClick = (evento) => {
+        navigate(`/detalhe-evento`,{state: { evento }})
     }
-    
-    return(
+
+    return (
         <div className="carrossel-evento">
 
-             <div className="conteudo-eventos">
+            <div className="conteudo-eventos">
                 <div className="header-carrossel">
                     <h2>
                         {props.tituloCarrossel}
@@ -41,13 +40,12 @@ export default function CarrosselEvento(props){
                         Ver todos
                     </span>
                 </div>
-                
+
                 <div className="eventos">
-                {
-                    listItem.map((item, index)=>(
-                        <div className="item-evento" key={index}>
-                            <Link to="/detalhe-evento">
-                                <EventoComum 
+                    {
+                        listItem.map((item, index) => (
+                            <div className="item-evento" key={index} onClick={() => handleEventoClick(item)}>
+                                <EventoComum
                                     fotoEvento={item.imagem}
                                     tituloEvento={item.titulo}
                                     descricaoEvento={item.descricao}
@@ -55,10 +53,9 @@ export default function CarrosselEvento(props){
                                     localEvento={item.local}
                                     quantidadeComentarios={item.comentarios}
                                 />
-                            </Link>
-                        </div>
-                    ))
-                }
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div>

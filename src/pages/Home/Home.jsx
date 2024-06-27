@@ -109,15 +109,15 @@ export default function Home() {
 
     const [eventos, setEventos] = useState([]);
 
-    useEffect(() => {
-        api.get("/eventos")
-            .then((response) => {
-                setEventos(response);
-            })
-            .catch((error) => {
-                console.log("Erro ao buscar dados dos eventos " + error);
-            });
-    }, []);
+    // useEffect(() => {
+    //     api.get("/eventos")
+    //         .then((response) => {
+    //             setEventos(response);
+    //         })
+    //         .catch((error) => {
+    //             console.log("Erro ao buscar dados dos eventos " + error);
+    //         });
+    // }, []);
 
     return (
         <div className="container-homepage">
