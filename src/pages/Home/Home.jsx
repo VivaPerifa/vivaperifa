@@ -8,19 +8,6 @@ import ContainerDepoimentos from '../../components/ContainerDepoimentos/Containe
 import DisclaimerCookies from '../../components/DisclaimerCookies/DisclaimerCookies';
 import DisclaimerDivulgueSeuEvento from "../../components/DisclaimerDivulgueSeuEvento/DisclaimerDivulgueSeuEvento";
 
-import Evento1 from "../../assets/evento_1.png";
-import Evento2 from "../../assets/evento_2.png";
-import Evento3 from "../../assets/evento_3.png";
-import Evento4 from "../../assets/evento_4.png";
-import Evento5 from "../../assets/evento_5.png";
-import Evento6 from "../../assets/evento_6.png";
-import Evento7 from "../../assets/evento_7.png";
-import Evento8 from "../../assets/evento_8.png";
-import Evento9 from "../../assets/evento_9.png";
-import Evento10 from "../../assets/evento_10.png";
-// import Evento11 from "../../assets/evento_11.png";
-// import Evento12 from "../../assets/evento_12.png";
-// import Evento13 from "../../assets/evento_13.png";
 import Mapa from '../../components/Mapa/Mapa';
 import { useState, useEffect } from 'react';
 import api from '../../services/api';
@@ -30,84 +17,274 @@ import Arte from '../../assets/arte.png';
 import CarrosselEventoDestaque from '../../components/CarrosselEventoDestaque/CarrosselEventoDestaque';
 import EventoRua from '../../assets/evento_rua.png';
 
+//miniaturas
+import Museu from '../../assets/miniaturas_eventos/museu.png';
+import Teatro from '../../assets/miniaturas_eventos/teatro.png';
+import Poema from '../../assets/miniaturas_eventos/poema.png';
+import FabricaCultura from '../../assets/miniaturas_eventos/fabrica_cultura.jpg';
+import Sapobemba from '../../assets/miniaturas_eventos/sapobemba.jpg';
+import FestasTradiconais from '../../assets/miniaturas_eventos/festas_tradicionais.png';
+
 export default function Home() {
-    const primeiraListaEvento = [
+    const eventosRecentes = [
         {
             id: 1,
-            imagem: Evento10,
-            titulo: "Tenda de História",
-            data: "Sábado, dia 29/04 às 9h - 12h",
-            local: "Guaianases",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            imagem: Museu,
+            titulo: "Museu do Ipiranga",
+            data: "30 de Jun a 31 de Ago, 9h às 16h",
+            local: {
+                rua: "R. dos Patriotas",
+                bairro: "Ipiranga",
+                numero: "20",
+                cidade: "São Paulo",
+                estado: "SP",
+                nomeLocal: "Ipiranga"
+            },
+            categorias: [
+                {
+                    categoria: "Cultura",
+                    cor:"var(--cor-rosa)"
+                },
+                {
+                    categoria: "Arte",
+                    cor:"var(--cor-laranja)"
+                },
+                {
+                    categoria: "Museu",
+                    cor:"var(--cor-azul)"
+                }
+            ],
+            paragrafos: [
+                {
+                    descricao: "O Museu de Arte Contemporânea é um espaço cultural vibrante localizado no coração da cidade. Fundado em 1990, o museu destaca-se por sua arquitetura moderna e arrojada, que por si só já é uma obra de arte."
+                },
+                {
+                    descricao: "Ele abriga uma vasta coleção de obras de artistas renomados e emergentes, abrangendo diversas formas de expressão, como pintura, escultura, fotografia, instalação e arte digital. Além das exposições permanentes, o museu organiza mostras temporárias, oficinas, palestras e debates, promovendo um diálogo constante entre a arte e a sociedade."
+                }
+            ],
+            faixaEtaria: "Livre para todos os públicos"
         },
         {
             id: 2,
-            imagem: Evento5,
-            titulo: "Literatura",
-            data: "Sábado, dia 20/04 às 09h - 12h",
-            local: "Cidade Tiradentes",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            imagem: Teatro,
+            titulo: "Circus, A Nova Tournée",
+            data: "06 a 14 de Jul, 11h00 às 16h00",
+            local: {
+                rua: "Av. Pedro Álvares Cabral",
+                bairro: "",
+                numero: "1301",
+                cidade: "São Paulo",
+                estado: "SP",
+                nomeLocal: "Museu de Arte Moderna"
+            },
+            categorias: [
+                {
+                    categoria: "Cultura",
+                    cor:"var(--cor-rosa)"
+                },
+                {
+                    categoria: "Arte",
+                    cor:"var(--cor-laranja)"
+                },
+                {
+                    categoria: "Teatro",
+                    cor:"var(--cor-azul)"
+                }
+            ],
+            paragrafos: [
+                {
+                    descricao: "Dois clowns entram em cena para divertir a plateia. Mas nada funciona direito. Está dada a medida do que veremos quando abrirem as cortinas do pequeno palco: todos os números estão condenados a uma série divertidíssima de fracassos. A dupla clownesca dá vida aos bonecos, mostrando habilidades e grande domínio nas técnicas de manipulação ao mesmo tempo que estabelece com a plateia um intenso movimento de colaboração."
+                },
+                {
+                    descricao: "Números clássicos do circo são recriados por personagens conhecidos ou figuras inusitadas: uma mosca dançarina, uma família de ovos equilibristas e duas minhocas trapezistas estão entre os companheiros de palco. Todos carismáticos, todos capazes de manterem crianças e adultos atentos do início ao fim dessa peculiar jornada circense."
+                }
+            ],
+            faixaEtaria: "Livre para todos os públicos"
         },
         {
             id: 3,
-            imagem: Evento8,
-            titulo: "Batalha de Rima",
-            data: "Sábado, dia 20/04 às 09h - 12h",
-            local: "Itaquera",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
+            imagem: FabricaCultura,
+            titulo: "Além do Rio Há o Mar",
+            data: "Quarta, 03 de Jul, às 14:30h",
+            local: {
+                rua: "R. Henriqueta Noguez Bieba",
+                bairro: "",
+                numero: "281",
+                cidade: "Cidade Tiradentes",
+                estado: "SP",
+                nomeLocal: "Cidade Tiradentes"
+            },
+            categorias: [
+                {
+                    categoria: "Cultura",
+                    cor:"var(--cor-rosa)"
+                },
+                {
+                    categoria: "Arte",
+                    cor:"var(--cor-laranja)"
+                },
+                {
+                    categoria: "Teatro",
+                    cor:"var(--cor-azul)"
+                }
+            ],
+            paragrafos: [
+                {
+                    descricao: "Espetáculo de Teatro: Além do Rio Há o Mar - Grupo Puveita. Júlio sempre deslizou pelas águas do Rio Amazonas, atravessando pessoas e suas histórias. Até que um dia encontra-se com uma divertida senhora que lhe conta histórias para além daquelas águas, ela revela a ele segredos do Mar. Júlio parte para uma grande aventura em busca destas “ondas altas e fortes."
+                }
+            ],
+            faixaEtaria: "Livre para todos os públicos"
         }
     ];
 
-    const listItem = [
+    const eventosSaoPaulo = [
+        {
+            id: 4,
+            imagem: Poema,
+            titulo: "Poemas para Brincar",
+            data: "Domingo, 30 de Jun, 11h00 às 16h00",
+            local: {
+                rua: "Av. Pedro Álvares Cabral",
+                bairro: "",
+                numero: "1301",
+                cidade: "São Paulo",
+                estado: "SP",
+                nomeLocal: "Museu de Arte Moderna"
+            },
+            categorias: [
+                {
+                    categoria: "Cultura",
+                    cor:"var(--cor-rosa)"
+                },
+                {
+                    categoria: "Arte",
+                    cor:"var(--cor-laranja)"
+                },
+                {
+                    categoria: "Poema",
+                    cor:"var(--cor-azul)"
+                }
+            ],
+            paragrafos: [
+                {
+                    descricao: "Poemas para Brincar é um espetáculo de bonecos baseado no livro homônimo de poesias para criança do poeta José Paulo Paes e ilustrado pelo artista plástico Luiz Maia. O espetáculo aborda as brincadeiras de criança: a pipa, o rio, o medo do cemitério e os bicho, é conta a história de Ana e Juca que depois de perderem sua pipa, inventam uma nova brincadeira: através do jogo de palavras, descobrem como brincar de poesia."
+                }
+            ],
+            faixaEtaria: "Livre para todos os públicos"
+        },
+        {
+            id: 5,
+            imagem: Sapobemba,
+            titulo: "Fábrica de Cultura Sapobemba",
+            data: "Terça e Quarta, 9h às 21h.",
+            local: {
+                rua: "R. Agostin Luberti",
+                bairro: "Fazenda da Juta",
+                numero: "300",
+                cidade: "São Paulo",
+                estado: "SP",
+                nomeLocal: "Sapobemba"
+            },
+            categorias: [
+                {
+                    categoria: "Cultura",
+                    cor:"var(--cor-rosa)"
+                },
+                {
+                    categoria: "Arte",
+                    cor:"var(--cor-laranja)"
+                },
+                {
+                    categoria: "Fábrica de Cultura",
+                    cor:"var(--cor-azul)"
+                }
+            ],
+            paragrafos: [
+                {
+                    descricao: "A Fábrica de Cultura em Sapopemba é um vibrante centro de atividades culturais e educacionais, dedicado a promover a arte e a inclusão social na comunidade. Oferecendo uma vasta gama de oficinas gratuitas de música, dança, teatro, artes visuais e tecnologia, a fábrica se destaca como um espaço acolhedor para todas as idades. Com infraestrutura moderna e acessível, incentiva a expressão artística e o desenvolvimento de talentos locais."
+                },
+                {
+                    descricao: "Além das oficinas, realiza eventos, exposições e apresentações regulares, fortalecendo o laço comunitário e o acesso à cultura. É um verdadeiro polo de criatividade e transformação social na região."
+                }
+            ],
+            faixaEtaria: "Livre para todos os públicos"
+        },
+        {
+            id: 5,
+            imagem: FestasTradiconais,
+            titulo: "Festas Tradicionais Brasileiras 2024",
+            data: "01 a 30 de Jun",
+            local: {
+                rua: "R. Prof. Artur Primavesi",
+                bairro: "Jardim Clímax",
+                numero: "S/N",
+                cidade: "São Paulo",
+                estado: "SP",
+                nomeLocal: "CEU Parque Bristol"
+            },
+            categorias: [
+                {
+                    categoria: "Música",
+                    cor:"var(--cor-rosa)"
+                },
+                {
+                    categoria: "Teatro",
+                    cor:"var(--cor-laranja)"
+                },
+                {
+                    categoria: "Circo",
+                    cor:"var(--cor-azul)"
+                }
+            ],
+            paragrafos: [
+                {
+                    descricao: "A Coordenadoria dos Centros Educacionais Unificados, por meio da Divisão de Cultura, preparou uma programação recheada de atividades culturais para enriquecer ainda mais as festas tradicionais de junho."
+                },
+                {
+                    descricao: "Folias de São João – Grupo Folias e Folguedos / Inimar dos Reis."
+                },
+                {
+                    descricao: "Caruru Teatro-Bailinho – CIA. TEATRO DA INVESTIGAÇÃO."
+                },
+                {
+                    descricao: "Forró Vila do Sossego – Coletivo Setãoperifa."
+                },
+                {
+                    descricao: "Piá – Lili Flor & Paulo Pixu."
+                },
+                {
+                    descricao: "CircoXoteBaião – Cia Mimicalado."
+                },
+                {
+                    descricao: "Jornada Sertaneja – Adriano Martins."
+                }
+            ],
+            faixaEtaria: "Livre para todos os públicos"
+        }
+    ]
+
+    const eventosDestaque = [
         {
             id: 1,
             imagem: BatalhaRima,
-            titulo: "Batalha de Rima em SP",
-            data: "Sábado, dia 20/04 às 9h - 12h, SP Jardim Clímax"
+            titulo: "Batalha de Rima",
+            data: "Sábado, 20 de Jul, 21h às 23h, São Paulo - SP"
         },
         {
             id: 2,
             imagem: Arte,
-            titulo: "Batalha de Rima em SP",
-            data: "Sábado, dia 20/04 às 9h - 12h, SP Jardim Clímax"
+            titulo: "Museu de Arte e Cultura",
+            data: "30 a 16 de Jul, 9h às 15h, São Paulo - SP"
         },
         {
             id: 3,
             imagem: EventoRua,
-            titulo: "Batalha de Rima em SP",
-            data: "Sábado, dia 20/04 às 9h - 12h, SP Jardim Clímax"
+            titulo: "Palestra Periferia",
+            data: "Domingo, 05 de Ago, 17h ás 19h, São Paulo - SP"
         }
     ];
 
-    const segundaListaEvento = [
-        {
-            id: 1,
-            imagem: Evento9,
-            titulo: "Tenda de História",
-            data: "Sábado, dia 29/04 às 9h - 12h",
-            local: "Guaianases",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
-        },
-        {
-            id: 2,
-            imagem: Evento6,
-            titulo: "Literatura",
-            data: "Sábado, dia 20/04 às 09h - 12h",
-            local: "Cidade Tiradentes",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
-        },
-        {
-            id: 3,
-            imagem: Evento7,
-            titulo: "Batalha de Rima",
-            data: "Sábado, dia 20/04 às 09h - 12h",
-            local: "Itaquera",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada...",
-        }
-    ];
-
-
-    const [eventos, setEventos] = useState([]);
+    // const [eventos, setEventos] = useState([]);
 
     // useEffect(() => {
     //     api.get("/eventos")
@@ -126,17 +303,17 @@ export default function Home() {
             /> */}
             <div className="homepage-header">
                 <Menu></Menu>
-                <CarrosselEventoDestaque listaEventoDestaque={listItem}></CarrosselEventoDestaque>
+                <CarrosselEventoDestaque listaEventoDestaque={eventosDestaque}></CarrosselEventoDestaque>
             </div>
 
             <div className="homepage-carrossel-evento">
                 <CarrosselEvento
                     tituloCarrossel="adicionados recentemente"
-                    listaEvento={primeiraListaEvento}
+                    listaEvento={eventosRecentes}
                 />
                 <CarrosselEvento
                     tituloCarrossel="acontece em são paulo"
-                    listaEvento={segundaListaEvento}
+                    listaEvento={eventosSaoPaulo}
                 />
             </div>
 

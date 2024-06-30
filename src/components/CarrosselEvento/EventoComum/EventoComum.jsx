@@ -1,6 +1,8 @@
 import './EventoComum.css';
 import Coracao from '../../../assets/coracao.png';
 import Agenda from '../../../assets/agenda.png';
+import { CiCalendar } from "react-icons/ci";
+import { IoMdHeartEmpty } from "react-icons/io";
 
 export default function EventoComum(props) {
     return (
@@ -8,50 +10,59 @@ export default function EventoComum(props) {
             <div className="evento-comum">
 
                 <figure className="evento-comum__imagem">
-                    <img src={props.fotoEvento} alt="" />
+                    <img src={props.imagem} alt="" />
                 </figure>
 
                 <div className="evento-comum__dados">
                     <div className="evento-comum__titulo">
                         <h2>
-                            {props.tituloEvento}
+                            {props.titulo}
                         </h2>
                     </div>
 
                     <div className='evento-comum__icones'>
-                        <span>
+                        <span className="evento-comum__coracao">
                             <img src={Coracao} alt="" />
+                            {/* <IoMdHeartEmpty 
+                                style={{
+                                width:"2.3rem",
+                                height:"2.3rem",
+                                color:"var(--cor-rosa)"
+                                }}/> */}
                         </span>
 
                         <span>
-                            <img src={Agenda} alt="" />
+                            {/* <img src={Agenda} alt="" /> */}
+                            <CiCalendar style={{width:"2.3rem",height:"2.3rem",color:"var(--cor-azul)"}}/>
                         </span>
                     </div>
                 </div>
 
                 <div className="evento-comum__data">
-                    <span style={{color:"#D9043E"}}>
+                    <span style={{ color: "#D9043E" }}>
                         {props.quantidadeComentarios}
                     </span>
-                    <span style={{color:"#033E8C"}}>
-                        {props.dataEvento}
+                    <span style={{ color: "#033E8C" }}>
+                        {props.data}
                     </span>
                 </div>
 
                 <div className="evento-comum__descricao">
-                    <p>
-                        {props.descricaoEvento}
-                    </p>
+                    {
+                        props.paragrafos.map((item) => (
+                            <p>{item.descricao}</p>
+                        ))
+                    }
                 </div>
 
                 <div className={`evento-comum__local  ${props.quantidadeComentarios != null ? 'cor-azul' : 'cor-laranja'}`}>
                     <span>
-                        {props.localEvento}
+                        {props.local.nomeLocal}
                     </span>
                 </div>
             </div>
         </div>
 
-        
+
     )
 }

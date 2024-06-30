@@ -22,6 +22,8 @@ export default function CarrosselEvento(props) {
     //         });
     // }, []);
 
+    
+
     const navigate = useNavigate();
     const handleEventoClick = (evento) => {
         navigate(`/detalhe-evento`,{state: { evento }})
@@ -46,11 +48,11 @@ export default function CarrosselEvento(props) {
                         listItem.map((item, index) => (
                             <div className="item-evento" key={index} onClick={() => handleEventoClick(item)}>
                                 <EventoComum
-                                    fotoEvento={item.imagem}
-                                    tituloEvento={item.titulo}
-                                    descricaoEvento={item.descricao}
-                                    dataEvento={item.data}
-                                    localEvento={item.local}
+                                    imagem={item.imagem}
+                                    titulo={item.titulo}
+                                    paragrafos={item.paragrafos}
+                                    data={item.data}
+                                    local={item.local}
                                     quantidadeComentarios={item.qtdComentarios}
                                 />
                             </div>

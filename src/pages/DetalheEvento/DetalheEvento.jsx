@@ -24,7 +24,7 @@ export default function DetalheEvento() {
 
     var listComentarios = [];
 
-    if(evento.comentarios!=null){
+    if (evento.comentarios != null) {
         listComentarios = evento.comentarios;
         console.log(listComentarios);
     }
@@ -42,7 +42,13 @@ export default function DetalheEvento() {
             <div className="detalhe-evento__body">
 
                 <div className="detalhe-evento__categoria">
-                    <span>#Categoria</span>
+                    <div className="detalhe-evento__categoria-list">
+                        {
+                            evento.categorias.map((item) => (
+                                <span style={{color:item.cor}}>#{item.categoria}</span>
+                            ))
+                        }
+                    </div>
                     <div className="detalhe-evento__icones">
                         <span>
                             <img src={Coracao} alt="" />
@@ -54,13 +60,15 @@ export default function DetalheEvento() {
                 </div>
                 <div className="detalhe-evento__titulo">
                     <h2>{evento.titulo}</h2>
-                </div> 
+                </div>
 
-                <p>{evento.descricao}</p>
-                
                 <div className="detalhe-evento__prog-info">
                     <div className="detalhe-evento__descricao">
-                        <p>{evento.descricao}</p>
+                        {
+                            evento.paragrafos.map((item) => (
+                                <p>{item.descricao}</p>
+                            ))
+                        }
                     </div>
                     <div className="detalhe-evento__programacao">
                         <h2>detalhes do evento</h2>
@@ -81,7 +89,7 @@ export default function DetalheEvento() {
                                     </figure>
                                     <span>Localização</span>
                                 </div>
-                                <span>{evento.local}</span>
+                                <span>{evento.local.rua}, {evento.local.numero}, {evento.local.cidade} - {evento.local.estado}</span>
                             </div>
                             <div className="programacao__item">
                                 <div className="programacao__icone">
@@ -90,7 +98,7 @@ export default function DetalheEvento() {
                                     </figure>
                                     <span>Faixa etária</span>
                                 </div>
-                                <span>Livre para todos os públicos</span>
+                                <span>{evento.faixaEtaria}</span>
                             </div>
                             <div className="programacao__mapa">
                                 <Mapa larguraMapa="100%" alturaMapa="250px"></Mapa>
@@ -98,8 +106,6 @@ export default function DetalheEvento() {
                         </div>
                     </div>
                 </div>
-                
-                <p>{evento.descricao}</p>
 
                 <div className="mini-perfil-organizador">
                     <div className="mini-perfil-dados">
@@ -117,22 +123,22 @@ export default function DetalheEvento() {
                     </div>
                 </div>
 
-                <span className={`${listComentarios==null?'show':'hidden'}`}>Deixe seu comentário quando o evento ocorrer!</span>
+                <span className={`${listComentarios == null ? 'show' : 'hidden'}`}>Deixe seu comentário quando o evento ocorrer!</span>
 
-                <div className={`detalhe-evento__comentarios ${evento.comentarios!=null?'show':'hidden'}`}>
+                <div className={`detalhe-evento__comentarios ${evento.comentarios != null ? 'show' : 'hidden'}`}>
                     <div className="detalhe-evento__avaliacao">
                         <span>4.0</span>
-                        <IoMdStar style={{color:"var(--cor-amarela)" }}/> <IoMdStar style={{color:"var(--cor-amarela)"}}/> <IoIosStarHalf style={{color:"var(--cor-amarela)"}}/> <IoIosStarOutline style={{color:"var(--cor-amarela)"}}/> <IoIosStarOutline style={{color:"var(--cor-amarela)"}}/>
+                        <IoMdStar style={{ color: "var(--cor-amarela)" }} /> <IoMdStar style={{ color: "var(--cor-amarela)" }} /> <IoIosStarHalf style={{ color: "var(--cor-amarela)" }} /> <IoIosStarOutline style={{ color: "var(--cor-amarela)" }} /> <IoIosStarOutline style={{ color: "var(--cor-amarela)" }} />
                         <span>293901</span>
                     </div>
-                   <div className="evento-comentarios__header">
+                    <div className="evento-comentarios__header">
                         <h2>Avaliação e comentários</h2>
                         <button>Avalie esse evento</button>
-                   </div>
+                    </div>
                     {
                         listComentarios.map((item) => (
                             <div className="comentario__item">
-                                <Comentario 
+                                <Comentario
                                     nome={item.nome}
                                     perfil={item.perfil}
                                     nota={item.nota}

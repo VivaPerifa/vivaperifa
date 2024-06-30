@@ -53,6 +53,14 @@
     font-weight: 500;
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.80);
+    /* white-space: wrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 80px;
+    width: 100%;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .evento-comum__local{
@@ -75,7 +83,7 @@
 
 .evento-comum__icones {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .evento-comum__icones span{
