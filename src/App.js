@@ -17,7 +17,6 @@ import DescricaoEvento from './pages/GerenciadorPerfil/CadastrarEvento/Descricao
 import ImagemEvento from './pages/GerenciadorPerfil/CadastrarEvento/ImagemEvento/ImagemEvento';
 import MenuLateralPerfil from './pages/GerenciadorPerfil/MenuLateralPerfil/MenuLateralPerfil';
 import DetalheEvento from './pages/DetalheEvento/DetalheEvento';
-import Xamuel from './assets/evento_6.png';
 
 // import Comentario from './components/Comentario/Comentario';
 import GerenciadorPerfil from './pages/GerenciadorPerfil/GerenciadorPerfil';

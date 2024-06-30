@@ -6,7 +6,6 @@ import DisclaimerImpulsionarEvento from "../../components/DisclaimerImpulsionarE
 import ContainerPlanos from '../../components/ContainerPlanos/ContainerPlanos';
 import EventoDestaque from "../../components/CarrosselEventoDestaque/EventoDestaque/EventoDestaque";
 
-import Xamuel from '../../assets/xamuel.jpg';
 import Menu from '../../static/Menu/Menu';
 import Footer from "../../static/Footer/Footer";
 
@@ -323,22 +322,8 @@ export default function Explorar(){
             <CarrosselEvento
                 tituloCarrossel="acontece na zona sul"
                 listaEvento={eventosZonaSul}
+                filtro="true"
             />
-
-            {/* <CarrosselEvento
-                tituloCarrossel="acontece na zona sul"
-                listaEvento={segundaListaEvento}
-            />
-
-            <CarrosselEvento
-                tituloCarrossel="acontece na zona norte"
-                listaEvento={terceiraListaEvento}
-            />
-
-            <CarrosselEvento
-                tituloCarrossel="acontece na zona oeste"
-                listaEvento={quartaListaEvento}
-            /> */}
 
             <DisclaimerImpulsionarEvento></DisclaimerImpulsionarEvento>
             <ContainerPlanos></ContainerPlanos>

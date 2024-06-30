@@ -1,11 +1,7 @@
 import CarrosselEvento from '../../components/CarrosselEvento/CarrosselEvento';
 import './Comunidade.css';
-
-import Evento11 from "../../assets/evento_feira.png";
 import Menu from '../../static/Menu/Menu';
 import Footer from '../../static/Footer/Footer';
-
-import Perfil from '../../assets/perfil-participante.png';
 
 /*miniaturas eventos */
 import OficinaDancaComunidade from '../../assets/miniaturas_eventos/oficina_danca_comunidade.jpg';

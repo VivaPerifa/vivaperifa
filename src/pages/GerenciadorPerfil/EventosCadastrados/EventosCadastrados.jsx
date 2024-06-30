@@ -1,58 +1,25 @@
 import MenuLateralPerfil from "../MenuLateralPerfil/MenuLateralPerfil";
 import "./EventosCadastrados.css";
-import Evento1 from "../../../assets/evento_1.png";
-import Evento2 from "../../../assets/evento_2.png";
-import Evento3 from "../../../assets/evento_3.png";
-import Evento4 from "../../../assets/evento_4.png";
-import Evento5 from "../../../assets/evento_5.png";
-import Evento6 from "../../../assets/evento_6.png";
-import Evento7 from "../../../assets/evento_7.png";
-import Evento8 from "../../../assets/evento_8.png";
-import Evento9 from "../../../assets/evento_9.png";
-import Evento10 from "../../../assets/evento_10.png";
-
-import Evento12 from "../../../assets/evento_12.png";
-import Evento13 from "../../../assets/evento_13.png";
-import Evento14 from "../../../assets/evento_14.png";
-import Evento11 from "../../../assets/evento_feira.png";
-
-import CarrosselEventoDestaque from '../../../components/CarrosselEventoDestaque/CarrosselEventoDestaque';
-import CarrosselEvento from "../../../components/CarrosselEvento/CarrosselEvento";
 import { useState, useEffect } from 'react';
 import CarrosselMiniEventoComum from "../../../components/CarrosselMiniEventoComum/CarrosselMiniEventoComum";
 
 /*miniaturas eventos */
-import OficinaDancaComunidade from '../../../assets/miniaturas_eventos/oficina_danca_comunidade.jpg';
-import TendaHistoria from '../../../assets/miniaturas_eventos/tenda_historia.png';
-import FeriasEscolares from '../../../assets/miniaturas_eventos/ferias_escolares.png';
 import Sarau from '../../../assets/miniaturas_eventos/sarau.png';
 import Piseiro from '../../../assets/miniaturas_eventos/piseiro.jpg';
 import Curso from '../../../assets/miniaturas_eventos/curso.png';
 import Museu from '../../../assets/miniaturas_eventos/museu.png';
 import Teatro from '../../../assets/miniaturas_eventos/teatro.png';
 import TeatroCultural from '../../../assets/miniaturas_eventos/tearo_cultural.jpg';
-import BatalhaRima from '../../../assets/miniaturas_eventos/batalha_rima.png';
 
 /*organizadores*/
 import Eccoa from '../../../assets/miniaturas_eventos/eccoa.jpg';
 import CTN from '../../../assets/miniaturas_eventos/ctn.jpg';
 import CasaAkueran from '../../../assets/miniaturas_eventos/casa_akueran.jpg';
-import GalpaoBoneco from '../../../assets/miniaturas_eventos/galpao_boneco.webp';
 // import EscolaMamaeAntonia from '../../assets/miniaturas_eventos/escola_mamae_antonia.jpg';
-import CeuVilaAlpina from '../../../assets/miniaturas_eventos/ceu_vila_alpina.png';
 import MuseuArteModerna from '../../../assets/miniaturas_eventos/museu_arte_moderna.jpg';
 import FabricaCulturaTiradentes from '../../../assets/miniaturas_eventos/fabrica_cultura_tiradentes.jpg';
 
 /*perfis */
-import AnaClaudia from '../../../assets/perfis/ana_claudia.png';
-import CarlosMenezes from '../../../assets/perfis/carlos_menezes.png';
-import Eliza from '../../../assets/perfis/eliza.png';
-import LucianaMartins from '../../../assets/perfis/luciana_martins.png';
-import FelipeSouza from '../../../assets/perfis/felipe_souza.png';
-import JoaoPereira from '../../../assets/perfis/joao_pereira.png';
-import RicardoAlmeida from '../../../assets/perfis/ricardo_almeida.png';
-import MarianaLopes from '../../../assets/perfis/marina_lopes.png';
-import GuilhermeGiovanni from '../../../assets/perfis/guilherme.png';
 import ThiagoCosta from '../../../assets/perfis/thiago_costa.png';
 import LarissaPereira from '../../../assets/perfis/larissa_pereira.png';
 import SandraNunes from '../../../assets/perfis/sandra_nunes.png';

@@ -1,7 +1,5 @@
 import './DetalheEvento.css';
-import PerfilOrganizador from "../../assets/perfil-usuario.png";
 import Menu from '../../static/Menu/Menu';
-import Evento from '../../assets/xamuel.jpg';
 import Footer from '../../static/Footer/Footer';
 import Coracao from '../../assets/coracao.png';
 import Agenda from '../../assets/agenda.png';
@@ -9,10 +7,8 @@ import Calendar from '../../assets/icone-calendar.png';
 import Local from '../../assets/icone-local.png';
 import FaixaEtaria from '../../assets/faixa-etaria.png';
 import Mapa from '../../components/Mapa/Mapa';
-import Evento10 from "../../assets/evento_10.png";
 import { useLocation } from 'react-router-dom';
 import Comentario from '../../components/Comentario/Comentario';
-import Perfil from '../../assets/perfil-participante.png';
 import { IoMdStar } from "react-icons/io";
 import { IoIosStarOutline } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";

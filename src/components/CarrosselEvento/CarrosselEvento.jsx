@@ -3,8 +3,8 @@ import EventoComum from "./EventoComum/EventoComum";
 import './CarrosselEvento.css';
 import { useState, useEffect } from 'react';
 import api from '../../services/api';
-import Evento from '../../assets/evento_feira.png';
 import { Link, useNavigate } from 'react-router-dom';
+import Filtro from '../../assets/filtro.png';
 
 export default function CarrosselEvento(props) {
     const listItem = props.listaEvento;
@@ -22,25 +22,33 @@ export default function CarrosselEvento(props) {
     //         });
     // }, []);
 
-    
+
 
     const navigate = useNavigate();
     const handleEventoClick = (evento) => {
-        navigate(`/detalhe-evento`,{state: { evento }})
+        navigate(`/detalhe-evento`, { state: { evento } })
     }
 
     return (
         <div className="carrossel-evento">
-
             <div className="conteudo-eventos">
-                <div className="header-carrossel">
-                    <h2>
-                        {props.tituloCarrossel}
-                    </h2>
-
-                    <span className={`${props.tituloCarrossel != null ? 'show' : 'hidden'}`}>
-                        Ver todos
-                    </span>
+                <div className="carrossel-evento__header">
+                    <div className="header-carrossel__descricao">
+                        <div className="header-carrossel__titulo">
+                            <h2>
+                                {props.tituloCarrossel}
+                            </h2>
+                            <div className={`${props.filtro!=null?'show':'hidden'}`}>
+                                <img src={Filtro} alt="Ícone de Filtrar" />
+                            </div>
+                        </div>
+                        <span className={`${props.tituloCarrossel != null ? 'show' : 'hidden'}`}>
+                            Ver todos
+                        </span>
+                    </div>
+                    <div className={`header-carrossel__filtros ${props.filtro!=null?'show':'hidden'}`}>
+                        <span className="filtro-ativo">Hoje</span> <span>Amanhã</span> <span>Nesta semana</span> <span>Próximo mês</span> <span>Recorrentes</span>
+                    </div>
                 </div>
 
                 <div className="eventos">

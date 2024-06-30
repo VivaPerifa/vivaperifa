@@ -1,7 +1,7 @@
 import CampoForm from '../../components/CampoForm/CampoForm';
-import perfil from '../../assets/perfil-usuario.png';
+import Perfil from '../../assets/perfil-participante.png';
 import "./EditarPerfilParticipante.css";
-
+import Menu from '../../static/Menu/Menu';
 
 export default function EditarPerfilParticipante() {
     return (
@@ -10,11 +10,11 @@ export default function EditarPerfilParticipante() {
                 <div className="campo-PerfilParticipante">
                     <div className="foto-e-dados">
                         <div className="foto-perfil">
-                            <img src={perfil} alt="Foto do Participante" />
+                            <img src={Perfil} alt="Foto do Participante" />
                         </div>
                         <div className="dados-perfil">
-                            <h2>Gabriel Azevedo</h2>
-                            <p>@Azevedo2024</p>
+                            <h2>Guilherme</h2>
+                            <p>@guizini2024</p>
                         </div>
                         <button className="alterar-foto-button">Alterar Foto</button>
                     </div>
