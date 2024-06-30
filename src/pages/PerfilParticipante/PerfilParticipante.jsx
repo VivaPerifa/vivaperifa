@@ -5,8 +5,36 @@ import Perfil from '../../assets/perfil-participante.png';
 import Comentario from '../../components/Comentario/Comentario';
 import { Link } from 'react-router-dom';
 import Footer from '../../static/Footer/Footer';
+import { useEffect, useState } from 'react';
 
-const PerfilParticipante = () => {
+export default function PerfilParticipante() {
+    const [aba, setAba] = useState("comentários");
+
+    useEffect(() => {
+        var titulo_comentarios = document.getElementById('titulo_comentarios');
+        var titulo_favoritos = document.getElementById('titulo_favoritos');
+        var titulo_seguindo = document.getElementById('titulo_seguindo');
+
+        if(aba=="comentários"){
+            /*atvivando aba */
+            titulo_comentarios.classList.add('guia-ativo');
+            titulo_favoritos.classList.remove('guia-ativo');
+            titulo_seguindo.classList.remove('guia-ativo');
+        }
+        if(aba=="favoritos"){
+            /*atvivando aba */
+            titulo_favoritos.classList.add('guia-ativo');
+            titulo_comentarios.classList.remove('guia-ativo');
+            titulo_seguindo.classList.remove('guia-ativo');
+        }
+        if(aba=="seguindo"){
+            /*atvivando aba */
+            titulo_seguindo.classList.add('guia-ativo');
+            titulo_favoritos.classList.remove('guia-ativo');
+            titulo_comentarios.classList.remove('guia-ativo');
+        }   
+    },[aba]);
+
     const comentarios = [
         {
             perfil: Perfil,
@@ -52,14 +80,14 @@ const PerfilParticipante = () => {
                     </div>
                 </div>
                 <div className="perfil-participante__guia">
-                    <div id="titulo_comentarios">
-                        <span>Comentários</span>
+                    <div id='titulo_comentarios'>
+                        <span onClick={() => setAba((prevAba) => "comentários")}>Comentários</span>
                     </div>
-                    <div id="titulo_favoritos">
-                        <span>Favoritos</span>
+                    <div id='titulo_favoritos'>
+                        <span onClick={() => setAba((prevAba) => "favoritos")}>Favoritos</span>
                     </div>
-                    <div id="titulo_seguindo">
-                        <span>Seguindo</span>
+                    <div id='titulo_seguindo'>
+                        <span onClick={() => setAba((prevAba) => "seguindo")}>Seguindo</span>
                     </div>
                 </div>
             </div>
@@ -82,5 +110,3 @@ const PerfilParticipante = () => {
         </div>
     );
 }
-
-export default PerfilParticipante;
