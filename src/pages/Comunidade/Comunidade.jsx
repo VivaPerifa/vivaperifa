@@ -8,15 +8,40 @@ import Footer from '../../static/Footer/Footer';
 import Perfil from '../../assets/perfil-participante.png';
 
 /*miniaturas eventos */
-import FestaJunina from '../../assets/miniaturas_eventos/festa_junina.png';
-import FabricaCultura from '../../assets/miniaturas_eventos/fabrica_cultura_itaim.jpg';
-import Baile from '../../assets/miniaturas_eventos/baile.png';
-import OficinaDanca from '../../assets/miniaturas_eventos/oficina_danca.jpg';
-import DancaTeatro from '../../assets/miniaturas_eventos/danca_teatro.png';
-import Cemiterio from '../../assets/miniaturas_eventos/cemiterio.png';
-import BatalhaRima from '../../assets/miniaturas_eventos/batalha_rima.png';
+import OficinaDancaComunidade from '../../assets/miniaturas_eventos/oficina_danca_comunidade.jpg';
+import TendaHistoria from '../../assets/miniaturas_eventos/tenda_historia.png';
+import FeriasEscolares from '../../assets/miniaturas_eventos/ferias_escolares.png';
+import Sarau from '../../assets/miniaturas_eventos/sarau.png';
+import Piseiro from '../../assets/miniaturas_eventos/piseiro.jpg';
+import Curso from '../../assets/miniaturas_eventos/curso.png';
 
-import OficinaDancaComunidade from '../../assets/miniaturas_eventos/oficina_danca_comunidade.png';
+/*organizadores*/
+import Eccoa from '../../assets/miniaturas_eventos/eccoa.jpg';
+import CTN from '../../assets/miniaturas_eventos/ctn.jpg';
+import CasaAkueran from '../../assets/miniaturas_eventos/casa_akueran.jpg';
+import GalpaoBoneco from '../../assets/miniaturas_eventos/galpao_boneco.webp';
+// import EscolaMamaeAntonia from '../../assets/miniaturas_eventos/escola_mamae_antonia.jpg';
+import CeuVilaAlpina from '../../assets/miniaturas_eventos/ceu_vila_alpina.png';
+
+/*perfis */
+import AnaClaudia from '../../assets/perfis/ana_claudia.png';
+import CarlosMenezes from '../../assets/perfis/carlos_menezes.png';
+import Eliza from '../../assets/perfis/eliza.png';
+import LucianaMartins from '../../assets/perfis/luciana_martins.png';
+import FelipeSouza from '../../assets/perfis/felipe_souza.png';
+import JoaoPereira from '../../assets/perfis/joao_pereira.png';
+import RicardoAlmeida from '../../assets/perfis/ricardo_almeida.png';
+import MarianaLopes from '../../assets/perfis/marina_lopes.png';
+import GuilhermeGiovanni from '../../assets/perfis/guilherme.png';
+import ThiagoCosta from '../../assets/perfis/thiago_costa.png';
+import LarissaPereira from '../../assets/perfis/larissa_pereira.png';
+import SandraNunes from '../../assets/perfis/sandra_nunes.png';
+import AndreSouza from '../../assets/perfis/andre_souza.png';
+import FernandoLima from '../../assets/perfis/fernando_lima.png';
+import MarcoAurelio from '../../assets/perfis/marco_aurelio.png';
+import AnaOliveira from '../../assets/perfis/ana_oliveira.png';
+import RafaelSantos from '../../assets/perfis/rafael_santos.png';
+import CarlaMedonca from '../../assets/perfis/carla_medonca.png';
 
 export default function Comunidade(){
     
@@ -25,152 +50,264 @@ export default function Comunidade(){
             id: 1,
             imagem: OficinaDancaComunidade,
             titulo: "Aula de Dança",
-            data: "Quinta, 18:30h às 20h",
+            data: "Quinta, 08 de Mai, 18:30h às 20h",
             local: {
                 rua: "R. João Pedro Lecór",
                 bairro: "Vila Alpina",
                 numero: "144",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "CEU Vila Alpina"
+                estado: "SP"
             },
             categorias: [
                 {
-                    categoria: "Cultura",
+                    categoria: "Arte",
+                    cor:"var(--cor-rosa)"
+                },
+                {
+                    categoria: "Dança",
+                    cor:"var(--cor-laranja)"
+                }
+            ],
+            paragrafos: [
+                {
+                    descricao: "A oficina de dança oferece um espaço vibrante e acolhedor onde participantes de todas as idades e níveis podem explorar diversas modalidades de dança. Com instrutores experientes, as aulas são projetadas para desenvolver habilidades técnicas e expressividade artística. O ambiente colaborativo incentiva a interação social e a criatividade, promovendo bem-estar físico e mental. Além disso, a oficina proporciona oportunidades para apresentações e eventos, enriquecendo a experiência dos participantes. Venha descobrir o prazer e a energia transformadora da dança!"
+                }
+            ],
+            faixaEtaria: "Maiores de 16 anos",
+            organizador: {
+                imagem: CeuVilaAlpina,
+                nome: "CEU Vila Alpina",
+                eventos: 34
+            },
+            qtdComentarios: "50",
+            comentarios: [
+                {
+                    perfil: AnaClaudia,
+                    usuario: "Ana Cláudia",
+                    comentario: "Adorei a oficina de dança! Os instrutores são extremamente profissionais e as aulas são muito divertidas. Senti uma grande evolução na minha técnica.",
+                    nota: "4.8",
+                    tempo: "20 min"
+                },
+                {
+                    perfil: CarlosMenezes,
+                    usuario: "Carlos Menezes",
+                    comentario: "A oficina é boa, mas achei que poderia haver mais variação nos estilos de dança. No entanto, a energia do lugar é incrível e fiz muitos amigos.",
+                    nota: "3.7",
+                    tempo: "30 min"
+                },
+                {
+                    perfil: Eliza,
+                    usuario: "Eliza Rocha",
+                    comentario: "Não gostei muito da organização das aulas e senti que os grupos eram muito grandes, dificultando a atenção individual. Espero que melhorem esses pontos.",
+                    nota: "2.3",
+                    tempo: "1h"
+                }
+            ]   
+        },
+        {
+            id: 2,
+            imagem: TendaHistoria,
+            titulo: "Tenda de Histórias",
+            data: "Domingo, 07 de Mar, 16h às 19h",
+            local: {
+                rua: "R. Policial Giovanni",
+                bairro: "Jardim Primavera",
+                numero: "400",
+                cidade: "São Paulo",
+                estado: "SP"
+            },
+            categorias: [
+                {
+                    categoria: "Contação de histórias",
+                    cor:"var(--cor-rosa)"
+                }
+            ],
+            paragrafos: [
+                {
+                    descricao: "Acreditamos que a escola é um espaço privilegiado de vida e aprendizagem. Que a ludicidade, a brincadeira e o faz de conta devem estar presente no cotidiano escolar. Organizamos a rotina de 140 crianças de 0 a 05 anos a fim de que experimentem situações diversas que a ajude sentir-se segura e acolhida, utilizando este espaço para ampliar suas relações sociais e afetivas,apropriando-se dos mais diferentes tipos de linguagem (oral, escrita, corporal, plástica, musical e outras)de acordo com suas capacidades e necessidades."
+                }
+            ],
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: GalpaoBoneco,
+                nome: "Escola Mamãe Antônia",
+                eventos: 12
+            },
+            qtdComentarios: "102",
+            comentarios: [
+                {
+                    perfil: JoaoPereira,
+                    usuario: "João Pereira",
+                    comentario: "O evento de contação de histórias foi simplesmente mágico! As histórias eram cativantes e os contadores de histórias eram muito expressivos.",
+                    nota: "5.0",
+                    tempo: "35 min"
+                },
+                {
+                    perfil: LucianaMartins,
+                    usuario: "Luciana Martins",
+                    comentario: "Achei o evento bem organizado e as histórias eram ótimas. No entanto, o espaço estava um pouco lotado, o que dificultou a visualização em alguns momentos.",
+                    nota: "4.2",
+                    tempo: "40 min"
+                },
+                {
+                    perfil: FelipeSouza,
+                    usuario: "Felipe Souza",
+                    comentario: "As crianças adoraram o evento! Foi muito interativo e divertido. Os contadores conseguiram prender a atenção de todos.",
+                    nota: "4.8",
+                    tempo: "1h"
+                }
+            ]      
+        },
+        {
+            id: 3,
+            imagem: FeriasEscolares,
+            titulo: "Férias no Galpão dos Bonecos",
+            data: "10 a 17 de Jan, às 17h",
+            local: {
+                rua: "R. Colariano",
+                bairro: "Vila Romana",
+                numero: "622",
+                cidade: "São Paulo",
+                estado: "SP"
+            },
+            categorias: [
+                {
+                    categoria: "Férias",
+                    cor:"var(--cor-rosa)"
+                }
+            ],
+            paragrafos: [
+                {
+                    descricao: "As Férias chegaram e aqui no Galpão dos Bonecos a gente vai receber as crianças para uma imersão ao universo do Teatro de Bonecos!"
+                },
+                {
+                    descricao: "O passeio dura 3 horas e você pode deixar seu filho ou sua filha conosco e buscar ao final da visita, para crianças de 5 a 9 anos."
+                },
+                {
+                    descricao: "Visita ao acervo – 1 hora: A gente faz a visita guiada aos mais de 800 bonecos expostos pelo Galpão, com brincadeiras e muitas histórias divertidas."
+                },
+                {
+                    descricao: "Lanche – 30 minutos: Após a visita guiada a gente faz uma pausa para o lanche, que deve ser trazido pela criança – não fornecemos o lanche!"
+                },
+                {
+                    descricao: "Espetáculo – 30 minutos: Depois do lanche é hora do espetáculo, faremos a apresentação da peça Filhotes do Brasil, um sucesso de público e queridinho da Galpão dos Bonecos."
+                },
+                {
+                    descricao: "Oficina – 1 hora: Depois da peça, chegou o momento de colocar a mão na massa e criar seu próprio boneco, que poderá ser levado para casa!"
+                }
+            ],
+            faixaEtaria: "Maiores de 18 anos",
+            organizador: {
+                imagem: GalpaoBoneco,
+                nome: "Galpão dos Bonecos",
+                eventos: 22
+            },
+            qtdComentarios: "150",
+            comentarios: [
+                {
+                    perfil: RicardoAlmeida,
+                    usuario: "Ricardo Almeida",
+                    comentario: "O teatro com bonecos foi maravilhoso! Os detalhes e a expressão dos bonecos eram incríveis, e a história foi muito envolvente. Recomendo para todas as idades!",
+                    nota: "5.0",
+                    tempo: "10 min"
+                },
+                {
+                    perfil: MarianaLopes,
+                    usuario: "Mariana Lopes",
+                    comentario: "Adorei o espetáculo! Os bonecos eram muito bem feitos e a performance foi cheia de emoção e humor. Apenas achei o som um pouco baixo em alguns momentos.",
+                    nota: "4.3",
+                    tempo: "50 min"
+                },
+                {
+                    perfil: GuilhermeGiovanni,
+                    usuario: "Guilherme Giovanni",
+                    comentario: "Foi uma experiência encantadora para toda a família. As crianças ficaram fascinadas pelos bonecos e a narrativa foi muito criativa. Só gostaria que fosse um pouco mais longo.",
+                    nota: "4.7",
+                    tempo: "2h"
+                }
+            ]   
+        },
+        {
+            id: 4,
+            imagem: Sarau,
+            titulo: "Sarau - Ecos do Coração",
+            data: "Quarta, 14 de dez, 16h às 22h",
+            local: {
+                rua: "R. Graham Bell",
+                bairro: "Alto da Boa Vista",
+                numero: "430",
+                cidade: "São Paulo",
+                estado: "SP"
+            },
+            categorias: [
+                {
+                    categoria: "Sarau",
                     cor:"var(--cor-rosa)"
                 },
                 {
                     categoria: "Arte",
                     cor:"var(--cor-laranja)"
-                },
-                {
-                    categoria: "Teatro",
-                    cor:"var(--cor-azul)"
                 }
             ],
             paragrafos: [
                 {
-                    descricao: "É chegada a hora do lançamento do ENCONTRO CONTEMPORÂNEO DE DANÇA DE SALÃO em 2024! E nada melhor para este marco que um baile, não é mesmo? O convite está lançado, venha conhecer o Encontro, saber tudo que vai rolar no festival em 2024 e, de quebra, dançar coladinho com a gente."
+                    descricao: "Ecos do Coração nasceu da pulsante vontade de criar um espaço colaborativo para celebrarmos a arte e a diversidade, impulsionados pelo ritmo que anima nossos corações e da vida aos nossos movimentos."
                 },
                 {
-                    descricao: "O que é o Baile Contemporâneo de Dança de Salão: É um formato de baile pioneiro e inovador idealizado pela Dois Rumos Cia de Dança e que desde Maio de 2017 já conta com mais de 50 edições. O projeto nasceu com o intuito de acolher o que é diverso, refletir sobre padrões patriarcais e cisheteronormativos dentro da dança de salão, estimular a criatividade em suas mais variadas formas e ressignificar o espaço do baile, buscando assim, facilitar outras formas de manifestações dos corpos e assegurar sua liberdade de expressão e existência."
+                    descricao: "Criamos uma roda onde juntos vamos cantar, contar histórias, ouvir, apredender e ensinar. Inspirados pela vontade de sair um pouco melhor do que chegamos."
+                },
+                {
+                    descricao: "Dentro dessa roda todos são como pedaços de um grande quebra-cabeça, cada um trazendo uma parte única de si para compartilhar com os outros: historias e emoções que se traduzem na arte."
+                },
+                {
+                    descricao: "O encontro é um convite para todas as idades. Com atividades sendo oferecidas, opções de alimentação saudável, artesanato, pinturas, exposições e etc."
+                },
+                {
+                    descricao: "Cada encontro é unico e vai oferecer caminhos diferentes de acordo com os próprios participantes."
                 }
             ],
-            faixaEtaria: "Maiores de 16 anos"
-        },
-        {
-            id: 2,
-            imagem: FestaJunina,
-            titulo: "O Bailão Festa Junina da Sopro Escola de dança",
-            data: "Domingo, 07 de Jul, 16h às 19h",
-            local: {
-                rua: "R. Três Mosqueteiros",
-                bairro: "Santana",
-                numero: "50",
-                cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Sopro Escola de Dança"
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: CasaAkueran,
+                nome: "Casa Akueran",
+                eventos: 10
             },
-            categorias: [
+            qtdComentarios: "80",
+            comentarios: [
                 {
-                    categoria: "Festa Junina",
-                    cor:"var(--cor-rosa)"
+                    perfil: LarissaPereira,
+                    usuario: "Larissa Pereira",
+                    comentario: "O sarau foi simplesmente encantador! A variedade de apresentações, desde poesia até música ao vivo, fez com que a noite fosse inesquecível. Mal posso esperar pelo próximo.",
+                    nota: "4.9",
+                    tempo: "10 min"
                 },
                 {
-                    categoria: "Música",
-                    cor:"var(--cor-laranja)"
+                    perfil: ThiagoCosta,
+                    usuario: "Thiago Costa",
+                    comentario: "Foi uma ótima experiência cultural, com talentos locais se apresentando. O ambiente era muito acolhedor e intimista. Apenas achei que o evento poderia ter sido melhor divulgado.",
+                    nota: "4.4",
+                    tempo: "15 min"
+                },
+                {
+                    perfil: SandraNunes,
+                    usuario: "Sandra Nunes",
+                    comentario: "Adorei participar do sarau! A diversidade de temas e estilos foi inspiradora. Foi uma noite de muita arte e emoção. Uma pena que o espaço estava um pouco lotado.",
+                    nota: "4.5",
+                    tempo: "45 min"
                 }
-            ],
-            paragrafos: [
-                {
-                    descricao: "O BAILÃO. espetáculo de Festa Junina da Sopro Escola de Danças, sob a direção de Roberto Amorim e Tatiana Portella, participação dos alunos da Sopro Escola de Danças."
-                },
-                {
-                    descricao: "Cancelamentos de pedidos pagos serão aceitos até 7 dias após a compra, desde que a solicitação seja enviada até 48 horas antes do início do evento."
-                },
-                {
-                    descricao: "Você poderá editar o participante de um ingresso apenas uma vez. Essa opção ficará disponível até 24 horas antes do início do evento."
-                }
-            ],
-            faixaEtaria: "Livre para todos os públicos"
-        },
-        {
-            id: 3,
-            imagem: Cemiterio,
-            titulo: "Visita mediada - Cemitério da Consolação",
-            data: "Segunda, 15 de Jul, 14h às 16h",
-            local: {
-                rua: "R. da Consolação",
-                bairro: "Consolação",
-                numero: "1660",
-                cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Cemitério Consolação"
-            },
-            categorias: [
-                {
-                    categoria: "Pessio",
-                    cor:"var(--cor-rosa)"
-                }
-            ],
-            paragrafos: [
-                {
-                    descricao: "A visita é gratuita e mediada pelo carismático Francivaldo Gomes, conhecido como Popó."
-                },
-                {
-                    descricao: "Popó é funcionário da prefeitura e realiza o tour mediado há mais de 20 anos no cemitério da Consolação."
-                },
-                {
-                    descricao: "Nesse encontro você irá aprender e conhecer mais sobre as personalidades que fizeram parte da história de São Paulo e do país que estão sepultadas no cemitério, com muita história e informação."
-                },
-                {
-                    descricao: "Nesse encontro você irá aprender e conhecer mais sobre as personalidades que fizeram parte da história de São Paulo e do país que estão sepultadas no cemitério, com muita história e informação."
-                }
-            ],
-            faixaEtaria: "Maiores de 18 anos"
-        },
-        {
-            id: 4,
-            imagem: OficinaDanca,
-            titulo: "Oficina Estúdio de Dança",
-            data: "Segunda-feira, às 07h",
-            local: {
-                rua: "R. Juquis",
-                bairro: "Moema",
-                numero: "287",
-                cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Moema"
-            },
-            categorias: [
-                {
-                    categoria: "Dança",
-                    cor:"var(--cor-rosa)"
-                },
-                {
-                    categoria: "Música",
-                    cor:"var(--cor-laranja)"
-                }
-            ],
-            paragrafos: [
-                {
-                    descricao: "A Oficina Estúdio de Dança é uma escola referência na cidade de São Paulo com foco de atuação em formação de bailarinos contemporâneos."
-                }
-            ],
-            faixaEtaria: "Livre para todos os públicos"
+            ]   
         },
         {
             id: 5,
-            imagem: DancaTeatro,
-            titulo: "Teia De Renda",
-            data: "Quinta a Domingo, 9h às 17h.",
+            imagem: Piseiro,
+            titulo: "Tardezinha do Arrocha",
+            data: "Terça, 09 de Mai, às 14h",
             local: {
-                rua: "R. Vergueiro",
-                bairro: "Paraíso",
-                numero: "1000",
+                rua: "R. Jacofer",
+                bairro: "Bairro do Limão",
+                numero: "615",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Centro Cultural São Paulo"
+                estado: "SP"
             },
             categorias: [
                 {
@@ -184,56 +321,99 @@ export default function Comunidade(){
             ],
             paragrafos: [
                 {
-                    descricao: "Essa obra integrou o projeto Ensejos, uma parceria com o Centro Cultural São Paulo, que tem curadoria de dança de Mark Van Loo e direção geral de Rodolfo Beltrão."
-                },
-                {
-                    descricao: "Teia de Renda, de Arilton Assunção, que parte de temas como a literatura, a poesia, a dramaturgia, a política e a religiosidade em movimento para construir a obra. A coreografia encontra nas composições “Teia de Renda” e “Evocação das Montanhas”, a inspiração e a liberdade de sua concepção. “Uma teia que sustenta, que alimenta, que une e separa relações”, diz Arilton. "
-                },
-                {
-                    descricao: "No teatro, além de shows de artistas e grupos locais e sessões de cinema, apresentações de espetáculos como Ballet Stagium, Cia. Cisne Negro, São Paulo Companhia de Dança, Cia. Vagalum Tum Tum, Grupo das Dores de Teatro Ltda-ME, OAK Educação e Meio Ambiente Ltda, Grupo Capézio, Samba 7, Mandallas.com entre outros."
+                    descricao: "A Tardezinha do Arrocha é um evento imperdível para os amantes do arrocha e da música sertaneja. Realizado em um ambiente ao ar livre, com vista deslumbrante para o pôr do sol, o evento promete uma tarde repleta de animação, dança e boa música. Com apresentações ao vivo de artistas consagrados e novos talentos do gênero, os participantes podem desfrutar de uma experiência musical autêntica e envolvente. Além disso, a Tardezinha do Arrocha oferece opções gastronômicas variadas e bebidas refrescantes, garantindo diversão para todos. Venha curtir essa festa inesquecível com amigos e família!"
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Maiores de 16 anos",
+            organizador: {
+                imagem: CTN,
+                nome: "CTN - Centro de Tradições Nordestinas",
+                eventos: 9
+            },
+            qtdComentarios: "52",
+            comentarios: [
+                {
+                    perfil: AndreSouza,
+                    usuario: "André Souza",
+                    comentario: "O show de sertanejo foi sensacional! A energia dos artistas era contagiante e a seleção de músicas fez todo mundo cantar junto. Com certeza, uma das melhores noites que já tive.",
+                    nota: "5.0",
+                    tempo: "2 min"
+                },
+                {
+                    perfil: FernandoLima,
+                    usuario: "Fernanda Lima",
+                    comentario: "Adorei o show, a dupla cantou todos os sucessos que eu queria ouvir. Só achei que o som estava um pouco alto demais em alguns momentos, mas no geral foi uma ótima experiência.",
+                    nota: "4.6",
+                    tempo: "30 min"
+                },
+                {
+                    perfil: MarcoAurelio,
+                    usuario: "Marco Aurélio",
+                    comentario: "Foi uma noite incrível! A produção do show estava impecável e os artistas deram um verdadeiro espetáculo. Só gostaria que tivesse mais opções de alimentação no local.",
+                    nota: "4.7",
+                    tempo: "50 min"
+                }
+            ]   
         },
         {
             id: 6,
-            imagem: FabricaCultura,
-            titulo: "Fábrica de Cultura Itaim Paulista",
-            data: "Quinta a Domingo, 9h às 17h.",
+            imagem: Curso,
+            titulo: "Curso Online - Projetos Socioambientais Elaboração e Gestão",
+            data: "05 a 07 de Fev, 19h às 23h",
             local: {
-                rua: "R. Estudantes da China",
-                bairro: "Itaim Paulista",
-                numero: "500",
+                rua: "Av. Paulista",
+                bairro: "Bela Vista",
+                numero: "2073",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Itaim Paulista"
+                estado: "SP"
             },
             categorias: [
                 {
-                    categoria: "Cultura",
+                    categoria: "Educação",
                     cor:"var(--cor-rosa)"
-                },
-                {
-                    categoria: "Arte",
-                    cor:"var(--cor-laranja)"
-                },
-                {
-                    categoria: "Teatro",
-                    cor:"var(--cor-azul)"
                 }
             ],
             paragrafos: [
                 {
-                    descricao: "A Fábrica de Cultura taim Paulista foi inaugurada em setembro de 2011 e está localizada na região da Encosta Norte e instalada em um edifício com 4.500m², planta horizontal e conta com um teatro com 300 lugares, totalmente equipado para apresentações, salas de aula, biblioteca e estúdio de som."
+                    descricao: "Curso Online Ao Vivo: Elaboração e Gestão de Projetos Socioambientais - Da Ideia à Realidade"
                 },
                 {
-                    descricao: "Tem 16 salas de aulas para as atividades, entre as quais se destacam: cursos de teatro, dança, música, circo, multimeios, artes plásticas e xadrez, além de saraus, feiras culturais e exposições de conclusão de cursos."
+                    descricao: "Domine a elaboração e gestão de projetos socioambientais e transforme sua comunidade, sua empresa, sua escola, seu meio!"
                 },
                 {
-                    descricao: "No teatro, além de shows de artistas e grupos locais e sessões de cinema, apresentações de espetáculos como Ballet Stagium, Cia. Cisne Negro, São Paulo Companhia de Dança, Cia. Vagalum Tum Tum, Grupo das Dores de Teatro Ltda-ME, OAK Educação e Meio Ambiente Ltda, Grupo Capézio, Samba 7, Mandallas.com entre outros."
+                    descricao: "Neste curso intensivo, você irá dominar as ferramentas e estratégias para criar e gerenciar projetos socioambientais de impacto. Abordaremos desde a identificação de problemas locais e globais até a captação de recursos e a avaliação de resultados, com foco na aplicação prática e na geração de resultados concretos."
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Maiores de 16 anos",
+            organizador: {
+                imagem: Eccoa,
+                nome: "ECCOA",
+                eventos: 90
+            },
+            qtdComentarios: "20",
+            comentarios: [
+                {
+                    perfil: AnaOliveira,
+                    usuario: "Ana Oliveira",
+                    comentario: "O curso de gestão de projetos socioambientais foi extremamente informativo e prático. Aprendi muitas técnicas que já estou aplicando em projetos reais. Recomendo!",
+                    nota: "4.8",
+                    tempo: "12 min"
+                },
+                {
+                    perfil: RafaelSantos,
+                    usuario: "Rafael Santos",
+                    comentario: "Foi um curso muito enriquecedor, com professores experientes e conteúdo atualizado. A metodologia de ensino incentivou bastante a participação e o debate entre os alunos.",
+                    nota: "4.5",
+                    tempo: "25 min"
+                },
+                {
+                    perfil: CarlaMedonca,
+                    usuario: "Carla Medonça",
+                    comentario: "Gostei do curso, mas achei que faltou um pouco mais de ênfase em estudos de caso práticos. No entanto, os materiais complementares foram muito úteis.",
+                    nota: "3.9",
+                    tempo: "3h"
+                }
+            ]   
         }
     ];
 

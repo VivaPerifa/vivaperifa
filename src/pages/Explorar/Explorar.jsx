@@ -12,12 +12,21 @@ import Footer from "../../static/Footer/Footer";
 
 /*miniaturas eventos */
 import FestaJunina from '../../assets/miniaturas_eventos/festa_junina.png';
-import FabricaCultura from '../../assets/miniaturas_eventos/fabrica_cultura_itaim.jpg';
+import OficinaBonecos from '../../assets/miniaturas_eventos/oficina_bonecos.png';
+import FabricaCulturaItaim from '../../assets/miniaturas_eventos/fabrica_cultura_itaim.jpg';
 import Baile from '../../assets/miniaturas_eventos/baile.png';
-import OficinaDanca from '../../assets/miniaturas_eventos/oficina_danca.jpg';
 import DancaTeatro from '../../assets/miniaturas_eventos/danca_teatro.png';
 import Cemiterio from '../../assets/miniaturas_eventos/cemiterio.png';
 import BatalhaRima from '../../assets/miniaturas_eventos/batalha_rima.png';
+import FeiraArtesanal from '../../assets/miniaturas_eventos/feira_artesanal.png';
+import FabricasCultura from '../../assets/miniaturas_eventos/fabricas_cultura.jpg';
+
+/*organizadores*/
+import CeuVilaAlpina from '../../assets/miniaturas_eventos/ceu_vila_alpina.png';
+import TinTin from '../../assets/miniaturas_eventos/tintin.png';
+import FeirasCongressos from '../../assets/miniaturas_eventos/feiras_congressos.png';
+import CentroCultural from '../../assets/miniaturas_eventos/centro_cultural.jpg';
+import Consolare from '../../assets/miniaturas_eventos/consolare.png';
 
 export default function Explorar(){
     const filtros = [
@@ -58,8 +67,7 @@ export default function Explorar(){
                 bairro: "Vila Alpina",
                 numero: "144",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "CEU Vila Alpina"
+                estado: "SP"
             },
             categorias: [
                 {
@@ -83,43 +91,46 @@ export default function Explorar(){
                     descricao: "O que é o Baile Contemporâneo de Dança de Salão: É um formato de baile pioneiro e inovador idealizado pela Dois Rumos Cia de Dança e que desde Maio de 2017 já conta com mais de 50 edições. O projeto nasceu com o intuito de acolher o que é diverso, refletir sobre padrões patriarcais e cisheteronormativos dentro da dança de salão, estimular a criatividade em suas mais variadas formas e ressignificar o espaço do baile, buscando assim, facilitar outras formas de manifestações dos corpos e assegurar sua liberdade de expressão e existência."
                 }
             ],
-            faixaEtaria: "Maiores de 16 anos"
+            faixaEtaria: "Maiores de 16 anos",
+            organizador: {
+                imagem: CeuVilaAlpina,
+                nome: "CEU Vila Alpina",
+                eventos: 30
+            }
         },
         {
             id: 2,
-            imagem: FestaJunina,
-            titulo: "O Bailão Festa Junina da Sopro Escola de dança",
-            data: "Domingo, 07 de Jul, 16h às 19h",
+            imagem: OficinaBonecos,
+            titulo: "TinTinTins - Oficina de Bonecos no PAM",
+            data: "08 a 22 de Jul, 14h às 18h",
             local: {
-                rua: "R. Três Mosqueteiros",
-                bairro: "Santana",
-                numero: "50",
+                rua: "R. Pamplona",
+                bairro: "Jardim Paulista",
+                numero: "1704",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Sopro Escola de Dança"
+                estado: "SP"
             },
             categorias: [
                 {
-                    categoria: "Festa Junina",
+                    categoria: "Arte",
                     cor:"var(--cor-rosa)"
                 },
                 {
-                    categoria: "Música",
+                    categoria: "Oficina",
                     cor:"var(--cor-laranja)"
                 }
             ],
             paragrafos: [
                 {
-                    descricao: "O BAILÃO. espetáculo de Festa Junina da Sopro Escola de Danças, sob a direção de Roberto Amorim e Tatiana Portella, participação dos alunos da Sopro Escola de Danças."
-                },
-                {
-                    descricao: "Cancelamentos de pedidos pagos serão aceitos até 7 dias após a compra, desde que a solicitação seja enviada até 48 horas antes do início do evento."
-                },
-                {
-                    descricao: "Você poderá editar o participante de um ingresso apenas uma vez. Essa opção ficará disponível até 24 horas antes do início do evento."
+                    descricao: "PAM e TinTinTins Apresentam: Férias Artísticas Inesquecíveis - Descubra o ponto onde a criatividade infantil se transforma em arte tangível nas oficinas TinTinTins no Jardim Pamplona Shopping. Sob a orientação da renomada artista Graziella Poffo, essas oficinas oferecem às crianças a chance de dar vida aos seus sonhos através de bonecos únicos, criados a partir de seus próprios desenhos. Cada sessão das oficinas TinTinTins é uma porta aberta para a imaginação, permitindo que as crianças explorem suas habilidades artísticas e criem sem limites, utilizando o design exclusivo dos nossos bonecos patenteado. Essas criações não são apenas brinquedos, mas embaixadores de histórias e sonhos, cada um refletindo a visão única de seu criador mirim."
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: TinTin,
+                nome: "TinTinTins",
+                eventos: 2
+            }
         },
         {
             id: 3,
@@ -154,37 +165,42 @@ export default function Explorar(){
                     descricao: "Nesse encontro você irá aprender e conhecer mais sobre as personalidades que fizeram parte da história de São Paulo e do país que estão sepultadas no cemitério, com muita história e informação."
                 }
             ],
-            faixaEtaria: "Maiores de 18 anos"
+            faixaEtaria: "Maiores de 18 anos",
+            organizador: {
+                imagem: Consolare,
+                nome: "Consolare",
+                eventos: 34
+            }
         },
         {
             id: 4,
-            imagem: OficinaDanca,
-            titulo: "Oficina Estúdio de Dança",
-            data: "Segunda-feira, às 07h",
+            imagem: FeiraArtesanal,
+            titulo: "Mega Artesanal",
+            data: "27 a 31 de Jul, 10h às 18h",
             local: {
-                rua: "R. Juquis",
-                bairro: "Moema",
-                numero: "287",
+                rua: "Rodovia dos Imigrantes",
+                bairro: "Água Funda",
+                numero: "234",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Moema"
+                estado: "SP"
             },
             categorias: [
                 {
-                    categoria: "Dança",
+                    categoria: "Feira de Artesanato",
                     cor:"var(--cor-rosa)"
-                },
-                {
-                    categoria: "Música",
-                    cor:"var(--cor-laranja)"
                 }
             ],
             paragrafos: [
                 {
-                    descricao: "A Oficina Estúdio de Dança é uma escola referência na cidade de São Paulo com foco de atuação em formação de bailarinos contemporâneos."
+                    descricao: "A Mega Artesanal é uma feira completa, realizada há mais de 15 anos, com a participação da Indústria, do Comércio, dos Ateliês, Confeiteiros e Artesãos.  Oferece infinitas oportunidades para quem gosta e faz arte, artesanato e artes manuais. Milhares de cursos e demonstrações são oferecidos, além dos lançamentos e  venda de produtos, matérias primas, projetos, desafios, exposições, premiações, encontros, negócios e muito mais!"
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Maiores de 12 anos",
+            organizador: {
+                imagem: FeirasCongressos,
+                nome: "São Paulo Feiras e Congressos",
+                eventos: 8
+            }
         },
         {
             id: 5,
@@ -196,8 +212,7 @@ export default function Explorar(){
                 bairro: "Paraíso",
                 numero: "1000",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Centro Cultural São Paulo"
+                estado: "SP"
             },
             categorias: [
                 {
@@ -220,11 +235,16 @@ export default function Explorar(){
                     descricao: "No teatro, além de shows de artistas e grupos locais e sessões de cinema, apresentações de espetáculos como Ballet Stagium, Cia. Cisne Negro, São Paulo Companhia de Dança, Cia. Vagalum Tum Tum, Grupo das Dores de Teatro Ltda-ME, OAK Educação e Meio Ambiente Ltda, Grupo Capézio, Samba 7, Mandallas.com entre outros."
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: CentroCultural,
+                nome: "Centro Cultural de São Paulo",
+                eventos: 14
+            }
         },
         {
             id: 6,
-            imagem: FabricaCultura,
+            imagem: FabricasCultura,
             titulo: "Fábrica de Cultura Itaim Paulista",
             data: "Quinta a Domingo, 9h às 17h.",
             local: {
@@ -232,8 +252,7 @@ export default function Explorar(){
                 bairro: "Itaim Paulista",
                 numero: "500",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Itaim Paulista"
+                estado: "SP"
             },
             categorias: [
                 {
@@ -260,7 +279,12 @@ export default function Explorar(){
                     descricao: "No teatro, além de shows de artistas e grupos locais e sessões de cinema, apresentações de espetáculos como Ballet Stagium, Cia. Cisne Negro, São Paulo Companhia de Dança, Cia. Vagalum Tum Tum, Grupo das Dores de Teatro Ltda-ME, OAK Educação e Meio Ambiente Ltda, Grupo Capézio, Samba 7, Mandallas.com entre outros."
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: FabricaCulturaItaim,
+                nome: "Fábrica de Cultura de Itaim",
+                eventos: 15
+            }
         }
     ];
 

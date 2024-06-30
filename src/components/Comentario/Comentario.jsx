@@ -25,7 +25,11 @@ export default function Comentario(props) {
                             <span>{props.nota}</span>
                         </div>
                         <div className="usuario-estrela">
-                            <IoMdStar style={{color:"var(--cor-amarela)" }}/> <IoMdStar style={{color:"var(--cor-amarela)"}}/> <IoIosStarHalf style={{color:"var(--cor-amarela)"}}/> <IoIosStarOutline style={{color:"var(--cor-amarela)"}}/> <IoIosStarOutline style={{color:"var(--cor-amarela)"}}/>
+                            <IoMdStar style={{color:"var(--cor-amarela)" }}/> 
+                            <IoMdStar style={{color:"var(--cor-amarela)"}}/> 
+                            <IoMdStar style={{color:"var(--cor-amarela)"}}/> 
+                            <IoIosStarHalf style={{color:"var(--cor-amarela)"}}/> 
+                            <IoIosStarOutline style={{color:"var(--cor-amarela)"}}/>
                         </div>
                     </div>
 

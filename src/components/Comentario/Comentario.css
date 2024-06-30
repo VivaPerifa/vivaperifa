@@ -25,20 +25,28 @@
 .comentario__conteudo{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
-.comentario__nome span{
-    font-size: 1.2rem;
+.comentario__nome .usuario-nome span{
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
-.usuario-estrela{
-    font-size: 1.2rem;
+.comentario__nome .usuario-estrela{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.comentario__nome .usuario-nota span{
+    font-size: 1.5rem;
 }
 
 .comentario__descricao p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
 }
 
 .comentario__like{

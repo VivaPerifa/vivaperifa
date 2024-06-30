@@ -21,9 +21,16 @@ import EventoRua from '../../assets/evento_rua.png';
 import Museu from '../../assets/miniaturas_eventos/museu.png';
 import Teatro from '../../assets/miniaturas_eventos/teatro.png';
 import Poema from '../../assets/miniaturas_eventos/poema.png';
-import FabricaCultura from '../../assets/miniaturas_eventos/fabrica_cultura.jpg';
-import Sapobemba from '../../assets/miniaturas_eventos/sapobemba.jpg';
+import TeatroCultural from '../../assets/miniaturas_eventos/tearo_cultural.jpg';
 import FestasTradiconais from '../../assets/miniaturas_eventos/festas_tradicionais.png';
+import FabricasCultura from '../../assets/miniaturas_eventos/fabricas_cultura.jpg';
+import FabricaCultura from '../../assets/miniaturas_eventos/fabrica_cultura.jpg';
+
+/*organizadores */
+import MuseuArteModerna from '../../assets/miniaturas_eventos/museu_arte_moderna.jpg';
+import FabricaCulturaTiradentes from '../../assets/miniaturas_eventos/fabrica_cultura_tiradentes.jpg';
+import FabricaCulturaSapobemba from '../../assets/miniaturas_eventos/fabrica_cultura_sapobemba.jpg';
+import CeuParqueBristol from '../../assets/miniaturas_eventos/ceu_parque_bristol.jpg';
 
 export default function Home() {
     const eventosRecentes = [
@@ -37,8 +44,7 @@ export default function Home() {
                 bairro: "Ipiranga",
                 numero: "20",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Ipiranga"
+                estado: "SP"
             },
             categorias: [
                 {
@@ -62,20 +68,24 @@ export default function Home() {
                     descricao: "Ele abriga uma vasta coleção de obras de artistas renomados e emergentes, abrangendo diversas formas de expressão, como pintura, escultura, fotografia, instalação e arte digital. Além das exposições permanentes, o museu organiza mostras temporárias, oficinas, palestras e debates, promovendo um diálogo constante entre a arte e a sociedade."
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: Museu,
+                nome: "Museu do Ipiranga",
+                eventos: 12
+            }
         },
         {
             id: 2,
             imagem: Teatro,
             titulo: "Circus, A Nova Tournée",
-            data: "06 a 14 de Jul, 11h00 às 16h00",
+            data: "06 a 14 de Jul, 11h às 16h",
             local: {
                 rua: "Av. Pedro Álvares Cabral",
-                bairro: "",
+                bairro: "Vila Mariana",
                 numero: "1301",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Museu de Arte Moderna"
+                estado: "SP"
             },
             categorias: [
                 {
@@ -99,20 +109,24 @@ export default function Home() {
                     descricao: "Números clássicos do circo são recriados por personagens conhecidos ou figuras inusitadas: uma mosca dançarina, uma família de ovos equilibristas e duas minhocas trapezistas estão entre os companheiros de palco. Todos carismáticos, todos capazes de manterem crianças e adultos atentos do início ao fim dessa peculiar jornada circense."
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: MuseuArteModerna,
+                nome: "Museu da Arte Moderna de São Paulo",
+                eventos: 23
+            }
         },
         {
             id: 3,
-            imagem: FabricaCultura,
+            imagem: TeatroCultural,
             titulo: "Além do Rio Há o Mar",
             data: "Quarta, 03 de Jul, às 14:30h",
             local: {
                 rua: "R. Henriqueta Noguez Bieba",
-                bairro: "",
+                bairro: "Fazenda do Carmo",
                 numero: "281",
                 cidade: "Cidade Tiradentes",
-                estado: "SP",
-                nomeLocal: "Cidade Tiradentes"
+                estado: "SP"
             },
             categorias: [
                 {
@@ -133,7 +147,12 @@ export default function Home() {
                     descricao: "Espetáculo de Teatro: Além do Rio Há o Mar - Grupo Puveita. Júlio sempre deslizou pelas águas do Rio Amazonas, atravessando pessoas e suas histórias. Até que um dia encontra-se com uma divertida senhora que lhe conta histórias para além daquelas águas, ela revela a ele segredos do Mar. Júlio parte para uma grande aventura em busca destas “ondas altas e fortes."
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: FabricaCulturaTiradentes,
+                nome: "Fábrica de Cultura da Cidade Tiradantes",
+                eventos: 10
+            }
         }
     ];
 
@@ -142,14 +161,13 @@ export default function Home() {
             id: 4,
             imagem: Poema,
             titulo: "Poemas para Brincar",
-            data: "Domingo, 30 de Jun, 11h00 às 16h00",
+            data: "Domingo, 30 de Jun, 11h às 16h",
             local: {
                 rua: "Av. Pedro Álvares Cabral",
-                bairro: "",
+                bairro: "Vila Mariana",
                 numero: "1301",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Museu de Arte Moderna"
+                estado: "SP"
             },
             categorias: [
                 {
@@ -170,20 +188,24 @@ export default function Home() {
                     descricao: "Poemas para Brincar é um espetáculo de bonecos baseado no livro homônimo de poesias para criança do poeta José Paulo Paes e ilustrado pelo artista plástico Luiz Maia. O espetáculo aborda as brincadeiras de criança: a pipa, o rio, o medo do cemitério e os bicho, é conta a história de Ana e Juca que depois de perderem sua pipa, inventam uma nova brincadeira: através do jogo de palavras, descobrem como brincar de poesia."
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: MuseuArteModerna,
+                nome: "Museu da Arte Moderna de São Paulo",
+                eventos: 20
+            }
         },
         {
             id: 5,
-            imagem: Sapobemba,
+            imagem: FabricaCultura,
             titulo: "Fábrica de Cultura Sapobemba",
             data: "Terça e Quarta, 9h às 21h.",
             local: {
                 rua: "R. Agostin Luberti",
-                bairro: "Fazenda da Juta",
+                bairro: "Sapobemba",
                 numero: "300",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "Sapobemba"
+                estado: "SP"
             },
             categorias: [
                 {
@@ -207,7 +229,12 @@ export default function Home() {
                     descricao: "Além das oficinas, realiza eventos, exposições e apresentações regulares, fortalecendo o laço comunitário e o acesso à cultura. É um verdadeiro polo de criatividade e transformação social na região."
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: FabricaCulturaSapobemba,
+                nome: "Fábrica de Cultura de Sapobemba",
+                eventos: 8
+            }
         },
         {
             id: 5,
@@ -219,8 +246,7 @@ export default function Home() {
                 bairro: "Jardim Clímax",
                 numero: "S/N",
                 cidade: "São Paulo",
-                estado: "SP",
-                nomeLocal: "CEU Parque Bristol"
+                estado: "SP"
             },
             categorias: [
                 {
@@ -259,7 +285,12 @@ export default function Home() {
                     descricao: "Jornada Sertaneja – Adriano Martins."
                 }
             ],
-            faixaEtaria: "Livre para todos os públicos"
+            faixaEtaria: "Livre para todos os públicos",
+            organizador: {
+                imagem: CeuParqueBristol,
+                nome: "CEU Parque Bristol",
+                eventos: 24
+            }
         }
     ]
 

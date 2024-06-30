@@ -39,10 +39,10 @@ export default function EventoComum(props) {
                 </div>
 
                 <div className="evento-comum__data">
-                    <span style={{ color: "#D9043E" }}>
-                        {props.quantidadeComentarios}
+                    <span style={{ color: "#D9043E" }} className={`${props.quantidadeComentarios!=null?'show':'hidden'}`}>
+                        {props.quantidadeComentarios} comentários
                     </span>
-                    <span style={{ color: "#033E8C" }}>
+                    <span style={{ color: "#033E8C" }} className={`${props.quantidadeComentarios==null?'show':'hidden'}`}>
                         {props.data}
                     </span>
                 </div>
@@ -55,9 +55,9 @@ export default function EventoComum(props) {
                     }
                 </div>
 
-                <div className={`evento-comum__local  ${props.quantidadeComentarios != null ? 'cor-azul' : 'cor-laranja'}`}>
+                <div className={`evento-comum__local  ${props.quantidadeComentarios!=null?'cor-azul':'cor-laranja'}`}>
                     <span>
-                        {props.local.nomeLocal}
+                        {props.local.bairro}
                     </span>
                 </div>
             </div>

@@ -40,21 +40,20 @@ export default function DetalheEvento() {
                 </div>
             </div>
             <div className="detalhe-evento__body">
-
                 <div className="detalhe-evento__categoria">
                     <div className="detalhe-evento__categoria-list">
                         {
                             evento.categorias.map((item) => (
-                                <span style={{color:item.cor}}>#{item.categoria}</span>
+                                <span style={{ color: item.cor }}>#{item.categoria}</span>
                             ))
                         }
                     </div>
                     <div className="detalhe-evento__icones">
                         <span>
-                            <img src={Coracao} alt="" />
+                            <img src={Coracao} alt="Ícone de Like" />
                         </span>
                         <span>
-                            <img src={Agenda} alt="" />
+                            <img src={Agenda} alt="Ícone de Agenda" />
                         </span>
                     </div>
                 </div>
@@ -110,12 +109,12 @@ export default function DetalheEvento() {
                 <div className="mini-perfil-organizador">
                     <div className="mini-perfil-dados">
                         <figure>
-                            <img src={PerfilOrganizador} alt="" />
+                            <img src={evento.organizador.imagem} alt="Perfil do Organizador de Eventos" />
                         </figure>
 
                         <div className="detalhes-mini-perfil">
-                            <span>Nome do produtor</span>
-                            <span>90 eventos</span>
+                            <span>{evento.organizador.nome}</span>
+                            <span>{evento.organizador.eventos} eventos</span>
                         </div>
                     </div>
                     <div className="botao-mini-perfil">
@@ -125,21 +124,45 @@ export default function DetalheEvento() {
 
                 <span className={`${listComentarios == null ? 'show' : 'hidden'}`}>Deixe seu comentário quando o evento ocorrer!</span>
 
-                <div className={`detalhe-evento__comentarios ${evento.comentarios != null ? 'show' : 'hidden'}`}>
-                    <div className="detalhe-evento__avaliacao">
-                        <span>4.0</span>
-                        <IoMdStar style={{ color: "var(--cor-amarela)" }} /> <IoMdStar style={{ color: "var(--cor-amarela)" }} /> <IoIosStarHalf style={{ color: "var(--cor-amarela)" }} /> <IoIosStarOutline style={{ color: "var(--cor-amarela)" }} /> <IoIosStarOutline style={{ color: "var(--cor-amarela)" }} />
-                        <span>293901</span>
-                    </div>
-                    <div className="evento-comentarios__header">
+                <div className="detalhe-evento__avaliacao">
+                    <div className="avaliacao__header">
                         <h2>Avaliação e comentários</h2>
                         <button>Avalie esse evento</button>
                     </div>
+                    <div className="avaliacao__nota">
+                        <div className="avaliacao__nota-total">
+                            <span>4.0</span>
+                            <div className="avaliacao__estrelas">
+                                <IoMdStar style={{ width:"3rem",height:"3rem",color: "var(--cor-amarela)" }} /> <IoMdStar style={{ width:"3rem",height:"3rem",color: "var(--cor-amarela)" }} /> <IoIosStarHalf style={{ width:"3rem",height:"3rem",color: "var(--cor-amarela)" }} /> <IoIosStarOutline style={{ width:"3rem",height:"3rem",color: "var(--cor-amarela)" }} /> <IoIosStarOutline style={{ width:"3rem",height:"3rem",color: "var(--cor-amarela)" }} />
+                            </div>
+                            <span className="avaliacao__qtd">4,123 avaliações</span>
+                        </div>
+                        <div className="avaliacao__nota-separada">
+                            <div class="progress-bar">
+                                <span>5</span><div class="progress" style={{width: '100%'}}></div>
+                            </div>
+                            <div class="progress-bar">
+                                <span>4</span><div class="progress" style={{width: '70%'}}></div>
+                            </div>
+                            <div class="progress-bar">
+                                <span>3</span><div class="progress" style={{width: '50%'}}></div>
+                            </div>
+                            <div class="progress-bar">
+                                <span>2</span><div class="progress" style={{width: '30%'}}></div>
+                            </div>
+                            <div class="progress-bar">
+                                <span>1</span><div class="progress" style={{width: '15%'}}></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr></hr>
+                <div className={`detalhe-evento__comentarios ${evento.comentarios != null ? 'show' : 'hidden'}`}>
                     {
                         listComentarios.map((item) => (
                             <div className="comentario__item">
                                 <Comentario
-                                    nome={item.nome}
+                                    nome={item.usuario}
                                     perfil={item.perfil}
                                     nota={item.nota}
                                     comentario={item.comentario}
