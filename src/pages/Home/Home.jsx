@@ -32,12 +32,16 @@ import FabricaCulturaTiradentes from '../../assets/miniaturas_eventos/fabrica_cu
 import FabricaCulturaSapobemba from '../../assets/miniaturas_eventos/fabrica_cultura_sapobemba.jpg';
 import CeuParqueBristol from '../../assets/miniaturas_eventos/ceu_parque_bristol.jpg';
 
+import { useTranslation } from 'react-i18next';
+
 export default function Home() {
+    const { t } = useTranslation();
+
     const eventosRecentes = [
         {
             id: 1,
             imagem: Museu,
-            titulo: "Museu do Ipiranga",
+            titulo: t("Museu do Ipiranga"),
             data: "30 de Jun a 31 de Ago, 9h às 16h",
             local: {
                 rua: "R. dos Patriotas",
@@ -155,6 +159,10 @@ export default function Home() {
             }
         }
     ];
+
+    const handleTeste = () => {
+        console.log('testando');
+    }
 
     const eventosSaoPaulo = [
         {
@@ -329,9 +337,6 @@ export default function Home() {
 
     return (
         <div className="container-homepage">
-            {/* <Header
-                tipoCabecalho="home"
-            /> */}
             <div className="homepage-header">
                 <Menu></Menu>
                 <CarrosselEventoDestaque listaEventoDestaque={eventosDestaque}></CarrosselEventoDestaque>

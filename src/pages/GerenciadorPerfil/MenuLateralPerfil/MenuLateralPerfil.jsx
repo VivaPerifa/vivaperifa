@@ -8,8 +8,7 @@ import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 import '../MenuLateralPerfil/MenuLateralPerfil.css';
 import '../../../App';
 import { Link  }from 'react-router-dom';
-
-import { IoCreateOutline } from "react-icons/io5";
+import Perfil from "../../../assets/foto-organizador.png";
 
 export default function MenuLateralPerfil() {
     return (
@@ -18,9 +17,9 @@ export default function MenuLateralPerfil() {
                 <div className="menu-lateral__conteudo">
                     <div className="menu-lateral__perfil">
                         <Link to="/perfil-organizador">
-                            <img src="https://cdn.oantagonista.com/uploads/2022/08/reproducao_redessociais.jpeg" alt="Foto de Perfil"/>
+                            <img src={Perfil} alt="Foto de Perfil"/>
                         </Link>
-                        <h2>Pablo Marçal</h2>
+                        <h2>João Elias</h2>
                         <Link to="/editar-perfil" className="editar-perfil__link"><span>Editar perfil</span></Link>
                     </div>
 

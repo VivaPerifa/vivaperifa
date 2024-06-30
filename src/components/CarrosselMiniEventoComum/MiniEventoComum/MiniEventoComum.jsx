@@ -15,28 +15,30 @@ export default function MiniEventoComum(props) {
                     </div>
                     <div className="mini-evento-comum__icones">
                         <span>
-                            <img src={Coracao} alt="" />
+                            <img src={Coracao} alt="Ícone de Like" />
                         </span>
                         <span>
-                            <img src={Agenda} alt="" />
+                            <img src={Agenda} alt="Ícone de Agendar" />
                         </span>
                     </div>
                 </div>
                 <div className="mini-evento-comum__data">
-                    <span style={{color:"#D9043E"}}>
-                        {props.comentarios}
+                    <span style={{ color: "#D9043E" }} className={`${props.quantidadeComentarios!=null?'show':'hidden'}`}>
+                        {props.quantidadeComentarios} comentários
                     </span>
-                    <span style={{color:"#033E8C"}}>
+                    <span style={{ color: "#033E8C" }} className={`${props.quantidadeComentarios==null?'show':'hidden'}`}>
                         {props.data}
                     </span>
                 </div>
                 <div className="mini-evento-comum__descricao">
-                    <p>
-                        {props.descricao}
-                    </p>
+                    {
+                        props.paragrafos.map((item) => (
+                            <p>{item.descricao}</p>
+                        ))
+                    }
                 </div>
                 <div className={`mini-evento-comum__local ${props.comentarios != null ? 'cor-azul' : 'cor-laranja'}`}>
-                    <span>{props.local}</span>
+                    <span>{props.local.bairro}</span>
                 </div>
             </div>
         </div>

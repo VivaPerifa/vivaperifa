@@ -159,8 +159,8 @@ export default function DetalheEvento() {
                 <hr></hr>
                 <div className={`detalhe-evento__comentarios ${evento.comentarios != null ? 'show' : 'hidden'}`}>
                     {
-                        listComentarios.map((item) => (
-                            <div className="comentario__item">
+                        listComentarios.map((item, index) => (
+                            <div className="comentario__item" key={index}>
                                 <Comentario
                                     nome={item.usuario}
                                     perfil={item.perfil}

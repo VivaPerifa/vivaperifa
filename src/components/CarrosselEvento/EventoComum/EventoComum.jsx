@@ -22,17 +22,10 @@ export default function EventoComum(props) {
 
                     <div className='evento-comum__icones'>
                         <span className="evento-comum__coracao">
-                            <img src={Coracao} alt="" />
-                            {/* <IoMdHeartEmpty 
-                                style={{
-                                width:"2.3rem",
-                                height:"2.3rem",
-                                color:"var(--cor-rosa)"
-                                }}/> */}
+                            <img src={Coracao} alt="Ícone de Like" />
                         </span>
 
                         <span>
-                            {/* <img src={Agenda} alt="" /> */}
                             <CiCalendar style={{width:"2.3rem",height:"2.3rem",color:"var(--cor-azul)"}}/>
                         </span>
                     </div>

@@ -12,10 +12,11 @@ export default function CarrosselMiniEventoComum(props){
                         <MiniEventoComum 
                             imagem={item.imagem}
                             titulo={item.titulo}
+                            paragrafos={item.paragrafos}
                             data={item.data}
-                            descricao={item.descricao}
                             local={item.local}
                             comentarios={item.comentarios}
+                            quantidadeComentarios={item.qtdComentarios}
                         />
                     </div>
                 ))

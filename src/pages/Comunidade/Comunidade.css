@@ -1,7 +1,6 @@
 .container-comunidade{
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 .comunidade-header{
@@ -21,4 +20,8 @@
     width: 80%;
     margin: 0 auto;
     justify-content: center;
+}
+
+.eventos-comunidade{
+    margin-bottom: 40px;
 }

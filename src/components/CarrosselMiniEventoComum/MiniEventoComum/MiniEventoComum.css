@@ -64,11 +64,19 @@
     gap: 8px;
 }
 
-.mini-evento-comum__descricao p{
+.mini-evento-comum__descricao{
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.80);
+    /* white-space: wrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 60px;
+    width: 100%;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .mini-evento-comum__data span{
@@ -81,3 +89,4 @@
     font-weight: 600;
     font-size: 0.8rem;
 }
+

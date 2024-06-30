@@ -423,11 +423,12 @@ export default function Comunidade(){
                 <Menu></Menu>
                 <h2>Explore a comunidade de eventos da sua qubrada!</h2>
             </div>
-            <CarrosselEvento
-                tituloCarrossel="histórico de eventos em são paulo"
-                listaEvento={eventosComunidade}
-            />
-        
+            <div className="eventos-comunidade">
+                <CarrosselEvento
+                    tituloCarrossel="histórico de eventos em são paulo"
+                    listaEvento={eventosComunidade}
+                />
+            </div>
             <Footer></Footer>
         </div>
     );

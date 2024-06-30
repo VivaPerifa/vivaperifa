@@ -55,11 +55,43 @@
     margin: 0 auto;
 }
 
-.perfil-organizador__body{
+.perfil-organizador__eventos-publicados{
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin-top: 40px;
+}
+
+.perfil-organizador__guia{
+    margin: 0 auto;
+    width: var(--tamanho-container);
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.perfil-organizador__guia span{
+    font-size: 1.8rem;
+    display: block;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.show-container{
+    display: flex;
+    transition: all 0.1s;
+}
+
+.hidden-container{
+    display: none;
+    transition: all 0.1s;
+}
+
+.ativo{
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    font-weight: 600;
+    transition: all 0.1s;
 }
 
 @media only screen and (max-width:1440px){

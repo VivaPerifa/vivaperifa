@@ -55,7 +55,7 @@
     border-bottom: 3px solid black;
     padding-bottom: 10px;
     font-weight: 600;
-    transition: all 0.5s;
+    transition: all 0.1s;
 }
 
 .eventos-cadastrados__body {
@@ -63,39 +63,6 @@
     flex-direction: column;
     gap: 30px;
 }
-
-/* .eventos-cadastrados__carrossel {
-    display: grid;
-    grid-template-columns: repeat(3, 32%);
-    justify-content: space-between;
-} */
-
-/* 
-.pendentes {
-    opacity: 1;
-    z-index: 2;
-}
-
-.eventos-cadastrados-scroll.active .pendentes {
-    opacity: 0;
-    z-index: 1;
-}
-
-.encerrados {
-    opacity: 0;
-    z-index: 1;
-}
-
-.eventos-cadastrados-scroll.active .encerrados {
-    opacity: 1;
-    z-index: 2;
-    animation: move 0.1s;
-} */
-
-/* .active{
-    opacity: 0;
-    z-index: 1;
-} */
 
 @keyframes move {
 
@@ -109,11 +76,11 @@
 }
 
 .show-container{
-    display: none;
-    transition: all 0.5s;
+    display: flex;
+    transition: all 0.1s;
 }
 
 .hidden-container{
-    display: flex;
-    transition: all 0.5s;
+    display: none;
+    transition: all 0.1s;
 }
