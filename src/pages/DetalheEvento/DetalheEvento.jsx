@@ -12,6 +12,7 @@ import Comentario from '../../components/Comentario/Comentario';
 import { IoMdStar } from "react-icons/io";
 import { IoIosStarOutline } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
+import BotaoColorido from '../../components/BotaoColorido/BotaoColorido.jsx';
 
 export default function DetalheEvento() {
 
@@ -98,6 +99,7 @@ export default function DetalheEvento() {
                             <div className="programacao__mapa">
                                 <Mapa larguraMapa="100%" alturaMapa="250px"></Mapa>
                             </div>
+                            <BotaoColorido legendaBotao='Ver ingressos' larguraBotao='100%'> </BotaoColorido>
                         </div>
                     </div>
                 </div>
