@@ -28,7 +28,16 @@ const VisualizarEvento = () => {
                         <div className="visualizacao-evento__carrossel">
                             <div className="carrossel-visualizacao__item">
                             </div>
-                            <MiniEventoComum className="carrossel-visualizacao__item"></MiniEventoComum>
+                            <MiniEventoComum 
+                                className="carrossel-visualizacao__item"
+                                imagem={Evento}
+                                titulo=""
+                                paragrafos=""
+                                data=""
+                                local=""
+                                comentarios=""
+                                quantidadeComentarios=""
+                            />
                             <div className="carrossel-visualizacao__item">
                             </div>
                         </div>

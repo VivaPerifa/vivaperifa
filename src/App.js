@@ -45,10 +45,10 @@ import EditarPerfilParticipante from './pages/EditarPerfilParticipante/EditarPer
 
 
 function App() {
-  // const { t, i18n } = useTranslation();
-  // const changeLanguage = (lng) => {
-  //   i18n.changeLanguage(lng);
-  // }
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  }
   
   return (
     
@@ -60,6 +60,7 @@ function App() {
         <LocationRequest></LocationRequest> */}
         <DisclaimerCookies></DisclaimerCookies>
         {/* <Tradutor changeLanguage={changeLanguage} />   */}
+        <BotaoTopo></BotaoTopo>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/home' element={<Home/>} />

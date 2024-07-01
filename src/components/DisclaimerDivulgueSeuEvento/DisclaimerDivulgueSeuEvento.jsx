@@ -16,10 +16,12 @@ export default function DisclaimerDivulgueSeuEvento(){
                     </h3>
                 </div>
                 <p>Junte-se a nós para impulsionar a cultura e os eventos na perifa! Entre em contato agora para se tornar um parceiro do VivaPerifa.</p>
-                <BotaoColorido 
-                    legendaBotao="Contato"
-                    larguraBotao="50%"
-                />
+                <Link to="/contato">
+                    <BotaoColorido 
+                        legendaBotao="Contato"
+                        larguraBotao="50%"
+                    />
+                </Link>
 
             </div>
             <figure className="divulgar-evento__imagem">
