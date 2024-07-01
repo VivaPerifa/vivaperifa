@@ -25,24 +25,31 @@ export default function MenuLateralPerfil() {
 
                     <div className="menu-lateral__lista">
                         <ul>
-                            <Link to="/criar-evento"><li><FontAwesomeIcon icon={faPenToSquare} /> 
-                                Criar Evento
-                            </li></Link>
-                            <Link to="/eventos-cadastrados"><li><FontAwesomeIcon icon={faCalendar} /> 
-                                Eventos
-                            </li></Link>
-                            <Link to=''><li><FontAwesomeIcon icon={faChartSimple} /> 
-                                Analytics
-                            </li></Link>
-                            <Link to='/comentarios-evento'><li><FontAwesomeIcon icon={faCommentDots} /> 
-                                Comunidade
-                            </li></Link>
-                            <Link to=''><li><FontAwesomeIcon icon={faGear} /> 
-                                Configurações
-                            </li></Link>
-                            <Link to='/suporte-evento'><li><FontAwesomeIcon icon={faCircleQuestion} /> 
-                                Suporte
-                            </li></Link>
+                            <Link to="/criar-evento">
+                                <li><FontAwesomeIcon icon={faPenToSquare} /> 
+                                    Criar Evento
+                                </li>
+                            </Link>
+                            <Link to="/eventos-cadastrados">
+                                <li><FontAwesomeIcon icon={faCalendar} /> 
+                                    Eventos
+                                </li>
+                            </Link>
+                            <Link to="">
+                                <li><FontAwesomeIcon icon={faChartSimple} /> 
+                                    Analytics
+                                </li>
+                            </Link>
+                            <Link to='/comentarios-evento'>
+                                <li><FontAwesomeIcon icon={faCommentDots} /> 
+                                    Comunidade
+                                </li>
+                            </Link>
+                            <Link to='/suporte-evento'>
+                                <li><FontAwesomeIcon icon={faCircleQuestion} /> 
+                                    Suporte
+                                </li>
+                            </Link>
                         </ul>
                     </div>
                 </div>

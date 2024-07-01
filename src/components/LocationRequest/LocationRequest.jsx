@@ -61,13 +61,13 @@ export default function LocationRequest() {
                     </div>
                 </div>
             )}
-            {location && (
+            {/* {location && (
                 <div className="location-info">
                     <p>Sua localização atual:</p>
                     <p>Latitude: {location.latitude}</p>
                     <p>Longitude: {location.longitude}</p>
                 </div>
-            )}
+            )} */}
         </div>
     );
 }

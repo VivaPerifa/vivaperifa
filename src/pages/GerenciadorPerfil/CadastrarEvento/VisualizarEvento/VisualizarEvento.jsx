@@ -1,14 +1,33 @@
 import EventoComum from "../../../../components/CarrosselEvento/EventoComum/EventoComum";
 import "./VisualizarEvento.css";
 import { Link } from 'react-router-dom';
-import Evento from '../../../../assets/batalha_rima.png';
+import BatalhaRima from '../../../../assets/batalha_rima.png';
 import MenuLateralPerfil from "../../MenuLateralPerfil/MenuLateralPerfil";
 import Coracao from '../../../../assets/coracao.png';
 import Agenda from '../../../../assets/agenda.png';
 import BotaoColorido from "../../../../components/BotaoColorido/BotaoColorido";
 import MiniEventoComum from "../../../../components/CarrosselMiniEventoComum/MiniEventoComum/MiniEventoComum";
 
-const VisualizarEvento = () => {
+export default function VisualizarEvento(){
+    const evento = {
+        id: 1,
+        imagem: BatalhaRima,
+        titulo: "Batalha de Rima",
+        data: "Sábado, 20 de Jul, 21h às 23h",
+        paragrafos: [
+            {
+                descricao: "A batalha de rima é um evento dinâmico e eletrizante, onde MCs se enfrentam em duelos verbais improvisados, exibindo criatividade, inteligência e rapidez de raciocínio. Realizada em um ambiente vibrante e acolhedor, a batalha promove uma atmosfera de competição saudável e respeito mútuo. Os participantes utilizam suas habilidades líricas para criar rimas afiadas e respostas rápidas, enquanto o público vibra e participa ativamente, incentivando os artistas. Com jurados especializados e a energia contagiante da plateia, a batalha de rima celebra a cultura hip-hop e o talento dos MCs, proporcionando uma experiência única e envolvente."
+            }
+        ],
+        local: {
+            rua: "R. Graham Bell",
+            bairro: "Alto da Boa Vista",
+            numero: "430",
+            cidade: "São Paulo",
+            estado: "SP"
+        }
+    }
+
     return (
         <div className="container-visualizacao">
             <MenuLateralPerfil></MenuLateralPerfil>
@@ -30,13 +49,11 @@ const VisualizarEvento = () => {
                             </div>
                             <MiniEventoComum 
                                 className="carrossel-visualizacao__item"
-                                imagem={Evento}
-                                titulo=""
-                                paragrafos=""
-                                data=""
-                                local=""
-                                comentarios=""
-                                quantidadeComentarios=""
+                                imagem={BatalhaRima}
+                                titulo={evento.titulo}
+                                paragrafos={evento.paragrafos}
+                                data={evento.data}
+                                local={evento.local}
                             />
                             <div className="carrossel-visualizacao__item">
                             </div>
@@ -62,5 +79,3 @@ const VisualizarEvento = () => {
         </div>
     );
 };
-
-export default VisualizarEvento;

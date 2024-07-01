@@ -81,21 +81,21 @@ export default function Menu(props) {
                         {showLoginOptions && (
                             <><div className='overlay-login' onClick={handleUserIconClick}></div>
                                 <div className='login-opcao' ref={loginOptionsRef}>
-                                    <h2>Entrar/Cadastrar</h2>
-                                    <CampoForm id='login-form' tipo='text' legenda='E-mail' tamanhoCampo='100%' tituloForm="" />
+                                <h2>{t('menu.entrar-cadastrar')}</h2>
+                                    <CampoForm id='login-form' tipo='text' legenda={t('menu.email')} tamanhoCampo='100%' tituloForm="" />
 
-                                    <CampoForm id='login-form' tipo='text' legenda='Senha' tamanhoCampo='100%' tituloForm="" />
+                                    <CampoForm id='login-form' tipo='text' legenda={t('menu.senha')} tamanhoCampo='100%' tituloForm="" />
 
-                                    <BotaoAzul legendaBotao="Entrar" larguraBotao="200px"/>
+                                    <BotaoAzul legendaBotao={t('menu.entrar')} larguraBotao="200px"/>
                                     {/* <Link to=''>{t('Entrar')}</Link> */}
-                                    <a href=''><h4>Esqueceu sua senha?</h4></a>
+                                    <a href=''><h4>{t('menu.esqueceu-senha')}</h4></a>
 
-                                    <p>Novo no VivaPerifa!<Link to='/form-cadastro' className='btn_cadastrese'>{t('CADASTRE-SE')}</Link></p>
+                                    <p>{t('menu.novo-no-vivaperifa')}<Link to='/form-cadastro' className='btn_cadastrese'>{t('menu.cadastre-se')}</Link></p>
                                 </div>
                             </>
                         )}
                     </div>
-                    <Tradutor></Tradutor>
+                    <Tradutor /> 
                 </div>
             </nav>
         </div>

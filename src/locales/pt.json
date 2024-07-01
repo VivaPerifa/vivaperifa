@@ -1,24 +1,92 @@
 {
-    "menu": {
-      "home": "Home",
-      "explorar": "Explorar",
-      "comunidade": "Comunidade",
-      "sobre-nos": "Sobre Nós",
-      "contato": "Contato",
-      "gerenciador-perfil": "Gerenciador de Perfil",
-      "campo-pesquisa": "Pesquisar evento por artista, categoria, local..."
+  "menu": {
+    "home": "Home",
+    "explorar": "Explorar",
+    "comunidade": "Comunidade",
+    "sobre-nos": "Sobre Nós",
+    "contato": "Contato",
+    "gerenciador-perfil": "Gerenciador de Perfil",
+    "entrar-cadastrar": "Entrar / Cadastrar",
+    "email": "E-mail",
+    "senha": "Senha",
+    "entrar": "Entrar",
+    "esqueceu-senha": "Esqueceu sua senha?",
+    "novo-no-vivaperifa": "Novo no VivaPerifa!",
+    "cadastre-se": "CADASTRAR-SE",
+    "campo-pesquisa": "Pesquisar evento por artista, categoria, local..."
+  },
+  "home": {
+    "acontece_em_sao_paulo": "Acontece em São Paulo",
+    "adicionados_recentemente": "Adicionados Recentemente",
+    "encontre_eventos_no_mapa": "Encontre os eventos no mapa"
+  },
+  "event": {
+    "tenda_de_historia": "Tenda de História",
+    "literatura": "Literatura",
+    "batalha_de_rima": "Batalha de Rima",
+    "date_format": "Sábado, dia 29/04 às 9h - 12h",
+    "date_format1": "Sábado, dia 20/04 às 9h - 12h, SP Jardim Clímax",
+    "location_format": "{location}",
+    "ver-todos": "Ver todos",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada..."
+  },
+  "disclaimer": {
+    "divulgue-evento":"divulge seus eventos",
+    "seja-parceiro":"seja um parceiro",
+    "junte-se": "Junte-se a nós para impulsionar a cultura e os eventos na perifa! Entre em contato agora para se tornar um parceiro do VivaPerifa.",
+    "contato": "Contato",
+    "impulsionar":"aumente o ",
+    "impulsionar-destaque": "Alcance ",
+    "impulsionar1":"do seu evento",
+    "impulsionar-texto": "Aumente o impacto do seu evento na comunidade com o VivaPerifa! Nossa  plataforma oferece ferramentas poderosas para promover e destacar seu  evento, alcançando o público certo e impulsionando sua visibilidade.  Junte-se a nós para levar sua iniciativa ao próximo nível!"
+  },
+  "plano": {
+    "assinar": "Assinar",
+    "humildade": {
+        "tipo": "Humildade",
+        "valor": "Gratuito",
+        "beneficio1": "Cadastrar evento",
+        "beneficio2": "Acesso a comunidade"
     },
-    "home": {
-      "acontece_em_sao_paulo": "Acontece em São Paulo",
-      "adicionados_recentemente": "Adicionados Recentemente",
-      "encontre_eventos_no_mapa": "Encontre os eventos no mapa"
-    },
-    "event": {
-      "tenda_de_historia": "Tenda de História",
-      "literatura": "Literatura",
-      "batalha_de_rima": "Batalha de Rima",
-      "date_format": "Sábado, {date} das {time_start} às {time_end}",
-      "location_format": "{location}",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada..."
+    "top-favela": {
+        "tipo": "Top da Favela",
+        "valor1": "R$ 39,90",
+        "periodo1": "/Mensal",
+        "valor2": "R$ 429,90",
+        "periodo2": "/Anual",
+        "beneficio1": "Plano Humildade",
+        "beneficio2": "Dashboard de análise mensal",
+        "beneficio3": "Eventos em destaque",
+        "beneficio4": "Suporte prioritário",
+        "beneficio5": "Notificação imediata"
     }
+},
+"depoimento": {
+      "titulo": "eles curtiram você também vai!",
+      "titulo1": "To amando",
+      "descricao1": " VivaPerifa é incrível! Encontrei diversos eventos culturais na minha  região que nem sabia que existiam. É uma plataforma que fortalece a cultura local.",
+      "nome1": "Ana Beatriz",
+      "tipo1": "usuario",
+      "titulo2": "To Prático e Intuitivo",
+      "descricao2": "Como organizador de eventos, o VivaPerifa foi uma ótima escolha para  promover nossas iniciativas na periferia. A plataforma é fácil de usar e  nos ajudou a alcançar um público mais amplo",
+      "nome2": "Carlos Soares",
+      "tipo2": "Organizador",
+      "titulo3": "Essencial!",
+      "descricao3": "O VivaPerifa é uma ferramenta essencial para quem quer se manter  atualizado sobre o que está acontecendo nas periferias.",
+      "nome3": "João Kaique",
+      "tipo3": "usuario",
+      "titulo4": "Inclusivo",
+      "descricao4": "Adoro a proposta inclusiva do VivaPerifa! Encontrei eventos  diversificados e pude participar de iniciativas que antes desconhecia. É  uma plataforma que realmente valoriza a comunidade",
+      "nome4": "Igor Manuel",
+      "tipo4": "usuario",
+      "titulo5": "Ótimos Recursos!",
+      "descricao5": "VivaPerifa oferece uma variedade impressionante de recursos que  tornam a experiência do usuário excepcional. É  uma plataforma que realmente valoriza a comunidade",
+      "nome5": "Raquel Oliveira",
+      "tipo5": "usuario"
+  },
+  "footer": {
+    "eventos": "Eventos",
+    "empresa": "Empresa",
+    "redes_sociais": "Redes Sociais"
   }
+}

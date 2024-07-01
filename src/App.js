@@ -8,8 +8,7 @@ import Comunidade from './pages/Comunidade/Comunidade';
 import Contato from './pages/Contato/Contato';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import "./i18n";
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Mapa from './components/Mapa/Mapa';
 import DescricaoEvento from './pages/GerenciadorPerfil/CadastrarEvento/DescricaoEvento/DescricaoEvento.jsx';
@@ -35,6 +34,8 @@ import PerfilOrganizador from './pages/PerfilOrganizador/PerfilOrganizador.jsx';
 
 // import { LocalizationProvider } from '@mui/x-date-pickers';
 // import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import "./i18n";
+import { useTranslation } from 'react-i18next';
 
 import EditarPerfilOrganizador from './pages/GerenciadorPerfil/EditarPerfilOrganizador/EditarPerfilOrganizador.jsx';
 import FormCadastroUsuario from './pages/FormCadastroUsuario/FormCadastroUsuario.jsx';
@@ -45,19 +46,16 @@ import EditarPerfilParticipante from './pages/EditarPerfilParticipante/EditarPer
 
 
 function App() {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  }
+  
   
   return (
     
     <BrowserRouter>
       <div>
         {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
-        {children}
-        </LocalizationProvider> 
-        <LocationRequest></LocationRequest> */}
+            {children} 
+        </LocalizationProvider>  */}
+        <LocationRequest></LocationRequest>
         <DisclaimerCookies></DisclaimerCookies>
         {/* <Tradutor changeLanguage={changeLanguage} />   */}
         <BotaoTopo></BotaoTopo>

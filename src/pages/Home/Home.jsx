@@ -344,17 +344,17 @@ export default function Home() {
 
             <div className="homepage-carrossel-evento">
                 <CarrosselEvento
-                    tituloCarrossel="adicionados recentemente"
+                    tituloCarrossel={t('home.adicionados_recentemente')}
                     listaEvento={eventosRecentes}
                 />
                 <CarrosselEvento
-                    tituloCarrossel="acontece em são paulo"
+                    tituloCarrossel={t('home.acontece_em_sao_paulo')}
                     listaEvento={eventosSaoPaulo}
                 />
             </div>
 
             <div className="mapa-home">
-                <h2>Encontre os eventos no mapa</h2>
+                <h2>{t("home.encontre_eventos_no_mapa")}</h2>
                 <Mapa larguraMapa="100%" alturaMapa="500px"></Mapa>
             </div>
 

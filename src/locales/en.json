@@ -1,24 +1,92 @@
 {
-    "menu": {
-      "home": "Home",
-      "explorar": "Explore",
-      "comunidade": "Community",
-      "sobre-nos": "About Us",
-      "contato": "Contact",
-      "gerenciador-perfil": "Profile Manager",
-      "campo-pesquisa": "Search event by artist, category, location..."
-    },
-    "home": {
-      "acontece_em_sao_paulo": "Happening in São Paulo",
-      "adicionados_recentemente": "Recently Added",
-      "encontre_eventos_no_mapa": "Find events on the map"
-    },
-    "event": {
-      "tenda_de_historia": "StoryTelling",
-      "literatura": "Literature",
-      "batalha_de_rima": "Rap Battle",
-      "date_format": "Saturday, {date} from {time_start} to {time_end}",
-      "location_format": "{location}",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada..."
-    }
+  "menu": {
+    "home": "Home",
+    "explorar": "Explore",
+    "comunidade": "Community",
+    "sobre-nos": "About Us",
+    "contato": "Contact",
+    "gerenciador-perfil": "Profile Manager",
+    "entrar-cadastrar": "Sign In / Register",
+    "email": "E-mail",
+    "senha": "Password",
+    "entrar": "Sign In",
+    "esqueceu-senha": "Forgot your password?",
+    "novo-no-vivaperifa": "New to VivaPerifa!",
+    "cadastre-se": "REGISTER",
+    "campo-pesquisa": "Search event by artist, category, location..."
+  },
+  "home": {
+    "acontece_em_sao_paulo": "Happening in São Paulo",
+    "adicionados_recentemente": "Recently Added",
+    "encontre_eventos_no_mapa": "Find events on the map"
+  },
+  "event": {
+    "tenda_de_historia": "StoryTelling",
+    "literatura": "Literature",
+    "batalha_de_rima": "Rap Battle",
+    "date_format": "Saturday, Jul 20, 9pm to 11pm, São Paulo - SP",
+    "location_format": "{location}",
+    "ver-todos": "All",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla purus sed purus ornare malesuada..."
+  },
+  "disclaimer": {
+    "divulgue-evento": "publicize your events",
+    "seja-parceiro": "be a partner",
+    "junte-se": "Join us to boost culture and events in the periphery! Get in touch now to become a VivaPerifa partner.",
+    "contato": "Contact",
+    "impulsionar":"increase the ",
+    "impulsionar-destaque":"Reach ",
+    "impulsionar1":"of your event",
+    "impulsionar-texto": "Increase the impact of your event on the community with VivaPerifa! Our platform offers powerful tools to promote and highlight your event, reaching the right audience and boosting your visibility.  Join us to take your initiative to the next level!"
+  },
+"plano": {
+  "assinar": "Purchase",
+  "humildade": {
+    "tipo": "Humildade",
+    "valor": "Free",
+    "beneficio1": "Register event",
+    "beneficio2": "Access to community",
+    "assinar": "Sign "
+  },
+  "top-favela": {
+    "tipo": "Top da Favela",
+    "valor1": "7,22USD",
+    "periodo1": "/Monthly",
+    "valor2": "77,83USD",
+    "periodo2": "/Yearly",
+    "beneficio1": "Humildade Plan",
+    "beneficio2": "Monthly analysis dashboard",
+    "beneficio3": "Featured events",
+    "beneficio4": "Priority support",
+    "beneficio5": "Immediate notification"
+  }
+},
+"depoimento": {
+      "titulo": "they liked it, you will too!",
+      "titulo1": "Loving it",
+      "descricao1": "VivaPerifa is amazing! I found several cultural events in my region that I didn't even know existed. It's a platform that strengthens local culture.",
+      "nome1": "Ana Beatriz",
+      "tipo1": "user",
+      "titulo2": "Practical and Intuitive",
+      "descricao2": "As an event organizer, VivaPerifa was a great choice to promote our initiatives in the periphery. The platform is easy to use and helped us reach a wider audience.",
+      "nome2": "Carlos Soares",
+      "tipo2": "Organizer",
+      "titulo3": "Essential!",
+      "descricao3": "VivaPerifa is an essential tool for those who want to stay updated on what's happening in the peripheries.",
+      "nome3": "João Kaique",
+      "tipo3": "user",
+      "titulo4": "Inclusive",
+      "descricao4": "I love VivaPerifa's inclusive approach! I found diverse events and was able to participate in initiatives I didn't know about before. It's a platform that truly values the community.",
+      "nome4": "Igor Manuel",
+      "tipo4": "user",
+      "titulo5": "Great Resources!",
+      "descricao5": "VivaPerifa offers an impressive variety of resources that make the user experience exceptional. It's a platform that truly values the community.",
+      "nome5": "Raquel Oliveira",
+      "tipo5": "user"
+  },
+  "footer": {
+    "eventos": "Events",
+    "empresa": "Company",
+    "redes_sociais": "Social Media"
+  }
 }
