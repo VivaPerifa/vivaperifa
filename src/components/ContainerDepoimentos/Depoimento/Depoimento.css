@@ -31,3 +31,16 @@
     flex-direction: column;
     gap: 20px;
 }
+
+@media only screen and (max-width:1024px){
+    .depoimento{
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .depoimento{
+        margin: 0;
+        width: 100%;
+    }
+}

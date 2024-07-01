@@ -38,3 +38,24 @@
     width: 100%;
     object-fit: cover;
 }
+
+@media only screen and (max-width:768px){
+    .impulsionar-evento__descricao{
+        width: 60%;
+    }
+    .impulsionar-evento__imagem{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .disclaimer-impulsionar-evento{
+        flex-direction: column;
+    }
+    .impulsionar-evento__descricao{
+        width: 100%;
+    }
+    .impulsionar-evento__imagem{
+        width: 100%;
+    }
+}

@@ -25,3 +25,14 @@
     font-weight: 800;
     text-align: center;
 }
+
+@media only screen and (max-width:768px){
+    .depoimentos__list{
+        display: grid;
+        grid-template-columns: 80%;
+        gap: 30px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 0;
+    }
+}

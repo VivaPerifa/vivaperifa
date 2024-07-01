@@ -13,7 +13,7 @@ export default function ContainerDepoimento(){
             titulo: "To amando",
             descricao: " VivaPerifa é incrível! Encontrei diversos eventos culturais na minha  região que nem sabia que existiam. É uma plataforma que fortalece a cultura local.",
             nome:"Ana Beatriz",
-            tipo:"usuario",
+            tipo:"Usuário",
             imagem: Perfil1
         },
         {
@@ -29,7 +29,7 @@ export default function ContainerDepoimento(){
             titulo: "Essencial!",
             descricao: "O VivaPerifa é uma ferramenta essencial para quem quer se manter  atualizado sobre o que está acontecendo nas periferias.",
             nome:"João Kaique",
-            tipo:"usuario",
+            tipo:"Usuário",
             imagem: Perfil3
         },
         {
@@ -37,7 +37,7 @@ export default function ContainerDepoimento(){
             titulo: "Inclusivo",
             descricao: "Adoro a proposta inclusiva do VivaPerifa! Encontrei eventos  diversificados e pude participar de iniciativas que antes desconhecia. É  uma plataforma que realmente valoriza a comunidade",
             nome:"Igor Manuel",
-            tipo:"usuario",
+            tipo:"Usuário",
             imagem: Perfil4
         },
         {
@@ -45,11 +45,10 @@ export default function ContainerDepoimento(){
             titulo: "Ótimos Recursos!",
             descricao: "VivaPerifa oferece uma variedade impressionante de recursos que  tornam a experiência do usuário excepcional.É  uma plataforma que realmente valoriza a comunidade",
             nome:"Raquel Oliveira",
-            tipo:"usuario",
+            tipo:"Usuário",
             imagem: Perfil5
         }
     ]
-
     
     return( 
         <div className='container-depoimentos'>

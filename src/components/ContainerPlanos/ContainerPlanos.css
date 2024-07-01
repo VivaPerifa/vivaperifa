@@ -3,9 +3,41 @@
 }
 
 .fundo-plano{
-    padding: 30px;
-    display: flex;
-    justify-content: center;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
     align-items: first baseline;
+    justify-content: center;
     gap: 30px;
+}
+
+.plano{
+    width: 100%;
+}
+
+@media only screen and (max-width:1024px){
+    .fundo-plano{
+        grid-template-columns: repeat(3,30%);
+    }
+}
+
+@media only screen and (max-width:768px){
+    .fundo-plano{
+        grid-template-columns: 50%;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .fundo-plano{
+        grid-template-columns: 70%;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .fundo-plano{
+        grid-template-columns: 100%;
+        gap: 30px;
+    }
 }

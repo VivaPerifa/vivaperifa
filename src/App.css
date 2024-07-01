@@ -52,14 +52,29 @@
 @media only screen and (max-width:1440px){
     :root{
         font-size: 16px;
+        transition: all 0.5s;
     }
 }
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1024px){
     :root{
         font-size: 14px;
+        transition: all 0.5s;
     }
 }
+
+@media only screen and (max-width:768px){
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    :root{
+        font-size: 10px;
+    }
+}
+
 
 .show{
     display: block;

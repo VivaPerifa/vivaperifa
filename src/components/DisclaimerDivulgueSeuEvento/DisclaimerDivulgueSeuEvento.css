@@ -48,3 +48,24 @@
     width: 100%;
     object-fit: cover;
 }
+
+@media only screen and (max-width:768px){
+    .divulgar-evento__descricao{
+        width: 60%;
+    }
+    .divulgar-evento__imagem{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .divulgue-seu-evento{
+        flex-direction: column;
+    }
+    .divulgar-evento__descricao{
+        width: 100%;
+    }
+    .divulgar-evento__imagem{
+        width: 100%;
+    }
+}
