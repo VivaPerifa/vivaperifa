@@ -29,7 +29,7 @@ export default function LocalizacaoEvento() {
                         </div>
                     </div>
                     <div className="local-evento__legenda">
-                        <span>Lorem Ipsum</span>
+                        <span>R. Três Mosqueteiros, 230, Vila Formosa, São Paulo - SP</span>
                     </div>
 
                     <div className="localizacao-mapa">

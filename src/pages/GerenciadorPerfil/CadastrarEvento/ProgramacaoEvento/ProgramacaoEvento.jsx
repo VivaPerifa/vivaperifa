@@ -28,7 +28,7 @@ export default function ProgramacaoEvento() {
                             <CampoForm id='data-prog-evento' tipo='text' legenda='Digite a data do evento' tamanhoCampo='100%' tituloForm="Data do evento" />
                             <CampoForm id='hora-inic-prog-evento' tipo='text' legenda='Digite o horário em que o evento iniciará' tamanhoCampo='100%' tituloForm="Horário de início" />
                             <CampoForm id='data-fim-prog-evento' tipo='text' legenda='Digite o horário em que o evento terminará' tamanhoCampo='100%' tituloForm="Horário de fim" />
-                            <span>Lorem ipsum</span>
+                            <span>Sábado, 20 de Jul, 15h às 17h</span>
                         </div>
                         <div className="prog-evento__calendar">
                             <Calendar

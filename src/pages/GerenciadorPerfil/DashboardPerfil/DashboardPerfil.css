@@ -1,0 +1,23 @@
+.container-dashboard{
+    display: flex;
+}
+
+.dashboard__graficos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.dashboard__grafico-barra{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.dashboard__grafico-pizza{
+    width: 50%;
+    height: 400px;
+}

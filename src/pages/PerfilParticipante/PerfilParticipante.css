@@ -57,10 +57,10 @@
 
 .perfil-participante__comentarios{
     width: 80%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-left: 100px;
 }
 
 .perfil-participante__guia{
@@ -82,3 +82,20 @@
     font-weight: 600;
 }
 
+.perfil-participante__carrossel{
+    width: 60%;
+    margin-left: 100px;
+}
+
+.hidden-container{
+    display: flex;
+}
+
+.show-container{
+    display: none;
+}
+
+.perfil-participante__seguindo{
+    display: flex;
+    gap: 10px;
+}

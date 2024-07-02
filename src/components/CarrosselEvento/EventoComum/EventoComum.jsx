@@ -3,8 +3,13 @@ import Coracao from '../../../assets/coracao.png';
 import Agenda from '../../../assets/agenda.png';
 import { CiCalendar } from "react-icons/ci";
 import { IoMdHeartEmpty } from "react-icons/io";
+import CoracaoVazado from '../../../assets/coracao_vazado.png';
+import CoracaoPreenchido from '../../../assets/coracao_preenchido.png';
+import { useEffect, useState } from 'react';
 
 export default function EventoComum(props) {
+    const [click, setClick] = useState(false);
+
     return (
         <div className="container-evento-comum">
             <div className="evento-comum">
@@ -22,7 +27,7 @@ export default function EventoComum(props) {
 
                     <div className='evento-comum__icones'>
                         <span className="evento-comum__coracao">
-                            <img src={Coracao} alt="Ícone de Like" />
+                            <img src={Coracao} alt="Ícone de Like" id="coracao"/>
                         </span>
 
                         <span>

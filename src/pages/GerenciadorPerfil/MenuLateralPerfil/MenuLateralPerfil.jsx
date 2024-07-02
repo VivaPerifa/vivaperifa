@@ -35,7 +35,7 @@ export default function MenuLateralPerfil() {
                                     Eventos
                                 </li>
                             </Link>
-                            <Link to="">
+                            <Link to="/dashboard">
                                 <li><FontAwesomeIcon icon={faChartSimple} /> 
                                     Analytics
                                 </li>

@@ -43,13 +43,12 @@ import Comentario from './components/Comentario/Comentario.jsx';
 import ComentariosEvento from './pages/GerenciadorPerfil/ComentariosEvento/ComentariosEvento.jsx';
 import SuporteEvento from './pages/GerenciadorPerfil/SuporteEvento/SuporteEvento.jsx';
 import EditarPerfilParticipante from './pages/EditarPerfilParticipante/EditarPerfilParticipante.jsx';
-
+import { Chart } from "react-google-charts";
+import DashboardPerfil from './pages/GerenciadorPerfil/DashboardPerfil/DashboardPerfil.jsx';
 
 function App() {
-  
-  
   return (
-    
+
     <BrowserRouter>
       <div>
         {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -60,13 +59,13 @@ function App() {
         {/* <Tradutor changeLanguage={changeLanguage} />   */}
         <BotaoTopo></BotaoTopo>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/home' element={<Home/>} />
-          <Route path='/sobre-nos' element={<SobreNos/>} />
-          <Route path='/explorar' element={<Explorar/>} />
-          <Route path='/comunidade' element={<Comunidade/>} />
-          <Route path='/contato' element={<Contato/>} />
-          <Route path='/descricao-evento' element={<DescricaoEvento />}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/sobre-nos' element={<SobreNos />} />
+          <Route path='/explorar' element={<Explorar />} />
+          <Route path='/comunidade' element={<Comunidade />} />
+          <Route path='/contato' element={<Contato />} />
+          <Route path='/descricao-evento' element={<DescricaoEvento />} />
           <Route path='/gerenciador-perfil' element={<GerenciadorPerfil />}></Route>
           <Route path='/imagem-evento' element={<ImagemEvento />}></Route>
           <Route path='/criar-evento' element={<InicioCadastro />}></Route>
@@ -83,6 +82,7 @@ function App() {
           <Route path='/comentarios-evento' element={<ComentariosEvento></ComentariosEvento>}></Route>
           <Route path='/suporte-evento' element={<SuporteEvento></SuporteEvento>}></Route>
           <Route path='/editar-perfil-participante' element={<EditarPerfilParticipante></EditarPerfilParticipante>}></Route>
+          <Route path='/dashboard' element={<DashboardPerfil></DashboardPerfil>}></Route>
         </Routes>
       </div>
     </BrowserRouter>
