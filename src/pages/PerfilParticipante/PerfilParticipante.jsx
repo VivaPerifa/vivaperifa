@@ -273,7 +273,7 @@ export default function PerfilParticipante() {
                         </div>
                         <div className="dados-participante">
                             <span>3 comentários</span>
-                            <span>2 seguindo</span>
+                            <span>1 seguindo</span>
                         </div>
                     </div>
                 </div>
@@ -313,7 +313,10 @@ export default function PerfilParticipante() {
                 <figure>
                     <img src={Eccoa} alt="Ícone do perfil do organizador"/>
                 </figure>
-                <span>Eccoa</span>
+                <div className="seguindo__descricao">
+                    <span>Eccoa</span>
+                    <span>12 eventos</span>
+                </div>
             </div>
             <Footer></Footer>
         </div>

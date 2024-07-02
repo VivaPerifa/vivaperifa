@@ -13,18 +13,34 @@ import { IoMdStar } from "react-icons/io";
 import { IoIosStarOutline } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
 import BotaoColorido from '../../components/BotaoColorido/BotaoColorido.jsx';
+import { useEffect, useState } from 'react';
+
 
 export default function DetalheEvento() {
 
     const location = useLocation();
     const { evento } = location.state;
 
-    var listComentarios = [];
+    const [comentarios, setComentarios] = useState([]);
 
-    if (evento.comentarios != null) {
-        listComentarios = evento.comentarios;
-        console.log(listComentarios);
-    }
+    useEffect(() => {
+        if (evento.comentarios != null) {
+            setComentarios(evento.comentarios);
+            console.log(comentarios);
+        }
+        console.log(comentarios)
+    },[comentarios]);
+
+    // useEffect(() => {
+    //     var avaliacao = document.getElementById('avaliacao');
+    //     if(evento.comentarios == null){
+    //         avaliacao.classList.add('hidden');
+    //         avaliacao.classList.remove('show');
+    //     }else{
+    //         avaliacao.classList.add('show');
+    //         avaliacao.classList.remove('hidden');
+    //     }
+    // })
 
     return (
         <div className="container-detalhe-evento">
@@ -120,9 +136,9 @@ export default function DetalheEvento() {
                     </div>
                 </div>
 
-                <span className={`${listComentarios == null ? 'show' : 'hidden'}`}>Deixe seu comentário quando o evento ocorrer!</span>
+                <span className={`${comentarios == "" ? 'show' : 'hidden'}`}>Deixe seu comentário quando o evento ocorrer!</span>
 
-                <div className="detalhe-evento__avaliacao">
+                <div className={`detalhe-evento__avaliacao ${comentarios == "" ? 'hidden' : 'show'}`}>
                     <div className="avaliacao__header">
                         <h2>Avaliação e comentários</h2>
                         <button>Avalie esse evento</button>
@@ -136,28 +152,29 @@ export default function DetalheEvento() {
                             <span className="avaliacao__qtd">4,123 avaliações</span>
                         </div>
                         <div className="avaliacao__nota-separada">
-                            <div class="progress-bar">
-                                <span>5</span><div class="progress" style={{width: '100%'}}></div>
+                            <div className="progress-bar">
+                                <span>5</span><div className="progress" style={{width: '100%'}}></div>
                             </div>
-                            <div class="progress-bar">
-                                <span>4</span><div class="progress" style={{width: '70%'}}></div>
+                            <div className="progress-bar">
+                                <span>4</span><div className="progress" style={{width: '70%'}}></div>
                             </div>
-                            <div class="progress-bar">
-                                <span>3</span><div class="progress" style={{width: '50%'}}></div>
+                            <div className="progress-bar">
+                                <span>3</span><div className="progress" style={{width: '50%'}}></div>
                             </div>
-                            <div class="progress-bar">
-                                <span>2</span><div class="progress" style={{width: '30%'}}></div>
+                            <div className="progress-bar">
+                                <span>2</span><div className="progress" style={{width: '30%'}}></div>
                             </div>
-                            <div class="progress-bar">
-                                <span>1</span><div class="progress" style={{width: '15%'}}></div>
+                            <div className="progress-bar">
+                                <span>1</span><div className="progress" style={{width: '15%'}}></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <hr></hr>
-                <div className={`detalhe-evento__comentarios ${evento.comentarios != null ? 'show' : 'hidden'}`}>
+                
+                <div className={`detalhe-evento__comentarios ${comentarios != null ? 'show' : 'hidden'}`}>
                     {
-                        listComentarios.map((item, index) => (
+                        comentarios.map((item, index) => (
                             <div className="comentario__item" key={index}>
                                 <Comentario
                                     nome={item.usuario}

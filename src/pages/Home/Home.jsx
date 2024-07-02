@@ -77,7 +77,8 @@ export default function Home() {
                 imagem: Museu,
                 nome: "Museu do Ipiranga",
                 eventos: 12
-            }
+            },
+            comentarios: null
         },
         {
             id: 2,
@@ -118,7 +119,8 @@ export default function Home() {
                 imagem: MuseuArteModerna,
                 nome: "Museu da Arte Moderna de São Paulo",
                 eventos: 23
-            }
+            },
+            comentarios: null
         },
         {
             id: 3,
@@ -156,13 +158,10 @@ export default function Home() {
                 imagem: FabricaCulturaTiradentes,
                 nome: "Fábrica de Cultura da Cidade Tiradantes",
                 eventos: 10
-            }
+            },
+            comentarios: null
         }
     ];
-
-    const handleTeste = () => {
-        console.log('testando');
-    }
 
     const eventosSaoPaulo = [
         {
@@ -201,7 +200,8 @@ export default function Home() {
                 imagem: MuseuArteModerna,
                 nome: "Museu da Arte Moderna de São Paulo",
                 eventos: 20
-            }
+            },
+            comentarios: null
         },
         {
             id: 5,
@@ -242,7 +242,8 @@ export default function Home() {
                 imagem: FabricaCulturaSapobemba,
                 nome: "Fábrica de Cultura de Sapobemba",
                 eventos: 8
-            }
+            },
+            comentarios: null
         },
         {
             id: 5,
@@ -298,7 +299,8 @@ export default function Home() {
                 imagem: CeuParqueBristol,
                 nome: "CEU Parque Bristol",
                 eventos: 24
-            }
+            },
+            comentarios: null
         }
     ]
 

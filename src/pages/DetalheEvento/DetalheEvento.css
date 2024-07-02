@@ -292,3 +292,11 @@
     background-color: var(--cor-amarela);
     border-radius: 25px;
 }
+
+.show{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
