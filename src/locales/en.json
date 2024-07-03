@@ -39,6 +39,14 @@
     "impulsionar1":"of your event",
     "impulsionar-texto": "Increase the impact of your event on the community with VivaPerifa! Our platform offers powerful tools to promote and highlight your event, reaching the right audience and boosting your visibility.  Join us to take your initiative to the next level!"
   },
+  "organizador":{
+    "perfil": "With extensive experience in event planning and execution, I am an event producer dedicated to turning visions into unforgettable experiences. My passion for creating unique and memorable moments drives me to continuously innovate, ensuring that each event is distinctive and customized to meet my clients' expectations. ",
+    "eventos": "10 events",
+    "editar_perfil": "Edit Profile",
+    "gerenciar_eventos": "Manage Events",
+    "atuais": "Current",
+    "encerrados":"Closed"
+  },
 "plano": {
   "assinar": "Purchase",
   "humildade": {

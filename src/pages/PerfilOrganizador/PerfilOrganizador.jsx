@@ -53,8 +53,11 @@ import RafaelSantos from '../../assets/perfis/rafael_santos.png';
 import CarlaMedonca from '../../assets/perfis/carla_medonca.png';
 
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 
 export default function PerfilOrganizador() {
+    const { t } = useTranslation();
     const [conteudo, setConteudo] = useState(true);
     
     useEffect(() => {
@@ -612,14 +615,14 @@ export default function PerfilOrganizador() {
                     <div className='perfil-organizador__botoes'>
                         <Link to='/editar-perfil'>
                             <BotaoLaranja
-                                legendaBotao="Editar Perfil"
+                                legendaBotao={t("organizador.editar_perfil")}
                                 larguraBotao="150px"
                             />
                         </Link>
 
                         <Link to='/eventos-cadastrados'>
                             <BotaoAzul
-                                legendaBotao="Gerenciar Eventos"
+                                legendaBotao={t("organizador.gerenciar_eventos")}
                                 larguraBotao="180px"
                             />
                         </Link>
@@ -629,16 +632,16 @@ export default function PerfilOrganizador() {
 
             <div className='perfil-organizador__info'>
                 <h4>João Elias</h4>
-                <span>10 eventos</span>
-                <p>Com ampla experiência no planejamento e execução de eventos, sou um produtor de eventos dedicado a transformar visões em experiências inesquecíveis. Minha paixão por criar momentos únicos e memoráveis me impulsiona a inovar continuamente, garantindo que cada evento seja distinto e personalizado para atender às expectativas de meus clientes. </p>
+                <span>{t("organizador.eventos")}</span>
+                <p>{t("organizador.perfil")}</p>
             </div>
 
             <div className="perfil-organizador__guia">
                 <div className="perfil-organizador__atuais">
-                    <span id="titulo_atuais" onClick={handleConteudoAtual}>Atuais</span>
+                    <span id="titulo_atuais" onClick={handleConteudoAtual}>{t("organizador.atuais")}</span>
                 </div>
                 <div className="perfil-organizador__encerrados">
-                    <span id="titulo_publicados" onClick={handleConteudoPublicado}>Encerrados</span>
+                    <span id="titulo_publicados" onClick={handleConteudoPublicado}>{t("organizador.encerrados")}</span>
                 </div>
                 
             </div>

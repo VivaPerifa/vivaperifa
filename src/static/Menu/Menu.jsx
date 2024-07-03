@@ -39,7 +39,7 @@ export default function Menu(props) {
     }, [showLoginOptions]);
 
     return (
-        <div className="container-menu" style={{ backgroundColor: props.corFundo }}>
+        <div className="container-menu" style={{ background: props.corFundo }}>
             <nav className="menu">
                 <ul className="menu__lista">
                     <div className='logo'>

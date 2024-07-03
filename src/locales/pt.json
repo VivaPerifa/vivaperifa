@@ -61,6 +61,14 @@
         "beneficio5": "Notificação imediata"
     }
 },
+"organizador": {
+  "perfil": "Com ampla experiência no planejamento e execução de eventos, sou um produtor de eventos dedicado a transformar visões em experiências inesquecíveis. Minha paixão por criar momentos únicos e memoráveis me impulsiona a inovar continuamente, garantindo que cada evento seja distinto e personalizado para atender às expectativas de meus clientes. ",
+  "eventos": "10 eventos",
+  "editar_perfil": "Editar Perfil",
+  "gerenciar_eventos": "Gerenciar Eventos",
+  "atuais": "Atuais",
+  "encerrados":"Encerrados"
+},
 "depoimento": {
       "titulo": "eles curtiram você também vai!",
       "titulo1": "To amando",
