@@ -4,6 +4,8 @@
 
 VivaPerifa é uma plataforma digital dedicada a promover e fortalecer a vida cultural e comunitária nas periferias. Nosso objetivo é conectar as pessoas às diversas atividades que acontecem nessas regiões, proporcionando oportunidades de participação, aprendizado e engajamento. Através do VivaPerifa, os moradores das periferias podem descobrir, compartilhar e participar dessas atividades, promovendo a inclusão, o desenvolvimento comunitário e o empoderamento das comunidades periféricas.
 
+Acesse pelo link: https://viva-perifa.vercel.app/
+
 ## Funcionalidades Principais
 
 ### Para Organizadores de Eventos:
