@@ -22,3 +22,7 @@ Acesse pelo link: https://viva-perifa.vercel.app/
 - **Participe e Colabore**: 🤝 Envolva-se em projetos sociais, voluntariado e outras atividades comunitárias para fazer a diferença em sua comunidade.
 - **Notificações Personalizadas**: 🔔 Receba notificações personalizadas sobre eventos e atividades com base em seus interesses e localização.
 
+### Tecnologias
+- **Frontend**: React Native
+- **Backend**: Java, SpringBoot
+- **Banco de dados**: PostgreSQL
