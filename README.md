@@ -27,4 +27,4 @@ Acesse pelo link: https://viva-perifa.vercel.app/
 - **Backend**: Java, Spring Boot
 - **Banco de dados**: PostgreSQL
 
-[![My Skills](https://skillicons.dev/icons?i=js,react,java,springboot,postgresql)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,react,java,postgresql)](https://skillicons.dev)
