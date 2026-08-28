@@ -24,5 +24,7 @@ Acesse pelo link: https://viva-perifa.vercel.app/
 
 ### Tecnologias
 - **Frontend**: React Native
-- **Backend**: Java, SpringBoot
+- **Backend**: Java, Spring Boot
 - **Banco de dados**: PostgreSQL
+
+[![My Skills](https://skillicons.dev/icons?i=js,react,java,springboot,postgresql)](https://skillicons.dev)
